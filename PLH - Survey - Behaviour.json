@@ -90,13 +90,6 @@
         },
         "type": "execute_actions"
       },
-      "41a66ca6-e363-470c-a3d1-5c64b8defc69": {
-        "position": {
-          "left": 80,
-          "top": 660
-        },
-        "type": "execute_actions"
-      },
       "9e269298-6513-4140-b8c8-a70e2ef7463a": {
         "config": {
           "cases": {},
@@ -140,16 +133,6 @@
         },
         "type": "execute_actions"
       },
-      "576de9b9-6dcb-414e-ade9-27159adae83e": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 80,
-          "top": 880
-        },
-        "config": {
-          "cases": {}
-        }
-      },
       "063a3b94-d6da-4bc1-9c88-7d2c93ef3618": {
         "config": {
           "cases": {}
@@ -159,20 +142,6 @@
           "top": 980
         },
         "type": "wait_for_response"
-      },
-      "0f93d9a2-f96b-43b6-8415-142d3ef66196": {
-        "position": {
-          "left": 340,
-          "top": 1080
-        },
-        "type": "execute_actions"
-      },
-      "8d46b00a-fb51-4462-86f1-c93730176f2e": {
-        "position": {
-          "left": 0,
-          "top": 1120
-        },
-        "type": "execute_actions"
       },
       "2c91649b-6960-4f81-a0e1-3e438fea9884": {
         "position": {
@@ -532,10 +501,10 @@
         },
         "type": "split_by_contact_field"
       },
-      "f1e9b134-f486-45f6-a49e-c7ef6991a431": {
+      "c20d3198-33c0-4425-9f0b-a4235cd2ad97": {
         "position": {
-          "left": 340,
-          "top": 6080
+          "left": 980,
+          "top": 6360
         },
         "type": "execute_actions"
       },
@@ -545,7 +514,7 @@
         },
         "position": {
           "left": 160,
-          "top": 6200
+          "top": 6440
         },
         "type": "wait_for_response"
       },
@@ -565,7 +534,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 43
+    "revision": 1
   },
   "name": "PLH - Survey - Behaviour",
   "nodes": [
@@ -764,7 +733,7 @@
       ],
       "exits": [
         {
-          "destination_uuid": "41a66ca6-e363-470c-a3d1-5c64b8defc69",
+          "destination_uuid": "c832155d-c917-4dba-8979-24f0fccfc18d",
           "uuid": "41632b08-d97c-4f1b-89c9-a1e09fbbfe8b"
         },
         {
@@ -889,27 +858,6 @@
       "uuid": "43fe61aa-b764-4c57-adb9-e2bc5f2324df"
     },
     {
-      "uuid": "41a66ca6-e363-470c-a3d1-5c64b8defc69",
-      "actions": [
-        {
-          "attachments": [],
-          "text": "Are you a parent/caregiver of a child living with disabilities?",
-          "type": "send_msg",
-          "quick_replies": [
-            "Yes",
-            "No"
-          ],
-          "uuid": "81b6af38-3f51-40b6-b02f-4711db1b8ca0"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "0989d51d-f5a7-4b36-a9b8-e9024be988a4",
-          "destination_uuid": "576de9b9-6dcb-414e-ade9-27159adae83e"
-        }
-      ]
-    },
-    {
       "actions": [],
       "exits": [
         {
@@ -1025,68 +973,6 @@
       "uuid": "17e0c370-02fb-4708-ba66-cc328efcded1"
     },
     {
-      "uuid": "576de9b9-6dcb-414e-ade9-27159adae83e",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "e76537f8-31f0-4048-a36d-d64dfe5119a3",
-        "cases": [
-          {
-            "arguments": [
-              "yes y"
-            ],
-            "type": "has_any_word",
-            "uuid": "b9c66748-9a54-498a-8028-378d17061b5b",
-            "category_uuid": "e1137277-8ea0-47bf-896a-e9d750bf6142"
-          },
-          {
-            "arguments": [
-              "no n"
-            ],
-            "type": "has_any_word",
-            "uuid": "29439644-3c88-4d4d-9f9e-1df17f7f5d7d",
-            "category_uuid": "e3093699-85b2-4b17-93ea-2558416a392d"
-          }
-        ],
-        "categories": [
-          {
-            "uuid": "e1137277-8ea0-47bf-896a-e9d750bf6142",
-            "name": "Yes",
-            "exit_uuid": "08cdfec9-0ec5-4459-a584-9f9a6e307ad9"
-          },
-          {
-            "uuid": "e3093699-85b2-4b17-93ea-2558416a392d",
-            "name": "No",
-            "exit_uuid": "9b827ed9-c16a-4557-a436-30d27835f757"
-          },
-          {
-            "uuid": "e76537f8-31f0-4048-a36d-d64dfe5119a3",
-            "name": "Other",
-            "exit_uuid": "b345d451-907a-4eeb-8ff5-9c2f1ad89d74"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg"
-        },
-        "result_name": "Result 10"
-      },
-      "exits": [
-        {
-          "uuid": "08cdfec9-0ec5-4459-a584-9f9a6e307ad9",
-          "destination_uuid": "8d46b00a-fb51-4462-86f1-c93730176f2e"
-        },
-        {
-          "uuid": "9b827ed9-c16a-4557-a436-30d27835f757",
-          "destination_uuid": "c832155d-c917-4dba-8979-24f0fccfc18d"
-        },
-        {
-          "uuid": "b345d451-907a-4eeb-8ff5-9c2f1ad89d74",
-          "destination_uuid": "0f93d9a2-f96b-43b6-8415-142d3ef66196"
-        }
-      ]
-    },
-    {
       "actions": [],
       "exits": [
         {
@@ -1128,44 +1014,6 @@
         }
       },
       "uuid": "063a3b94-d6da-4bc1-9c88-7d2c93ef3618"
-    },
-    {
-      "uuid": "0f93d9a2-f96b-43b6-8415-142d3ef66196",
-      "actions": [
-        {
-          "attachments": [],
-          "text": "Sorry, I don't understand what you mean.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "761ab8eb-dd22-404c-86f8-659f3ad2dd41"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "847000e2-cdb5-4448-8317-2c421d70807f",
-          "destination_uuid": "41a66ca6-e363-470c-a3d1-5c64b8defc69"
-        }
-      ]
-    },
-    {
-      "uuid": "8d46b00a-fb51-4462-86f1-c93730176f2e",
-      "actions": [
-        {
-          "uuid": "a3e246fc-3cbd-498c-b0fc-3cce005cac38",
-          "type": "set_contact_field",
-          "field": {
-            "key": "has_disability",
-            "name": "has disability"
-          },
-          "value": "yes"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "bd443f18-d32c-4a14-8a86-c25c2796c868",
-          "destination_uuid": "c832155d-c917-4dba-8979-24f0fccfc18d"
-        }
-      ]
     },
     {
       "actions": [
@@ -2051,9 +1899,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "All children behave badly sometimes. Here are a list of typical behaviours that can be challenging for parents:\n\n1. Crying a lot\n2. Problems sleeping\n3. Acting clingy\n4. Whining for things\n5. Bad tempered or moody\n6. Problems eating\n7. Stubborn or fussy\n8. Naughty behaviour\n9. Temper tantrums\n\nPlease type the number that describes the most challenging behaviour for you to manage with @fields.survey_behave_name. You can also type \"N\" if you do not want to answer. ",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "All children behave badly sometimes. Here are a list of typical behaviours that can challenging for parents:\n\n1. Crying a lot\n2. Problems sleeping\n3. Acting clingy\n4. Whining for things\n5. Bad tempered or moody\n6. Problems eating\n7. Stubborn or fussy\n8. Behaving naughty\n9. Temper tantrums\n\nPlease type the number that describes the most challenging behaviour for you to manage with @fields.survey_behave_name. You can also type \"N\" if you do not want to answer. ",
+          "type": "send_msg",
           "uuid": "de8bc5fd-b8d8-4135-b0c0-a8624baf185f"
         }
       ],
@@ -2069,9 +1917,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "All children behave badly sometimes. Here are a list of typical behaviours that can be challenging for parents:\n\n1. Refuse to obey instructions\n2. Gets angry a lot\n3. Rudeness, disrespectful behaviour\n4. Irritable, frequent mood changes\n5. Does not follow rules\n6. Stubbornness\n7. Breaking things\n8. Getting into fights\n9. Teasing or bothering others\n\nPlease type the number that describes the most challenging behaviour for you to manage with @fields.survey_behave_name. You can also type \"N\" if you do not want to answer. ",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "All children behave badly sometimes. Here are a list of typical behaviours that can challenging for parents:\n\n1. Refuse to obey instructions\n2. Gets angry a lot\n3. Rudeness, disrespectful behaviour\n4. Irritable, frequent mood changes\n5. Does not follow rules\n6. Stubbornness\n7. Breaking things\n8. Getting into fights\n9. Teasing or bothering others\n\nPlease type the number that describes the most challenging behaviour for you to manage with @fields.survey_behave_name. You can also type \"N\" if you do not want to answer. ",
+          "type": "send_msg",
           "uuid": "012025b3-11eb-4901-bc68-fd8b602df8b8"
         }
       ],
@@ -2087,9 +1935,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "All children behave badly sometimes. Here are a list of typical behaviours that can be challenging for parents:\n\n1. Refuse to obey instructions\n2. Temper tantrums\n3. Disrespectful behaviour\n4. Whining for things\n5. Hyperactivity, can't sit still\n6. Hitting others\n7. Breaking things\n8. Getting into fights\n9. Teasing or bothering others\n\nPlease type the number that describes the most challenging behaviour for you to manage with @fields.survey_behave_name. You can also type \"N\" if you do not want to answer. ",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "All children behave badly sometimes. Here are a list of typical behaviours that can challenging for parents:\n\n1. Refuse to obey instructions\n2. Temper tantrums\n3. Disrespectful behaviour\n4. Whining for things\n5. Hyperactivity, can't sit still\n6. Hitting others\n7. Breaking things\n8. Getting into fights\n9. Teasing or bothering others\n\nPlease type the number that describes the most challenging behaviour for you to manage with @fields.survey_behave_name. You can also type \"N\" if you do not want to answer. ",
+          "type": "send_msg",
           "uuid": "bb7e4fcb-f0c5-40ba-855e-d37b993d1a19"
         }
       ],
@@ -2417,17 +2265,17 @@
     {
       "actions": [
         {
-          "attachments": [],
-          "text": "Thanks so much for answering these questions. We really appreciate it. \n\nRemember that we are here to help. Type \"Help\" if you ever want more parenting tips or other assistance. Thanks again!",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [],
+          "text": "Thanks so much for answering these questions. \n\nBe gentle with yourself. Just because something didn’t go well today, or you lost your temper, this doesn’t define who you are as a parent. Remind yourself of the things you did well today, even if they may seem small.",
+          "type": "send_msg",
           "uuid": "a164cb57-65bb-4e40-932c-81e0fe6bd4ca"
         }
       ],
       "exits": [
         {
-          "destination_uuid": null,
+          "destination_uuid": "c20d3198-33c0-4425-9f0b-a4235cd2ad97",
           "uuid": "6c4ee519-f557-4fd6-9c30-8c807a1f4836"
         }
       ],
@@ -2475,22 +2323,25 @@
       "uuid": "4b437dae-2999-4d6e-bc28-4c7e1ac005be"
     },
     {
-      "uuid": "f1e9b134-f486-45f6-a49e-c7ef6991a431",
       "actions": [
         {
-          "attachments": [],
-          "text": "Sorry, I don't understand what you mean.",
-          "type": "send_msg",
+          "all_urns": false,
+          "attachments": [
+            "image:@(fields.image_path & \"you_deserve_a_star.jpg\")"
+          ],
           "quick_replies": [],
-          "uuid": "e6f6094b-5ced-406d-92db-e004c92a416f"
+          "text": "Remember that we are here to help. Type \"Help\" if you ever want more parenting tips or other assistance. Chat later!",
+          "type": "send_msg",
+          "uuid": "1719a50e-f53b-4778-b180-44dbe27042cd"
         }
       ],
       "exits": [
         {
-          "uuid": "d58a8fda-0191-43a9-bed0-2b8dcb8dc311",
-          "destination_uuid": "135ab0c0-2324-44a4-ac9f-471f87f733be"
+          "destination_uuid": null,
+          "uuid": "06b136af-bcfc-4dbb-97d1-7e1eaede0e91"
         }
-      ]
+      ],
+      "uuid": "c20d3198-33c0-4425-9f0b-a4235cd2ad97"
     },
     {
       "actions": [],
@@ -2504,7 +2355,7 @@
           "uuid": "b9138df5-fe6e-4cb0-8c71-ad06a71873e8"
         },
         {
-          "destination_uuid": "f1e9b134-f486-45f6-a49e-c7ef6991a431",
+          "destination_uuid": "4b437dae-2999-4d6e-bc28-4c7e1ac005be",
           "uuid": "eaed736a-8dd5-46bc-b2d5-be4e7089a09a"
         }
       ],
@@ -2616,5 +2467,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "fac74b9c-d6e5-43a8-a8f0-a082eeb19388",
-  "revision": 44
+  "revision": 4
 }

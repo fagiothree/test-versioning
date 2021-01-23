@@ -63,19 +63,19 @@
         "type": "wait_for_response"
       },
       "edd5cb82-e7e6-4916-a596-9a62b816c48b": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 140,
           "top": 4560
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "7cb9b833-7189-4510-92b9-a4331e789b7a": {
         "position": {
@@ -101,22 +101,22 @@
           }
         },
         "position": {
-          "left": 320,
-          "top": 7320
+          "left": 240,
+          "top": 4900
         },
         "type": "split_by_contact_field"
       },
       "99f1f349-0f93-4e06-90e9-b4ca4a8b8aee": {
         "position": {
-          "left": 200,
-          "top": 7460
+          "left": 140,
+          "top": 5080
         },
         "type": "execute_actions"
       },
       "20598c3f-e8a9-437b-8688-9800c888fcde": {
         "position": {
-          "left": 460,
-          "top": 7460
+          "left": 400,
+          "top": 5080
         },
         "type": "execute_actions"
       },
@@ -265,23 +265,6 @@
           "top": 9400
         },
         "type": "execute_actions"
-      },
-      "4106fbcd-a216-4be6-b2fa-5de68b5b24be": {
-        "position": {
-          "left": 340,
-          "top": 4700
-        },
-        "type": "execute_actions"
-      },
-      "4c0c2be0-3981-418a-ba49-97ef8c9f612d": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 640,
-          "top": 4860
-        },
-        "config": {
-          "cases": {}
-        }
       }
     },
     "stickies": {}
@@ -291,7 +274,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 2
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Behave - Emotion",
   "nodes": [
@@ -545,27 +528,26 @@
       "uuid": "d729cddc-b9cb-451f-bfd7-30d99b1ca154"
     },
     {
-      "uuid": "edd5cb82-e7e6-4916-a596-9a62b816c48b",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "7cb9b833-7189-4510-92b9-a4331e789b7a",
+          "uuid": "2bff1732-b549-40fe-a2b7-c87523a003b0"
+        },
+        {
+          "destination_uuid": "b1c1a934-fca7-407c-a27b-4c67c48d82e9",
+          "uuid": "19f35bed-dcf2-4dfb-813a-2079fb49f5fe"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "26ce4b9c-f3fa-4466-9bbd-cb047b274d35",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "232a5aad-88ee-47b3-b897-c2ee1d22d637",
             "type": "has_any_word",
-            "uuid": "2a06b732-63ea-4061-b4fa-3d9435a409e6",
-            "category_uuid": "232a5aad-88ee-47b3-b897-c2ee1d22d637"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "c1b54c0a-afb0-4222-95da-97dc029015eb",
-            "category_uuid": "4258d9a8-6a8c-4fb2-ae80-e3d37a1f6fa3"
+            "uuid": "2a06b732-63ea-4061-b4fa-3d9435a409e6"
           }
         ],
         "categories": [
@@ -575,58 +557,22 @@
             "uuid": "232a5aad-88ee-47b3-b897-c2ee1d22d637"
           },
           {
-            "uuid": "4258d9a8-6a8c-4fb2-ae80-e3d37a1f6fa3",
-            "name": "Medium",
-            "exit_uuid": "f1600bbe-634c-4a6c-90b2-fd7b704513d5"
-          },
-          {
             "exit_uuid": "19f35bed-dcf2-4dfb-813a-2079fb49f5fe",
             "name": "Other",
             "uuid": "26ce4b9c-f3fa-4466-9bbd-cb047b274d35"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "26ce4b9c-f3fa-4466-9bbd-cb047b274d35",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "7cb9b833-7189-4510-92b9-a4331e789b7a",
-          "uuid": "2bff1732-b549-40fe-a2b7-c87523a003b0"
-        },
-        {
-          "uuid": "f1600bbe-634c-4a6c-90b2-fd7b704513d5",
-          "destination_uuid": "4106fbcd-a216-4be6-b2fa-5de68b5b24be"
-        },
-        {
-          "destination_uuid": "38d79403-9874-4266-b6a8-727e91cc47c0",
-          "uuid": "19f35bed-dcf2-4dfb-813a-2079fb49f5fe"
-        }
-      ]
-    },
-    {
-      "uuid": "4106fbcd-a216-4be6-b2fa-5de68b5b24be",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Emotional_Support.mp3\")"
-          ],
-          "text": "Here's an audio message that can help you teach your child how to cope with their emotions.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "f047430a-886b-48c3-81cf-c2c279632f9c"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "102a6179-6c65-4fe0-954d-bd5cb1cae5bb",
-          "destination_uuid": "4c0c2be0-3981-418a-ba49-97ef8c9f612d"
-        }
-      ]
+      "uuid": "edd5cb82-e7e6-4916-a596-9a62b816c48b"
     },
     {
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Emotional_Support.m4v\")"
+            "video:@(fields.video_script_path & \"Emotional_Support.m4v\")"
           ],
           "text": "Here's a video that can help you teach your child how to cope with their emotions.",
           "type": "send_msg",
@@ -636,7 +582,7 @@
       ],
       "exits": [
         {
-          "destination_uuid": "4c0c2be0-3981-418a-ba49-97ef8c9f612d",
+          "destination_uuid": "b1c1a934-fca7-407c-a27b-4c67c48d82e9",
           "uuid": "d5920243-cff5-4d92-a0b1-7286ef71c7b9"
         }
       ],
@@ -661,44 +607,81 @@
       "uuid": "43ae42b7-c3d1-4df5-a0d6-938c6d6b63c4"
     },
     {
-      "uuid": "4c0c2be0-3981-418a-ba49-97ef8c9f612d",
       "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "d6d820c9-e034-46f9-b747-9a296642680f",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "d6d820c9-e034-46f9-b747-9a296642680f",
-            "name": "All Responses",
-            "exit_uuid": "2262e796-f027-4fb0-b280-9bbafd1e627c"
-          },
-          {
-            "uuid": "8808c2c1-a6ab-40c3-8d8a-293c23de3673",
-            "name": "No Response",
-            "exit_uuid": "11567620-519c-4c47-939e-2185d4b9eb94"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "8808c2c1-a6ab-40c3-8d8a-293c23de3673"
-          }
-        },
-        "result_name": "Result 4"
-      },
       "exits": [
         {
-          "uuid": "2262e796-f027-4fb0-b280-9bbafd1e627c",
-          "destination_uuid": "38d79403-9874-4266-b6a8-727e91cc47c0"
+          "destination_uuid": "99f1f349-0f93-4e06-90e9-b4ca4a8b8aee",
+          "uuid": "46b765b0-37c6-4008-a829-245c953ae475"
         },
         {
-          "uuid": "11567620-519c-4c47-939e-2185d4b9eb94",
-          "destination_uuid": "38d79403-9874-4266-b6a8-727e91cc47c0"
+          "destination_uuid": "20598c3f-e8a9-437b-8688-9800c888fcde",
+          "uuid": "49346699-e027-4274-b547-602c81241a52"
         }
-      ]
+      ],
+      "router": {
+        "cases": [
+          {
+            "arguments": [
+              "teen"
+            ],
+            "category_uuid": "5ed2842e-9d81-4100-adb7-5f219a7da6b8",
+            "type": "has_any_word",
+            "uuid": "e831ce89-efe7-4ea7-9afd-f0fb45781c8c"
+          }
+        ],
+        "categories": [
+          {
+            "exit_uuid": "46b765b0-37c6-4008-a829-245c953ae475",
+            "name": "Teen",
+            "uuid": "5ed2842e-9d81-4100-adb7-5f219a7da6b8"
+          },
+          {
+            "exit_uuid": "49346699-e027-4274-b547-602c81241a52",
+            "name": "Other",
+            "uuid": "044e3fe5-8f16-406c-8218-9fbd45dd3ce0"
+          }
+        ],
+        "default_category_uuid": "044e3fe5-8f16-406c-8218-9fbd45dd3ce0",
+        "operand": "@fields.age_group_for_tips",
+        "type": "switch"
+      },
+      "uuid": "b1c1a934-fca7-407c-a27b-4c67c48d82e9"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Here is a comic that shows how you can give your teen love and support when they share difficult emotions with you…",
+          "type": "send_msg",
+          "uuid": "949a6c71-e9e0-4dae-8fb3-de2db6a8c2a8"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "38d79403-9874-4266-b6a8-727e91cc47c0",
+          "uuid": "2a7b2c18-470a-470d-a63e-164c7dae6c63"
+        }
+      ],
+      "uuid": "99f1f349-0f93-4e06-90e9-b4ca4a8b8aee"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Here is a comic that shows how you can give your child love and support when they share difficult emotions with you…",
+          "type": "send_msg",
+          "uuid": "eb8c29f2-f0a6-4444-992b-d020b016ce53"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "38d79403-9874-4266-b6a8-727e91cc47c0",
+          "uuid": "8a5ba41c-f855-47e7-ab67-6e7556022435"
+        }
+      ],
+      "uuid": "20598c3f-e8a9-437b-8688-9800c888fcde"
     },
     {
       "actions": [
@@ -822,7 +805,7 @@
           "uuid": "efda9e2e-df5f-4d7b-87bb-988622d8f8e3"
         },
         {
-          "destination_uuid": "b1c1a934-fca7-407c-a27b-4c67c48d82e9",
+          "destination_uuid": "18134998-ee8e-4cc8-9d87-4b371a4c0fb7",
           "uuid": "798cf183-0c84-4603-9cbf-97aefa11c269"
         },
         {
@@ -1108,87 +1091,6 @@
       "uuid": "dddf7687-1407-417d-96f7-ab89f72c54c6"
     },
     {
-      "actions": [],
-      "exits": [
-        {
-          "destination_uuid": "99f1f349-0f93-4e06-90e9-b4ca4a8b8aee",
-          "uuid": "46b765b0-37c6-4008-a829-245c953ae475"
-        },
-        {
-          "destination_uuid": "20598c3f-e8a9-437b-8688-9800c888fcde",
-          "uuid": "49346699-e027-4274-b547-602c81241a52"
-        }
-      ],
-      "router": {
-        "cases": [
-          {
-            "arguments": [
-              "teen"
-            ],
-            "category_uuid": "5ed2842e-9d81-4100-adb7-5f219a7da6b8",
-            "type": "has_any_word",
-            "uuid": "e831ce89-efe7-4ea7-9afd-f0fb45781c8c"
-          }
-        ],
-        "categories": [
-          {
-            "exit_uuid": "46b765b0-37c6-4008-a829-245c953ae475",
-            "name": "Teen",
-            "uuid": "5ed2842e-9d81-4100-adb7-5f219a7da6b8"
-          },
-          {
-            "exit_uuid": "49346699-e027-4274-b547-602c81241a52",
-            "name": "Other",
-            "uuid": "044e3fe5-8f16-406c-8218-9fbd45dd3ce0"
-          }
-        ],
-        "default_category_uuid": "044e3fe5-8f16-406c-8218-9fbd45dd3ce0",
-        "operand": "@fields.age_group_for_tips",
-        "type": "switch"
-      },
-      "uuid": "b1c1a934-fca7-407c-a27b-4c67c48d82e9"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.comic_path & \"giving_your_teen_attention_comic.jpg\")"
-          ],
-          "text": "Here is a comic that shows how you can give your teen love and support when they share difficult emotions with you…",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "949a6c71-e9e0-4dae-8fb3-de2db6a8c2a8"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "18134998-ee8e-4cc8-9d87-4b371a4c0fb7",
-          "uuid": "2a7b2c18-470a-470d-a63e-164c7dae6c63"
-        }
-      ],
-      "uuid": "99f1f349-0f93-4e06-90e9-b4ca4a8b8aee"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.comic_path & \"acknowledging_difficult_emotions_comic.jpg\")"
-          ],
-          "text": "Here is a comic that shows how you can give your child love and support when they share difficult emotions with you…",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "eb8c29f2-f0a6-4444-992b-d020b016ce53"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "18134998-ee8e-4cc8-9d87-4b371a4c0fb7",
-          "uuid": "8a5ba41c-f855-47e7-ab67-6e7556022435"
-        }
-      ],
-      "uuid": "20598c3f-e8a9-437b-8688-9800c888fcde"
-    },
-    {
       "actions": [
         {
           "all_urns": false,
@@ -1375,5 +1277,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "7a712069-fc50-449e-be8b-98a7f4370422",
-  "revision": 28
+  "revision": 2
 }

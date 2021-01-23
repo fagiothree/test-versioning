@@ -1,6 +1,13 @@
 {
   "_ui": {
     "nodes": {
+      "5b13d337-f00d-4a59-bff5-f21751afb3d8": {
+        "position": {
+          "left": 460,
+          "top": 580
+        },
+        "type": "execute_actions"
+      },
       "5478400d-402a-4c0c-a13a-41a2d0f047a4": {
         "position": {
           "left": 560,
@@ -25,13 +32,6 @@
         },
         "type": "execute_actions"
       },
-      "5fd3748b-bd00-4d3c-9f7c-954f22a8abc0": {
-        "position": {
-          "left": 780,
-          "top": 300
-        },
-        "type": "execute_actions"
-      },
       "8ee06523-dbc8-4bcd-bb09-8551489dd913": {
         "position": {
           "left": 180,
@@ -46,10 +46,10 @@
         },
         "type": "execute_actions"
       },
-      "5b13d337-f00d-4a59-bff5-f21751afb3d8": {
+      "5fd3748b-bd00-4d3c-9f7c-954f22a8abc0": {
         "position": {
-          "left": 460,
-          "top": 580
+          "left": 780,
+          "top": 300
         },
         "type": "execute_actions"
       }
@@ -60,7 +60,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 22
+    "revision": 1
   },
   "name": "PLH - Content - Relax - CheckIn - Connect",
   "nodes": [
@@ -241,9 +241,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"two_parents_talking_together.jpg\")"
-          ],
+          "attachments": [],
           "text": "When you take care of yourself, you take care of your children. We all need to connect. Try to talk to friends, family, and other support networks every day. If it has been a while since you reached out to someone, do it now!",
           "type": "send_msg",
           "quick_replies": [],
@@ -262,5 +260,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "1816d988-fa76-4e49-bbe7-17ba4561db25",
-  "revision": 23
+  "revision": 22
 }

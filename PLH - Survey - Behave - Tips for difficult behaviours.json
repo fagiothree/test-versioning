@@ -53,12 +53,12 @@
         "type": "split_by_contact_field"
       },
       "9ea7f30b-5155-4509-9df4-43e643ef8732": {
-        "type": "split_by_subflow",
+        "config": {},
         "position": {
           "left": 40,
           "top": 660
         },
-        "config": {}
+        "type": "split_by_subflow"
       },
       "28329c4c-22a8-4bcd-8f87-8adc20cae060": {
         "config": {
@@ -123,12 +123,12 @@
         "type": "execute_actions"
       },
       "adfa4a81-538a-4910-b1c8-dafec1120e56": {
-        "type": "split_by_subflow",
+        "config": {},
         "position": {
           "left": 100,
           "top": 1460
         },
-        "config": {}
+        "type": "split_by_subflow"
       },
       "85406b04-debb-4245-9f5a-38cb3de91e12": {
         "position": {
@@ -288,7 +288,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 4
+    "revision": 1
   },
   "name": "PLH - Survey - Behave - Tips for difficult behaviours",
   "nodes": [
@@ -606,20 +606,27 @@
       "uuid": "4a00a249-001d-400b-b9e7-913efd757743"
     },
     {
-      "uuid": "9ea7f30b-5155-4509-9df4-43e643ef8732",
       "actions": [
         {
-          "uuid": "40ee981f-c9c6-499c-8b10-1e2045373f95",
-          "type": "enter_flow",
           "flow": {
-            "uuid": "8c7523db-bd30-4b39-ac37-972541928564",
-            "name": "PLH - Content - Positive - Behave - Ignore"
-          }
+            "name": "BehaveFlow - ignore",
+            "uuid": "8c7523db-bd30-4b39-ac37-972541928564"
+          },
+          "type": "enter_flow",
+          "uuid": "40ee981f-c9c6-499c-8b10-1e2045373f95"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": null,
+          "uuid": "47091f85-fa45-43e0-84a9-cb98dc3f4d75"
+        },
+        {
+          "destination_uuid": null,
+          "uuid": "5d40c501-a120-4a56-bb2c-860ea3b8a390"
         }
       ],
       "router": {
-        "type": "switch",
-        "operand": "@child.run.status",
         "cases": [
           {
             "arguments": [
@@ -650,18 +657,11 @@
             "uuid": "660497e7-22a3-447f-833c-43c1406b6a2f"
           }
         ],
-        "default_category_uuid": "660497e7-22a3-447f-833c-43c1406b6a2f"
+        "default_category_uuid": "660497e7-22a3-447f-833c-43c1406b6a2f",
+        "operand": "@child.run.status",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": null,
-          "uuid": "47091f85-fa45-43e0-84a9-cb98dc3f4d75"
-        },
-        {
-          "destination_uuid": null,
-          "uuid": "5d40c501-a120-4a56-bb2c-860ea3b8a390"
-        }
-      ]
+      "uuid": "9ea7f30b-5155-4509-9df4-43e643ef8732"
     },
     {
       "actions": [],
@@ -894,12 +894,12 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Would you like suggestions for active and calm things to do with your child?",
-          "type": "send_msg",
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would like suggestions for active and calm things to do with your child?",
+          "type": "send_msg",
           "uuid": "7a5864f2-294f-4a96-99a1-45a089acc04e"
         }
       ],
@@ -1003,20 +1003,27 @@
       "uuid": "cbda3050-e400-4334-aa23-dccba042da55"
     },
     {
-      "uuid": "adfa4a81-538a-4910-b1c8-dafec1120e56",
       "actions": [
         {
-          "uuid": "93023816-e91e-4ef5-821d-f593fa4b419c",
-          "type": "enter_flow",
           "flow": {
-            "uuid": "750304b1-3190-40ea-ba46-dd729d77f35e",
-            "name": "PLH - Handler - Activity - Young children"
-          }
+            "name": "Activities for young children handler",
+            "uuid": "750304b1-3190-40ea-ba46-dd729d77f35e"
+          },
+          "type": "enter_flow",
+          "uuid": "93023816-e91e-4ef5-821d-f593fa4b419c"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": null,
+          "uuid": "f14816b4-4144-4594-b903-99419bd90e74"
+        },
+        {
+          "destination_uuid": null,
+          "uuid": "c197b941-9eb7-4aa4-95ec-a4ee0a744546"
         }
       ],
       "router": {
-        "type": "switch",
-        "operand": "@child.run.status",
         "cases": [
           {
             "arguments": [
@@ -1047,18 +1054,11 @@
             "uuid": "564e02b6-5cab-4b00-8b42-dbbed540ff28"
           }
         ],
-        "default_category_uuid": "564e02b6-5cab-4b00-8b42-dbbed540ff28"
+        "default_category_uuid": "564e02b6-5cab-4b00-8b42-dbbed540ff28",
+        "operand": "@child.run.status",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": null,
-          "uuid": "f14816b4-4144-4594-b903-99419bd90e74"
-        },
-        {
-          "destination_uuid": null,
-          "uuid": "c197b941-9eb7-4aa4-95ec-a4ee0a744546"
-        }
-      ]
+      "uuid": "adfa4a81-538a-4910-b1c8-dafec1120e56"
     },
     {
       "actions": [
@@ -1319,9 +1319,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Remember that you’re in charge of what they eat, but not how much. Newborns have stomach the size of a grape! They need to eat often (sometimes in the middle of the night). It’s important to build trust around eating, especially as your baby starts on solid food. Let them know you are listening to their wishes in the eating department. They’ll be ravenous again soon!",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Remember that you’re in charge of what they eat, but not how much. Newborns have stomach the size of a grape! They need to eat often (sometimes in the middle of the night. \nIt’s important to build trust around eating, especially as your baby starts on solid food. Let them know you are listening to their wishes in the eating department. They’ll be ravenous again soon!",
+          "type": "send_msg",
           "uuid": "a16a962a-1e2a-4e73-9414-4a79aa000191"
         }
       ],
@@ -1805,5 +1805,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "9625a4d5-4e8b-4016-b0ed-46d4d238f3fb",
-  "revision": 7
+  "revision": 3
 }

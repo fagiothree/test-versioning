@@ -8,18 +8,63 @@
         },
         "type": "execute_actions"
       },
-      "78d5d176-5c4d-4fa1-9047-f6fa8139eefa": {
+      "116991e6-8993-4599-aa28-53d873078c6a": {
+        "position": {
+          "left": 60,
+          "top": 460
+        },
+        "type": "execute_actions"
+      },
+      "2305f3f2-7820-4b80-b4f0-ca5dca432c8a": {
+        "position": {
+          "left": 780,
+          "top": 600
+        },
+        "type": "execute_actions"
+      },
+      "2ca9c866-22d1-4c45-91a9-336b828c9fb3": {
+        "position": {
+          "left": 680,
+          "top": 1160
+        },
+        "type": "execute_actions"
+      },
+      "2d0c10e6-b08d-491f-9859-0954b2fdb2d5": {
         "config": {},
         "position": {
-          "left": 540,
-          "top": 120
+          "left": 760,
+          "top": 980
         },
         "type": "split_by_subflow"
       },
-      "7267a453-71a3-4269-82be-8e10f1c6d36b": {
+      "391c346b-916a-431d-97e5-cf600e05ebde": {
         "position": {
-          "left": 440,
-          "top": 280
+          "left": 1180,
+          "top": 920
+        },
+        "type": "execute_actions"
+      },
+      "3c9e5fce-64b4-40c3-83c8-aaed7ca59dba": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 240,
+          "top": 680
+        },
+        "type": "wait_for_response"
+      },
+      "3f5d9882-411e-4592-af4c-13ae48274578": {
+        "position": {
+          "left": 1020,
+          "top": 400
+        },
+        "type": "execute_actions"
+      },
+      "484aef17-0a96-431e-a2e7-b36428685a27": {
+        "position": {
+          "left": 20,
+          "top": 960
         },
         "type": "execute_actions"
       },
@@ -30,17 +75,17 @@
         },
         "type": "execute_actions"
       },
-      "3f5d9882-411e-4592-af4c-13ae48274578": {
+      "57058178-eef8-4de8-bdf3-8932ddacfe95": {
         "position": {
-          "left": 1020,
-          "top": 400
+          "left": 1200,
+          "top": 1040
         },
         "type": "execute_actions"
       },
-      "116991e6-8993-4599-aa28-53d873078c6a": {
+      "57c848d0-847d-4b8e-935f-3b60534c4b0b": {
         "position": {
-          "left": 60,
-          "top": 460
+          "left": 460,
+          "top": 860
         },
         "type": "execute_actions"
       },
@@ -59,29 +104,27 @@
         },
         "type": "split_by_contact_field"
       },
-      "2305f3f2-7820-4b80-b4f0-ca5dca432c8a": {
-        "position": {
-          "left": 780,
-          "top": 600
-        },
-        "type": "execute_actions"
-      },
-      "3c9e5fce-64b4-40c3-83c8-aaed7ca59dba": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 240,
-          "top": 680
-        },
-        "type": "wait_for_response"
-      },
       "61472a76-d2c8-4f48-9643-b236cd7bea86": {
         "position": {
           "left": 760,
           "top": 800
         },
         "type": "execute_actions"
+      },
+      "7267a453-71a3-4269-82be-8e10f1c6d36b": {
+        "position": {
+          "left": 440,
+          "top": 280
+        },
+        "type": "execute_actions"
+      },
+      "78d5d176-5c4d-4fa1-9047-f6fa8139eefa": {
+        "config": {},
+        "position": {
+          "left": 540,
+          "top": 120
+        },
+        "type": "split_by_subflow"
       },
       "b9873273-04b6-41c0-adf2-85d96fa0dae1": {
         "position": {
@@ -90,53 +133,10 @@
         },
         "type": "execute_actions"
       },
-      "57c848d0-847d-4b8e-935f-3b60534c4b0b": {
-        "position": {
-          "left": 460,
-          "top": 860
-        },
-        "type": "execute_actions"
-      },
-      "391c346b-916a-431d-97e5-cf600e05ebde": {
-        "position": {
-          "left": 1180,
-          "top": 920
-        },
-        "type": "execute_actions"
-      },
-      "484aef17-0a96-431e-a2e7-b36428685a27": {
-        "position": {
-          "left": 20,
-          "top": 960
-        },
-        "type": "execute_actions"
-      },
-      "2d0c10e6-b08d-491f-9859-0954b2fdb2d5": {
-        "config": {},
-        "position": {
-          "left": 760,
-          "top": 980
-        },
-        "type": "split_by_subflow"
-      },
       "c9b2bfdf-dc72-4dfb-922f-370554151888": {
         "position": {
           "left": 460,
           "top": 1040
-        },
-        "type": "execute_actions"
-      },
-      "57058178-eef8-4de8-bdf3-8932ddacfe95": {
-        "position": {
-          "left": 1200,
-          "top": 1040
-        },
-        "type": "execute_actions"
-      },
-      "2ca9c866-22d1-4c45-91a9-336b828c9fb3": {
-        "position": {
-          "left": 680,
-          "top": 1160
         },
         "type": "execute_actions"
       }
@@ -249,11 +249,11 @@
     {
       "actions": [
         {
-          "attachments": [],
-          "text": "The idea of talking to children about abuse can be scary. We don't know what to say. But there are some simple things that can help them understand when it is not OK to be touched, and that they can tell you if something ever happens. ",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [],
+          "text": "The idea of talking to children about abuse can be scary. We don't know what to say. But there are some simple things can help them understand when it is not OK to be touched, and that they can tell you if something ever happens. ",
+          "type": "send_msg",
           "uuid": "15e47760-1725-4bc4-9f6d-d3d3e41cbac3"
         }
       ],
@@ -655,5 +655,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "826c8b1b-270a-454f-9714-eb994954c9c6",
-  "revision": 2
+  "revision": 1
 }

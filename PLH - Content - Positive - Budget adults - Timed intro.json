@@ -1,6 +1,37 @@
 {
   "_ui": {
     "nodes": {
+      "19dfc869-5303-4c54-b2fe-bb13bf02d871": {
+        "position": {
+          "left": 180,
+          "top": 1240
+        },
+        "type": "execute_actions"
+      },
+      "37c4e7bc-a16b-4bac-875c-8f4fcc8353c8": {
+        "position": {
+          "left": 1180,
+          "top": 900
+        },
+        "type": "execute_actions"
+      },
+      "5aa7a9e2-395e-498d-99f2-f29b60c1f66c": {
+        "position": {
+          "left": 420,
+          "top": 1080
+        },
+        "type": "execute_actions"
+      },
+      "5d0d7b2e-3a6e-4053-9884-538faf8c98d3": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 220,
+          "top": 900
+        },
+        "type": "wait_for_response"
+      },
       "69885a94-2211-49e4-86f0-832292fbdb1b": {
         "position": {
           "left": 260,
@@ -16,17 +47,17 @@
         },
         "type": "split_by_subflow"
       },
-      "e418edbb-05a7-4483-a8c9-2f6d177a65de": {
+      "95a12348-b809-4058-9445-82a8e7985ff6": {
         "position": {
-          "left": 240,
-          "top": 320
+          "left": 100,
+          "top": 700
         },
         "type": "execute_actions"
       },
-      "a7ca37ec-f38f-4b47-a102-809c11d78502": {
+      "a2a24277-2103-4be5-bf27-bf0741f15ef8": {
         "position": {
-          "left": 1040,
-          "top": 400
+          "left": 360,
+          "top": 700
         },
         "type": "execute_actions"
       },
@@ -45,25 +76,17 @@
         },
         "type": "split_by_contact_field"
       },
-      "d9f5e207-7be0-4b29-a277-97098087c0ad": {
-        "config": {},
+      "a73c338b-e30d-40f1-8dcd-535d26a0e091": {
         "position": {
-          "left": 1040,
-          "top": 620
-        },
-        "type": "split_by_subflow"
-      },
-      "95a12348-b809-4058-9445-82a8e7985ff6": {
-        "position": {
-          "left": 100,
-          "top": 700
+          "left": 460,
+          "top": 1160
         },
         "type": "execute_actions"
       },
-      "a2a24277-2103-4be5-bf27-bf0741f15ef8": {
+      "a7ca37ec-f38f-4b47-a102-809c11d78502": {
         "position": {
-          "left": 360,
-          "top": 700
+          "left": 1040,
+          "top": 400
         },
         "type": "execute_actions"
       },
@@ -74,30 +97,6 @@
         },
         "type": "execute_actions"
       },
-      "d124328d-1b8c-4f89-8206-e8efcd1a7473": {
-        "position": {
-          "left": 1160,
-          "top": 780
-        },
-        "type": "execute_actions"
-      },
-      "5d0d7b2e-3a6e-4053-9884-538faf8c98d3": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 220,
-          "top": 900
-        },
-        "type": "wait_for_response"
-      },
-      "37c4e7bc-a16b-4bac-875c-8f4fcc8353c8": {
-        "position": {
-          "left": 1180,
-          "top": 900
-        },
-        "type": "execute_actions"
-      },
       "c3c611bd-58a1-4fb3-b929-a38a702b9d88": {
         "position": {
           "left": 180,
@@ -105,24 +104,25 @@
         },
         "type": "execute_actions"
       },
-      "5aa7a9e2-395e-498d-99f2-f29b60c1f66c": {
+      "d124328d-1b8c-4f89-8206-e8efcd1a7473": {
         "position": {
-          "left": 420,
-          "top": 1080
+          "left": 1160,
+          "top": 780
         },
         "type": "execute_actions"
       },
-      "a73c338b-e30d-40f1-8dcd-535d26a0e091": {
+      "d9f5e207-7be0-4b29-a277-97098087c0ad": {
+        "config": {},
         "position": {
-          "left": 460,
-          "top": 1160
+          "left": 1040,
+          "top": 620
         },
-        "type": "execute_actions"
+        "type": "split_by_subflow"
       },
-      "19dfc869-5303-4c54-b2fe-bb13bf02d871": {
+      "e418edbb-05a7-4483-a8c9-2f6d177a65de": {
         "position": {
-          "left": 180,
-          "top": 1240
+          "left": 240,
+          "top": 320
         },
         "type": "execute_actions"
       }
@@ -134,7 +134,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 4
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Budget adults - Timed intro",
   "nodes": [
@@ -218,9 +218,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Millions of families are struggling to make ends meet. When money is tight, this can make us feel anxious, stressed, and sad. How we understand and talk about money with our children is important. Our children can also help us to spend and save in ways that will benefit the family.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Millions of families are struggling to make ends meet during COVID-19. When money is tight, this can make us feel anxious, stressed, and sad. How we understand and talk about money is important. We can also learn about how we can save in ways that will benefit the family.",
+          "type": "send_msg",
           "uuid": "5455e9bd-7a75-443f-8b6e-e6b3b6bffd98"
         }
       ],
@@ -372,15 +372,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"adults_budgeting.jpg\")"
-          ],
-          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
+          "type": "send_msg",
           "uuid": "27aefa6e-df99-498f-907d-4e2c736416fe"
         }
       ],
@@ -395,15 +393,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"adults_budgeting.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "6352d06b-a47a-494d-8258-99a44b77341d"
         }
       ],
@@ -616,5 +612,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "5d20c735-659c-434c-a136-43e0e47ce702",
-  "revision": 5
+  "revision": 1
 }

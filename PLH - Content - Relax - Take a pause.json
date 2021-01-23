@@ -74,16 +74,6 @@
         },
         "type": "execute_actions"
       },
-      "d8871f99-64de-4f4f-9669-4d5862abbddc": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 640,
-          "top": 440
-        },
-        "config": {
-          "cases": {}
-        }
-      },
       "622b46bf-fd8e-4704-9fc2-494a585bdcb5": {
         "position": {
           "left": 100,
@@ -93,14 +83,14 @@
       },
       "fba51c5b-6a8c-4ff3-a38a-48b75fe3a4e4": {
         "position": {
-          "left": 820,
-          "top": 660
+          "left": 600,
+          "top": 640
         },
         "type": "execute_actions"
       },
       "21163d50-5c6b-401f-b184-564f92a30e00": {
         "position": {
-          "left": 780,
+          "left": 740,
           "top": 800
         },
         "type": "execute_actions"
@@ -152,7 +142,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 18
+    "revision": 4
   },
   "name": "PLH - Content - Relax - Take a pause",
   "nodes": [
@@ -311,19 +301,19 @@
     {
       "actions": [
         {
+          "all_urns": false,
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Keep_Calm_And_Manage_Stress_Including_Take_A_Pause.m4v\")"
+            "video:@(fields.video_script_path & \"Keep_Calm_And_Manage_Stress_Including_Take_A_Pause.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video about how to keep calm and manage stress in our busy lives.",
           "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
           "uuid": "1cf4d46f-ef6a-4210-acc2-a87ec5c0bf99"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "d8871f99-64de-4f4f-9669-4d5862abbddc",
+          "destination_uuid": "fba51c5b-6a8c-4ff3-a38a-48b75fe3a4e4",
           "uuid": "7137f5f4-90c7-4b7c-9bc2-c7a237801206"
         }
       ],
@@ -373,9 +363,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"take_a_pause.mp3\")"
-          ],
+          "attachments": [],
           "text": "Here's an audio message to help you take a pause!",
           "type": "send_msg",
           "quick_replies": [],
@@ -384,7 +372,7 @@
       ],
       "exits": [
         {
-          "destination_uuid": "d8871f99-64de-4f4f-9669-4d5862abbddc",
+          "destination_uuid": "fba51c5b-6a8c-4ff3-a38a-48b75fe3a4e4",
           "uuid": "b09e9867-1645-49b0-be24-05da04b72138"
         }
       ],
@@ -407,46 +395,6 @@
         }
       ],
       "uuid": "893989b7-2c0d-4f76-9901-57df68cb82f3"
-    },
-    {
-      "uuid": "d8871f99-64de-4f4f-9669-4d5862abbddc",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "30334778-7ba0-4d7a-9db5-c3170c8d4978",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "30334778-7ba0-4d7a-9db5-c3170c8d4978",
-            "name": "All Responses",
-            "exit_uuid": "33916a3c-d0e3-472d-b6e6-d19b3c3858ce"
-          },
-          {
-            "uuid": "65917769-e126-4b84-bb0d-57a057aa068c",
-            "name": "No Response",
-            "exit_uuid": "781a35a4-bf33-4410-a834-e260271e6e65"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "65917769-e126-4b84-bb0d-57a057aa068c"
-          }
-        },
-        "result_name": "Result 3"
-      },
-      "exits": [
-        {
-          "uuid": "33916a3c-d0e3-472d-b6e6-d19b3c3858ce",
-          "destination_uuid": "542eb9a2-9ad6-44c1-9c45-da01b38c1d0a"
-        },
-        {
-          "uuid": "781a35a4-bf33-4410-a834-e260271e6e65",
-          "destination_uuid": "542eb9a2-9ad6-44c1-9c45-da01b38c1d0a"
-        }
-      ]
     },
     {
       "actions": [
@@ -472,13 +420,11 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.comic_path & \"managing_stress_comic.jpg\")"
-          ],
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
           "text": "Here is a comic to remind you of taking a pause!",
           "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
           "uuid": "f848f5b3-d6e3-40ef-b295-43f652a6daf8"
         }
       ],
@@ -689,5 +635,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "6445c8ce-01a8-4546-aa39-4dc4e39878af",
-  "revision": 19
+  "revision": 6
 }

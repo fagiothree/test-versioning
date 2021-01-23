@@ -1,20 +1,40 @@
 {
   "_ui": {
     "nodes": {
-      "4b75ab6b-7188-4f6f-bb4e-da4fd0b459cd": {
+      "0e4bf05a-8191-4414-880c-2f3350097af3": {
         "position": {
-          "left": 480,
-          "top": 20
+          "left": 220,
+          "top": 1320
         },
         "type": "execute_actions"
       },
-      "7f26762a-8977-4dc2-a96b-d66fefabe641": {
-        "config": {},
+      "0ee4f58e-6caa-4d88-82e3-297c176b85f5": {
         "position": {
-          "left": 880,
-          "top": 120
+          "left": 100,
+          "top": 1200
         },
-        "type": "split_by_subflow"
+        "type": "execute_actions"
+      },
+      "2d5de21b-53fb-4d14-9010-ce362bce90ef": {
+        "position": {
+          "left": 520,
+          "top": 1320
+        },
+        "type": "execute_actions"
+      },
+      "34bc7749-dbc4-49bc-b2a0-5f16d78aa1f8": {
+        "position": {
+          "left": 520,
+          "top": 460
+        },
+        "type": "execute_actions"
+      },
+      "3c07ce9d-ca53-4d16-afbb-400acd5fb7c1": {
+        "position": {
+          "left": 600,
+          "top": 200
+        },
+        "type": "execute_actions"
       },
       "3fe7f26c-135b-4310-9870-ec5cf638f7e4": {
         "config": {
@@ -31,48 +51,10 @@
         },
         "type": "split_by_contact_field"
       },
-      "3c07ce9d-ca53-4d16-afbb-400acd5fb7c1": {
+      "47df5c7b-5288-4afc-ba9c-78d638d3b2b3": {
         "position": {
-          "left": 600,
-          "top": 200
-        },
-        "type": "execute_actions"
-      },
-      "9f7b06b7-3f83-4d61-89c0-ee3ad70cfdd1": {
-        "position": {
-          "left": 100,
-          "top": 360
-        },
-        "type": "execute_actions"
-      },
-      "34bc7749-dbc4-49bc-b2a0-5f16d78aa1f8": {
-        "position": {
-          "left": 360,
-          "top": 400
-        },
-        "type": "execute_actions"
-      },
-      "b760ccb6-17ae-4d05-b491-7ae474479de9": {
-        "position": {
-          "left": 840,
-          "top": 520
-        },
-        "type": "execute_actions"
-      },
-      "eff347e4-2b79-4b99-b208-5012f0b55c57": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 460,
-          "top": 620
-        },
-        "type": "wait_for_response"
-      },
-      "89e7c9f6-5e06-44b4-b745-4e214989140d": {
-        "position": {
-          "left": 860,
-          "top": 640
+          "left": 220,
+          "top": 860
         },
         "type": "execute_actions"
       },
@@ -83,10 +65,25 @@
         },
         "type": "execute_actions"
       },
-      "47df5c7b-5288-4afc-ba9c-78d638d3b2b3": {
+      "4b75ab6b-7188-4f6f-bb4e-da4fd0b459cd": {
         "position": {
-          "left": 220,
-          "top": 860
+          "left": 480,
+          "top": 20
+        },
+        "type": "execute_actions"
+      },
+      "7f26762a-8977-4dc2-a96b-d66fefabe641": {
+        "config": {},
+        "position": {
+          "left": 880,
+          "top": 120
+        },
+        "type": "split_by_subflow"
+      },
+      "89e7c9f6-5e06-44b4-b745-4e214989140d": {
+        "position": {
+          "left": 860,
+          "top": 640
         },
         "type": "execute_actions"
       },
@@ -94,6 +91,20 @@
         "position": {
           "left": 920,
           "top": 980
+        },
+        "type": "execute_actions"
+      },
+      "9f7b06b7-3f83-4d61-89c0-ee3ad70cfdd1": {
+        "position": {
+          "left": 100,
+          "top": 360
+        },
+        "type": "execute_actions"
+      },
+      "b760ccb6-17ae-4d05-b491-7ae474479de9": {
+        "position": {
+          "left": 840,
+          "top": 520
         },
         "type": "execute_actions"
       },
@@ -112,26 +123,15 @@
         },
         "type": "execute_actions"
       },
-      "0ee4f58e-6caa-4d88-82e3-297c176b85f5": {
-        "position": {
-          "left": 100,
-          "top": 1200
+      "eff347e4-2b79-4b99-b208-5012f0b55c57": {
+        "config": {
+          "cases": {}
         },
-        "type": "execute_actions"
-      },
-      "0e4bf05a-8191-4414-880c-2f3350097af3": {
         "position": {
-          "left": 220,
-          "top": 1320
+          "left": 460,
+          "top": 600
         },
-        "type": "execute_actions"
-      },
-      "2d5de21b-53fb-4d14-9010-ce362bce90ef": {
-        "position": {
-          "left": 520,
-          "top": 1320
-        },
-        "type": "execute_actions"
+        "type": "wait_for_response"
       }
     },
     "stickies": {}
@@ -141,7 +141,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 16
   },
   "name": "PLH - Content - Positive - Behave - Ignore - Timed intro",
   "nodes": [
@@ -266,9 +266,9 @@
       "actions": [
         {
           "attachments": [],
+          "quick_replies": [],
           "text": "Hello! A lot of parents struggle when their children have temper tantrums and other demanding behaviours. Today's tip is about how to make this more manageable.",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "2a503e7c-d923-4775-b91d-294dfd724999"
         }
       ],
@@ -283,15 +283,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"misbehaving_children.jpg\")"
-          ],
-          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
+          "type": "send_msg",
           "uuid": "af35014a-c4ca-47dd-b257-f27cad759576"
         }
       ],
@@ -306,16 +304,14 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"misbehaving_children.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "2ef26aa2-34a8-4579-a61e-e11f2558a602"
         }
       ],
@@ -643,5 +639,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "f5fc4ba8-8f02-4d69-831e-6ba9b18a7e6d",
-  "revision": 6
+  "revision": 1
 }

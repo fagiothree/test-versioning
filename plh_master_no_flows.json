@@ -29,33 +29,6 @@
           }
         }
       ]
-    },
-    {
-      "uuid": "5f0b1630-56df-423f-b74c-e09ebc86e446",
-      "name": "plh covid program",
-      "group": {
-        "uuid": "55c96316-5fc8-4844-bf7d-c557eb769dc2",
-        "name": "in program"
-      },
-      "events": [
-        {
-          "uuid": "f3b7de88-1019-421d-93ae-8fc6a9ef16b3",
-          "offset": 0,
-          "unit": "M",
-          "event_type": "F",
-          "delivery_hour": -1,
-          "message": null,
-          "relative_to": {
-            "label": "next campaign event",
-            "key": "next_campaign_event"
-          },
-          "start_mode": "I",
-          "flow": {
-            "uuid": "455cacef-8fa3-4db8-8c95-c7189f747462",
-            "name": "PLH - Timed - Campaign"
-          }
-        }
-      ]
     }
   ],
   "triggers": [
@@ -204,11 +177,6 @@
     {
       "key": "gender",
       "name": "gender",
-      "type": "text"
-    },
-    {
-      "key": "has_disability",
-      "name": "has disability",
       "type": "text"
     },
     {
@@ -392,11 +360,6 @@
       "type": "text"
     },
     {
-      "key": "relaxation_path",
-      "name": "relaxation path",
-      "type": "text"
-    },
-    {
       "key": "starting_date",
       "name": "starting date",
       "type": "text"
@@ -482,53 +445,13 @@
       "type": "text"
     },
     {
-      "key": "surveydiscipline_fb_better",
-      "name": "surveydiscipline fb better",
-      "type": "text"
-    },
-    {
-      "key": "surveydiscipline_fb_worse",
-      "name": "surveydiscipline fb worse",
-      "type": "text"
-    },
-    {
       "key": "surveypositive",
       "name": "surveypositive",
       "type": "text"
     },
     {
-      "key": "surveypositive_fb_better",
-      "name": "surveypositive fb better",
-      "type": "text"
-    },
-    {
-      "key": "surveypositive_fb_worse",
-      "name": "surveypositive fb worse",
-      "type": "text"
-    },
-    {
       "key": "surveypraise",
       "name": "surveypraise",
-      "type": "text"
-    },
-    {
-      "key": "surveypraise_fb_better",
-      "name": "surveypraise fb better",
-      "type": "text"
-    },
-    {
-      "key": "surveypraise_fb_worse",
-      "name": "surveypraise fb worse",
-      "type": "text"
-    },
-    {
-      "key": "surveysexual_fb_better",
-      "name": "surveysexual fb better",
-      "type": "text"
-    },
-    {
-      "key": "surveysexual_fb_worse",
-      "name": "surveysexual fb worse",
       "type": "text"
     },
     {
@@ -542,43 +465,13 @@
       "type": "text"
     },
     {
-      "key": "surveyshout_fb_better",
-      "name": "surveyshout fb better",
-      "type": "text"
-    },
-    {
-      "key": "surveyshout_fb_worse",
-      "name": "surveyshout fb worse",
-      "type": "text"
-    },
-    {
       "key": "surveystress",
       "name": "surveystress",
       "type": "text"
     },
     {
-      "key": "surveystress_fb_better",
-      "name": "surveystress fb better",
-      "type": "text"
-    },
-    {
-      "key": "surveystress_fb_worse",
-      "name": "surveystress fb worse",
-      "type": "text"
-    },
-    {
       "key": "surveytime",
       "name": "surveytime",
-      "type": "text"
-    },
-    {
-      "key": "surveytime_fb_better",
-      "name": "surveytime fb better",
-      "type": "text"
-    },
-    {
-      "key": "surveytime_fb_worse",
-      "name": "surveytime fb worse",
       "type": "text"
     },
     {
@@ -607,23 +500,8 @@
       "type": "text"
     },
     {
-      "key": "video_path",
-      "name": "video path",
-      "type": "text"
-    },
-    {
       "key": "video_script_path",
       "name": "video script path",
-      "type": "text"
-    },
-    {
-      "key": "voiceover_audio_path",
-      "name": "voiceover audio path",
-      "type": "text"
-    },
-    {
-      "key": "voiceover_video_path",
-      "name": "voiceover video path",
       "type": "text"
     },
     {

@@ -580,7 +580,7 @@
   "language": "base",
   "localization": {},
   "metadata": {
-    "revision": 29
+    "revision": 1
   },
   "name": "PLH - Survey - Parenting & Behaviour",
   "nodes": [
@@ -2254,9 +2254,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Sorry, I don't understand what you mean. Please answer with a number between 0 and 7.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Sorry, I don't understand what you mean. Please answer with a number between 0 and 8.",
+          "type": "send_msg",
           "uuid": "6ae4775d-ba37-4706-876a-c519a35bf14b"
         }
       ],
@@ -2893,5 +2893,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "07617295-c87c-422a-bbd3-0104a3a29fd5",
-  "revision": 30
+  "revision": 29
 }

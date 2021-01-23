@@ -53,19 +53,19 @@
         "type": "execute_actions"
       },
       "2ebff256-80d9-4f1b-b127-775f22357b6c": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 280,
           "top": 460
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "e931c37b-ce06-42c9-a95d-03920fe0fbf4": {
         "position": {
@@ -79,8 +79,8 @@
           "cases": {}
         },
         "position": {
-          "left": 820,
-          "top": 540
+          "left": 460,
+          "top": 560
         },
         "type": "wait_for_response"
       },
@@ -93,29 +93,29 @@
       },
       "aad98f3c-88b8-4e1d-beee-899a29a395be": {
         "position": {
-          "left": 460,
-          "top": 900
+          "left": 140,
+          "top": 740
         },
         "type": "execute_actions"
       },
       "6a1a13ac-66b7-4786-afb0-b01b475b951c": {
         "position": {
-          "left": 840,
-          "top": 1140
+          "left": 420,
+          "top": 1020
         },
         "type": "execute_actions"
       },
       "0b0f3ba3-a674-47f7-ac82-e079ade9cd66": {
         "position": {
-          "left": 420,
-          "top": 1400
+          "left": 140,
+          "top": 1240
         },
         "type": "execute_actions"
       },
       "ad1f7c6d-5902-430e-863c-e1077a6ebc13": {
         "position": {
-          "left": 880,
-          "top": 1300
+          "left": 440,
+          "top": 1280
         },
         "type": "execute_actions"
       },
@@ -148,23 +148,6 @@
           "top": 2040
         },
         "type": "execute_actions"
-      },
-      "0eab225b-8901-4823-a762-3273f4b66162": {
-        "position": {
-          "left": 320,
-          "top": 580
-        },
-        "type": "execute_actions"
-      },
-      "8eb917ec-7e9d-4ed1-85d4-cfc4d20aa6a4": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 160,
-          "top": 820
-        },
-        "config": {
-          "cases": {}
-        }
       }
     },
     "stickies": {}
@@ -174,7 +157,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 2
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Behave - Crisis",
   "nodes": [
@@ -353,27 +336,26 @@
       "uuid": "9f801134-1d04-4eac-a124-a17a9501e2ac"
     },
     {
-      "uuid": "2ebff256-80d9-4f1b-b127-775f22357b6c",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "e931c37b-ce06-42c9-a95d-03920fe0fbf4",
+          "uuid": "1e5e5eff-a036-4ed4-9b64-22d3ee223bbf"
+        },
+        {
+          "destination_uuid": "aad98f3c-88b8-4e1d-beee-899a29a395be",
+          "uuid": "fa76d77e-be61-4705-803d-71316adfba6c"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "32033886-a8b7-4825-ac83-faf693bbf2bb",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "6d4523c0-5f95-4667-b384-b0c5631b3b13",
             "type": "has_any_word",
-            "uuid": "9213704a-cf77-41a0-ad80-e811997309e2",
-            "category_uuid": "6d4523c0-5f95-4667-b384-b0c5631b3b13"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "340e9860-60ba-4772-bc06-e9828503b806",
-            "category_uuid": "fd9f4920-3e22-4e75-9ea6-5e1b8129e6e9"
+            "uuid": "9213704a-cf77-41a0-ad80-e811997309e2"
           }
         ],
         "categories": [
@@ -383,32 +365,36 @@
             "uuid": "6d4523c0-5f95-4667-b384-b0c5631b3b13"
           },
           {
-            "uuid": "fd9f4920-3e22-4e75-9ea6-5e1b8129e6e9",
-            "name": "Medium",
-            "exit_uuid": "c269173b-9d77-4e6b-a06d-1bfbb214cc1c"
-          },
-          {
             "exit_uuid": "fa76d77e-be61-4705-803d-71316adfba6c",
             "name": "Other",
             "uuid": "32033886-a8b7-4825-ac83-faf693bbf2bb"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "32033886-a8b7-4825-ac83-faf693bbf2bb",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
+      "uuid": "2ebff256-80d9-4f1b-b127-775f22357b6c"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [
+            "video:@(fields.video_script_path & \"Crisis_Support.m4v\")"
+          ],
+          "text": "Here's a video on how you can support your teen when they are experiencing difficult situations.",
+          "type": "send_msg",
+          "quick_replies": [],
+          "uuid": "8963b8e1-05c7-4f82-8dfc-6de3c9a6dc99"
+        }
+      ],
       "exits": [
         {
-          "destination_uuid": "e931c37b-ce06-42c9-a95d-03920fe0fbf4",
-          "uuid": "1e5e5eff-a036-4ed4-9b64-22d3ee223bbf"
-        },
-        {
-          "uuid": "c269173b-9d77-4e6b-a06d-1bfbb214cc1c",
-          "destination_uuid": "0eab225b-8901-4823-a762-3273f4b66162"
-        },
-        {
           "destination_uuid": "aad98f3c-88b8-4e1d-beee-899a29a395be",
-          "uuid": "fa76d77e-be61-4705-803d-71316adfba6c"
+          "uuid": "167346be-34c3-400f-858f-6947fa71ec2d"
         }
-      ]
+      ],
+      "uuid": "e931c37b-ce06-42c9-a95d-03920fe0fbf4"
     },
     {
       "actions": [],
@@ -488,46 +474,6 @@
     {
       "actions": [
         {
-          "attachments": [
-            "video:@(fields.voiceover_video_path & \"Crisis_Support.m4v\")"
-          ],
-          "text": "Here's a video on how you can support your teen when they are experiencing difficult situations.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "8963b8e1-05c7-4f82-8dfc-6de3c9a6dc99"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "8eb917ec-7e9d-4ed1-85d4-cfc4d20aa6a4",
-          "uuid": "167346be-34c3-400f-858f-6947fa71ec2d"
-        }
-      ],
-      "uuid": "e931c37b-ce06-42c9-a95d-03920fe0fbf4"
-    },
-    {
-      "uuid": "0eab225b-8901-4823-a762-3273f4b66162",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Crisis_Support.mp3\")"
-          ],
-          "text": "Here's an audio message on how you can support your teen when they are experiencing difficult situations.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "1e4be705-41aa-4acb-b1a3-1e56d819c990"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "4c39cdec-dc4c-4433-a878-5fe4f91a8b24",
-          "destination_uuid": "8eb917ec-7e9d-4ed1-85d4-cfc4d20aa6a4"
-        }
-      ]
-    },
-    {
-      "actions": [
-        {
           "attachments": [],
           "quick_replies": [],
           "text": "That's okay! You can always type \"Help\" if you want to receive more tips about how to manage your child's behaviour.",
@@ -542,46 +488,6 @@
         }
       ],
       "uuid": "3b5bd5ef-ddec-469c-a557-2be43c7f73d8"
-    },
-    {
-      "uuid": "8eb917ec-7e9d-4ed1-85d4-cfc4d20aa6a4",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "e7d12795-469c-443f-bf5b-b6b0e17573ad",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "e7d12795-469c-443f-bf5b-b6b0e17573ad",
-            "name": "All Responses",
-            "exit_uuid": "ea6b48b4-4111-496f-9293-2c00672ca2c3"
-          },
-          {
-            "uuid": "090aa3a9-e40d-43a6-809f-84353f45d073",
-            "name": "No Response",
-            "exit_uuid": "a7e739f6-0172-4b08-a8ef-23e829391b8e"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "090aa3a9-e40d-43a6-809f-84353f45d073"
-          }
-        },
-        "result_name": "Result 3"
-      },
-      "exits": [
-        {
-          "uuid": "ea6b48b4-4111-496f-9293-2c00672ca2c3",
-          "destination_uuid": "aad98f3c-88b8-4e1d-beee-899a29a395be"
-        },
-        {
-          "uuid": "a7e739f6-0172-4b08-a8ef-23e829391b8e",
-          "destination_uuid": "aad98f3c-88b8-4e1d-beee-899a29a395be"
-        }
-      ]
     },
     {
       "actions": [
@@ -626,6 +532,25 @@
           "all_urns": false,
           "attachments": [],
           "quick_replies": [],
+          "text": "Here is a comic that shows how you can support your child during a crisis.",
+          "type": "send_msg",
+          "uuid": "5b5ddb47-5c6a-4977-93df-552d5c79d3f2"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "6a1a13ac-66b7-4786-afb0-b01b475b951c",
+          "uuid": "cce6d159-7bdc-4e16-a669-c2d2f9d9d23c"
+        }
+      ],
+      "uuid": "0b0f3ba3-a674-47f7-ac82-e079ade9cd66"
+    },
+    {
+      "actions": [
+        {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
           "text": "Well done! You have added another skill to your Parenting Toolkit! Supporting your child through a crisis will also teach them how to support others in difficult times. Good for you!",
           "type": "send_msg",
           "uuid": "445ca3de-3c9f-4a09-bd35-8c8c16810bd5"
@@ -638,27 +563,6 @@
         }
       ],
       "uuid": "ad1f7c6d-5902-430e-863c-e1077a6ebc13"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.comic_path & \"discosure_of_difficult_things_comic.jpg\")"
-          ],
-          "text": "Here is a comic that shows how you can support your child during a crisis.",
-          "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
-          "uuid": "5b5ddb47-5c6a-4977-93df-552d5c79d3f2"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "6a1a13ac-66b7-4786-afb0-b01b475b951c",
-          "uuid": "cce6d159-7bdc-4e16-a669-c2d2f9d9d23c"
-        }
-      ],
-      "uuid": "0b0f3ba3-a674-47f7-ac82-e079ade9cd66"
     },
     {
       "actions": [
@@ -827,5 +731,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "aeb8209e-e613-47fb-9eee-e9685434532a",
-  "revision": 20
+  "revision": 2
 }

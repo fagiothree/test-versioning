@@ -53,19 +53,19 @@
         "type": "execute_actions"
       },
       "e4dbd3a2-104c-43e6-b083-08a241ff2d09": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 220,
           "top": 760
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "cd82da27-2ff4-480b-966a-ece86bb7067a": {
         "config": {
@@ -94,22 +94,22 @@
       "d3a76deb-555a-4649-8b04-ab3698c78557": {
         "config": {},
         "position": {
-          "left": 520,
-          "top": 1180
+          "left": 200,
+          "top": 1100
         },
         "type": "split_by_subflow"
       },
       "cbfb6fba-3d3c-4f32-bdc7-0ce9545197ab": {
         "position": {
-          "left": 580,
-          "top": 1320
+          "left": 220,
+          "top": 1280
         },
         "type": "execute_actions"
       },
       "6f7912cf-a95b-4c55-95ce-7ee368fcde6d": {
         "position": {
           "left": 500,
-          "top": 1820
+          "top": 1620
         },
         "type": "execute_actions"
       },
@@ -147,14 +147,14 @@
       "9ce3e8a8-916a-4320-b422-415c51bfc174": {
         "position": {
           "left": 560,
-          "top": 1960
+          "top": 1920
         },
         "type": "execute_actions"
       },
       "059963f9-fff9-4e2e-9755-389dde6e30f1": {
         "position": {
           "left": 560,
-          "top": 2200
+          "top": 2160
         },
         "type": "execute_actions"
       },
@@ -168,7 +168,7 @@
       "e088109b-abc1-4c63-8f4d-4c74a2099a1b": {
         "position": {
           "left": 560,
-          "top": 2380
+          "top": 2360
         },
         "type": "execute_actions"
       },
@@ -263,23 +263,6 @@
           "top": 3900
         },
         "type": "execute_actions"
-      },
-      "363800a6-0bc0-4c86-b425-257f6b1111c2": {
-        "position": {
-          "left": 320,
-          "top": 920
-        },
-        "type": "execute_actions"
-      },
-      "c17c08d4-e6b8-4e96-b179-acc30ec06fc2": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 100,
-          "top": 1140
-        },
-        "config": {
-          "cases": {}
-        }
       }
     },
     "stickies": {}
@@ -289,7 +272,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 2
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Behave - Ignore",
   "nodes": [
@@ -449,15 +432,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"misbehaving_children.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "c54664c6-aeb7-4d8a-9654-9f137d289318"
         }
       ],
@@ -470,27 +451,26 @@
       "uuid": "4a64f2e0-4e74-4e75-bc63-2fb329731b6e"
     },
     {
-      "uuid": "e4dbd3a2-104c-43e6-b083-08a241ff2d09",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "0fd47428-593f-4f21-a326-b39f22737937",
+          "uuid": "f41462ed-bf9d-44cc-afcf-fc79da70bc6c"
+        },
+        {
+          "destination_uuid": "d3a76deb-555a-4649-8b04-ab3698c78557",
+          "uuid": "c13c14d6-fbf4-4bbc-baee-3fe92521c990"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "5286d8f9-762e-470c-ade7-f8d7196c3fdc",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "98605a47-7e91-4988-9325-76b21597bde9",
             "type": "has_any_word",
-            "uuid": "7ad1a560-afdf-4044-8b6e-f418b9f7ba1f",
-            "category_uuid": "98605a47-7e91-4988-9325-76b21597bde9"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "2ecf3ade-deef-48fe-9265-ae41021a7b98",
-            "category_uuid": "b3320153-5b1e-46fa-9f28-cf51f5ce9a7d"
+            "uuid": "7ad1a560-afdf-4044-8b6e-f418b9f7ba1f"
           }
         ],
         "categories": [
@@ -500,32 +480,16 @@
             "uuid": "98605a47-7e91-4988-9325-76b21597bde9"
           },
           {
-            "uuid": "b3320153-5b1e-46fa-9f28-cf51f5ce9a7d",
-            "name": "Medium",
-            "exit_uuid": "8badf377-c5b1-4470-b7f1-8ca2ae483c8e"
-          },
-          {
             "exit_uuid": "c13c14d6-fbf4-4bbc-baee-3fe92521c990",
             "name": "Other",
             "uuid": "5286d8f9-762e-470c-ade7-f8d7196c3fdc"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "5286d8f9-762e-470c-ade7-f8d7196c3fdc",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "0fd47428-593f-4f21-a326-b39f22737937",
-          "uuid": "f41462ed-bf9d-44cc-afcf-fc79da70bc6c"
-        },
-        {
-          "uuid": "8badf377-c5b1-4470-b7f1-8ca2ae483c8e",
-          "destination_uuid": "363800a6-0bc0-4c86-b425-257f6b1111c2"
-        },
-        {
-          "destination_uuid": "d3a76deb-555a-4649-8b04-ab3698c78557",
-          "uuid": "c13c14d6-fbf4-4bbc-baee-3fe92521c990"
-        }
-      ]
+      "uuid": "e4dbd3a2-104c-43e6-b083-08a241ff2d09"
     },
     {
       "actions": [],
@@ -606,7 +570,7 @@
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Ignore.m4v\")"
+            "video:@(fields.video_script_path & \"Ignore.m4v\")"
           ],
           "text": "Here's a video to help you manage your child's temper tantrums.",
           "type": "send_msg",
@@ -616,31 +580,11 @@
       ],
       "exits": [
         {
-          "destination_uuid": "c17c08d4-e6b8-4e96-b179-acc30ec06fc2",
+          "destination_uuid": "d3a76deb-555a-4649-8b04-ab3698c78557",
           "uuid": "d7d65fad-2950-4b50-b7c6-7ffd521df5d3"
         }
       ],
       "uuid": "0fd47428-593f-4f21-a326-b39f22737937"
-    },
-    {
-      "uuid": "363800a6-0bc0-4c86-b425-257f6b1111c2",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Ignore.mp3\")"
-          ],
-          "text": "Here's an audio message to help you manage your child's temper tantrums.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "be20295e-dad7-4a21-a44c-a89dd8876cea"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "b00042b3-8b51-4eab-94d8-2ec22da28712",
-          "destination_uuid": "c17c08d4-e6b8-4e96-b179-acc30ec06fc2"
-        }
-      ]
     },
     {
       "actions": [
@@ -659,46 +603,6 @@
         }
       ],
       "uuid": "4d09aa26-c21c-4d34-9ba6-d9b30c3b0ebc"
-    },
-    {
-      "uuid": "c17c08d4-e6b8-4e96-b179-acc30ec06fc2",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "ee1172a6-5892-4548-bfe2-33d0891a74c3",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "ee1172a6-5892-4548-bfe2-33d0891a74c3",
-            "name": "All Responses",
-            "exit_uuid": "c55acc14-b4e4-41d2-8135-c9e8b9eb92a8"
-          },
-          {
-            "uuid": "b1ee8c51-d68c-4321-a50c-5d307496e52b",
-            "name": "No Response",
-            "exit_uuid": "d1719779-192f-4f27-bede-743e1f95fbbb"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "b1ee8c51-d68c-4321-a50c-5d307496e52b"
-          }
-        },
-        "result_name": "Result 5"
-      },
-      "exits": [
-        {
-          "uuid": "c55acc14-b4e4-41d2-8135-c9e8b9eb92a8",
-          "destination_uuid": "d3a76deb-555a-4649-8b04-ab3698c78557"
-        },
-        {
-          "uuid": "d1719779-192f-4f27-bede-743e1f95fbbb",
-          "destination_uuid": "d3a76deb-555a-4649-8b04-ab3698c78557"
-        }
-      ]
     },
     {
       "actions": [
@@ -775,6 +679,24 @@
         }
       ],
       "uuid": "cbfb6fba-3d3c-4f32-bdc7-0ce9545197ab"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Sorry, I don't understand what you mean.",
+          "type": "send_msg",
+          "uuid": "740128fe-49c7-4d61-9f96-8a86daea13e9"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "cbfb6fba-3d3c-4f32-bdc7-0ce9545197ab",
+          "uuid": "cd099805-3f7a-40de-b1e3-c94bffaf66b4"
+        }
+      ],
+      "uuid": "6f7912cf-a95b-4c55-95ce-7ee368fcde6d"
     },
     {
       "actions": [],
@@ -922,24 +844,6 @@
         }
       },
       "uuid": "6dc4b9d8-51b5-4565-b3f1-1aa6fea699f3"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Sorry, I don't understand what you mean.",
-          "type": "send_msg",
-          "uuid": "740128fe-49c7-4d61-9f96-8a86daea13e9"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "cbfb6fba-3d3c-4f32-bdc7-0ce9545197ab",
-          "uuid": "cd099805-3f7a-40de-b1e3-c94bffaf66b4"
-        }
-      ],
-      "uuid": "6f7912cf-a95b-4c55-95ce-7ee368fcde6d"
     },
     {
       "actions": [
@@ -1367,5 +1271,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "8c7523db-bd30-4b39-ac37-972541928564",
-  "revision": 15
+  "revision": 2
 }

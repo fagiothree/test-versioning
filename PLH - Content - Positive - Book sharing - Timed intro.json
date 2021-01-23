@@ -1,18 +1,71 @@
 {
   "_ui": {
     "nodes": {
-      "9e91ef46-6a93-4553-a2b5-83a67dce9027": {
+      "0d99e07d-7435-430a-b9ca-dfcc4c3a835c": {
         "position": {
-          "left": 520,
-          "top": 20
+          "left": 60,
+          "top": 460
         },
         "type": "execute_actions"
+      },
+      "17892c27-3b22-4ace-b01d-20bb721bb6b0": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 240,
+          "top": 680
+        },
+        "type": "wait_for_response"
       },
       "4976227e-38a8-44a0-8e03-992cbaf7a08d": {
         "config": {},
         "position": {
           "left": 540,
           "top": 120
+        },
+        "type": "split_by_subflow"
+      },
+      "4a0b2856-85af-4796-b9d7-ec196682064c": {
+        "position": {
+          "left": 780,
+          "top": 440
+        },
+        "type": "execute_actions"
+      },
+      "4ece559a-b35e-41aa-9d1b-df94399a071d": {
+        "position": {
+          "left": 460,
+          "top": 1040
+        },
+        "type": "execute_actions"
+      },
+      "6eb318c6-5b47-4dd9-8829-cf60bbbd7883": {
+        "position": {
+          "left": 460,
+          "top": 860
+        },
+        "type": "execute_actions"
+      },
+      "74586f8d-002f-4cdc-9f85-21fc587621f0": {
+        "position": {
+          "left": 1180,
+          "top": 920
+        },
+        "type": "execute_actions"
+      },
+      "783a7172-9c17-46ee-a1f8-41942b1e2302": {
+        "position": {
+          "left": 760,
+          "top": 760
+        },
+        "type": "execute_actions"
+      },
+      "7c9e80ee-6d92-4226-823e-0eac2430137f": {
+        "config": {},
+        "position": {
+          "left": 760,
+          "top": 940
         },
         "type": "split_by_subflow"
       },
@@ -23,17 +76,31 @@
         },
         "type": "execute_actions"
       },
-      "4a0b2856-85af-4796-b9d7-ec196682064c": {
+      "8e943e0b-87e8-4cf0-8d36-3f878fa00761": {
         "position": {
-          "left": 780,
-          "top": 440
+          "left": 20,
+          "top": 820
         },
         "type": "execute_actions"
       },
-      "0d99e07d-7435-430a-b9ca-dfcc4c3a835c": {
+      "9485c068-b37c-45f7-9fe5-efb6679f04f9": {
         "position": {
-          "left": 60,
-          "top": 460
+          "left": 680,
+          "top": 1160
+        },
+        "type": "execute_actions"
+      },
+      "9e91ef46-6a93-4553-a2b5-83a67dce9027": {
+        "position": {
+          "left": 520,
+          "top": 20
+        },
+        "type": "execute_actions"
+      },
+      "b725ee5a-7671-4e33-a839-7777addc74a4": {
+        "position": {
+          "left": 1200,
+          "top": 1040
         },
         "type": "execute_actions"
       },
@@ -52,77 +119,10 @@
         },
         "type": "split_by_contact_field"
       },
-      "17892c27-3b22-4ace-b01d-20bb721bb6b0": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 240,
-          "top": 680
-        },
-        "type": "wait_for_response"
-      },
-      "783a7172-9c17-46ee-a1f8-41942b1e2302": {
-        "position": {
-          "left": 760,
-          "top": 760
-        },
-        "type": "execute_actions"
-      },
-      "8e943e0b-87e8-4cf0-8d36-3f878fa00761": {
-        "position": {
-          "left": 20,
-          "top": 820
-        },
-        "type": "execute_actions"
-      },
-      "6eb318c6-5b47-4dd9-8829-cf60bbbd7883": {
-        "position": {
-          "left": 460,
-          "top": 860
-        },
-        "type": "execute_actions"
-      },
-      "74586f8d-002f-4cdc-9f85-21fc587621f0": {
-        "position": {
-          "left": 1180,
-          "top": 920
-        },
-        "type": "execute_actions"
-      },
-      "7c9e80ee-6d92-4226-823e-0eac2430137f": {
-        "config": {},
-        "position": {
-          "left": 760,
-          "top": 940
-        },
-        "type": "split_by_subflow"
-      },
       "fc66187e-e884-4ba4-8161-d92eba8123ed": {
         "position": {
           "left": 20,
           "top": 960
-        },
-        "type": "execute_actions"
-      },
-      "4ece559a-b35e-41aa-9d1b-df94399a071d": {
-        "position": {
-          "left": 460,
-          "top": 1040
-        },
-        "type": "execute_actions"
-      },
-      "b725ee5a-7671-4e33-a839-7777addc74a4": {
-        "position": {
-          "left": 1200,
-          "top": 1040
-        },
-        "type": "execute_actions"
-      },
-      "9485c068-b37c-45f7-9fe5-efb6679f04f9": {
-        "position": {
-          "left": 680,
-          "top": 1160
         },
         "type": "execute_actions"
       }
@@ -133,7 +133,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 28
   },
   "name": "PLH - Content - Positive - Book sharing - Timed intro",
   "nodes": [
@@ -234,15 +234,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"child_and_adult_sitting_with_book.jpg\")"
-          ],
-          "text": "Would you like to learn more about how you can help your child develop through book sharing?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about how you can help your child develop through book sharing?",
+          "type": "send_msg",
           "uuid": "a5edaf71-6ef5-4b25-bf07-7c9617545020"
         }
       ],
@@ -257,15 +255,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"child_and_adult_sitting_with_book.jpg\")"
-          ],
-          "text": "We know that you have already received this tip (well done!). Would like to review them again?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "We know that you have already received this tip (well done!). Would like to review them again?",
+          "type": "send_msg",
           "uuid": "34e54f48-b761-4575-b13e-336ea3fc45f7"
         }
       ],
@@ -606,5 +602,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "fc8f073e-1543-44d2-aa56-4489ea354dcc",
-  "revision": 3
+  "revision": 1
 }

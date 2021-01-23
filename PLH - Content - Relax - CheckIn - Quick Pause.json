@@ -44,19 +44,9 @@
         },
         "type": "execute_actions"
       },
-      "8ad9abb9-d76f-4263-9a23-d93fda843e3a": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 420,
-          "top": 600
-        },
-        "config": {
-          "cases": {}
-        }
-      },
       "cb22661e-3f60-4e66-b887-c505996e46e0": {
         "position": {
-          "left": 760,
+          "left": 480,
           "top": 680
         },
         "type": "execute_actions"
@@ -69,7 +59,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 12
+    "revision": 1
   },
   "name": "PLH - Content - Relax - CheckIn - Quick Pause",
   "nodes": [
@@ -153,17 +143,17 @@
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Short_Pause.m4v\")"
+            "video:@(fields.video_script_path & \"Short_Pause.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a quick video to help you take a pause!",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "5c09d1da-854a-41b4-aba8-879ee59be18f"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "8ad9abb9-d76f-4263-9a23-d93fda843e3a",
+          "destination_uuid": "cb22661e-3f60-4e66-b887-c505996e46e0",
           "uuid": "d4376422-cbb4-4fa4-8950-53886ca8daea"
         }
       ],
@@ -172,9 +162,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "audio:﻿@(fields.voiceover_audio_path & \"Short_Pause.mp3\")"
-          ],
+          "attachments": [],
           "text": "Here's an audio message to help you take a pause!",
           "type": "send_msg",
           "all_urns": false,
@@ -184,7 +172,7 @@
       ],
       "exits": [
         {
-          "destination_uuid": "8ad9abb9-d76f-4263-9a23-d93fda843e3a",
+          "destination_uuid": "cb22661e-3f60-4e66-b887-c505996e46e0",
           "uuid": "dc41f8f2-2297-4914-ba8d-d52706208f83"
         }
       ],
@@ -209,55 +197,13 @@
       "uuid": "0e812181-6519-4e42-99fe-933875e48631"
     },
     {
-      "uuid": "8ad9abb9-d76f-4263-9a23-d93fda843e3a",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "bfe12222-3c9c-4b75-bdbc-6362c72a594a",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "bfe12222-3c9c-4b75-bdbc-6362c72a594a",
-            "name": "All Responses",
-            "exit_uuid": "a401a457-f22e-425a-88a3-aee549aa6cea"
-          },
-          {
-            "uuid": "108bee8b-d070-4f41-a816-299e96dae45d",
-            "name": "No Response",
-            "exit_uuid": "0cc3e8a6-ab7e-415d-b4ab-322feb1994a6"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "108bee8b-d070-4f41-a816-299e96dae45d"
-          }
-        },
-        "result_name": "Result 1"
-      },
-      "exits": [
-        {
-          "uuid": "a401a457-f22e-425a-88a3-aee549aa6cea",
-          "destination_uuid": "0e812181-6519-4e42-99fe-933875e48631"
-        },
-        {
-          "uuid": "0cc3e8a6-ab7e-415d-b4ab-322feb1994a6",
-          "destination_uuid": "0e812181-6519-4e42-99fe-933875e48631"
-        }
-      ]
-    },
-    {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
           "text": "We hope that was helpful! Remember you can always type \"Help\" at anytime if you need an activity to help you relax or reduce stress. Chat to you later!",
           "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
           "uuid": "2cb3d190-7a41-484d-bfe4-27a61b10a0ab"
         }
       ],
@@ -273,5 +219,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "1703b420-0de3-4b94-9436-000fb192b6c2",
-  "revision": 13
+  "revision": 3
 }

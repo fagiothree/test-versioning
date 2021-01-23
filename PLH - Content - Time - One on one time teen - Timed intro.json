@@ -8,18 +8,60 @@
         },
         "type": "execute_actions"
       },
-      "d1c6a11f-7ce9-45e4-b653-1d9dc029be9d": {
+      "4d3bdb60-2a9a-469a-9107-7add346435a8": {
         "config": {},
         "position": {
-          "left": 560,
-          "top": 140
+          "left": 840,
+          "top": 1280
         },
         "type": "split_by_subflow"
       },
-      "a8f808cb-d983-4920-9a78-842312b0dbc5": {
+      "4d504eca-3f71-4686-a987-66a3a4f7fa22": {
         "position": {
-          "left": 500,
-          "top": 280
+          "left": 140,
+          "top": 1940
+        },
+        "type": "execute_actions"
+      },
+      "50f5e303-f2d5-4cf0-b663-dca6aaf9eb72": {
+        "position": {
+          "left": 140,
+          "top": 1660
+        },
+        "type": "execute_actions"
+      },
+      "548410af-b708-48ed-bb87-ff26c3553445": {
+        "position": {
+          "left": 420,
+          "top": 1060
+        },
+        "type": "execute_actions"
+      },
+      "71b1b74c-ae19-4697-9620-81ae25481c9c": {
+        "position": {
+          "left": 1080,
+          "top": 1380
+        },
+        "type": "execute_actions"
+      },
+      "7e5aac42-0286-4c70-a522-d25a9b10530d": {
+        "position": {
+          "left": 460,
+          "top": 1720
+        },
+        "type": "execute_actions"
+      },
+      "9ad5ee94-3970-425f-829c-824265ce7bd1": {
+        "position": {
+          "left": 60,
+          "top": 1060
+        },
+        "type": "execute_actions"
+      },
+      "9c2eb2ac-6487-445c-81fc-bd159094eb81": {
+        "position": {
+          "left": 820,
+          "top": 1120
         },
         "type": "execute_actions"
       },
@@ -38,63 +80,10 @@
         },
         "type": "split_by_contact_field"
       },
-      "9ad5ee94-3970-425f-829c-824265ce7bd1": {
+      "a8f808cb-d983-4920-9a78-842312b0dbc5": {
         "position": {
-          "left": 60,
-          "top": 1060
-        },
-        "type": "execute_actions"
-      },
-      "548410af-b708-48ed-bb87-ff26c3553445": {
-        "position": {
-          "left": 420,
-          "top": 1060
-        },
-        "type": "execute_actions"
-      },
-      "9c2eb2ac-6487-445c-81fc-bd159094eb81": {
-        "position": {
-          "left": 820,
-          "top": 1120
-        },
-        "type": "execute_actions"
-      },
-      "4d3bdb60-2a9a-469a-9107-7add346435a8": {
-        "config": {},
-        "position": {
-          "left": 840,
-          "top": 1280
-        },
-        "type": "split_by_subflow"
-      },
-      "fa69d5ac-df07-4383-9216-48a4b738667f": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 420,
-          "top": 1380
-        },
-        "type": "wait_for_response"
-      },
-      "71b1b74c-ae19-4697-9620-81ae25481c9c": {
-        "position": {
-          "left": 1080,
-          "top": 1380
-        },
-        "type": "execute_actions"
-      },
-      "da252b52-10b5-41d2-902b-5be8aa98e22b": {
-        "position": {
-          "left": 840,
-          "top": 1480
-        },
-        "type": "execute_actions"
-      },
-      "c98891fe-bcb6-4b8c-a58e-ae30c00a4b8a": {
-        "position": {
-          "left": 1100,
-          "top": 1500
+          "left": 500,
+          "top": 280
         },
         "type": "execute_actions"
       },
@@ -105,26 +94,37 @@
         },
         "type": "execute_actions"
       },
-      "50f5e303-f2d5-4cf0-b663-dca6aaf9eb72": {
+      "c98891fe-bcb6-4b8c-a58e-ae30c00a4b8a": {
         "position": {
-          "left": 140,
-          "top": 1660
+          "left": 1100,
+          "top": 1500
         },
         "type": "execute_actions"
       },
-      "7e5aac42-0286-4c70-a522-d25a9b10530d": {
+      "d1c6a11f-7ce9-45e4-b653-1d9dc029be9d": {
+        "config": {},
         "position": {
-          "left": 460,
-          "top": 1720
+          "left": 560,
+          "top": 140
+        },
+        "type": "split_by_subflow"
+      },
+      "da252b52-10b5-41d2-902b-5be8aa98e22b": {
+        "position": {
+          "left": 840,
+          "top": 1480
         },
         "type": "execute_actions"
       },
-      "4d504eca-3f71-4686-a987-66a3a4f7fa22": {
-        "position": {
-          "left": 140,
-          "top": 1940
+      "fa69d5ac-df07-4383-9216-48a4b738667f": {
+        "config": {
+          "cases": {}
         },
-        "type": "execute_actions"
+        "position": {
+          "left": 420,
+          "top": 1380
+        },
+        "type": "wait_for_response"
       }
     },
     "stickies": {}
@@ -134,7 +134,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 43
   },
   "name": "PLH - Content - Time - One on one time teen - Timed intro",
   "nodes": [
@@ -276,15 +276,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.comic_path & \"One_on_One_Time_comic.jpg\")"
-          ],
-          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
+          "type": "send_msg",
           "uuid": "af08b604-1aa8-4776-96f3-895c494a8434"
         }
       ],
@@ -299,15 +297,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.comic_path & \"One_on_One_Time_comic.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "f563df38-76ca-4c85-9c4e-7ebf4089b24a"
         }
       ],
@@ -607,5 +603,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "82a3b6d3-74a3-4523-84d2-2c488ed7d715",
-  "revision": 3
+  "revision": 1
 }

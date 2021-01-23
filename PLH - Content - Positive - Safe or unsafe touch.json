@@ -98,46 +98,46 @@
         "type": "execute_actions"
       },
       "decd7d3b-c525-4548-9993-e2d8ac4ad653": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 620,
           "top": 1180
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "a5a03961-2801-469e-abbd-48fe46b2f5bf": {
         "position": {
-          "left": 280,
-          "top": 1620
+          "left": 380,
+          "top": 1220
         },
         "type": "execute_actions"
       },
       "07975732-74eb-43e9-bcce-c0298ff687d8": {
         "position": {
-          "left": 560,
-          "top": 1340
+          "left": 820,
+          "top": 1280
         },
         "type": "execute_actions"
       },
       "8e91f63d-46c4-41ba-b885-05c3778f18af": {
         "position": {
-          "left": 0,
-          "top": 1840
+          "left": 40,
+          "top": 1440
         },
         "type": "execute_actions"
       },
       "d5c00342-2e40-47b5-9733-84e7e5ccfca8": {
         "config": {},
         "position": {
-          "left": 600,
-          "top": 1680
+          "left": 640,
+          "top": 1500
         },
         "type": "split_by_subflow"
       },
@@ -146,64 +146,64 @@
           "cases": {}
         },
         "position": {
-          "left": 120,
-          "top": 1960
+          "left": 220,
+          "top": 1560
         },
         "type": "wait_for_response"
       },
       "bba894ad-6634-452e-bdc5-65aeda3b3cd7": {
         "position": {
-          "left": 20,
-          "top": 2400
+          "left": 120,
+          "top": 1700
         },
         "type": "execute_actions"
       },
       "a832cd3e-dbb1-4c79-879c-76febabfcc52": {
         "position": {
-          "left": 240,
-          "top": 2400
+          "left": 340,
+          "top": 1700
         },
         "type": "execute_actions"
       },
       "bb1aeffa-e4ec-4dfe-a1ab-bea1ce32f8e0": {
         "position": {
-          "left": 940,
-          "top": 2180
+          "left": 1040,
+          "top": 1780
         },
         "type": "execute_actions"
       },
       "51e9e44c-51ec-4fbf-a53f-4417fc52e7aa": {
         "position": {
-          "left": 500,
-          "top": 2920
+          "left": 600,
+          "top": 1820
         },
         "type": "execute_actions"
       },
       "9c0862ae-6b4a-4438-93f5-9bafd5df8849": {
         "position": {
           "left": 200,
-          "top": 2100
+          "top": 1960
         },
         "type": "execute_actions"
       },
       "a76e05e1-8d47-4c1c-bc0c-d19115671b23": {
         "position": {
           "left": 1060,
-          "top": 2340
+          "top": 2180
         },
         "type": "execute_actions"
       },
       "f17dd599-711b-48e4-be09-81246daab588": {
         "position": {
           "left": 200,
-          "top": 2920
+          "top": 2260
         },
         "type": "execute_actions"
       },
       "3d268ee1-3f02-49cc-9885-11bf37755768": {
         "position": {
           "left": 360,
-          "top": 2600
+          "top": 2400
         },
         "type": "execute_actions"
       },
@@ -211,33 +211,16 @@
         "config": {},
         "position": {
           "left": 360,
-          "top": 2780
+          "top": 2580
         },
         "type": "split_by_subflow"
       },
       "d99f2eb4-16e4-4d38-a972-c2fdf326488a": {
         "position": {
           "left": 320,
-          "top": 3180
+          "top": 2740
         },
         "type": "execute_actions"
-      },
-      "71fd59ce-9d72-47d2-b9c5-9b5bc949c8b0": {
-        "position": {
-          "left": 840,
-          "top": 1400
-        },
-        "type": "execute_actions"
-      },
-      "0af72481-9e56-43ce-8b20-9388d4a394d6": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 560,
-          "top": 1500
-        },
-        "config": {
-          "cases": {}
-        }
       }
     },
     "stickies": {}
@@ -247,7 +230,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 3
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Safe or unsafe touch",
   "nodes": [
@@ -330,11 +313,11 @@
     {
       "actions": [
         {
-          "attachments": [],
-          "text": "The idea of talking to children about abuse can be scary. We don't know what to say. But there are some simple things that can help them understand when it is not OK to be touched, and that they can tell you if something ever happens. ",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [],
+          "text": "The idea of talking to children about abuse can be scary. We don't know what to say. But there are some simple things can help them understand when it is not OK to be touched, and that they can tell you if something ever happens. ",
+          "type": "send_msg",
           "uuid": "fe534fcd-e593-4a5b-b6e1-a5367d219666"
         }
       ],
@@ -587,27 +570,26 @@
       "uuid": "1463e484-2095-4a4f-b618-2ebaf90a1d03"
     },
     {
-      "uuid": "decd7d3b-c525-4548-9993-e2d8ac4ad653",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "07975732-74eb-43e9-bcce-c0298ff687d8",
+          "uuid": "748e3cfc-419d-462c-a033-6c4b32fe73d8"
+        },
+        {
+          "destination_uuid": "d5c00342-2e40-47b5-9733-84e7e5ccfca8",
+          "uuid": "581a20a0-102d-4559-a722-3fe343720eae"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "1aea9b00-df6b-4217-bf5e-6fb5c3b93d03",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "eae7e75e-1454-4430-a1db-5bbf9b6194cc",
             "type": "has_any_word",
-            "uuid": "d23b57b8-6390-4184-9fd2-b44c53552f3b",
-            "category_uuid": "eae7e75e-1454-4430-a1db-5bbf9b6194cc"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "a33bce5a-3787-4038-a9c6-59b7f9071383",
-            "category_uuid": "f3907ba0-c535-41c3-b5ad-74f62efdf804"
+            "uuid": "d23b57b8-6390-4184-9fd2-b44c53552f3b"
           }
         ],
         "categories": [
@@ -617,112 +599,16 @@
             "uuid": "eae7e75e-1454-4430-a1db-5bbf9b6194cc"
           },
           {
-            "uuid": "f3907ba0-c535-41c3-b5ad-74f62efdf804",
-            "name": "Medium",
-            "exit_uuid": "036c88b8-d7d5-4c8c-b286-8f2ed7fef565"
-          },
-          {
             "exit_uuid": "581a20a0-102d-4559-a722-3fe343720eae",
             "name": "Other",
             "uuid": "1aea9b00-df6b-4217-bf5e-6fb5c3b93d03"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "1aea9b00-df6b-4217-bf5e-6fb5c3b93d03",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "07975732-74eb-43e9-bcce-c0298ff687d8",
-          "uuid": "748e3cfc-419d-462c-a033-6c4b32fe73d8"
-        },
-        {
-          "uuid": "036c88b8-d7d5-4c8c-b286-8f2ed7fef565",
-          "destination_uuid": "71fd59ce-9d72-47d2-b9c5-9b5bc949c8b0"
-        },
-        {
-          "destination_uuid": "d5c00342-2e40-47b5-9733-84e7e5ccfca8",
-          "uuid": "581a20a0-102d-4559-a722-3fe343720eae"
-        }
-      ]
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "video:@(fields.voiceover_video_path & \"Good_Bad_Touch.m4v\")"
-          ],
-          "text": "Here's a video on how you can help protect your child.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "cbb17201-4b78-4748-bf7a-8d8c7fc49ed5"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "0af72481-9e56-43ce-8b20-9388d4a394d6",
-          "uuid": "f2fef546-5354-4e53-8107-b14352952875"
-        }
-      ],
-      "uuid": "07975732-74eb-43e9-bcce-c0298ff687d8"
-    },
-    {
-      "uuid": "71fd59ce-9d72-47d2-b9c5-9b5bc949c8b0",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Good_Bad_Touch.mp3\")"
-          ],
-          "text": "Here's an audio message on how you can help protect your child.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "6bdcf327-55b7-4f0b-afdc-cf608d525588"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "157d400b-49c1-4932-9cd4-84876cd8f68e",
-          "destination_uuid": "0af72481-9e56-43ce-8b20-9388d4a394d6"
-        }
-      ]
-    },
-    {
-      "uuid": "0af72481-9e56-43ce-8b20-9388d4a394d6",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "ec69ff2e-4044-4d0c-b5b2-bc7c149a8b4e",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "ec69ff2e-4044-4d0c-b5b2-bc7c149a8b4e",
-            "name": "All Responses",
-            "exit_uuid": "7d285ca7-ab44-4ba8-a387-0dd921536618"
-          },
-          {
-            "uuid": "097b267e-53a0-4dcd-ba24-22bc5c48c233",
-            "name": "No Response",
-            "exit_uuid": "27ef8245-b7c5-4bdb-a310-f5693eeeb818"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "097b267e-53a0-4dcd-ba24-22bc5c48c233"
-          }
-        },
-        "result_name": "Result 4"
-      },
-      "exits": [
-        {
-          "uuid": "7d285ca7-ab44-4ba8-a387-0dd921536618",
-          "destination_uuid": "d5c00342-2e40-47b5-9733-84e7e5ccfca8"
-        },
-        {
-          "uuid": "27ef8245-b7c5-4bdb-a310-f5693eeeb818",
-          "destination_uuid": "d5c00342-2e40-47b5-9733-84e7e5ccfca8"
-        }
-      ]
+      "uuid": "decd7d3b-c525-4548-9993-e2d8ac4ad653"
     },
     {
       "actions": [
@@ -741,6 +627,44 @@
         }
       ],
       "uuid": "a5a03961-2801-469e-abbd-48fe46b2f5bf"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [
+            "video:@(fields.video_script_path & \"Good_Bad_Touch.m4v\")"
+          ],
+          "text": "Here's a video on how you can help protect your child.",
+          "type": "send_msg",
+          "quick_replies": [],
+          "uuid": "cbb17201-4b78-4748-bf7a-8d8c7fc49ed5"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "d5c00342-2e40-47b5-9733-84e7e5ccfca8",
+          "uuid": "f2fef546-5354-4e53-8107-b14352952875"
+        }
+      ],
+      "uuid": "07975732-74eb-43e9-bcce-c0298ff687d8"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Sorry, I don't understand what you mean.",
+          "type": "send_msg",
+          "uuid": "2b11bee8-5c13-44e9-966f-2c905539bf75"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "a5a03961-2801-469e-abbd-48fe46b2f5bf",
+          "uuid": "8f96a256-e580-4866-bd5f-78f442c6bd29"
+        }
+      ],
+      "uuid": "8e91f63d-46c4-41ba-b885-05c3778f18af"
     },
     {
       "actions": [
@@ -799,24 +723,6 @@
         "type": "switch"
       },
       "uuid": "d5c00342-2e40-47b5-9733-84e7e5ccfca8"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Sorry, I don't understand what you mean.",
-          "type": "send_msg",
-          "uuid": "2b11bee8-5c13-44e9-966f-2c905539bf75"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "a5a03961-2801-469e-abbd-48fe46b2f5bf",
-          "uuid": "8f96a256-e580-4866-bd5f-78f442c6bd29"
-        }
-      ],
-      "uuid": "8e91f63d-46c4-41ba-b885-05c3778f18af"
     },
     {
       "actions": [],
@@ -917,63 +823,6 @@
     {
       "actions": [
         {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Please select another number if you want to learn more about how to protect your child from abuse:\n\n1. Learn about private parts\n2. Your body belongs to you\n3. Bad secrets should be told\n\nYou can also type \"N\" to stop this tip.",
-          "type": "send_msg",
-          "uuid": "bf70d197-7802-42d7-ade3-b4ab9ec8c5ab"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "f17dd599-711b-48e4-be09-81246daab588",
-          "uuid": "a121547e-5556-4433-91e8-1da2e49fbabf"
-        }
-      ],
-      "uuid": "9c0862ae-6b4a-4438-93f5-9bafd5df8849"
-    },
-    {
-      "actions": [
-        {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
-          "text": "We understand that this can be really difficult. Please type \"Help\" if you want any extra support or guidance.",
-          "type": "send_msg",
-          "uuid": "1ebfa75e-cc82-498a-8084-a9b191a959d5"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "a76e05e1-8d47-4c1c-bc0c-d19115671b23",
-          "uuid": "566a5595-a4a7-4397-b83d-8cac4d53891e"
-        }
-      ],
-      "uuid": "bb1aeffa-e4ec-4dfe-a1ab-bea1ce32f8e0"
-    },
-    {
-      "actions": [
-        {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Well done! You have added another skill to your Parenting Toolkit! Supporting your child through a crisis will also teach them how to support others in difficult times. Good for you!",
-          "type": "send_msg",
-          "uuid": "cace7534-1d06-4328-a730-7f069a4c2058"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "3d268ee1-3f02-49cc-9885-11bf37755768",
-          "uuid": "9d3a7e6a-9325-439b-b09c-83d138a13a25"
-        }
-      ],
-      "uuid": "a76e05e1-8d47-4c1c-bc0c-d19115671b23"
-    },
-    {
-      "actions": [
-        {
           "attachments": [],
           "quick_replies": [],
           "text": "1. Learn about private parts\n\nThe parts of their body that go under people's underwear or a swimsuit are private parts. It is not OK for other people to touch or to ask to look at them, or ask them to look at or touch theirs.",
@@ -1007,6 +856,102 @@
         }
       ],
       "uuid": "a832cd3e-dbb1-4c79-879c-76febabfcc52"
+    },
+    {
+      "actions": [
+        {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "We understand that this can be really difficult. Please type \"Help\" if you want any extra support or guidance.",
+          "type": "send_msg",
+          "uuid": "1ebfa75e-cc82-498a-8084-a9b191a959d5"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "a76e05e1-8d47-4c1c-bc0c-d19115671b23",
+          "uuid": "566a5595-a4a7-4397-b83d-8cac4d53891e"
+        }
+      ],
+      "uuid": "bb1aeffa-e4ec-4dfe-a1ab-bea1ce32f8e0"
+    },
+    {
+      "actions": [
+        {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "3. Bad secrets should be told. \n\nYour children should tell you if there is a secret that makes them feel worried. You will not be angry. Only nice secrets - like a surprise birthday party - should be kept secret. ",
+          "type": "send_msg",
+          "uuid": "deb10f7e-b209-4853-a357-b8d62e96496a"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "9c0862ae-6b4a-4438-93f5-9bafd5df8849",
+          "uuid": "f46dfe57-cadc-4391-a6d0-c7df4bd8762c"
+        }
+      ],
+      "uuid": "51e9e44c-51ec-4fbf-a53f-4417fc52e7aa"
+    },
+    {
+      "actions": [
+        {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Please select another number if you want to learn more about how to protect your child from abuse:\n\n1. Learn about private parts\n2. Your body belongs to you\n3. Bad secrets should be told\n\nYou can also type \"N\" to stop this tip.",
+          "type": "send_msg",
+          "uuid": "bf70d197-7802-42d7-ade3-b4ab9ec8c5ab"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "f17dd599-711b-48e4-be09-81246daab588",
+          "uuid": "a121547e-5556-4433-91e8-1da2e49fbabf"
+        }
+      ],
+      "uuid": "9c0862ae-6b4a-4438-93f5-9bafd5df8849"
+    },
+    {
+      "actions": [
+        {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Well done! You have added another skill to your Parenting Toolkit! Supporting your child through a crisis will also teach them how to support others in difficult times. Good for you!",
+          "type": "send_msg",
+          "uuid": "cace7534-1d06-4328-a730-7f069a4c2058"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "3d268ee1-3f02-49cc-9885-11bf37755768",
+          "uuid": "9d3a7e6a-9325-439b-b09c-83d138a13a25"
+        }
+      ],
+      "uuid": "a76e05e1-8d47-4c1c-bc0c-d19115671b23"
+    },
+    {
+      "actions": [
+        {
+          "field": {
+            "key": "last_interaction",
+            "name": "last interaction"
+          },
+          "type": "set_contact_field",
+          "uuid": "86e4cfb9-6877-433c-90b8-f5fe64879fe3",
+          "value": "@(now())"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "779d1a28-9c80-4a51-936e-cd33e0716d38",
+          "uuid": "2a0560b7-448d-446b-baf0-1837016ae9fd"
+        }
+      ],
+      "uuid": "f17dd599-711b-48e4-be09-81246daab588"
     },
     {
       "actions": [
@@ -1098,45 +1043,6 @@
     {
       "actions": [
         {
-          "field": {
-            "key": "last_interaction",
-            "name": "last interaction"
-          },
-          "type": "set_contact_field",
-          "uuid": "86e4cfb9-6877-433c-90b8-f5fe64879fe3",
-          "value": "@(now())"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "779d1a28-9c80-4a51-936e-cd33e0716d38",
-          "uuid": "2a0560b7-448d-446b-baf0-1837016ae9fd"
-        }
-      ],
-      "uuid": "f17dd599-711b-48e4-be09-81246daab588"
-    },
-    {
-      "actions": [
-        {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
-          "text": "3. Bad secrets should be told. \n\nYour children should tell you if there is a secret that makes them feel worried. You will not be angry. Only nice secrets - like a surprise birthday party - should be kept secret. ",
-          "type": "send_msg",
-          "uuid": "deb10f7e-b209-4853-a357-b8d62e96496a"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "9c0862ae-6b4a-4438-93f5-9bafd5df8849",
-          "uuid": "f46dfe57-cadc-4391-a6d0-c7df4bd8762c"
-        }
-      ],
-      "uuid": "51e9e44c-51ec-4fbf-a53f-4417fc52e7aa"
-    },
-    {
-      "actions": [
-        {
           "attachments": [],
           "quick_replies": [],
           "text": "Remember you can always type \"Help\" if you ever want more parenting tips or support. You can also change the type of messages you receive for an older or younger child. Just select \"Technical Support.\" Chat to you later!",
@@ -1156,5 +1062,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "c49aa0d8-d70b-4808-af04-8dd1f9e0d55d",
-  "revision": 16
+  "revision": 2
 }

@@ -77,24 +77,24 @@
         "type": "execute_actions"
       },
       "31b5504f-9474-488a-b770-942c50796d39": {
-        "type": "split_by_contact_field",
-        "position": {
-          "left": 260,
-          "top": 900
-        },
         "config": {
+          "cases": {},
           "operand": {
             "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+            "name": "type of media",
+            "type": "field"
+          }
+        },
+        "position": {
+          "left": 280,
+          "top": 980
+        },
+        "type": "split_by_contact_field"
       },
       "a9470170-1fdc-4042-863f-4054d8d256e2": {
         "position": {
-          "left": 60,
-          "top": 1080
+          "left": 180,
+          "top": 1140
         },
         "type": "execute_actions"
       },
@@ -108,17 +108,10 @@
           }
         },
         "position": {
-          "left": 1000,
-          "top": 2220
+          "left": 620,
+          "top": 1200
         },
         "type": "split_by_contact_field"
-      },
-      "341fc7a3-9165-4811-954e-db4faaf9ba5f": {
-        "position": {
-          "left": 860,
-          "top": 2380
-        },
-        "type": "execute_actions"
       },
       "e8c8b8b7-0532-434d-a62f-f8c2a90fff4f": {
         "config": {},
@@ -128,10 +121,17 @@
         },
         "type": "split_by_subflow"
       },
+      "341fc7a3-9165-4811-954e-db4faaf9ba5f": {
+        "position": {
+          "left": 580,
+          "top": 1340
+        },
+        "type": "execute_actions"
+      },
       "bbd27b66-5749-4727-8b97-9656825562e2": {
         "position": {
-          "left": 1120,
-          "top": 2380
+          "left": 800,
+          "top": 1360
         },
         "type": "execute_actions"
       },
@@ -189,15 +189,15 @@
       },
       "4ede084e-bdeb-49f8-ba35-1eaab2c10058": {
         "position": {
-          "left": 1040,
-          "top": 2580
+          "left": 920,
+          "top": 2440
         },
         "type": "execute_actions"
       },
       "7d8b05f0-58f7-470c-915c-7286cdb500ac": {
         "position": {
-          "left": 1100,
-          "top": 2800
+          "left": 720,
+          "top": 2720
         },
         "type": "execute_actions"
       },
@@ -215,23 +215,6 @@
           "top": 3600
         },
         "type": "execute_actions"
-      },
-      "fc7df860-454b-47e7-bcc3-661b46ed70a9": {
-        "position": {
-          "left": 340,
-          "top": 1060
-        },
-        "type": "execute_actions"
-      },
-      "496f2ca9-4f25-46e0-a51c-2641b31492b1": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 540,
-          "top": 1240
-        },
-        "config": {
-          "cases": {}
-        }
       }
     },
     "stickies": {}
@@ -241,7 +224,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 2
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Behave - Praise",
   "nodes": [
@@ -515,64 +498,6 @@
       "uuid": "b6d4f1db-92de-40a1-8adf-a7de38310206"
     },
     {
-      "uuid": "31b5504f-9474-488a-b770-942c50796d39",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "fc2e22a7-3610-4c15-a363-161202e8d3ca",
-        "cases": [
-          {
-            "arguments": [
-              "high"
-            ],
-            "type": "has_any_word",
-            "uuid": "405e3a56-4fcf-45ed-b425-7ccde6f03319",
-            "category_uuid": "4394bd93-d0f0-4d63-b10d-782e01a22433"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "7a08e541-1d35-4098-bbd4-c97f8b39a36b",
-            "category_uuid": "50fc231e-77e5-4160-9cab-5a99aa6ae3ff"
-          }
-        ],
-        "categories": [
-          {
-            "exit_uuid": "3ea535ce-0c0d-48ad-be1c-fc9fa6bbe0ba",
-            "name": "High",
-            "uuid": "4394bd93-d0f0-4d63-b10d-782e01a22433"
-          },
-          {
-            "uuid": "50fc231e-77e5-4160-9cab-5a99aa6ae3ff",
-            "name": "Medium",
-            "exit_uuid": "46419958-625d-4a7f-a743-b0864897475b"
-          },
-          {
-            "exit_uuid": "006eb8f4-0579-47ff-bd73-0ecbf81209f2",
-            "name": "Other",
-            "uuid": "fc2e22a7-3610-4c15-a363-161202e8d3ca"
-          }
-        ],
-        "operand": "@fields.type_of_media"
-      },
-      "exits": [
-        {
-          "destination_uuid": "a9470170-1fdc-4042-863f-4054d8d256e2",
-          "uuid": "3ea535ce-0c0d-48ad-be1c-fc9fa6bbe0ba"
-        },
-        {
-          "uuid": "46419958-625d-4a7f-a743-b0864897475b",
-          "destination_uuid": "fc7df860-454b-47e7-bcc3-661b46ed70a9"
-        },
-        {
-          "destination_uuid": "e8c8b8b7-0532-434d-a62f-f8c2a90fff4f",
-          "uuid": "006eb8f4-0579-47ff-bd73-0ecbf81209f2"
-        }
-      ]
-    },
-    {
       "actions": [
         {
           "attachments": [],
@@ -591,84 +516,124 @@
       "uuid": "74140681-2f5d-4730-9f8a-430b2286b04f"
     },
     {
-      "uuid": "fc7df860-454b-47e7-bcc3-661b46ed70a9",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Praise.mp3\")"
-          ],
-          "text": "Here's an audio message on how you can bring more attention to positive behaviour by praising your child!",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "45cdaddf-0d92-43f0-aa9e-f18da665d68e"
-        }
-      ],
+      "actions": [],
       "exits": [
         {
-          "uuid": "ef25d4be-f637-4395-ac64-dc521c19f3b6",
-          "destination_uuid": "496f2ca9-4f25-46e0-a51c-2641b31492b1"
+          "destination_uuid": "a9470170-1fdc-4042-863f-4054d8d256e2",
+          "uuid": "3ea535ce-0c0d-48ad-be1c-fc9fa6bbe0ba"
+        },
+        {
+          "destination_uuid": "06659ea1-6c7f-448b-aed1-af3c0c289833",
+          "uuid": "006eb8f4-0579-47ff-bd73-0ecbf81209f2"
         }
-      ]
+      ],
+      "router": {
+        "cases": [
+          {
+            "arguments": [
+              "high"
+            ],
+            "category_uuid": "4394bd93-d0f0-4d63-b10d-782e01a22433",
+            "type": "has_any_word",
+            "uuid": "405e3a56-4fcf-45ed-b425-7ccde6f03319"
+          }
+        ],
+        "categories": [
+          {
+            "exit_uuid": "3ea535ce-0c0d-48ad-be1c-fc9fa6bbe0ba",
+            "name": "High",
+            "uuid": "4394bd93-d0f0-4d63-b10d-782e01a22433"
+          },
+          {
+            "exit_uuid": "006eb8f4-0579-47ff-bd73-0ecbf81209f2",
+            "name": "Other",
+            "uuid": "fc2e22a7-3610-4c15-a363-161202e8d3ca"
+          }
+        ],
+        "default_category_uuid": "fc2e22a7-3610-4c15-a363-161202e8d3ca",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
+      },
+      "uuid": "31b5504f-9474-488a-b770-942c50796d39"
     },
     {
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Praise.m4v\")"
+            "video:@(fields.video_script_path & \"Praise.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video on how you can bring more attention to positive behaviour by praising your child!",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "c12034b8-8e14-4efa-ae03-087dfabd96df"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "496f2ca9-4f25-46e0-a51c-2641b31492b1",
+          "destination_uuid": "06659ea1-6c7f-448b-aed1-af3c0c289833",
           "uuid": "fdf238c4-b03b-4235-847e-90b7f596c079"
         }
       ],
       "uuid": "a9470170-1fdc-4042-863f-4054d8d256e2"
     },
     {
-      "uuid": "496f2ca9-4f25-46e0-a51c-2641b31492b1",
       "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "3d4833c9-4548-4b1c-b7a7-9cbe2a5acfa9",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "3d4833c9-4548-4b1c-b7a7-9cbe2a5acfa9",
-            "name": "All Responses",
-            "exit_uuid": "c672396f-d627-4138-922a-50711abe78bb"
-          },
-          {
-            "uuid": "cb8c4e22-8ebf-43c2-a523-e728acf7c14c",
-            "name": "No Response",
-            "exit_uuid": "2e448c2a-5933-44db-9ecc-1855f07cb189"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "cb8c4e22-8ebf-43c2-a523-e728acf7c14c"
-          }
-        },
-        "result_name": "Result 4"
-      },
       "exits": [
         {
-          "uuid": "c672396f-d627-4138-922a-50711abe78bb",
-          "destination_uuid": "e8c8b8b7-0532-434d-a62f-f8c2a90fff4f"
+          "destination_uuid": "341fc7a3-9165-4811-954e-db4faaf9ba5f",
+          "uuid": "351b85fd-499d-48a8-bc7e-ddd010db198a"
         },
         {
-          "uuid": "2e448c2a-5933-44db-9ecc-1855f07cb189",
-          "destination_uuid": "e8c8b8b7-0532-434d-a62f-f8c2a90fff4f"
+          "destination_uuid": "bbd27b66-5749-4727-8b97-9656825562e2",
+          "uuid": "1aacc2c7-570b-4f32-aa54-9783f5841eda"
         }
-      ]
+      ],
+      "router": {
+        "cases": [
+          {
+            "arguments": [
+              "teen"
+            ],
+            "category_uuid": "02da21b3-5670-452d-b557-7e95b3a54bd4",
+            "type": "has_any_word",
+            "uuid": "61252720-1937-474a-968a-419c8249dacf"
+          }
+        ],
+        "categories": [
+          {
+            "exit_uuid": "351b85fd-499d-48a8-bc7e-ddd010db198a",
+            "name": "Teen",
+            "uuid": "02da21b3-5670-452d-b557-7e95b3a54bd4"
+          },
+          {
+            "exit_uuid": "1aacc2c7-570b-4f32-aa54-9783f5841eda",
+            "name": "Other",
+            "uuid": "da5b672f-3570-47f6-a855-22b0f0d14f00"
+          }
+        ],
+        "default_category_uuid": "da5b672f-3570-47f6-a855-22b0f0d14f00",
+        "operand": "@fields.age_group_for_tips",
+        "type": "switch"
+      },
+      "uuid": "06659ea1-6c7f-448b-aed1-af3c0c289833"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Praise your children when they are behaving well! They may not show it but you’ll see them doing that good behaviour again…",
+          "type": "send_msg",
+          "uuid": "5fe0a4c2-c4df-4e4d-94e6-2f1d2f9d8433"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "e8c8b8b7-0532-434d-a62f-f8c2a90fff4f",
+          "uuid": "cb9fcf70-11b9-4542-b401-a130cd80c81b"
+        }
+      ],
+      "uuid": "341fc7a3-9165-4811-954e-db4faaf9ba5f"
     },
     {
       "actions": [
@@ -733,6 +698,24 @@
         {
           "attachments": [],
           "quick_replies": [],
+          "text": "Praise your children when they are behaving well! They may not show it but you’ll see them doing that good behaviour again…",
+          "type": "send_msg",
+          "uuid": "017deb58-24aa-46e4-8b27-f06e0a7e4b6e"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "e8c8b8b7-0532-434d-a62f-f8c2a90fff4f",
+          "uuid": "36ae25f2-162a-415a-b55d-acfed239818b"
+        }
+      ],
+      "uuid": "bbd27b66-5749-4727-8b97-9656825562e2"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
           "text": "Praise works for our children, too. When you bring more attention to positive behaviour, they are likely to do it more often. They also will feel good about themselves! \n\nHere are 3 simple steps to get it right:\n\n1. Be positive\n2. Be specific\n3. Be enthusiastic\n\nTo learn more about one of these steps, type \"1\" to \"3\". You can also type \"N\" to stop this tip.",
           "type": "send_msg",
           "uuid": "f8771ecc-fa94-4e53-9569-55e17aa5d760"
@@ -762,7 +745,7 @@
           "uuid": "4722b698-8942-46cf-ac3e-661281761141"
         },
         {
-          "destination_uuid": "06659ea1-6c7f-448b-aed1-af3c0c289833",
+          "destination_uuid": "4ede084e-bdeb-49f8-ba35-1eaab2c10058",
           "uuid": "46f40ee5-cc8a-4822-be35-2fe704790545"
         },
         {
@@ -915,87 +898,6 @@
       "uuid": "f6808725-0cd1-4337-a189-e95a7f713eaf"
     },
     {
-      "actions": [],
-      "exits": [
-        {
-          "destination_uuid": "341fc7a3-9165-4811-954e-db4faaf9ba5f",
-          "uuid": "351b85fd-499d-48a8-bc7e-ddd010db198a"
-        },
-        {
-          "destination_uuid": "bbd27b66-5749-4727-8b97-9656825562e2",
-          "uuid": "1aacc2c7-570b-4f32-aa54-9783f5841eda"
-        }
-      ],
-      "router": {
-        "cases": [
-          {
-            "arguments": [
-              "teen"
-            ],
-            "category_uuid": "02da21b3-5670-452d-b557-7e95b3a54bd4",
-            "type": "has_any_word",
-            "uuid": "61252720-1937-474a-968a-419c8249dacf"
-          }
-        ],
-        "categories": [
-          {
-            "exit_uuid": "351b85fd-499d-48a8-bc7e-ddd010db198a",
-            "name": "Teen",
-            "uuid": "02da21b3-5670-452d-b557-7e95b3a54bd4"
-          },
-          {
-            "exit_uuid": "1aacc2c7-570b-4f32-aa54-9783f5841eda",
-            "name": "Other",
-            "uuid": "da5b672f-3570-47f6-a855-22b0f0d14f00"
-          }
-        ],
-        "default_category_uuid": "da5b672f-3570-47f6-a855-22b0f0d14f00",
-        "operand": "@fields.age_group_for_tips",
-        "type": "switch"
-      },
-      "uuid": "06659ea1-6c7f-448b-aed1-af3c0c289833"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.comic_path & \"praise_teens_comic.jpg\")"
-          ],
-          "text": "Praise your children when they are behaving well! They may not show it but you’ll see them doing that good behaviour again…",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "5fe0a4c2-c4df-4e4d-94e6-2f1d2f9d8433"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "4ede084e-bdeb-49f8-ba35-1eaab2c10058",
-          "uuid": "cb9fcf70-11b9-4542-b401-a130cd80c81b"
-        }
-      ],
-      "uuid": "341fc7a3-9165-4811-954e-db4faaf9ba5f"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.comic_path & \"praise_Kids_comic.jpg\")"
-          ],
-          "text": "Praise your children when they are behaving well! They may not show it but you’ll see them doing that good behaviour again…",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "017deb58-24aa-46e4-8b27-f06e0a7e4b6e"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "4ede084e-bdeb-49f8-ba35-1eaab2c10058",
-          "uuid": "36ae25f2-162a-415a-b55d-acfed239818b"
-        }
-      ],
-      "uuid": "bbd27b66-5749-4727-8b97-9656825562e2"
-    },
-    {
       "actions": [
         {
           "all_urns": false,
@@ -1141,5 +1043,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "bf7e25e1-69df-4e57-ba01-c501ba1b87cb",
-  "revision": 30
+  "revision": 2
 }

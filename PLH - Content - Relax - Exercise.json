@@ -112,17 +112,71 @@
         },
         "type": "execute_actions"
       },
-      "61406f35-8ad3-4104-ab68-6319430fabd0": {
-        "position": {
-          "left": 600,
-          "top": 1060
-        },
-        "type": "execute_actions"
-      },
       "c1ffab38-eade-41fe-a616-26ddc89f2bbe": {
         "position": {
           "left": 40,
           "top": 1220
+        },
+        "type": "execute_actions"
+      },
+      "d696a00e-78b5-4bb4-8b2a-94a609dbf154": {
+        "position": {
+          "left": 680,
+          "top": 2580
+        },
+        "type": "execute_actions"
+      },
+      "fa6b6f3c-b916-4c72-85f4-6d9d7c404c10": {
+        "position": {
+          "left": 1020,
+          "top": 2340
+        },
+        "type": "execute_actions"
+      },
+      "10a5028e-be50-46d5-93ae-5ae88639c20e": {
+        "position": {
+          "left": 220,
+          "top": 2400
+        },
+        "type": "execute_actions"
+      },
+      "77d42f7b-365e-4879-a16b-a2a141f392ff": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 1060,
+          "top": 2500
+        },
+        "type": "wait_for_response"
+      },
+      "8badeba7-fd4b-4fb5-99fe-f95b25c12a99": {
+        "config": {},
+        "position": {
+          "left": 220,
+          "top": 2760
+        },
+        "type": "split_by_subflow"
+      },
+      "1c4cbda1-502c-4126-a6e0-c5ed4f85dd3d": {
+        "config": {},
+        "position": {
+          "left": 1060,
+          "top": 2760
+        },
+        "type": "split_by_subflow"
+      },
+      "2575b0aa-c738-40ac-aaaa-b7a4b034acfb": {
+        "position": {
+          "left": 1140,
+          "top": 2980
+        },
+        "type": "execute_actions"
+      },
+      "61406f35-8ad3-4104-ab68-6319430fabd0": {
+        "position": {
+          "left": 600,
+          "top": 1060
         },
         "type": "execute_actions"
       },
@@ -161,76 +215,12 @@
         },
         "type": "execute_actions"
       },
-      "fa6b6f3c-b916-4c72-85f4-6d9d7c404c10": {
-        "position": {
-          "left": 1020,
-          "top": 2340
-        },
-        "type": "execute_actions"
-      },
       "5e82ec04-7d75-43c9-bd25-6579b0ffa565": {
         "position": {
           "left": 520,
           "top": 2360
         },
         "type": "execute_actions"
-      },
-      "10a5028e-be50-46d5-93ae-5ae88639c20e": {
-        "position": {
-          "left": 220,
-          "top": 2400
-        },
-        "type": "execute_actions"
-      },
-      "77d42f7b-365e-4879-a16b-a2a141f392ff": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 1060,
-          "top": 2500
-        },
-        "type": "wait_for_response"
-      },
-      "d696a00e-78b5-4bb4-8b2a-94a609dbf154": {
-        "position": {
-          "left": 680,
-          "top": 2580
-        },
-        "type": "execute_actions"
-      },
-      "8badeba7-fd4b-4fb5-99fe-f95b25c12a99": {
-        "config": {},
-        "position": {
-          "left": 220,
-          "top": 2760
-        },
-        "type": "split_by_subflow"
-      },
-      "1c4cbda1-502c-4126-a6e0-c5ed4f85dd3d": {
-        "config": {},
-        "position": {
-          "left": 1060,
-          "top": 2760
-        },
-        "type": "split_by_subflow"
-      },
-      "2575b0aa-c738-40ac-aaaa-b7a4b034acfb": {
-        "position": {
-          "left": 1140,
-          "top": 2980
-        },
-        "type": "execute_actions"
-      },
-      "59f362b9-2366-416b-9fe5-6137d6b58425": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 140,
-          "top": 1420
-        },
-        "config": {
-          "cases": {}
-        }
       }
     },
     "stickies": {}
@@ -240,7 +230,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 13
+    "revision": 1
   },
   "name": "PLH - Content - Relax - Exercise",
   "nodes": [
@@ -401,16 +391,14 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"dancing_family.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "720de092-0de5-41c0-a51d-be63f19beb1b"
         }
       ],
@@ -623,9 +611,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Exercise.mp3\")"
-          ],
+          "attachments": [],
           "text": "Here's an audio message to guide you through a fun physical activity!",
           "type": "send_msg",
           "quick_replies": [],
@@ -634,7 +620,7 @@
       ],
       "exits": [
         {
-          "destination_uuid": "59f362b9-2366-416b-9fe5-6137d6b58425",
+          "destination_uuid": "10a5028e-be50-46d5-93ae-5ae88639c20e",
           "uuid": "1d8c0959-9ad1-43ff-9e14-54ada2b767d9"
         }
       ],
@@ -661,19 +647,19 @@
     {
       "actions": [
         {
+          "all_urns": false,
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Exercise.m4v\")"
+            "video:@(fields.video_script_path & \"Exercise.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a fun video of a physical activity that can help you release stress and keep healthy!",
           "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
           "uuid": "3e2f0a6b-64e1-4873-8005-f33864c13109"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "59f362b9-2366-416b-9fe5-6137d6b58425",
+          "destination_uuid": "10a5028e-be50-46d5-93ae-5ae88639c20e",
           "uuid": "6b4f271f-8774-4d54-897f-5ecd49900369"
         }
       ],
@@ -695,46 +681,6 @@
         {
           "uuid": "c10520f6-f23d-49ec-b224-ef7c93ac8abd",
           "destination_uuid": "e42c4d17-0075-4cda-b950-b9b2a65f7487"
-        }
-      ]
-    },
-    {
-      "uuid": "59f362b9-2366-416b-9fe5-6137d6b58425",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "7f6ba2aa-c566-413e-adcd-598a19d855e6",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "7f6ba2aa-c566-413e-adcd-598a19d855e6",
-            "name": "All Responses",
-            "exit_uuid": "0ec21574-8e64-440f-90ac-c2fe2a616e6c"
-          },
-          {
-            "uuid": "4af1f804-dbb8-4ea4-a09f-1706fb5c10d8",
-            "name": "No Response",
-            "exit_uuid": "8a42c112-bfa3-4844-972a-a096723da2f3"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "4af1f804-dbb8-4ea4-a09f-1706fb5c10d8"
-          }
-        },
-        "result_name": "Result 4"
-      },
-      "exits": [
-        {
-          "uuid": "0ec21574-8e64-440f-90ac-c2fe2a616e6c",
-          "destination_uuid": "61406f35-8ad3-4104-ab68-6319430fabd0"
-        },
-        {
-          "uuid": "8a42c112-bfa3-4844-972a-a096723da2f3",
-          "destination_uuid": "61406f35-8ad3-4104-ab68-6319430fabd0"
         }
       ]
     },
@@ -1105,5 +1051,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "8e395b1c-bb00-4a53-a5cf-f21377944430",
-  "revision": 23
+  "revision": 13
 }

@@ -60,19 +60,19 @@
         "type": "execute_actions"
       },
       "831815cf-9e98-411d-8924-0d86849cbdda": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 280,
           "top": 760
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "b1e13995-f712-49f8-850f-5294cb85bbea": {
         "config": {
@@ -91,10 +91,10 @@
         },
         "type": "execute_actions"
       },
-      "d2759e8c-3080-4167-9a5a-02dd9cd6436f": {
+      "2f84ee96-935b-42c4-8ea8-0214d9a6d391": {
         "position": {
-          "left": 260,
-          "top": 920
+          "left": 320,
+          "top": 940
         },
         "type": "execute_actions"
       },
@@ -105,23 +105,6 @@
         },
         "type": "execute_actions"
       },
-      "2f84ee96-935b-42c4-8ea8-0214d9a6d391": {
-        "position": {
-          "left": 620,
-          "top": 1020
-        },
-        "type": "execute_actions"
-      },
-      "ce3b2e9f-f5bb-4771-aa2c-c4a1a4d74b9d": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 100,
-          "top": 1100
-        },
-        "config": {
-          "cases": {}
-        }
-      },
       "b7ab2bae-c8a0-48ab-9460-716b9bd12632": {
         "position": {
           "left": 1040,
@@ -131,8 +114,8 @@
       },
       "c5381bab-6cf4-4dc9-acf9-680c26fd00b5": {
         "position": {
-          "left": 680,
-          "top": 1220
+          "left": 340,
+          "top": 1140
         },
         "type": "execute_actions"
       },
@@ -161,67 +144,53 @@
         "type": "wait_for_response"
       },
       "14c2c819-e432-4737-8fac-b41d849db2d2": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 220,
           "top": 1660
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
-      },
-      "dfb13117-8480-425c-a3e5-2fecf9ae0f76": {
-        "type": "split_by_contact_field",
-        "position": {
-          "left": 1260,
-          "top": 1660
-        },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "beec515b-e684-49e4-9fc8-258954eaa8bb": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 600,
           "top": 1680
         },
+        "type": "split_by_contact_field"
+      },
+      "dfb13117-8480-425c-a3e5-2fecf9ae0f76": {
         "config": {
+          "cases": {},
           "operand": {
             "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
-      },
-      "748e826e-0773-44d3-94cd-2f1d045e564e": {
-        "position": {
-          "left": 780,
-          "top": 1800
+            "name": "type of media",
+            "type": "field"
+          }
         },
-        "type": "execute_actions"
-      },
-      "273e3818-66ae-463b-ada4-55ee21366ea9": {
         "position": {
-          "left": 1100,
-          "top": 1800
+          "left": 1020,
+          "top": 1680
         },
-        "type": "execute_actions"
+        "type": "split_by_contact_field"
       },
-      "4dacb275-c466-4d7f-87e8-c342ef61b1ea": {
+      "e45aa956-d683-4393-817c-cb3eb350d2bc": {
         "position": {
-          "left": 1360,
+          "left": 540,
           "top": 1800
         },
         "type": "execute_actions"
@@ -233,61 +202,31 @@
         },
         "type": "execute_actions"
       },
-      "51f13e16-c879-4508-8916-9a31f5069e20": {
+      "273e3818-66ae-463b-ada4-55ee21366ea9": {
         "position": {
-          "left": 300,
+          "left": 860,
           "top": 1820
         },
         "type": "execute_actions"
       },
-      "e45aa956-d683-4393-817c-cb3eb350d2bc": {
+      "90c9f326-1e66-456f-bc3d-f2ec2c84d9d2": {
         "position": {
-          "left": 560,
-          "top": 1820
+          "left": 180,
+          "top": 1960
         },
         "type": "execute_actions"
-      },
-      "64757b30-a795-42e7-884b-2c93a52c426f": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 160,
-          "top": 1960
-        },
-        "config": {
-          "cases": {}
-        }
-      },
-      "310f45e5-f7df-4f75-844c-b17724b9c397": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 660,
-          "top": 1960
-        },
-        "config": {
-          "cases": {}
-        }
-      },
-      "30979536-fac6-4414-ab69-a8955b6b4118": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 1220,
-          "top": 1960
-        },
-        "config": {
-          "cases": {}
-        }
       },
       "fa5b2f1f-b614-4eb3-9801-10db09e62136": {
         "position": {
           "left": 680,
-          "top": 2100
+          "top": 1960
         },
         "type": "execute_actions"
       },
       "10ee56f7-8169-4372-9994-554a12804b0b": {
         "position": {
-          "left": 1220,
-          "top": 2160
+          "left": 960,
+          "top": 1960
         },
         "type": "execute_actions"
       },
@@ -298,7 +237,7 @@
         },
         "type": "execute_actions"
       },
-      "90c9f326-1e66-456f-bc3d-f2ec2c84d9d2": {
+      "bca92d36-c38c-45b6-b8e7-d3f38519c754": {
         "position": {
           "left": 180,
           "top": 2240
@@ -312,10 +251,10 @@
         },
         "type": "execute_actions"
       },
-      "bca92d36-c38c-45b6-b8e7-d3f38519c754": {
+      "1b9a997d-9576-49c4-a0c6-dc3b077df0af": {
         "position": {
-          "left": 180,
-          "top": 2520
+          "left": 320,
+          "top": 2560
         },
         "type": "execute_actions"
       },
@@ -326,10 +265,10 @@
         },
         "type": "execute_actions"
       },
-      "1b9a997d-9576-49c4-a0c6-dc3b077df0af": {
+      "bbecc8ff-a705-4074-b3a2-161adfd513fe": {
         "position": {
-          "left": 320,
-          "top": 2820
+          "left": 160,
+          "top": 2880
         },
         "type": "execute_actions"
       },
@@ -344,13 +283,6 @@
         "position": {
           "left": 1080,
           "top": 2980
-        },
-        "type": "execute_actions"
-      },
-      "bbecc8ff-a705-4074-b3a2-161adfd513fe": {
-        "position": {
-          "left": 160,
-          "top": 3140
         },
         "type": "execute_actions"
       },
@@ -389,6 +321,14 @@
         },
         "type": "execute_actions"
       },
+      "491437e5-96ae-4527-bedf-dc40970f56d5": {
+        "config": {},
+        "position": {
+          "left": 820,
+          "top": 5120
+        },
+        "type": "split_by_subflow"
+      },
       "7bf74c8e-37e6-473f-9121-56e6df975d3c": {
         "position": {
           "left": 380,
@@ -402,14 +342,6 @@
           "top": 4840
         },
         "type": "execute_actions"
-      },
-      "491437e5-96ae-4527-bedf-dc40970f56d5": {
-        "config": {},
-        "position": {
-          "left": 820,
-          "top": 5120
-        },
-        "type": "split_by_subflow"
       },
       "e52f0bd6-703e-4352-8567-8433a3e39cd9": {
         "position": {
@@ -451,7 +383,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 66
+    "revision": 1
   },
   "name": "PLH - Content - Extra - Development",
   "nodes": [
@@ -650,27 +582,26 @@
       "uuid": "1ec1957e-89d6-4e19-92f3-37a8e1f9c487"
     },
     {
-      "uuid": "831815cf-9e98-411d-8924-0d86849cbdda",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "9f68fdb8-70d2-431e-ad6e-77a30187c061",
+          "uuid": "7a77a0a7-96d9-4ecc-8876-c028b1073c08"
+        },
+        {
+          "destination_uuid": "2f84ee96-935b-42c4-8ea8-0214d9a6d391",
+          "uuid": "e91adb92-99cc-4b9c-8d18-5359bd59b1cb"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "4e2a112c-da40-4be1-988c-3614930a2938",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "af92b11d-ec4e-47a9-b136-5a5c4ebbf166",
             "type": "has_any_word",
-            "uuid": "68853db1-46bc-4cfa-a334-d42e197f60dc",
-            "category_uuid": "af92b11d-ec4e-47a9-b136-5a5c4ebbf166"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "645486ec-453d-422f-a402-95e59547325e",
-            "category_uuid": "e20b907b-dd7a-4591-b506-205113492366"
+            "uuid": "68853db1-46bc-4cfa-a334-d42e197f60dc"
           }
         ],
         "categories": [
@@ -680,32 +611,16 @@
             "uuid": "af92b11d-ec4e-47a9-b136-5a5c4ebbf166"
           },
           {
-            "uuid": "e20b907b-dd7a-4591-b506-205113492366",
-            "name": "Medium",
-            "exit_uuid": "64c2d940-86e6-4d99-96a7-805c61521929"
-          },
-          {
             "exit_uuid": "e91adb92-99cc-4b9c-8d18-5359bd59b1cb",
             "name": "Other",
             "uuid": "4e2a112c-da40-4be1-988c-3614930a2938"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "4e2a112c-da40-4be1-988c-3614930a2938",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "9f68fdb8-70d2-431e-ad6e-77a30187c061",
-          "uuid": "7a77a0a7-96d9-4ecc-8876-c028b1073c08"
-        },
-        {
-          "uuid": "64c2d940-86e6-4d99-96a7-805c61521929",
-          "destination_uuid": "d2759e8c-3080-4167-9a5a-02dd9cd6436f"
-        },
-        {
-          "destination_uuid": "2f84ee96-935b-42c4-8ea8-0214d9a6d391",
-          "uuid": "e91adb92-99cc-4b9c-8d18-5359bd59b1cb"
-        }
-      ]
+      "uuid": "831815cf-9e98-411d-8924-0d86849cbdda"
     },
     {
       "actions": [],
@@ -786,59 +701,21 @@
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Child_Development_Introduction.m4v\")"
+            "video:@(fields.video_script_path & \"Child_Development_Introduction.m4v\")"
           ],
-          "text": "All children develop at different rates. Here's a video to help you understand what to expect from your children.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Video of Child Development",
+          "type": "send_msg",
           "uuid": "ec223177-b9a8-4e68-ab75-b94182636e2e"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "ce3b2e9f-f5bb-4771-aa2c-c4a1a4d74b9d",
+          "destination_uuid": "2f84ee96-935b-42c4-8ea8-0214d9a6d391",
           "uuid": "2e46727d-e5ee-4a52-ab73-a6e8410f599a"
         }
       ],
       "uuid": "9f68fdb8-70d2-431e-ad6e-77a30187c061"
-    },
-    {
-      "uuid": "d2759e8c-3080-4167-9a5a-02dd9cd6436f",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Child_Development_Introduction.mp3\")"
-          ],
-          "text": "All children develop at different rates. Here's an audio message to help you understand what to expect from your children.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "30492c40-30a8-4ca6-93ef-8e6aa3473ae4"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "71193548-ad99-4ff4-b8f6-2d619bd57a98",
-          "destination_uuid": "ce3b2e9f-f5bb-4771-aa2c-c4a1a4d74b9d"
-        }
-      ]
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "That's okay! You can always type \"Help\" if you want to learn more about child development. ",
-          "type": "send_msg",
-          "uuid": "049d29d1-e043-4689-a58a-824efa6a77c7"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "b7ab2bae-c8a0-48ab-9460-716b9bd12632",
-          "uuid": "88b4c2fe-a4da-45fd-ae90-7c1cc067d4eb"
-        }
-      ],
-      "uuid": "3c9f947b-122b-4cb2-be4f-513687f2d995"
     },
     {
       "actions": [
@@ -861,6 +738,24 @@
     {
       "actions": [
         {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "That's okay! You can always type \"Help\" if you want to learn more about child development. ",
+          "type": "send_msg",
+          "uuid": "049d29d1-e043-4689-a58a-824efa6a77c7"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "b7ab2bae-c8a0-48ab-9460-716b9bd12632",
+          "uuid": "88b4c2fe-a4da-45fd-ae90-7c1cc067d4eb"
+        }
+      ],
+      "uuid": "3c9f947b-122b-4cb2-be4f-513687f2d995"
+    },
+    {
+      "actions": [
+        {
           "all_urns": false,
           "attachments": [],
           "quick_replies": [],
@@ -876,46 +771,6 @@
         }
       ],
       "uuid": "b7ab2bae-c8a0-48ab-9460-716b9bd12632"
-    },
-    {
-      "uuid": "ce3b2e9f-f5bb-4771-aa2c-c4a1a4d74b9d",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "7b31e699-840b-4ab7-b062-af46c89fc51e",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "7b31e699-840b-4ab7-b062-af46c89fc51e",
-            "name": "All Responses",
-            "exit_uuid": "235f269f-100b-40b0-9119-e8b8102481df"
-          },
-          {
-            "uuid": "b26378cd-ad25-4261-be5a-b70aa60ba61d",
-            "name": "No Response",
-            "exit_uuid": "d27640d5-c84c-40b5-a51a-23eaabad08ee"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "b26378cd-ad25-4261-be5a-b70aa60ba61d"
-          }
-        },
-        "result_name": "Result 4"
-      },
-      "exits": [
-        {
-          "uuid": "235f269f-100b-40b0-9119-e8b8102481df",
-          "destination_uuid": "2f84ee96-935b-42c4-8ea8-0214d9a6d391"
-        },
-        {
-          "uuid": "d27640d5-c84c-40b5-a51a-23eaabad08ee",
-          "destination_uuid": "2f84ee96-935b-42c4-8ea8-0214d9a6d391"
-        }
-      ]
     },
     {
       "actions": [
@@ -1057,27 +912,26 @@
       "uuid": "9615d1d2-62b8-4fed-b95e-a5c4d4d08d63"
     },
     {
-      "uuid": "14c2c819-e432-4737-8fac-b41d849db2d2",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "e9bd311b-330d-4245-9f84-43999f59098e",
+          "uuid": "fcd68a47-4eee-4cb5-bad5-a210fc687155"
+        },
+        {
+          "destination_uuid": "90c9f326-1e66-456f-bc3d-f2ec2c84d9d2",
+          "uuid": "deffce2d-655e-49c8-8230-7f59d77b11ab"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "f76f6f9f-bb0d-48c2-bc0a-bf6aca9b42bb",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "5dff4b02-479b-42d4-ad6b-0209b859abe7",
             "type": "has_any_word",
-            "uuid": "d0a55385-a90d-40fb-8cb5-505cd4557738",
-            "category_uuid": "5dff4b02-479b-42d4-ad6b-0209b859abe7"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "408ae7a4-3b15-412d-ad8d-8b4ffced06d6",
-            "category_uuid": "f673323b-42f1-4c0f-b591-a2c5ca53664a"
+            "uuid": "d0a55385-a90d-40fb-8cb5-505cd4557738"
           }
         ],
         "categories": [
@@ -1087,113 +941,38 @@
             "uuid": "5dff4b02-479b-42d4-ad6b-0209b859abe7"
           },
           {
-            "uuid": "f673323b-42f1-4c0f-b591-a2c5ca53664a",
-            "name": "Medium",
-            "exit_uuid": "3a4f8aae-da1f-45de-b0b5-adb2ea6de1fa"
-          },
-          {
             "exit_uuid": "deffce2d-655e-49c8-8230-7f59d77b11ab",
             "name": "Other",
             "uuid": "f76f6f9f-bb0d-48c2-bc0a-bf6aca9b42bb"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "f76f6f9f-bb0d-48c2-bc0a-bf6aca9b42bb",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "e9bd311b-330d-4245-9f84-43999f59098e",
-          "uuid": "fcd68a47-4eee-4cb5-bad5-a210fc687155"
-        },
-        {
-          "uuid": "3a4f8aae-da1f-45de-b0b5-adb2ea6de1fa",
-          "destination_uuid": "51f13e16-c879-4508-8916-9a31f5069e20"
-        },
-        {
-          "destination_uuid": "90c9f326-1e66-456f-bc3d-f2ec2c84d9d2",
-          "uuid": "deffce2d-655e-49c8-8230-7f59d77b11ab"
-        }
-      ]
+      "uuid": "14c2c819-e432-4737-8fac-b41d849db2d2"
     },
     {
-      "uuid": "dfb13117-8480-425c-a3e5-2fecf9ae0f76",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "e45aa956-d683-4393-817c-cb3eb350d2bc",
+          "uuid": "b4122717-9642-4d37-9a22-b998ab9ecfd7"
+        },
+        {
+          "destination_uuid": "fa5b2f1f-b614-4eb3-9801-10db09e62136",
+          "uuid": "ff582470-ba29-42be-b552-99aa8c0a9841"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "a4f1f5cd-7d56-4d30-93f2-3db2ca0a4d3e",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "07de6e66-96ed-4a18-b5d1-5fbf20e7124b",
             "type": "has_any_word",
-            "uuid": "aa351787-5b55-4338-bc78-62504656e65a",
-            "category_uuid": "b3725211-00b0-4020-86f5-fc0337608019"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "53948baf-6641-46d5-b682-f483e986a5a6",
-            "category_uuid": "66f4db11-9a72-4e3d-9a49-bedcb35e9346"
-          }
-        ],
-        "categories": [
-          {
-            "exit_uuid": "0e500162-8454-4f11-966b-109233a0689b",
-            "name": "High",
-            "uuid": "b3725211-00b0-4020-86f5-fc0337608019"
-          },
-          {
-            "uuid": "66f4db11-9a72-4e3d-9a49-bedcb35e9346",
-            "name": "Medium",
-            "exit_uuid": "50439efb-89e5-4511-a2b0-33f7f6da3d3f"
-          },
-          {
-            "exit_uuid": "86a7bb0e-951d-4dd7-a235-664ecf82a144",
-            "name": "Other",
-            "uuid": "a4f1f5cd-7d56-4d30-93f2-3db2ca0a4d3e"
-          }
-        ],
-        "operand": "@fields.type_of_media"
-      },
-      "exits": [
-        {
-          "destination_uuid": "273e3818-66ae-463b-ada4-55ee21366ea9",
-          "uuid": "0e500162-8454-4f11-966b-109233a0689b"
-        },
-        {
-          "uuid": "50439efb-89e5-4511-a2b0-33f7f6da3d3f",
-          "destination_uuid": "4dacb275-c466-4d7f-87e8-c342ef61b1ea"
-        },
-        {
-          "destination_uuid": "10ee56f7-8169-4372-9994-554a12804b0b",
-          "uuid": "86a7bb0e-951d-4dd7-a235-664ecf82a144"
-        }
-      ]
-    },
-    {
-      "uuid": "beec515b-e684-49e4-9fc8-258954eaa8bb",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "10799ded-5621-4cac-9490-2293c9d86d84",
-        "cases": [
-          {
-            "arguments": [
-              "high"
-            ],
-            "type": "has_any_word",
-            "uuid": "4827fa85-3ac7-4f4f-9a7b-1ef8f169da5b",
-            "category_uuid": "07de6e66-96ed-4a18-b5d1-5fbf20e7124b"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "b43f79d7-727b-47a3-b05d-9b313e50984d",
-            "category_uuid": "7c4b723e-1889-4ae2-b548-d38764c709c3"
+            "uuid": "4827fa85-3ac7-4f4f-9a7b-1ef8f169da5b"
           }
         ],
         "categories": [
@@ -1203,272 +982,136 @@
             "uuid": "07de6e66-96ed-4a18-b5d1-5fbf20e7124b"
           },
           {
-            "uuid": "7c4b723e-1889-4ae2-b548-d38764c709c3",
-            "name": "Medium",
-            "exit_uuid": "ff2a0840-64b5-4217-865e-91899d847caf"
-          },
-          {
             "exit_uuid": "ff582470-ba29-42be-b552-99aa8c0a9841",
             "name": "Other",
             "uuid": "10799ded-5621-4cac-9490-2293c9d86d84"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "10799ded-5621-4cac-9490-2293c9d86d84",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
+      "uuid": "beec515b-e684-49e4-9fc8-258954eaa8bb"
+    },
+    {
+      "actions": [],
       "exits": [
         {
-          "destination_uuid": "e45aa956-d683-4393-817c-cb3eb350d2bc",
-          "uuid": "b4122717-9642-4d37-9a22-b998ab9ecfd7"
+          "destination_uuid": "273e3818-66ae-463b-ada4-55ee21366ea9",
+          "uuid": "0e500162-8454-4f11-966b-109233a0689b"
         },
         {
-          "uuid": "ff2a0840-64b5-4217-865e-91899d847caf",
-          "destination_uuid": "748e826e-0773-44d3-94cd-2f1d045e564e"
-        },
-        {
-          "destination_uuid": "fa5b2f1f-b614-4eb3-9801-10db09e62136",
-          "uuid": "ff582470-ba29-42be-b552-99aa8c0a9841"
+          "destination_uuid": "10ee56f7-8169-4372-9994-554a12804b0b",
+          "uuid": "86a7bb0e-951d-4dd7-a235-664ecf82a144"
         }
-      ]
+      ],
+      "router": {
+        "cases": [
+          {
+            "arguments": [
+              "high"
+            ],
+            "category_uuid": "b3725211-00b0-4020-86f5-fc0337608019",
+            "type": "has_any_word",
+            "uuid": "aa351787-5b55-4338-bc78-62504656e65a"
+          }
+        ],
+        "categories": [
+          {
+            "exit_uuid": "0e500162-8454-4f11-966b-109233a0689b",
+            "name": "High",
+            "uuid": "b3725211-00b0-4020-86f5-fc0337608019"
+          },
+          {
+            "exit_uuid": "86a7bb0e-951d-4dd7-a235-664ecf82a144",
+            "name": "Other",
+            "uuid": "a4f1f5cd-7d56-4d30-93f2-3db2ca0a4d3e"
+          }
+        ],
+        "default_category_uuid": "a4f1f5cd-7d56-4d30-93f2-3db2ca0a4d3e",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
+      },
+      "uuid": "dfb13117-8480-425c-a3e5-2fecf9ae0f76"
     },
     {
-      "uuid": "748e826e-0773-44d3-94cd-2f1d045e564e",
       "actions": [
         {
           "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Child_Development_Children_2to9_Years.mp3\")"
+            "video:@(fields.video_script_path & \"Child_Development_Children_2to9_Years.m4v\")"
           ],
-          "text": "Audio of Child Development - Children (2 - 9 years)",
-          "type": "send_msg",
           "quick_replies": [],
-          "uuid": "c066aa82-71f3-433c-8af1-65b66971035f"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "b7f1e5b1-dcd3-43f9-bf56-f7bf935f6da0",
-          "destination_uuid": "310f45e5-f7df-4f75-844c-b17724b9c397"
-        }
-      ]
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "video:@(fields.voiceover_video_path & \"Child_Development_Teenagers_10to17_Years.m4v\")"
-          ],
-          "text": "Video of Child Development - Teenagers (10 - 17 years)",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "a0c09ed9-b331-4a68-aa8b-17ca0cb16a8f"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "30979536-fac6-4414-ab69-a8955b6b4118",
-          "uuid": "da7d144a-c2cb-45fe-8c5c-ab502cd4cdd7"
-        }
-      ],
-      "uuid": "273e3818-66ae-463b-ada4-55ee21366ea9"
-    },
-    {
-      "uuid": "4dacb275-c466-4d7f-87e8-c342ef61b1ea",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Child_Development_Teenagers_10to17_Years.mp3\")"
-          ],
-          "text": "Audio of Child Development - Teenagers (10 - 17 years)",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "01d46ad5-92ba-4cac-acda-e3fd0812da90"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "f4344c27-f52c-41c3-bc73-4fe3e8f7990b",
-          "destination_uuid": "30979536-fac6-4414-ab69-a8955b6b4118"
-        }
-      ]
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "video:@(fields.voiceover_video_path & \"Child_Development_Babies_Toddlers_0 to2_Years.m4v\")"
-          ],
-          "text": "Video of Child Development - Babies & toddlers (0 - 2 years)",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "ff838e0e-7e3d-49b2-ac26-2e21a1f14ff5"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "64757b30-a795-42e7-884b-2c93a52c426f",
-          "uuid": "1f7d1505-5aa3-435b-ae22-02d3165d005b"
-        }
-      ],
-      "uuid": "e9bd311b-330d-4245-9f84-43999f59098e"
-    },
-    {
-      "uuid": "51f13e16-c879-4508-8916-9a31f5069e20",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Child_Development_Babies_Toddlers_0 to2_Years.mp3\")"
-          ],
-          "text": "Audio of Child Development - Babies & toddlers (0 - 2 years)",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "abaf3da4-2eff-4c7e-8c5b-edcd839f2daf"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "e05ffaa6-47ca-457e-a91e-82454b61d13f",
-          "destination_uuid": "64757b30-a795-42e7-884b-2c93a52c426f"
-        }
-      ]
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "video:@(fields.voiceover_video_path & \"Child_Development_Children_2to9_Years.m4v\")"
-          ],
           "text": "Video of Child Development - Children (2 - 9 years)",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "e23d7f70-d7f1-45fa-b8eb-c5d37bfa7d5d"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "310f45e5-f7df-4f75-844c-b17724b9c397",
+          "destination_uuid": "fa5b2f1f-b614-4eb3-9801-10db09e62136",
           "uuid": "645c16e9-f60b-48ff-b74a-69c35d94e7d0"
         }
       ],
       "uuid": "e45aa956-d683-4393-817c-cb3eb350d2bc"
     },
     {
-      "uuid": "64757b30-a795-42e7-884b-2c93a52c426f",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "8549c432-c6f4-44bd-a9e9-3cf07b60b8f5",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "8549c432-c6f4-44bd-a9e9-3cf07b60b8f5",
-            "name": "All Responses",
-            "exit_uuid": "e3189fc0-f2c1-4601-b962-80b170eab468"
-          },
-          {
-            "uuid": "e8a82097-70c6-4a0e-b98e-89a4f7ab702a",
-            "name": "No Response",
-            "exit_uuid": "deb5d2d7-a2c8-419b-9365-f162655af9e7"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "e8a82097-70c6-4a0e-b98e-89a4f7ab702a"
-          }
-        },
-        "result_name": "Result 5"
-      },
+      "actions": [
+        {
+          "attachments": [
+            "video:@(fields.video_script_path & \"Child_Development_Babies_Toddlers_0 to2_Years.m4v\")"
+          ],
+          "quick_replies": [],
+          "text": "Video of Child Development - Babies & toddlers (0 - 2 years)",
+          "type": "send_msg",
+          "uuid": "ff838e0e-7e3d-49b2-ac26-2e21a1f14ff5"
+        }
+      ],
       "exits": [
         {
-          "uuid": "e3189fc0-f2c1-4601-b962-80b170eab468",
-          "destination_uuid": "90c9f326-1e66-456f-bc3d-f2ec2c84d9d2"
-        },
-        {
-          "uuid": "deb5d2d7-a2c8-419b-9365-f162655af9e7",
-          "destination_uuid": "90c9f326-1e66-456f-bc3d-f2ec2c84d9d2"
+          "destination_uuid": "90c9f326-1e66-456f-bc3d-f2ec2c84d9d2",
+          "uuid": "1f7d1505-5aa3-435b-ae22-02d3165d005b"
         }
-      ]
+      ],
+      "uuid": "e9bd311b-330d-4245-9f84-43999f59098e"
     },
     {
-      "uuid": "310f45e5-f7df-4f75-844c-b17724b9c397",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "eaa672ed-1034-43a1-ab61-50e3e91f693e",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "eaa672ed-1034-43a1-ab61-50e3e91f693e",
-            "name": "All Responses",
-            "exit_uuid": "6cebb2a8-552e-452b-b801-e3e89525f993"
-          },
-          {
-            "uuid": "a343f412-dfed-41e5-8543-a203ebb34810",
-            "name": "No Response",
-            "exit_uuid": "56e7d6d0-a156-42d7-90d3-6631b6f50c56"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "a343f412-dfed-41e5-8543-a203ebb34810"
-          }
-        },
-        "result_name": "Result 6"
-      },
+      "actions": [
+        {
+          "attachments": [
+            "video:@(fields.video_script_path & \"Child_Development_Teenagers_10to17_Years.m4v\")"
+          ],
+          "quick_replies": [],
+          "text": "Video of Child Development - Teenagers (10 - 17 years)",
+          "type": "send_msg",
+          "uuid": "a0c09ed9-b331-4a68-aa8b-17ca0cb16a8f"
+        }
+      ],
       "exits": [
         {
-          "uuid": "6cebb2a8-552e-452b-b801-e3e89525f993",
-          "destination_uuid": "fa5b2f1f-b614-4eb3-9801-10db09e62136"
-        },
-        {
-          "uuid": "56e7d6d0-a156-42d7-90d3-6631b6f50c56",
-          "destination_uuid": "fa5b2f1f-b614-4eb3-9801-10db09e62136"
+          "destination_uuid": "10ee56f7-8169-4372-9994-554a12804b0b",
+          "uuid": "da7d144a-c2cb-45fe-8c5c-ab502cd4cdd7"
         }
-      ]
+      ],
+      "uuid": "273e3818-66ae-463b-ada4-55ee21366ea9"
     },
     {
-      "uuid": "30979536-fac6-4414-ab69-a8955b6b4118",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "2aa90fa2-26b3-4a41-820f-d59f8ed6e3f7",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "2aa90fa2-26b3-4a41-820f-d59f8ed6e3f7",
-            "name": "All Responses",
-            "exit_uuid": "0b6de64f-9727-4ded-80d2-30629ad77f72"
-          },
-          {
-            "uuid": "15b5f3b3-df14-42b8-8b5f-79bee4843a8d",
-            "name": "No Response",
-            "exit_uuid": "c777ef21-d357-44fe-9c98-e5cb96a17323"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "15b5f3b3-df14-42b8-8b5f-79bee4843a8d"
-          }
-        },
-        "result_name": "Result 7"
-      },
+      "actions": [
+        {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Infant (0–1 year) needs:\n• Us to provide food, sleep, cleaning, comfort and safety.\n• A strong bond with parent/ caregiver.\n• Lots of play and attention - the most active time of brain development is during the first 1000 days of life!",
+          "type": "send_msg",
+          "uuid": "14e960d1-4e64-4725-bb54-464b5ddd87d7"
+        }
+      ],
       "exits": [
         {
-          "uuid": "0b6de64f-9727-4ded-80d2-30629ad77f72",
-          "destination_uuid": "10ee56f7-8169-4372-9994-554a12804b0b"
-        },
-        {
-          "uuid": "c777ef21-d357-44fe-9c98-e5cb96a17323",
-          "destination_uuid": "10ee56f7-8169-4372-9994-554a12804b0b"
+          "destination_uuid": "bca92d36-c38c-45b6-b8e7-d3f38519c754",
+          "uuid": "ae7b42aa-34d2-4702-9aed-c1e09c7db826"
         }
-      ]
+      ],
+      "uuid": "90c9f326-1e66-456f-bc3d-f2ec2c84d9d2"
     },
     {
       "actions": [
@@ -1532,18 +1175,18 @@
           "all_urns": false,
           "attachments": [],
           "quick_replies": [],
-          "text": "Infant (0–1 year) needs:\n• Us to provide food, sleep, cleaning, comfort and safety.\n• A strong bond with parent/ caregiver.\n• Lots of play and attention - the most active time of brain development is during the first 1000 days of life!",
+          "text": "Infants (0-1):\n• 0–6 months: Smile, babble and cry to attract your attention. We should provide care, cuddling and protection.\n• 6–11 months: Cling to you, especially when feeling insecure or frightened. \n• 12–23 months: Start to walk, talk and explore things around them!",
           "type": "send_msg",
-          "uuid": "14e960d1-4e64-4725-bb54-464b5ddd87d7"
+          "uuid": "435db7cc-9229-4618-a2f8-cf21d9d6a544"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "bca92d36-c38c-45b6-b8e7-d3f38519c754",
-          "uuid": "ae7b42aa-34d2-4702-9aed-c1e09c7db826"
+          "destination_uuid": "1b9a997d-9576-49c4-a0c6-dc3b077df0af",
+          "uuid": "ba336513-be83-4ff2-9e1f-2cb19c650266"
         }
       ],
-      "uuid": "90c9f326-1e66-456f-bc3d-f2ec2c84d9d2"
+      "uuid": "bca92d36-c38c-45b6-b8e7-d3f38519c754"
     },
     {
       "actions": [
@@ -1570,18 +1213,18 @@
           "all_urns": false,
           "attachments": [],
           "quick_replies": [],
-          "text": "Infants (0-1):\n• 0–6 months: Smile, babble and cry to attract your attention. We should provide care, cuddling and protection.\n• 6–11 months: Cling to you, especially when feeling insecure or frightened. \n• 12–23 months: Start to walk, talk and explore things around them!",
+          "text": "Toddlers (2-3 years):\n• Become a curious little explorer - watch out for climbing! \n• Learn through play and trying things out\n• Want to learn how to do new things (like getting dressed) and make their own decisions.\n• Want your praise and your approval",
           "type": "send_msg",
-          "uuid": "435db7cc-9229-4618-a2f8-cf21d9d6a544"
+          "uuid": "71d32d83-de56-415f-9873-335c2ff62363"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "1b9a997d-9576-49c4-a0c6-dc3b077df0af",
-          "uuid": "ba336513-be83-4ff2-9e1f-2cb19c650266"
+          "destination_uuid": "bbecc8ff-a705-4074-b3a2-161adfd513fe",
+          "uuid": "1726d6a7-4a89-4b93-a76f-3d6d859b7b46"
         }
       ],
-      "uuid": "bca92d36-c38c-45b6-b8e7-d3f38519c754"
+      "uuid": "1b9a997d-9576-49c4-a0c6-dc3b077df0af"
     },
     {
       "actions": [
@@ -1608,18 +1251,18 @@
           "all_urns": false,
           "attachments": [],
           "quick_replies": [],
-          "text": "Toddlers (2-3 years):\n• Become a curious little explorer - watch out for climbing! \n• Learn through play and trying things out\n• Want to learn how to do new things (like getting dressed) and make their own decisions.\n• Want your praise and your approval",
+          "text": "Toddlers (2-3 years):\n• Start speaking in sentences and  learning new words.\n• Does not like to lose or take turns, but sharing can be taught.\n• May express feelings in dramatic ways (like screaming on the floor!). Can start to learn how to manage their feelings.",
           "type": "send_msg",
-          "uuid": "71d32d83-de56-415f-9873-335c2ff62363"
+          "uuid": "9e535a12-93cb-4307-b758-827bc0d43d3b"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "bbecc8ff-a705-4074-b3a2-161adfd513fe",
-          "uuid": "1726d6a7-4a89-4b93-a76f-3d6d859b7b46"
+          "destination_uuid": "7bf74c8e-37e6-473f-9121-56e6df975d3c",
+          "uuid": "978399b3-073e-4e64-874e-f48de240f952"
         }
       ],
-      "uuid": "1b9a997d-9576-49c4-a0c6-dc3b077df0af"
+      "uuid": "bbecc8ff-a705-4074-b3a2-161adfd513fe"
     },
     {
       "actions": [
@@ -1658,25 +1301,6 @@
         }
       ],
       "uuid": "0a63990e-e06c-492d-8389-5042ee7d9d9f"
-    },
-    {
-      "actions": [
-        {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Toddlers (2-3 years):\n• Start speaking in sentences and  learning new words.\n• Does not like to lose or take turns, but sharing can be taught.\n• May express feelings in dramatic ways (like screaming on the floor!). Can start to learn how to manage their feelings.",
-          "type": "send_msg",
-          "uuid": "9e535a12-93cb-4307-b758-827bc0d43d3b"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "7bf74c8e-37e6-473f-9121-56e6df975d3c",
-          "uuid": "978399b3-073e-4e64-874e-f48de240f952"
-        }
-      ],
-      "uuid": "bbecc8ff-a705-4074-b3a2-161adfd513fe"
     },
     {
       "actions": [
@@ -1977,5 +1601,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "c717861d-d2ee-4cb1-994e-04a10fe427ff",
-  "revision": 69
+  "revision": 15
 }

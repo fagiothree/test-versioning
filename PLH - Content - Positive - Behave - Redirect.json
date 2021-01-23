@@ -63,19 +63,19 @@
         "type": "wait_for_response"
       },
       "c309809e-cdf0-4bfa-ba1e-c9dafc2bde89": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 220,
           "top": 1240
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "6499e30b-5dee-47f8-8261-7d4d9e0ce523": {
         "position": {
@@ -94,7 +94,7 @@
       "d8e2b757-0521-447b-9f04-037981cf58bd": {
         "position": {
           "left": 500,
-          "top": 1700
+          "top": 1420
         },
         "type": "execute_actions"
       },
@@ -109,20 +109,20 @@
         },
         "position": {
           "left": 400,
-          "top": 1980
+          "top": 1760
         },
         "type": "split_by_contact_field"
       },
       "ada05454-0f19-417c-b07c-f5a1179092c0": {
         "position": {
           "left": 280,
-          "top": 2080
+          "top": 1920
         },
         "type": "execute_actions"
       },
       "cc522091-9e7d-4a1b-a519-54ee91f5da58": {
         "position": {
-          "left": 780,
+          "left": 520,
           "top": 2260
         },
         "type": "execute_actions"
@@ -338,30 +338,6 @@
           "top": 9800
         },
         "type": "execute_actions"
-      },
-      "d2937f53-960c-4df6-a6e3-40d0202a03b7": {
-        "position": {
-          "left": 380,
-          "top": 1380
-        },
-        "type": "execute_actions"
-      },
-      "6d2681d3-151a-483d-8d07-5ae0f8d6aabf": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 120,
-          "top": 1640
-        },
-        "config": {
-          "cases": {}
-        }
-      },
-      "75a11d02-5e69-4d26-9fde-503f656cb1cd": {
-        "position": {
-          "left": 840,
-          "top": 2080
-        },
-        "type": "execute_actions"
       }
     },
     "stickies": {}
@@ -371,7 +347,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 2
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Behave - Redirect",
   "nodes": [
@@ -625,27 +601,26 @@
       "uuid": "5128f83d-d8d0-4352-ab51-9fff7995da22"
     },
     {
-      "uuid": "c309809e-cdf0-4bfa-ba1e-c9dafc2bde89",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "c6ad6df8-b500-43a2-b25d-79cd8d4c4615",
+          "uuid": "6ffe2cb9-8790-4e1c-af9d-5994e4982960"
+        },
+        {
+          "destination_uuid": "d8e2b757-0521-447b-9f04-037981cf58bd",
+          "uuid": "58dccb17-281b-4678-8090-17901ed63c97"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "4ac8c4ce-7e48-49c6-a273-72f7e361aa1a",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "cbbc6e56-1537-46f6-96c7-11e4cefe84ff",
             "type": "has_any_word",
-            "uuid": "ecc55857-03e3-4994-b487-029b538d0f9e",
-            "category_uuid": "cbbc6e56-1537-46f6-96c7-11e4cefe84ff"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "693d2e51-95a4-48f0-8102-abaa6e3bc811",
-            "category_uuid": "fc5f156d-3bf5-4df2-aa8b-e3b30a761b4f"
+            "uuid": "ecc55857-03e3-4994-b487-029b538d0f9e"
           }
         ],
         "categories": [
@@ -655,32 +630,16 @@
             "uuid": "cbbc6e56-1537-46f6-96c7-11e4cefe84ff"
           },
           {
-            "uuid": "fc5f156d-3bf5-4df2-aa8b-e3b30a761b4f",
-            "name": "Medium",
-            "exit_uuid": "6225f601-ac65-449c-abeb-934946e3b08e"
-          },
-          {
             "exit_uuid": "58dccb17-281b-4678-8090-17901ed63c97",
             "name": "Other",
             "uuid": "4ac8c4ce-7e48-49c6-a273-72f7e361aa1a"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "4ac8c4ce-7e48-49c6-a273-72f7e361aa1a",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "c6ad6df8-b500-43a2-b25d-79cd8d4c4615",
-          "uuid": "6ffe2cb9-8790-4e1c-af9d-5994e4982960"
-        },
-        {
-          "uuid": "6225f601-ac65-449c-abeb-934946e3b08e",
-          "destination_uuid": "d2937f53-960c-4df6-a6e3-40d0202a03b7"
-        },
-        {
-          "destination_uuid": "d8e2b757-0521-447b-9f04-037981cf58bd",
-          "uuid": "58dccb17-281b-4678-8090-17901ed63c97"
-        }
-      ]
+      "uuid": "c309809e-cdf0-4bfa-ba1e-c9dafc2bde89"
     },
     {
       "actions": [
@@ -704,81 +663,21 @@
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Redirect.m4v\")"
+            "video:@(fields.video_script_path & \"Redirect.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video that helps you redirect your child's behaviour when they misbehave.",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "a14cd30a-7cc5-4526-ab65-bb28966f4128"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "6d2681d3-151a-483d-8d07-5ae0f8d6aabf",
+          "destination_uuid": "d8e2b757-0521-447b-9f04-037981cf58bd",
           "uuid": "87a215c9-7c78-42b1-a0fc-a8d172dde39c"
         }
       ],
       "uuid": "c6ad6df8-b500-43a2-b25d-79cd8d4c4615"
-    },
-    {
-      "uuid": "d2937f53-960c-4df6-a6e3-40d0202a03b7",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Redirect.mp3\")"
-          ],
-          "text": "Here's an audio message that can help you redirect your child's behaviour when they misbehave.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "fd335bf1-b9cf-47cc-96e7-421d0059a351"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "504cf959-625e-4fe0-bb2e-8df09a230fdc",
-          "destination_uuid": "6d2681d3-151a-483d-8d07-5ae0f8d6aabf"
-        }
-      ]
-    },
-    {
-      "uuid": "6d2681d3-151a-483d-8d07-5ae0f8d6aabf",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "b2f76ddc-2647-49ef-9329-5d7fa47b818a",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "b2f76ddc-2647-49ef-9329-5d7fa47b818a",
-            "name": "All Responses",
-            "exit_uuid": "e60d0931-1bbd-4e4e-b590-7e594c72a20e"
-          },
-          {
-            "uuid": "62ac3b16-0b38-482a-8534-31c27364108d",
-            "name": "No Response",
-            "exit_uuid": "3780e4ca-80c8-497e-8a2f-b12f487851c1"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "62ac3b16-0b38-482a-8534-31c27364108d"
-          }
-        },
-        "result_name": "Result 4"
-      },
-      "exits": [
-        {
-          "uuid": "e60d0931-1bbd-4e4e-b590-7e594c72a20e",
-          "destination_uuid": "d8e2b757-0521-447b-9f04-037981cf58bd"
-        },
-        {
-          "uuid": "3780e4ca-80c8-497e-8a2f-b12f487851c1",
-          "destination_uuid": "d8e2b757-0521-447b-9f04-037981cf58bd"
-        }
-      ]
     },
     {
       "actions": [
@@ -806,7 +705,7 @@
           "uuid": "213a5d3a-5674-4007-a4f5-15abfc848960"
         },
         {
-          "destination_uuid": "75a11d02-5e69-4d26-9fde-503f656cb1cd",
+          "destination_uuid": "cc522091-9e7d-4a1b-a519-54ee91f5da58",
           "uuid": "b2c84a6e-0b31-43a3-9b9c-ac067c6d569f"
         }
       ],
@@ -851,32 +750,11 @@
       ],
       "exits": [
         {
-          "destination_uuid": "75a11d02-5e69-4d26-9fde-503f656cb1cd",
+          "destination_uuid": "cc522091-9e7d-4a1b-a519-54ee91f5da58",
           "uuid": "9e050df7-87f6-404a-bb47-59cb03b7fcf9"
         }
       ],
       "uuid": "ada05454-0f19-417c-b07c-f5a1179092c0"
-    },
-    {
-      "uuid": "75a11d02-5e69-4d26-9fde-503f656cb1cd",
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.comic_path & \"redirect_comic.jpg\")"
-          ],
-          "text": "Here is a comic that shows how you can use redirect!",
-          "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
-          "uuid": "e5d9f3e5-eba9-4e47-b579-a0fdd274009c"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "dc8d0f1e-987c-487e-9649-a82a6e467882",
-          "destination_uuid": "cc522091-9e7d-4a1b-a519-54ee91f5da58"
-        }
-      ]
     },
     {
       "actions": [
@@ -1557,5 +1435,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "7e80c417-593d-43d6-973e-def42396e618",
-  "revision": 21
+  "revision": 2
 }

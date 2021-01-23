@@ -1,20 +1,55 @@
 {
   "_ui": {
     "nodes": {
-      "6979666a-b94e-4899-b8f9-5d6756ba7203": {
+      "07305d96-916b-41e7-99f8-216f9c10836f": {
         "position": {
-          "left": 180,
-          "top": 20
+          "left": 80,
+          "top": 720
         },
         "type": "execute_actions"
       },
-      "5c3ad69a-a277-4f80-8237-3f7f48b32bc4": {
-        "config": {},
+      "0af51870-b08c-4a89-808b-e660b9d60ce0": {
+        "position": {
+          "left": 540,
+          "top": 3920
+        },
+        "type": "execute_actions"
+      },
+      "1838d0f1-2714-4b75-98da-0dcc418c47d8": {
+        "position": {
+          "left": 540,
+          "top": 2900
+        },
+        "type": "execute_actions"
+      },
+      "18859c47-c335-4af5-b35f-d74ec1d5d2b5": {
+        "position": {
+          "left": 1040,
+          "top": 2460
+        },
+        "type": "execute_actions"
+      },
+      "2d51f833-6973-42e1-bbc3-9638052526bf": {
+        "position": {
+          "left": 960,
+          "top": 360
+        },
+        "type": "execute_actions"
+      },
+      "2e29d582-4d49-4d23-9d37-dbfe52740c88": {
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 160,
-          "top": 160
+          "top": 600
         },
-        "type": "split_by_subflow"
+        "type": "split_by_contact_field"
       },
       "4e495ef0-076b-4371-bb0c-48160f6e7931": {
         "position": {
@@ -38,17 +73,25 @@
         },
         "type": "split_by_contact_field"
       },
-      "2d51f833-6973-42e1-bbc3-9638052526bf": {
+      "585dc9d7-2d75-406d-9e2c-dc1a9515f094": {
         "position": {
-          "left": 960,
-          "top": 360
+          "left": 200,
+          "top": 5180
         },
         "type": "execute_actions"
       },
-      "a561484e-887b-4b17-ad07-0616dd74354c": {
+      "5c3ad69a-a277-4f80-8237-3f7f48b32bc4": {
+        "config": {},
         "position": {
-          "left": 1180,
-          "top": 460
+          "left": 160,
+          "top": 160
+        },
+        "type": "split_by_subflow"
+      },
+      "60d79acd-baf9-4183-8147-6e74743f8173": {
+        "position": {
+          "left": 660,
+          "top": 1480
         },
         "type": "execute_actions"
       },
@@ -62,136 +105,23 @@
         },
         "type": "wait_for_response"
       },
-      "2e29d582-4d49-4d23-9d37-dbfe52740c88": {
-        "type": "split_by_contact_field",
-        "position": {
-          "left": 260,
-          "top": 600
-        },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
-      },
-      "07305d96-916b-41e7-99f8-216f9c10836f": {
-        "position": {
-          "left": 80,
-          "top": 720
-        },
-        "type": "execute_actions"
-      },
-      "cbcfc405-f78d-42e5-85de-b4f0fe5a6894": {
-        "position": {
-          "left": 780,
-          "top": 740
-        },
-        "type": "execute_actions"
-      },
-      "b98faf35-3f04-4366-94a4-6a71a599c1ff": {
-        "position": {
-          "left": 260,
-          "top": 1020
-        },
-        "type": "execute_actions"
-      },
-      "905e975d-3fa3-40e3-89f2-53be8dbf9c87": {
-        "position": {
-          "left": 260,
-          "top": 1320
-        },
-        "type": "execute_actions"
-      },
-      "f1a09e94-6a13-420e-878a-f43addfdc970": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 380,
-          "top": 1460
-        },
-        "type": "wait_for_response"
-      },
-      "60d79acd-baf9-4183-8147-6e74743f8173": {
-        "position": {
-          "left": 660,
-          "top": 1480
-        },
-        "type": "execute_actions"
-      },
-      "c5c306e8-bcb7-425a-928a-23e2b28965cb": {
-        "position": {
-          "left": 500,
-          "top": 1640
-        },
-        "type": "execute_actions"
-      },
-      "9b21940c-5dc5-4433-88f5-50581ba185f8": {
-        "config": {},
+      "6979666a-b94e-4899-b8f9-5d6756ba7203": {
         "position": {
           "left": 180,
-          "top": 1760
-        },
-        "type": "split_by_subflow"
-      },
-      "def8bb05-b1e8-4c52-9a0a-5f976c1cfbde": {
-        "position": {
-          "left": 300,
-          "top": 1900
+          "top": 20
         },
         "type": "execute_actions"
       },
-      "d8f670fd-e32f-4b77-8080-0f40286e62cd": {
+      "6b12bd7a-15dc-4b20-8b32-d0dc812a9eda": {
         "position": {
-          "left": 1020,
-          "top": 2200
-        },
-        "type": "execute_actions"
-      },
-      "e9922c62-5b77-45cb-a88d-90e58119729f": {
-        "position": {
-          "left": 100,
-          "top": 2420
-        },
-        "type": "execute_actions"
-      },
-      "fc00a67d-9c55-4e46-96d1-8f9a1ea885fb": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 420,
-          "top": 2420
-        },
-        "type": "wait_for_response"
-      },
-      "18859c47-c335-4af5-b35f-d74ec1d5d2b5": {
-        "position": {
-          "left": 1040,
-          "top": 2460
-        },
-        "type": "execute_actions"
-      },
-      "aa1dd5b7-4bf5-43aa-b9a7-bb9d04fc904f": {
-        "position": {
-          "left": 820,
-          "top": 2480
+          "left": 540,
+          "top": 3300
         },
         "type": "execute_actions"
       },
       "79d87f48-db88-4990-877e-3d8b773afa56": {
         "position": {
           "left": 340,
-          "top": 2560
-        },
-        "type": "execute_actions"
-      },
-      "b6108d35-e2c6-46c4-8511-c28a3e9b766b": {
-        "position": {
-          "left": 580,
           "top": 2560
         },
         "type": "execute_actions"
@@ -203,38 +133,74 @@
         },
         "type": "execute_actions"
       },
-      "1838d0f1-2714-4b75-98da-0dcc418c47d8": {
+      "905e975d-3fa3-40e3-89f2-53be8dbf9c87": {
         "position": {
-          "left": 540,
-          "top": 2900
+          "left": 260,
+          "top": 1200
         },
         "type": "execute_actions"
       },
-      "6b12bd7a-15dc-4b20-8b32-d0dc812a9eda": {
+      "9b21940c-5dc5-4433-88f5-50581ba185f8": {
+        "config": {},
         "position": {
-          "left": 540,
-          "top": 3300
+          "left": 180,
+          "top": 1760
+        },
+        "type": "split_by_subflow"
+      },
+      "a561484e-887b-4b17-ad07-0616dd74354c": {
+        "position": {
+          "left": 1180,
+          "top": 460
         },
         "type": "execute_actions"
       },
-      "eb5c1f1d-caab-4edf-87eb-b74f989befb7": {
+      "aa1dd5b7-4bf5-43aa-b9a7-bb9d04fc904f": {
         "position": {
-          "left": 540,
-          "top": 3720
+          "left": 820,
+          "top": 2480
         },
         "type": "execute_actions"
       },
-      "0af51870-b08c-4a89-808b-e660b9d60ce0": {
+      "b6108d35-e2c6-46c4-8511-c28a3e9b766b": {
         "position": {
-          "left": 540,
-          "top": 3920
+          "left": 580,
+          "top": 2560
         },
         "type": "execute_actions"
       },
-      "585dc9d7-2d75-406d-9e2c-dc1a9515f094": {
+      "b98faf35-3f04-4366-94a4-6a71a599c1ff": {
         "position": {
-          "left": 200,
-          "top": 5180
+          "left": 260,
+          "top": 880
+        },
+        "type": "execute_actions"
+      },
+      "c5c306e8-bcb7-425a-928a-23e2b28965cb": {
+        "position": {
+          "left": 500,
+          "top": 1640
+        },
+        "type": "execute_actions"
+      },
+      "cbcfc405-f78d-42e5-85de-b4f0fe5a6894": {
+        "position": {
+          "left": 780,
+          "top": 740
+        },
+        "type": "execute_actions"
+      },
+      "d8f670fd-e32f-4b77-8080-0f40286e62cd": {
+        "position": {
+          "left": 1020,
+          "top": 2200
+        },
+        "type": "execute_actions"
+      },
+      "def8bb05-b1e8-4c52-9a0a-5f976c1cfbde": {
+        "position": {
+          "left": 300,
+          "top": 1900
         },
         "type": "execute_actions"
       },
@@ -246,22 +212,39 @@
         },
         "type": "split_by_subflow"
       },
-      "2ee132a0-8f51-4175-9b84-a39b5df5f3de": {
+      "e9922c62-5b77-45cb-a88d-90e58119729f": {
         "position": {
-          "left": 340,
-          "top": 720
+          "left": 100,
+          "top": 2420
         },
         "type": "execute_actions"
       },
-      "f2cb42f4-3155-4945-b7bf-09f53d1e7bae": {
-        "type": "wait_for_response",
+      "eb5c1f1d-caab-4edf-87eb-b74f989befb7": {
         "position": {
-          "left": 60,
-          "top": 880
+          "left": 540,
+          "top": 3720
         },
+        "type": "execute_actions"
+      },
+      "f1a09e94-6a13-420e-878a-f43addfdc970": {
         "config": {
           "cases": {}
-        }
+        },
+        "position": {
+          "left": 380,
+          "top": 1420
+        },
+        "type": "wait_for_response"
+      },
+      "fc00a67d-9c55-4e46-96d1-8f9a1ea885fb": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 420,
+          "top": 2420
+        },
+        "type": "wait_for_response"
       }
     },
     "stickies": {}
@@ -271,7 +254,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 96
   },
   "name": "PLH - Content - Positive - Behave - Consequences",
   "nodes": [
@@ -525,27 +508,26 @@
       "uuid": "664a43f5-d512-4e97-a4e6-98a4c798a04e"
     },
     {
-      "uuid": "2e29d582-4d49-4d23-9d37-dbfe52740c88",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "07305d96-916b-41e7-99f8-216f9c10836f",
+          "uuid": "9602fb7d-b610-44d0-91d3-d81eb3a4f0a2"
+        },
+        {
+          "destination_uuid": "b98faf35-3f04-4366-94a4-6a71a599c1ff",
+          "uuid": "ad112a81-94c0-4fc2-826e-00f6dc1beda2"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "c06efd58-0c01-4865-8092-6b0a964631cb",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "b069f1e2-9cf2-4635-827f-4205a72bb117",
             "type": "has_any_word",
-            "uuid": "ed3dc818-5c23-4020-a7e1-ea61fa327005",
-            "category_uuid": "b069f1e2-9cf2-4635-827f-4205a72bb117"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "4c483d58-8ce7-4830-b68d-26f280e6d75b",
-            "category_uuid": "6398b4f8-30ba-4517-a87f-3e5b50582a75"
+            "uuid": "ed3dc818-5c23-4020-a7e1-ea61fa327005"
           }
         ],
         "categories": [
@@ -555,72 +537,36 @@
             "uuid": "b069f1e2-9cf2-4635-827f-4205a72bb117"
           },
           {
-            "uuid": "6398b4f8-30ba-4517-a87f-3e5b50582a75",
-            "name": "Medium",
-            "exit_uuid": "b75ac331-8220-4bae-9afc-827024ecf4b7"
-          },
-          {
             "exit_uuid": "ad112a81-94c0-4fc2-826e-00f6dc1beda2",
             "name": "Other",
             "uuid": "c06efd58-0c01-4865-8092-6b0a964631cb"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "c06efd58-0c01-4865-8092-6b0a964631cb",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "07305d96-916b-41e7-99f8-216f9c10836f",
-          "uuid": "9602fb7d-b610-44d0-91d3-d81eb3a4f0a2"
-        },
-        {
-          "uuid": "b75ac331-8220-4bae-9afc-827024ecf4b7",
-          "destination_uuid": "2ee132a0-8f51-4175-9b84-a39b5df5f3de"
-        },
-        {
-          "destination_uuid": "b98faf35-3f04-4366-94a4-6a71a599c1ff",
-          "uuid": "ad112a81-94c0-4fc2-826e-00f6dc1beda2"
-        }
-      ]
+      "uuid": "2e29d582-4d49-4d23-9d37-dbfe52740c88"
     },
     {
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Consequences.m4v\")"
+            "video:@(fields.video_script_path & \"Consequences.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video that explains you can use consequences to discipline your child.",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "f6efc5e5-e0b6-43e3-8973-dea6319fb100"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "f2cb42f4-3155-4945-b7bf-09f53d1e7bae",
+          "destination_uuid": "b98faf35-3f04-4366-94a4-6a71a599c1ff",
           "uuid": "a4480b1f-4534-45f6-8747-5439438f220c"
         }
       ],
       "uuid": "07305d96-916b-41e7-99f8-216f9c10836f"
-    },
-    {
-      "uuid": "2ee132a0-8f51-4175-9b84-a39b5df5f3de",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Consequences.mp3\")"
-          ],
-          "text": "Here's an audio message that explains how you can use consequences to discipline your child.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "db41351d-be80-4b0e-b8d1-9c985b808bff"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "20035e41-897b-4769-9947-99858acc68ea",
-          "destination_uuid": "f2cb42f4-3155-4945-b7bf-09f53d1e7bae"
-        }
-      ]
     },
     {
       "actions": [
@@ -639,46 +585,6 @@
         }
       ],
       "uuid": "cbcfc405-f78d-42e5-85de-b4f0fe5a6894"
-    },
-    {
-      "uuid": "f2cb42f4-3155-4945-b7bf-09f53d1e7bae",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "a1537610-350e-4b1e-829e-7a2582c9a409",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "a1537610-350e-4b1e-829e-7a2582c9a409",
-            "name": "All Responses",
-            "exit_uuid": "0a9ad34a-2d00-4072-ba8e-0d30aecd4c9c"
-          },
-          {
-            "uuid": "2f59aa23-aef6-413a-8a47-3120cba21289",
-            "name": "No Response",
-            "exit_uuid": "8ade43a4-33fe-4312-990d-7f252f2bc12d"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "2f59aa23-aef6-413a-8a47-3120cba21289"
-          }
-        },
-        "result_name": "Result 6"
-      },
-      "exits": [
-        {
-          "uuid": "0a9ad34a-2d00-4072-ba8e-0d30aecd4c9c",
-          "destination_uuid": "b98faf35-3f04-4366-94a4-6a71a599c1ff"
-        },
-        {
-          "uuid": "8ade43a4-33fe-4312-990d-7f252f2bc12d",
-          "destination_uuid": "b98faf35-3f04-4366-94a4-6a71a599c1ff"
-        }
-      ]
     },
     {
       "actions": [
@@ -1194,12 +1100,10 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.comic_path & \"consequences_comic.jpg\")"
-          ],
+          "attachments": [],
+          "quick_replies": [],
           "text": "Here is a comic that shows a parent giving their child a choice to follow the instruction or receive a consequence.",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "eec27c11-7c60-42bc-8992-64f05159ab63"
         }
       ],
@@ -1321,5 +1225,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "41063063-f553-4909-a108-92c1138f5043",
-  "revision": 15
+  "revision": 1
 }

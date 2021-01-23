@@ -1,6 +1,49 @@
 {
   "_ui": {
     "nodes": {
+      "0079919d-a672-4694-b353-2a9bd8dde3a6": {
+        "position": {
+          "left": 20,
+          "top": 480
+        },
+        "type": "execute_actions"
+      },
+      "09c82c25-78ae-47e7-a453-d43578d38305": {
+        "position": {
+          "left": 920,
+          "top": 740
+        },
+        "type": "execute_actions"
+      },
+      "0fdea3e0-90e4-42f4-8ecf-9849ba325edd": {
+        "position": {
+          "left": 0,
+          "top": 800
+        },
+        "type": "execute_actions"
+      },
+      "233003e6-12d0-4e65-90d4-a13d33363f44": {
+        "position": {
+          "left": 920,
+          "top": 460
+        },
+        "type": "execute_actions"
+      },
+      "2f23b459-5dbf-4b72-bcc9-1bcd4b137474": {
+        "position": {
+          "left": 1120,
+          "top": 560
+        },
+        "type": "execute_actions"
+      },
+      "35011b79-e155-4aa1-bdb6-4a6d49e3678e": {
+        "config": {},
+        "position": {
+          "left": 540,
+          "top": 800
+        },
+        "type": "split_by_subflow"
+      },
       "55458b5b-1d8a-4a09-a682-81c4a1d78af3": {
         "position": {
           "left": 560,
@@ -8,18 +51,10 @@
         },
         "type": "execute_actions"
       },
-      "b817cb4f-4c33-4c09-a698-d5daa484807a": {
-        "config": {},
+      "720d442c-a2f1-4ecc-a776-4869c2ad6647": {
         "position": {
-          "left": 560,
-          "top": 100
-        },
-        "type": "split_by_subflow"
-      },
-      "ad09cf91-7090-4957-9372-56da5e75b3b3": {
-        "position": {
-          "left": 440,
-          "top": 240
+          "left": 160,
+          "top": 920
         },
         "type": "execute_actions"
       },
@@ -38,17 +73,32 @@
         },
         "type": "split_by_contact_field"
       },
-      "233003e6-12d0-4e65-90d4-a13d33363f44": {
+      "ad09cf91-7090-4957-9372-56da5e75b3b3": {
         "position": {
-          "left": 920,
-          "top": 460
+          "left": 440,
+          "top": 240
         },
         "type": "execute_actions"
       },
-      "0079919d-a672-4694-b353-2a9bd8dde3a6": {
+      "b817cb4f-4c33-4c09-a698-d5daa484807a": {
+        "config": {},
+        "position": {
+          "left": 560,
+          "top": 100
+        },
+        "type": "split_by_subflow"
+      },
+      "bd2804ba-aa45-4edd-b64b-2f326b6d1593": {
         "position": {
           "left": 20,
-          "top": 480
+          "top": 1160
+        },
+        "type": "execute_actions"
+      },
+      "c608fff4-741a-48b3-b2a0-fbc3b4608fb7": {
+        "position": {
+          "left": 520,
+          "top": 700
         },
         "type": "execute_actions"
       },
@@ -59,56 +109,20 @@
         },
         "type": "execute_actions"
       },
-      "2f23b459-5dbf-4b72-bcc9-1bcd4b137474": {
-        "position": {
-          "left": 1120,
-          "top": 560
-        },
-        "type": "execute_actions"
-      },
       "efae6085-ebd0-471c-aee3-13f151cdbc70": {
         "config": {
           "cases": {}
         },
         "position": {
           "left": 40,
-          "top": 680
+          "top": 660
         },
         "type": "wait_for_response"
       },
-      "c608fff4-741a-48b3-b2a0-fbc3b4608fb7": {
+      "f65ab827-0702-492b-b4db-199613da8a38": {
         "position": {
-          "left": 520,
-          "top": 740
-        },
-        "type": "execute_actions"
-      },
-      "09c82c25-78ae-47e7-a453-d43578d38305": {
-        "position": {
-          "left": 920,
-          "top": 740
-        },
-        "type": "execute_actions"
-      },
-      "0fdea3e0-90e4-42f4-8ecf-9849ba325edd": {
-        "position": {
-          "left": 0,
-          "top": 820
-        },
-        "type": "execute_actions"
-      },
-      "35011b79-e155-4aa1-bdb6-4a6d49e3678e": {
-        "config": {},
-        "position": {
-          "left": 540,
-          "top": 840
-        },
-        "type": "split_by_subflow"
-      },
-      "720d442c-a2f1-4ecc-a776-4869c2ad6647": {
-        "position": {
-          "left": 160,
-          "top": 920
+          "left": 20,
+          "top": 1340
         },
         "type": "execute_actions"
       },
@@ -116,20 +130,6 @@
         "position": {
           "left": 180,
           "top": 1020
-        },
-        "type": "execute_actions"
-      },
-      "bd2804ba-aa45-4edd-b64b-2f326b6d1593": {
-        "position": {
-          "left": 20,
-          "top": 1160
-        },
-        "type": "execute_actions"
-      },
-      "f65ab827-0702-492b-b4db-199613da8a38": {
-        "position": {
-          "left": 20,
-          "top": 1340
         },
         "type": "execute_actions"
       }
@@ -141,7 +141,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 55
   },
   "name": "PLH - Content - Relax - Take a pause - Timed intro",
   "nodes": [
@@ -224,10 +224,12 @@
     {
       "actions": [
         {
-          "attachments": [],
+          "attachments": [
+            "image:@(fields.image_path & \"misbehaving_children.jpg\")"
+          ],
+          "quick_replies": [],
           "text": "Hello! This is a stressful time, especially for parents. When we are stressed or angry, we do not make the best decisions. Taking the time to care for ourselves will help us care for our children.\nToday's tip is about how to keep calm and manage stress in our busy lives. ",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "2bbe1fbe-10bf-4593-932a-b0a0cf4b7864"
         }
       ],
@@ -303,15 +305,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"misbehaving_children.jpg\")"
-          ],
-          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
+          "type": "send_msg",
           "uuid": "d1bd3464-0314-4c84-baf7-cfaf454a3f11"
         }
       ],
@@ -326,15 +326,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"misbehaving_children.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "8dca44ba-c87e-4abe-b02c-826c8b5fb1a8"
         }
       ],
@@ -625,5 +623,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "fc83e9a6-2fde-419c-84b2-64182e20cc8f",
-  "revision": 6
+  "revision": 1
 }

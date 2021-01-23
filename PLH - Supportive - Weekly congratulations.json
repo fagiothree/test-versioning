@@ -1,32 +1,25 @@
 {
   "_ui": {
     "nodes": {
-      "aeed124d-cee5-4ff7-9774-5d0c8da09cd3": {
-        "config": {
-          "cases": {},
-          "operand": {
-            "id": "current_week_in_program",
-            "name": "current week in program",
-            "type": "field"
-          }
-        },
+      "0219665a-4077-4aee-8631-3b5988dd9b14": {
+        "config": {},
         "position": {
-          "left": 600,
-          "top": 60
+          "left": 180,
+          "top": 1140
         },
-        "type": "split_by_contact_field"
+        "type": "split_by_subflow"
       },
-      "c62ef761-365a-4875-8b2a-ce1d8276fb46": {
+      "16f4dd43-f544-4ae8-8692-dc3178e3ef1f": {
         "position": {
-          "left": 420,
-          "top": 180
+          "left": 220,
+          "top": 1560
         },
         "type": "execute_actions"
       },
-      "784e7bd8-bbb0-4a2f-8372-c81e947400cc": {
+      "2e27b342-a806-4d15-b430-6b4ba4acedc6": {
         "position": {
-          "left": 860,
-          "top": 240
+          "left": 740,
+          "top": 1720
         },
         "type": "execute_actions"
       },
@@ -37,35 +30,6 @@
         },
         "type": "execute_actions"
       },
-      "c35df13b-3109-41e2-a698-3ac526841d9c": {
-        "position": {
-          "left": 740,
-          "top": 500
-        },
-        "type": "execute_actions"
-      },
-      "7de7c5ec-904b-4731-8cd3-7957d9edbdba": {
-        "config": {
-          "cases": {},
-          "operand": {
-            "id": "n_skills_week",
-            "name": "n skills week",
-            "type": "result"
-          }
-        },
-        "position": {
-          "left": 420,
-          "top": 740
-        },
-        "type": "split_by_run_result"
-      },
-      "d463f185-570c-4da8-aadd-ae04c43860f0": {
-        "position": {
-          "left": 200,
-          "top": 880
-        },
-        "type": "execute_actions"
-      },
       "3ee874da-e194-4986-b2ac-9a9903a5eb6e": {
         "position": {
           "left": 800,
@@ -73,20 +37,26 @@
         },
         "type": "execute_actions"
       },
-      "eb7af719-1754-4ece-b513-91885a552d86": {
+      "5896a477-e8f7-4c1d-a956-241fbb81f81b": {
         "position": {
-          "left": 200,
-          "top": 1020
+          "left": 220,
+          "top": 1420
         },
         "type": "execute_actions"
       },
-      "0219665a-4077-4aee-8631-3b5988dd9b14": {
-        "config": {},
+      "739ba2a3-6456-4200-a76d-57451aee2051": {
         "position": {
-          "left": 180,
-          "top": 1140
+          "left": 760,
+          "top": 1900
         },
-        "type": "split_by_subflow"
+        "type": "execute_actions"
+      },
+      "784e7bd8-bbb0-4a2f-8372-c81e947400cc": {
+        "position": {
+          "left": 860,
+          "top": 240
+        },
+        "type": "execute_actions"
       },
       "7b808658-524c-4419-aea9-d671a825cda4": {
         "config": {
@@ -103,17 +73,68 @@
         },
         "type": "split_by_run_result"
       },
-      "5896a477-e8f7-4c1d-a956-241fbb81f81b": {
+      "7de7c5ec-904b-4731-8cd3-7957d9edbdba": {
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "n_skills_week",
+            "name": "n skills week",
+            "type": "result"
+          }
+        },
         "position": {
-          "left": 220,
-          "top": 1420
+          "left": 420,
+          "top": 740
+        },
+        "type": "split_by_run_result"
+      },
+      "8fe5f4a7-cfd2-4996-89c7-9587ea25055c": {
+        "position": {
+          "left": 480,
+          "top": 2060
         },
         "type": "execute_actions"
       },
-      "16f4dd43-f544-4ae8-8692-dc3178e3ef1f": {
+      "aeb39d5e-8382-4473-8d45-82ec233e7ace": {
         "position": {
-          "left": 220,
-          "top": 1560
+          "left": 460,
+          "top": 1740
+        },
+        "type": "execute_actions"
+      },
+      "aeed124d-cee5-4ff7-9774-5d0c8da09cd3": {
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "current_week_in_program",
+            "name": "current week in program",
+            "type": "field"
+          }
+        },
+        "position": {
+          "left": 600,
+          "top": 60
+        },
+        "type": "split_by_contact_field"
+      },
+      "c35df13b-3109-41e2-a698-3ac526841d9c": {
+        "position": {
+          "left": 740,
+          "top": 500
+        },
+        "type": "execute_actions"
+      },
+      "c62ef761-365a-4875-8b2a-ce1d8276fb46": {
+        "position": {
+          "left": 420,
+          "top": 180
+        },
+        "type": "execute_actions"
+      },
+      "d463f185-570c-4da8-aadd-ae04c43860f0": {
+        "position": {
+          "left": 200,
+          "top": 880
         },
         "type": "execute_actions"
       },
@@ -125,31 +146,10 @@
         },
         "type": "split_by_subflow"
       },
-      "2e27b342-a806-4d15-b430-6b4ba4acedc6": {
+      "eb7af719-1754-4ece-b513-91885a552d86": {
         "position": {
-          "left": 740,
-          "top": 1720
-        },
-        "type": "execute_actions"
-      },
-      "aeb39d5e-8382-4473-8d45-82ec233e7ace": {
-        "position": {
-          "left": 460,
-          "top": 1740
-        },
-        "type": "execute_actions"
-      },
-      "739ba2a3-6456-4200-a76d-57451aee2051": {
-        "position": {
-          "left": 760,
-          "top": 1900
-        },
-        "type": "execute_actions"
-      },
-      "8fe5f4a7-cfd2-4996-89c7-9587ea25055c": {
-        "position": {
-          "left": 480,
-          "top": 2060
+          "left": 200,
+          "top": 1020
         },
         "type": "execute_actions"
       }
@@ -160,7 +160,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 28
   },
   "name": "PLH - Supportive - Weekly congratulations",
   "nodes": [
@@ -291,9 +291,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Congratulations for finishing the ParentText programme! \n\nYou can always revisit the parenting tips by typing \"Help\". If you want to stop receiving messages, go to \"Technical Support\" and then select \"User Experience\".",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Congratulations for finishing the ParenText programme! \n\nYou can always revisit the parenting tips by typing \"Help\". If you want to stop receiving messages, go to \"Technical Support\" and then select \"User Experience\".",
+          "type": "send_msg",
           "uuid": "c2e0fa7c-23e3-4a25-97db-9a95518afef5"
         }
       ],
@@ -709,5 +709,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "ecefe7d2-9535-4104-af2a-70ac6143208f",
-  "revision": 2
+  "revision": 1
 }

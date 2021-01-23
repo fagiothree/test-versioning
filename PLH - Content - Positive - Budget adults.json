@@ -63,19 +63,19 @@
         "type": "wait_for_response"
       },
       "5d290250-f39d-43c2-86fa-f7ed096df29c": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 140,
           "top": 720
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "4ef750df-a91d-46f1-b887-26b25710cd97": {
         "position": {
@@ -84,34 +84,17 @@
         },
         "type": "execute_actions"
       },
-      "36da9b88-46ba-422d-bbe7-bcfd0b7b2539": {
+      "61a2df43-1b0d-4555-abb0-72f994f5af65": {
         "position": {
-          "left": 320,
-          "top": 860
-        },
-        "type": "execute_actions"
-      },
-      "5d9cd798-6a39-4c5f-bdb7-55d90bea19a7": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 320,
+          "left": 160,
           "top": 1040
         },
-        "config": {
-          "cases": {}
-        }
+        "type": "execute_actions"
       },
       "5f2377a4-50de-4869-8658-5d30a22c2756": {
         "position": {
           "left": 940,
           "top": 1040
-        },
-        "type": "execute_actions"
-      },
-      "61a2df43-1b0d-4555-abb0-72f994f5af65": {
-        "position": {
-          "left": 300,
-          "top": 1180
         },
         "type": "execute_actions"
       },
@@ -291,7 +274,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 21
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Budget adults",
   "nodes": [
@@ -375,9 +358,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Millions of families are struggling to make ends meet. When money is tight, this can make us feel anxious, stressed, and sad. How we understand and talk about money is important. We can also learn about how we can save in ways that will benefit the family.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Millions of families are struggling to make ends meet during COVID-19. When money is tight, this can make us feel anxious, stressed, and sad. How we understand and talk about money is important. We can also learn about how we can save in ways that will benefit the family.",
+          "type": "send_msg",
           "uuid": "b31da02d-cce7-4aad-9751-063fe081461b"
         }
       ],
@@ -433,16 +416,14 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"adults_budgeting.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "ec8bdfe2-4656-4491-97f0-c37fc1a7369e"
         }
       ],
@@ -548,27 +529,26 @@
       "uuid": "db88ee2b-74c4-4a41-85a9-807bf22fd78c"
     },
     {
-      "uuid": "5d290250-f39d-43c2-86fa-f7ed096df29c",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "4ef750df-a91d-46f1-b887-26b25710cd97",
+          "uuid": "44a839d2-416c-45e6-bd5d-2ff5937e3f61"
+        },
+        {
+          "destination_uuid": "61a2df43-1b0d-4555-abb0-72f994f5af65",
+          "uuid": "4d2c2d5c-4507-48ce-b40e-858e1da62c81"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "ad249e7a-5538-4740-b314-e4282545a5a0",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "f42158e3-d937-4c8c-b531-b08aa01d58ae",
             "type": "has_any_word",
-            "uuid": "f39bc781-408a-4aea-9939-8c5f090b39c4",
-            "category_uuid": "f42158e3-d937-4c8c-b531-b08aa01d58ae"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "4d61d775-6a26-4be6-91a0-450b236ea9ce",
-            "category_uuid": "b5304a23-fc78-486b-8be6-d99a6733b2ec"
+            "uuid": "f39bc781-408a-4aea-9939-8c5f090b39c4"
           }
         ],
         "categories": [
@@ -578,38 +558,22 @@
             "uuid": "f42158e3-d937-4c8c-b531-b08aa01d58ae"
           },
           {
-            "uuid": "b5304a23-fc78-486b-8be6-d99a6733b2ec",
-            "name": "Medium",
-            "exit_uuid": "bb4d2d4b-f167-4f1d-a0a4-ee51c74cc809"
-          },
-          {
             "exit_uuid": "4d2c2d5c-4507-48ce-b40e-858e1da62c81",
             "name": "Other",
             "uuid": "ad249e7a-5538-4740-b314-e4282545a5a0"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "ad249e7a-5538-4740-b314-e4282545a5a0",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "4ef750df-a91d-46f1-b887-26b25710cd97",
-          "uuid": "44a839d2-416c-45e6-bd5d-2ff5937e3f61"
-        },
-        {
-          "uuid": "bb4d2d4b-f167-4f1d-a0a4-ee51c74cc809",
-          "destination_uuid": "36da9b88-46ba-422d-bbe7-bcfd0b7b2539"
-        },
-        {
-          "destination_uuid": "61a2df43-1b0d-4555-abb0-72f994f5af65",
-          "uuid": "4d2c2d5c-4507-48ce-b40e-858e1da62c81"
-        }
-      ]
+      "uuid": "5d290250-f39d-43c2-86fa-f7ed096df29c"
     },
     {
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Family_Budgeting.m4v\")"
+            "video:@(fields.video_script_path & \"Family_Budgeting.m4v\")"
           ],
           "text": "Here's a video to help you make a budget and save money together as a family.",
           "type": "send_msg",
@@ -619,89 +583,11 @@
       ],
       "exits": [
         {
-          "destination_uuid": "5d9cd798-6a39-4c5f-bdb7-55d90bea19a7",
+          "destination_uuid": "61a2df43-1b0d-4555-abb0-72f994f5af65",
           "uuid": "e477d452-1922-43ce-ae75-5ada45b41f27"
         }
       ],
       "uuid": "4ef750df-a91d-46f1-b887-26b25710cd97"
-    },
-    {
-      "uuid": "36da9b88-46ba-422d-bbe7-bcfd0b7b2539",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_video_path & \"Family_Budgeting.mp3\")"
-          ],
-          "text": "Here's an audio message to help you make a budget and save money together as a family.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "f2211904-2e04-418a-b98c-adddf800a74a"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "ba64f0e7-3c60-4563-b3f0-20e601390e9a",
-          "destination_uuid": "5d9cd798-6a39-4c5f-bdb7-55d90bea19a7"
-        }
-      ]
-    },
-    {
-      "uuid": "5d9cd798-6a39-4c5f-bdb7-55d90bea19a7",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "e231df4a-4750-450e-b52b-3019896d7449",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "e231df4a-4750-450e-b52b-3019896d7449",
-            "name": "All Responses",
-            "exit_uuid": "dfdc21bc-46b4-4c6d-ae30-ec07313b6df2"
-          },
-          {
-            "uuid": "42f1c130-f4cc-4486-905a-56557a92b438",
-            "name": "No Response",
-            "exit_uuid": "bf1ee25b-92ff-41a6-b24e-4346e435a9e4"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "42f1c130-f4cc-4486-905a-56557a92b438"
-          }
-        },
-        "result_name": "Result 8"
-      },
-      "exits": [
-        {
-          "uuid": "dfdc21bc-46b4-4c6d-ae30-ec07313b6df2",
-          "destination_uuid": "61a2df43-1b0d-4555-abb0-72f994f5af65"
-        },
-        {
-          "uuid": "bf1ee25b-92ff-41a6-b24e-4346e435a9e4",
-          "destination_uuid": "61a2df43-1b0d-4555-abb0-72f994f5af65"
-        }
-      ]
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "That's okay! You can always type \"Help\" at anytime if you want this tip at another time. Chat to you later!",
-          "type": "send_msg",
-          "uuid": "50b942f4-da74-4aec-af38-e647992953bc"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": null,
-          "uuid": "e264e612-1023-401b-a040-2c9ce532c87b"
-        }
-      ],
-      "uuid": "5f2377a4-50de-4869-8658-5d30a22c2756"
     },
     {
       "actions": [
@@ -720,6 +606,24 @@
         }
       ],
       "uuid": "61a2df43-1b0d-4555-abb0-72f994f5af65"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "That's okay! You can always type \"Help\" at anytime if you want this tip at another time. Chat to you later!",
+          "type": "send_msg",
+          "uuid": "50b942f4-da74-4aec-af38-e647992953bc"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": null,
+          "uuid": "e264e612-1023-401b-a040-2c9ce532c87b"
+        }
+      ],
+      "uuid": "5f2377a4-50de-4869-8658-5d30a22c2756"
     },
     {
       "actions": [
@@ -844,15 +748,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"draw_budget.jpg\")"
-          ],
-          "text": "Do you want to receive Step 2? ",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Do you want to receive Step 2? ",
+          "type": "send_msg",
           "uuid": "98c895d9-114c-4399-aad4-a92617450334"
         }
       ],
@@ -1186,9 +1088,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Step 4: Find out where you can get extra help\n\nYour government or community groups may be giving money, vouchers, or food parcels to families in need. Ask about whether places in your community are giving support.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Step 4: Find out where you can get extra help\n\nYour government or community groups may be giving money, or food parcels to families during COVID-19. Ask about whether places in your community are giving support.",
+          "type": "send_msg",
           "uuid": "458c05e5-4f02-4a28-b051-8008b9ba4645"
         }
       ],
@@ -1406,5 +1308,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "736c3998-ddd5-46fc-837d-7a1ab9254335",
-  "revision": 22
+  "revision": 2
 }

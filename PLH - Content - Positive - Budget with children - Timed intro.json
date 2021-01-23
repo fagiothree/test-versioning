@@ -1,10 +1,49 @@
 {
   "_ui": {
     "nodes": {
-      "edc5ceaf-d326-4941-b7ba-2887b5979a4c": {
+      "0cc3e009-fa59-40fb-a867-2ffa7cee2c7a": {
+        "position": {
+          "left": 180,
+          "top": 1080
+        },
+        "type": "execute_actions"
+      },
+      "3851b07b-8107-4d9a-a134-11195909c8c1": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 220,
+          "top": 900
+        },
+        "type": "wait_for_response"
+      },
+      "5168c4e5-c8a8-44df-8525-0225d75889ef": {
+        "position": {
+          "left": 1160,
+          "top": 780
+        },
+        "type": "execute_actions"
+      },
+      "779ade42-7c72-4ffb-8a9a-643b5fba39aa": {
+        "config": {},
+        "position": {
+          "left": 1040,
+          "top": 620
+        },
+        "type": "split_by_subflow"
+      },
+      "786b21c6-35f7-4890-a5a1-88bff40344d4": {
         "position": {
           "left": 260,
-          "top": 40
+          "top": 320
+        },
+        "type": "execute_actions"
+      },
+      "807df82e-62bb-4ae6-b611-848e571c27fc": {
+        "position": {
+          "left": 920,
+          "top": 760
         },
         "type": "execute_actions"
       },
@@ -16,10 +55,45 @@
         },
         "type": "split_by_subflow"
       },
-      "786b21c6-35f7-4890-a5a1-88bff40344d4": {
+      "a0bcfab2-c170-4fa2-a063-e88e5e50fb97": {
         "position": {
-          "left": 260,
-          "top": 320
+          "left": 100,
+          "top": 700
+        },
+        "type": "execute_actions"
+      },
+      "bc392446-0bbf-49ab-bb39-47920a711d26": {
+        "position": {
+          "left": 420,
+          "top": 1080
+        },
+        "type": "execute_actions"
+      },
+      "cf9fc6d6-7dce-4dcc-8731-65ef4c1b9c06": {
+        "position": {
+          "left": 1180,
+          "top": 900
+        },
+        "type": "execute_actions"
+      },
+      "e2337f6c-c4b8-4158-a31b-8cd1a5e8aff4": {
+        "position": {
+          "left": 460,
+          "top": 1160
+        },
+        "type": "execute_actions"
+      },
+      "e42c5119-5ea2-44cf-986f-efa9658be4f3": {
+        "position": {
+          "left": 360,
+          "top": 700
+        },
+        "type": "execute_actions"
+      },
+      "e434e2c4-e5e3-48a1-8e88-29c5e3e565db": {
+        "position": {
+          "left": 180,
+          "top": 1240
         },
         "type": "execute_actions"
       },
@@ -41,88 +115,14 @@
         },
         "position": {
           "left": 240,
-          "top": 620
+          "top": 600
         },
         "type": "split_by_contact_field"
       },
-      "779ade42-7c72-4ffb-8a9a-643b5fba39aa": {
-        "config": {},
+      "edc5ceaf-d326-4941-b7ba-2887b5979a4c": {
         "position": {
-          "left": 1040,
-          "top": 620
-        },
-        "type": "split_by_subflow"
-      },
-      "a0bcfab2-c170-4fa2-a063-e88e5e50fb97": {
-        "position": {
-          "left": 100,
-          "top": 720
-        },
-        "type": "execute_actions"
-      },
-      "e42c5119-5ea2-44cf-986f-efa9658be4f3": {
-        "position": {
-          "left": 360,
-          "top": 720
-        },
-        "type": "execute_actions"
-      },
-      "807df82e-62bb-4ae6-b611-848e571c27fc": {
-        "position": {
-          "left": 920,
-          "top": 760
-        },
-        "type": "execute_actions"
-      },
-      "5168c4e5-c8a8-44df-8525-0225d75889ef": {
-        "position": {
-          "left": 1160,
-          "top": 780
-        },
-        "type": "execute_actions"
-      },
-      "3851b07b-8107-4d9a-a134-11195909c8c1": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 220,
-          "top": 940
-        },
-        "type": "wait_for_response"
-      },
-      "cf9fc6d6-7dce-4dcc-8731-65ef4c1b9c06": {
-        "position": {
-          "left": 1180,
-          "top": 900
-        },
-        "type": "execute_actions"
-      },
-      "0cc3e009-fa59-40fb-a867-2ffa7cee2c7a": {
-        "position": {
-          "left": 180,
-          "top": 1080
-        },
-        "type": "execute_actions"
-      },
-      "bc392446-0bbf-49ab-bb39-47920a711d26": {
-        "position": {
-          "left": 420,
-          "top": 1080
-        },
-        "type": "execute_actions"
-      },
-      "e2337f6c-c4b8-4158-a31b-8cd1a5e8aff4": {
-        "position": {
-          "left": 460,
-          "top": 1160
-        },
-        "type": "execute_actions"
-      },
-      "e434e2c4-e5e3-48a1-8e88-29c5e3e565db": {
-        "position": {
-          "left": 180,
-          "top": 1240
+          "left": 260,
+          "top": 40
         },
         "type": "execute_actions"
       }
@@ -134,7 +134,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 3
+    "revision": 17
   },
   "name": "PLH - Content - Positive - Budget with children - Timed intro",
   "nodes": [
@@ -218,9 +218,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Millions of families are struggling to make ends meet especially due to the COVID-19 pandemic. When money is tight, this can make us feel anxious, stressed, and sad. How we understand and talk about money with our children is important. Our children can also help us to spend and save in ways that will benefit the family.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Millions of families are struggling to make ends meet during COVID-19. When money is tight, this can make us feel anxious, stressed, and sad. How we understand and talk about money with our children is important. Our children can also help us to spend and save that will benefit the family.",
+          "type": "send_msg",
           "uuid": "9e8beba5-d0cf-46ba-a269-e3901c320db6"
         }
       ],
@@ -372,15 +372,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"family_budgeting.jpg\")"
-          ],
-          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
+          "type": "send_msg",
           "uuid": "79749965-4109-4acc-a956-aab4866cc2b3"
         }
       ],
@@ -395,15 +393,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"family_budgeting.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "5e47fb5b-ed37-4779-abe8-e0b16bcb147d"
         }
       ],
@@ -454,25 +450,6 @@
         }
       ],
       "uuid": "5168c4e5-c8a8-44df-8525-0225d75889ef"
-    },
-    {
-      "actions": [
-        {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
-          "text": "It looks like you are busy right now. You can always type \"GoBack\" to restart this parenting tip or \"Help\" for other support.",
-          "type": "send_msg",
-          "uuid": "6c11edb4-ae95-47a2-8a1c-d74a964be7bb"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "807df82e-62bb-4ae6-b611-848e571c27fc",
-          "uuid": "834b8143-2c50-4197-9cb4-c3d983224acc"
-        }
-      ],
-      "uuid": "cf9fc6d6-7dce-4dcc-8731-65ef4c1b9c06"
     },
     {
       "actions": [],
@@ -535,6 +512,25 @@
         }
       },
       "uuid": "3851b07b-8107-4d9a-a134-11195909c8c1"
+    },
+    {
+      "actions": [
+        {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "It looks like you are busy right now. You can always type \"GoBack\" to restart this parenting tip or \"Help\" for other support.",
+          "type": "send_msg",
+          "uuid": "6c11edb4-ae95-47a2-8a1c-d74a964be7bb"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "807df82e-62bb-4ae6-b611-848e571c27fc",
+          "uuid": "834b8143-2c50-4197-9cb4-c3d983224acc"
+        }
+      ],
+      "uuid": "cf9fc6d6-7dce-4dcc-8731-65ef4c1b9c06"
     },
     {
       "actions": [
@@ -616,5 +612,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "e4f05547-bde7-47ff-9fd9-1908f2474245",
-  "revision": 5
+  "revision": 1
 }

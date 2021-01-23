@@ -1,6 +1,78 @@
 {
   "_ui": {
     "nodes": {
+      "0e437043-2f73-4ae5-880e-2589f143dce9": {
+        "position": {
+          "left": 1240,
+          "top": 820
+        },
+        "type": "execute_actions"
+      },
+      "21e8c85b-6aeb-46f2-a173-9f97e97a4afe": {
+        "position": {
+          "left": 560,
+          "top": 1220
+        },
+        "type": "execute_actions"
+      },
+      "313d1a44-4757-4075-b404-d80d2349c06a": {
+        "position": {
+          "left": 160,
+          "top": 940
+        },
+        "type": "execute_actions"
+      },
+      "5464eb9f-33a2-4c3a-aaed-230eb6a9fa36": {
+        "position": {
+          "left": 860,
+          "top": 4080
+        },
+        "type": "execute_actions"
+      },
+      "5c203a92-8e08-4882-a121-f74b46240752": {
+        "config": {},
+        "position": {
+          "left": 1080,
+          "top": 4980
+        },
+        "type": "split_by_subflow"
+      },
+      "613983a8-2953-4c3f-bc0a-a6c87aacc64e": {
+        "position": {
+          "left": 580,
+          "top": 1860
+        },
+        "type": "execute_actions"
+      },
+      "79234b46-0358-42d6-becb-211017456f2d": {
+        "position": {
+          "left": 1020,
+          "top": 560
+        },
+        "type": "execute_actions"
+      },
+      "86a20fd4-ef26-45bf-9eb7-ac1fab06fd4e": {
+        "position": {
+          "left": 120,
+          "top": 2620
+        },
+        "type": "execute_actions"
+      },
+      "8acee52c-5942-4bb5-aa6a-3dc0fc013c98": {
+        "config": {},
+        "position": {
+          "left": 320,
+          "top": 1100
+        },
+        "type": "split_by_subflow"
+      },
+      "8cdaa262-e5e8-442a-a5d0-0f4ec555dc41": {
+        "position": {
+          "left": 60,
+          "top": 1720
+        },
+        "type": "execute_actions"
+      },
       "9387c9ad-b4e0-40a1-bb53-e4b69fb44ab8": {
         "position": {
           "left": 420,
@@ -15,6 +87,44 @@
           "top": 120
         },
         "type": "split_by_subflow"
+      },
+      "b083230f-5976-4714-a882-e3ce5a6988e7": {
+        "position": {
+          "left": 60,
+          "top": 2160
+        },
+        "type": "execute_actions"
+      },
+      "c1f9f495-e922-42ee-ae75-838048954978": {
+        "position": {
+          "left": 320,
+          "top": 1800
+        },
+        "type": "execute_actions"
+      },
+      "c66de0ec-dd8b-4bc9-a823-b6c19e83ceef": {
+        "position": {
+          "left": 700,
+          "top": 2640
+        },
+        "type": "execute_actions"
+      },
+      "cc54f073-39d3-43eb-8336-65df69880c3a": {
+        "position": {
+          "left": 420,
+          "top": 2620
+        },
+        "type": "execute_actions"
+      },
+      "cf93497c-5dd1-4a15-b58d-ee4796fd6bfa": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 860,
+          "top": 780
+        },
+        "type": "wait_for_response"
       },
       "d2a91b3d-a57f-4b29-bcd9-374b9d71b316": {
         "config": {
@@ -31,102 +141,31 @@
         },
         "type": "split_by_contact_field"
       },
-      "edd98603-a91e-4d66-9ff1-b26346d1ec27": {
+      "d63a6ca5-5135-4932-86b7-f7f7ee62a7cb": {
         "position": {
-          "left": 680,
-          "top": 520
+          "left": 900,
+          "top": 1960
         },
         "type": "execute_actions"
       },
-      "79234b46-0358-42d6-becb-211017456f2d": {
+      "d7853c06-526d-4756-9001-d0e7f5dab2f9": {
         "position": {
-          "left": 1020,
-          "top": 560
+          "left": 460,
+          "top": 3440
         },
         "type": "execute_actions"
-      },
-      "cf93497c-5dd1-4a15-b58d-ee4796fd6bfa": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 860,
-          "top": 780
-        },
-        "type": "wait_for_response"
-      },
-      "0e437043-2f73-4ae5-880e-2589f143dce9": {
-        "position": {
-          "left": 1240,
-          "top": 820
-        },
-        "type": "execute_actions"
-      },
-      "f7d43f27-8dfa-4dd9-a65b-8cf239007689": {
-        "type": "split_by_contact_field",
-        "position": {
-          "left": 480,
-          "top": 840
-        },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
-      },
-      "313d1a44-4757-4075-b404-d80d2349c06a": {
-        "position": {
-          "left": 160,
-          "top": 940
-        },
-        "type": "execute_actions"
-      },
-      "0f894291-adf0-43b1-81f7-548b7f355fd5": {
-        "position": {
-          "left": 440,
-          "top": 960
-        },
-        "type": "execute_actions"
-      },
-      "fc09e73c-6cf9-4af8-96a0-22e9e9bf59e6": {
-        "position": {
-          "left": 1000,
-          "top": 1000
-        },
-        "type": "execute_actions"
-      },
-      "7473e608-7b83-418d-ac61-a3e52f83008e": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 180,
-          "top": 1120
-        },
-        "config": {
-          "cases": {}
-        }
-      },
-      "21e8c85b-6aeb-46f2-a173-9f97e97a4afe": {
-        "position": {
-          "left": 560,
-          "top": 1220
-        },
-        "type": "execute_actions"
-      },
-      "8acee52c-5942-4bb5-aa6a-3dc0fc013c98": {
-        "config": {},
-        "position": {
-          "left": 280,
-          "top": 1340
-        },
-        "type": "split_by_subflow"
       },
       "e31b7ea7-4ddc-4886-99db-5f237a48d20e": {
         "position": {
           "left": 1080,
           "top": 1480
+        },
+        "type": "execute_actions"
+      },
+      "e5093429-9888-476b-9403-e492f4cb5519": {
+        "position": {
+          "left": 460,
+          "top": 3860
         },
         "type": "execute_actions"
       },
@@ -140,80 +179,39 @@
         },
         "type": "wait_for_response"
       },
-      "8cdaa262-e5e8-442a-a5d0-0f4ec555dc41": {
+      "edd98603-a91e-4d66-9ff1-b26346d1ec27": {
         "position": {
-          "left": 60,
-          "top": 1720
+          "left": 680,
+          "top": 520
         },
         "type": "execute_actions"
       },
-      "c1f9f495-e922-42ee-ae75-838048954978": {
+      "f3cfee7f-0d65-4045-a24a-6a22124f6f95": {
         "position": {
-          "left": 320,
-          "top": 1800
+          "left": 1100,
+          "top": 5140
         },
         "type": "execute_actions"
       },
-      "613983a8-2953-4c3f-bc0a-a6c87aacc64e": {
-        "position": {
-          "left": 580,
-          "top": 1860
+      "f7d43f27-8dfa-4dd9-a65b-8cf239007689": {
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
         },
-        "type": "execute_actions"
-      },
-      "d63a6ca5-5135-4932-86b7-f7f7ee62a7cb": {
         "position": {
-          "left": 900,
-          "top": 1960
+          "left": 480,
+          "top": 840
         },
-        "type": "execute_actions"
+        "type": "split_by_contact_field"
       },
-      "b083230f-5976-4714-a882-e3ce5a6988e7": {
+      "fc09e73c-6cf9-4af8-96a0-22e9e9bf59e6": {
         "position": {
-          "left": 60,
-          "top": 2160
-        },
-        "type": "execute_actions"
-      },
-      "86a20fd4-ef26-45bf-9eb7-ac1fab06fd4e": {
-        "position": {
-          "left": 120,
-          "top": 2620
-        },
-        "type": "execute_actions"
-      },
-      "cc54f073-39d3-43eb-8336-65df69880c3a": {
-        "position": {
-          "left": 420,
-          "top": 2620
-        },
-        "type": "execute_actions"
-      },
-      "c66de0ec-dd8b-4bc9-a823-b6c19e83ceef": {
-        "position": {
-          "left": 700,
-          "top": 2640
-        },
-        "type": "execute_actions"
-      },
-      "d7853c06-526d-4756-9001-d0e7f5dab2f9": {
-        "position": {
-          "left": 460,
-          "top": 3440
-        },
-        "type": "execute_actions"
-      },
-      "e5093429-9888-476b-9403-e492f4cb5519": {
-        "position": {
-          "left": 460,
-          "top": 3860
-        },
-        "type": "execute_actions"
-      },
-      "5464eb9f-33a2-4c3a-aaed-230eb6a9fa36": {
-        "position": {
-          "left": 860,
-          "top": 4080
+          "left": 1000,
+          "top": 1000
         },
         "type": "execute_actions"
       },
@@ -221,21 +219,6 @@
         "position": {
           "left": 1080,
           "top": 4800
-        },
-        "type": "execute_actions"
-      },
-      "5c203a92-8e08-4882-a121-f74b46240752": {
-        "config": {},
-        "position": {
-          "left": 1080,
-          "top": 4980
-        },
-        "type": "split_by_subflow"
-      },
-      "f3cfee7f-0d65-4045-a24a-6a22124f6f95": {
-        "position": {
-          "left": 1100,
-          "top": 5140
         },
         "type": "execute_actions"
       }
@@ -257,7 +240,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 15
+    "revision": 135
   },
   "name": "PLH - Content - Positive - Online children",
   "nodes": [
@@ -382,9 +365,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Our children and teens are now spending a lot more time online. Being connected helps them stay positive…but it also presents risks and dangers.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Our children and teens are now spending a lot more time online. Being connected helps them reduce the impact of COVID-19 and encourages them to continue with their lives…but it also presents risks and dangers.",
+          "type": "send_msg",
           "uuid": "e3887321-eebe-424c-800f-6775e0f10bb4"
         }
       ],
@@ -399,15 +382,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"children_sitting_on_a_couch_with_tablet.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "948c0e7d-1e2f-4a2e-a62d-899b94c11cc7"
         }
       ],
@@ -513,27 +494,26 @@
       "uuid": "0e437043-2f73-4ae5-880e-2589f143dce9"
     },
     {
-      "uuid": "f7d43f27-8dfa-4dd9-a65b-8cf239007689",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "313d1a44-4757-4075-b404-d80d2349c06a",
+          "uuid": "bdb08f6d-a2c5-44fa-ad8a-5109a9b16295"
+        },
+        {
+          "destination_uuid": "8acee52c-5942-4bb5-aa6a-3dc0fc013c98",
+          "uuid": "b9978430-94ff-4fd8-81ca-240253fc4cb8"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "e1ad701e-e54a-4547-8b02-4fa913fca667",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "8bc387b8-d63b-41c0-8294-0cdfd26d6988",
             "type": "has_any_word",
-            "uuid": "b0f71832-7b9e-4b4f-8a28-f7744afa9df6",
-            "category_uuid": "8bc387b8-d63b-41c0-8294-0cdfd26d6988"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "87460542-c6ff-4f3a-b66d-f9d43383639e",
-            "category_uuid": "ab2ccf8b-cd3b-4756-a11f-1252b440e16a"
+            "uuid": "b0f71832-7b9e-4b4f-8a28-f7744afa9df6"
           }
         ],
         "categories": [
@@ -543,72 +523,36 @@
             "uuid": "8bc387b8-d63b-41c0-8294-0cdfd26d6988"
           },
           {
-            "uuid": "ab2ccf8b-cd3b-4756-a11f-1252b440e16a",
-            "name": "Medium",
-            "exit_uuid": "460fd38c-3bfe-4e1c-8914-10971ce08935"
-          },
-          {
             "exit_uuid": "b9978430-94ff-4fd8-81ca-240253fc4cb8",
             "name": "Other",
             "uuid": "e1ad701e-e54a-4547-8b02-4fa913fca667"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "e1ad701e-e54a-4547-8b02-4fa913fca667",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "313d1a44-4757-4075-b404-d80d2349c06a",
-          "uuid": "bdb08f6d-a2c5-44fa-ad8a-5109a9b16295"
-        },
-        {
-          "uuid": "460fd38c-3bfe-4e1c-8914-10971ce08935",
-          "destination_uuid": "0f894291-adf0-43b1-81f7-548b7f355fd5"
-        },
-        {
-          "destination_uuid": "8acee52c-5942-4bb5-aa6a-3dc0fc013c98",
-          "uuid": "b9978430-94ff-4fd8-81ca-240253fc4cb8"
-        }
-      ]
+      "uuid": "f7d43f27-8dfa-4dd9-a65b-8cf239007689"
     },
     {
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Online_Child_Safety.m4v\")"
+            "video:@(fields.video_script_path & \"Online_Child_Safety.m4v\")"
           ],
-          "text": "Here's a video to help you keep your children safe online.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Here's a video to help you keep your children safe online!",
+          "type": "send_msg",
           "uuid": "7b945490-454b-4dc1-9add-4ffcbaa0c406"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "7473e608-7b83-418d-ac61-a3e52f83008e",
+          "destination_uuid": "8acee52c-5942-4bb5-aa6a-3dc0fc013c98",
           "uuid": "9e8efa28-0933-4fd8-bac2-67fa6fec61d2"
         }
       ],
       "uuid": "313d1a44-4757-4075-b404-d80d2349c06a"
-    },
-    {
-      "uuid": "0f894291-adf0-43b1-81f7-548b7f355fd5",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Online_Child_Safety.mp3\")"
-          ],
-          "text": "Here's an audio message to help you keep your children safe online.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "448278a3-4517-4f80-91b1-377022a3e4e6"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "9824c437-ae0d-4d44-b3a5-6a3dd152e589",
-          "destination_uuid": "7473e608-7b83-418d-ac61-a3e52f83008e"
-        }
-      ]
     },
     {
       "actions": [
@@ -627,65 +571,6 @@
         }
       ],
       "uuid": "fc09e73c-6cf9-4af8-96a0-22e9e9bf59e6"
-    },
-    {
-      "uuid": "7473e608-7b83-418d-ac61-a3e52f83008e",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "14f14911-2ce5-4c20-b69e-ad90af2e8d92",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "14f14911-2ce5-4c20-b69e-ad90af2e8d92",
-            "name": "All Responses",
-            "exit_uuid": "569e214b-b62f-493b-af4b-eeb75d0087c4"
-          },
-          {
-            "uuid": "4e5ee690-c9f8-45e0-be47-9a4155723aaf",
-            "name": "No Response",
-            "exit_uuid": "c9b7fa8c-a837-4bb5-9604-e6d083d77bee"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "4e5ee690-c9f8-45e0-be47-9a4155723aaf"
-          }
-        },
-        "result_name": "Result 4"
-      },
-      "exits": [
-        {
-          "uuid": "569e214b-b62f-493b-af4b-eeb75d0087c4",
-          "destination_uuid": "21e8c85b-6aeb-46f2-a173-9f97e97a4afe"
-        },
-        {
-          "uuid": "c9b7fa8c-a837-4bb5-9604-e6d083d77bee",
-          "destination_uuid": "21e8c85b-6aeb-46f2-a173-9f97e97a4afe"
-        }
-      ]
-    },
-    {
-      "actions": [
-        {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Here are 6 tips that can help you keep your children safe online:\n\n1. Learn about the risks and dangers\n2. Quick tech fixes\n3. Create healthy and safe online habits\n4. Spend time with your child online\n5. Build open communication\n6. Report and seek help\n\nTo learn more about one of these, type \"1\" to \"6\". You can also type \"N\" to stop this tip.",
-          "type": "send_msg",
-          "uuid": "d6baf56e-1070-451c-96ff-1d1115c682db"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "e578dfcb-878f-431f-a9e7-c4b17880879a",
-          "uuid": "980b8d4c-8d6c-464b-bb29-c58467ac7563"
-        }
-      ],
-      "uuid": "21e8c85b-6aeb-46f2-a173-9f97e97a4afe"
     },
     {
       "actions": [
@@ -744,6 +629,25 @@
         "type": "switch"
       },
       "uuid": "8acee52c-5942-4bb5-aa6a-3dc0fc013c98"
+    },
+    {
+      "actions": [
+        {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Here are 6 tips that can help you keep your children safe online:\n\n1. Learn about the risks and dangers\n2. Quick tech fixes\n3. Create healthy and safe online habits\n4. Spend time with your child online\n5. Build open communication\n6. Report and seek help\n\nTo learn more about one of these, type \"1\" to \"6\". You can also type \"N\" to stop this tip.",
+          "type": "send_msg",
+          "uuid": "d6baf56e-1070-451c-96ff-1d1115c682db"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "e578dfcb-878f-431f-a9e7-c4b17880879a",
+          "uuid": "980b8d4c-8d6c-464b-bb29-c58467ac7563"
+        }
+      ],
+      "uuid": "21e8c85b-6aeb-46f2-a173-9f97e97a4afe"
     },
     {
       "actions": [
@@ -1006,13 +910,11 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"family_with_tablet.jpg\")"
-          ],
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
           "text": "4. Spend time with your child or teen online\n\nGet to know how your child experiences the digital world.\nExplore websites, social media, games, and apps together.\nTalk to your teen on how to report things that aren't OK.\n\nCommon Sense Media has great advice for apps, games and entertainment for different ages.\nhttps://www.commonsensemedia.org/app-reviews",
           "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
           "uuid": "01777679-fee7-4003-a865-7527d41df0b1"
         }
       ],
@@ -1104,11 +1006,11 @@
     {
       "actions": [
         {
-          "attachments": [],
-          "text": "Well done! You have added another skill to your Parenting Toolkit! Keeping your child safe online is just like in the real world. You have taken a BIG STEP to making this happen. Good for you!",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [],
+          "text": "Well done! You have added another skill to your Parenting Toolkit! Digital parenting is just like parenting in the real world. You have taken a BIG STEP to keeping your child safe online. Good for you!",
+          "type": "send_msg",
           "uuid": "db8a158e-9dea-4fcb-8fc1-3700e198526f"
         }
       ],
@@ -1229,5 +1131,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "5dfd0ea1-b243-46e1-a64d-3347dce5049c",
-  "revision": 16
+  "revision": 1
 }

@@ -25,17 +25,17 @@
         },
         "type": "wait_for_response"
       },
-      "17f01d24-9c3c-444f-a67f-b69eb549a0e3": {
-        "position": {
-          "left": 200,
-          "top": 260
-        },
-        "type": "execute_actions"
-      },
       "9ec858e4-44b0-408d-8374-407e3d411e49": {
         "position": {
           "left": 520,
           "top": 300
+        },
+        "type": "execute_actions"
+      },
+      "17f01d24-9c3c-444f-a67f-b69eb549a0e3": {
+        "position": {
+          "left": 200,
+          "top": 260
         },
         "type": "execute_actions"
       },
@@ -168,8 +168,8 @@
       },
       "f189a242-e897-44ea-9cf1-f6a04ac920bc": {
         "position": {
-          "left": 0,
-          "top": 1220
+          "left": 20,
+          "top": 1240
         },
         "type": "execute_actions"
       },
@@ -198,14 +198,14 @@
       "8433bbad-fb2d-4c82-9abf-79c864710aad": {
         "position": {
           "left": 540,
-          "top": 1400
+          "top": 1440
         },
         "type": "execute_actions"
       },
       "094f39a6-d18a-46fa-adad-584e538dcdea": {
         "position": {
-          "left": 20,
-          "top": 1560
+          "left": 40,
+          "top": 1480
         },
         "type": "execute_actions"
       },
@@ -372,7 +372,7 @@
       "58a2300f-f221-47a4-9948-c5540b2a5ae3": {
         "position": {
           "left": 600,
-          "top": 2280
+          "top": 2260
         },
         "type": "execute_actions"
       },
@@ -385,7 +385,7 @@
       },
       "044f68ae-fc2f-4c3b-bae6-59de8bc00a9a": {
         "position": {
-          "left": 1300,
+          "left": 1160,
           "top": 2500
         },
         "type": "execute_actions"
@@ -400,14 +400,14 @@
       "b3798f65-38b6-47fc-9e64-61b29c164f0a": {
         "position": {
           "left": 900,
-          "top": 2720
+          "top": 2700
         },
         "type": "execute_actions"
       },
       "f1017f0f-5594-4194-9bea-78e3c9c48e0a": {
         "position": {
           "left": 680,
-          "top": 2800
+          "top": 2740
         },
         "type": "execute_actions"
       },
@@ -415,7 +415,7 @@
         "config": null,
         "position": {
           "left": 500,
-          "top": 3080
+          "top": 2980
         },
         "type": "split_by_random"
       },
@@ -423,7 +423,7 @@
         "config": null,
         "position": {
           "left": 400,
-          "top": 3200
+          "top": 3120
         },
         "type": "split_by_random"
       },
@@ -444,7 +444,7 @@
       "bba7aa81-cd6d-48b2-aea6-a358dcc0faec": {
         "position": {
           "left": 560,
-          "top": 3320
+          "top": 3280
         },
         "type": "execute_actions"
       },
@@ -458,7 +458,7 @@
       "a6500d4c-18cd-424e-902d-30d9d4b85e68": {
         "position": {
           "left": 320,
-          "top": 3320
+          "top": 3300
         },
         "type": "execute_actions"
       },
@@ -547,7 +547,7 @@
         "type": "split_by_contact_field",
         "position": {
           "left": 300,
-          "top": 3700
+          "top": 3680
         },
         "config": {
           "operand": {
@@ -581,64 +581,8 @@
       },
       "bd4e26d3-95ed-4256-9957-4442d660e67c": {
         "position": {
-          "left": 580,
-          "top": 3940
-        },
-        "type": "execute_actions"
-      },
-      "b8b443f2-2ede-405e-8994-080778262f90": {
-        "position": {
-          "left": 20,
-          "top": 1420
-        },
-        "type": "execute_actions"
-      },
-      "fa34f137-669d-4dc4-8b3d-a3a18513d790": {
-        "position": {
           "left": 520,
-          "top": 1540
-        },
-        "type": "execute_actions"
-      },
-      "96159acf-3564-4aaa-9d5a-6f38ee791181": {
-        "position": {
-          "left": 580,
-          "top": 4060
-        },
-        "type": "execute_actions"
-      },
-      "1556c2b7-f228-4436-9f8b-175e64bfec3a": {
-        "position": {
-          "left": 0,
-          "top": 3960
-        },
-        "type": "execute_actions"
-      },
-      "0067ecbf-884b-4beb-a3b2-40bea8409b26": {
-        "position": {
-          "left": 680,
-          "top": 2920
-        },
-        "type": "execute_actions"
-      },
-      "b4c2d271-2afc-4c1d-8c50-f39336262cc4": {
-        "position": {
-          "left": 40,
-          "top": 2620
-        },
-        "type": "execute_actions"
-      },
-      "da471a56-92b8-4fac-a0ff-6fa58ad8b3ae": {
-        "position": {
-          "left": 900,
-          "top": 2860
-        },
-        "type": "execute_actions"
-      },
-      "25575ff4-1977-4eb1-8ada-51f59ab15b99": {
-        "position": {
-          "left": 300,
-          "top": 3940
+          "top": 4080
         },
         "type": "execute_actions"
       }
@@ -650,7 +594,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 229
+    "revision": 196
   },
   "name": "PLH - Supportive - Calm",
   "nodes": [
@@ -1022,12 +966,10 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"adults_talking_on_stools.jpg\")"
-          ],
+          "attachments": [],
+          "quick_replies": [],
           "text": "Do you sometimes feel your feelings are too much?\nTalk to someone. \nTalk to someone you trust. Talk to a friend. Talk to family. Talk to a tree.\nGet your worries off your chest and then let them go. Even if it’s just for a moment. \nHow do you feel now?\nA joy shared is twice the joy. A problem shared is half the problem.",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "cbca8cb9-ed5b-4bce-971f-e895e41b68e5"
         }
       ],
@@ -1158,7 +1100,7 @@
         },
         {
           "uuid": "a3b4d732-9903-40ca-ba2e-33b7c67efd98",
-          "destination_uuid": "b8b443f2-2ede-405e-8994-080778262f90"
+          "destination_uuid": "094f39a6-d18a-46fa-adad-584e538dcdea"
         }
       ]
     },
@@ -1185,10 +1127,8 @@
       "uuid": "87e9ba63-87dc-4324-883b-879e8577d406",
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"A_song_that_reflects_what_you_need.mp3\")"
-          ],
-          "text": "Choose a song that reflects what you need.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "quick_replies": [],
           "uuid": "3cdf12a2-74fe-4e7d-a8bb-248c5ece58d5"
@@ -1205,7 +1145,7 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Sit down, close your eyes and listen to your breath as it goes in and out. Notice how you feel. When you are ready open your eyes again.",
+          "text": "Sit down, close your eyes and listen to your breath as it goes in and out. Notice how you feel. When you are ready open your eyes again. Try this whenever you are feeling stressed and you need a break reconnect.",
           "type": "send_msg",
           "all_urns": false,
           "quick_replies": [],
@@ -1214,7 +1154,7 @@
       ],
       "exits": [
         {
-          "destination_uuid": "094f39a6-d18a-46fa-adad-584e538dcdea",
+          "destination_uuid": null,
           "uuid": "ff9c4e26-1728-425b-b0db-4e6630a499e1"
         }
       ],
@@ -1225,7 +1165,7 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Breath in and out slowly 5 times. Then try responding in a calmer way.",
+          "text": "Breath in and out slowly 5 times. Then try responding in a calmer way. Millions of parents say this helps - A LOT.",
           "type": "send_msg",
           "quick_replies": [],
           "uuid": "17c7654b-aa38-42ae-bb77-0364a804f069"
@@ -1234,7 +1174,7 @@
       "exits": [
         {
           "uuid": "3bf0c3fa-d596-4a04-b150-71d93a8b27b3",
-          "destination_uuid": "fa34f137-669d-4dc4-8b3d-a3a18513d790"
+          "destination_uuid": null
         }
       ]
     },
@@ -1281,10 +1221,8 @@
     {
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"5_deep_breaths.mp3\")"
-          ],
-          "text": "Five deep breaths.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "all_urns": false,
           "quick_replies": [],
@@ -1293,40 +1231,35 @@
       ],
       "exits": [
         {
-          "destination_uuid": "fa34f137-669d-4dc4-8b3d-a3a18513d790",
+          "destination_uuid": null,
           "uuid": "64011fd6-123f-470c-a2f9-db9314653219"
         }
       ],
       "uuid": "8433bbad-fb2d-4c82-9abf-79c864710aad"
     },
     {
-      "uuid": "b8b443f2-2ede-405e-8994-080778262f90",
+      "uuid": "094f39a6-d18a-46fa-adad-584e538dcdea",
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"Listen_to_your breath.mp3\")"
-          ],
-          "text": "Listen to your breath.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
-          "all_urns": false,
           "quick_replies": [],
-          "uuid": "593fde90-2285-412d-a3cc-7df631c90b2f"
+          "uuid": "efbb5f91-bb45-4f53-af8e-3ca44b93fa17"
         }
       ],
       "exits": [
         {
-          "uuid": "862f4ec2-e8e2-49e8-b129-b45261618cf3",
-          "destination_uuid": "094f39a6-d18a-46fa-adad-584e538dcdea"
+          "uuid": "078dc0a9-90dc-45e6-9140-5a1611654bf1",
+          "destination_uuid": null
         }
       ]
     },
     {
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"When_feelings_are_too_much.mp3\")"
-          ],
-          "text": "When feelings are too much.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "all_urns": false,
           "quick_replies": [],
@@ -1340,47 +1273,6 @@
         }
       ],
       "uuid": "d6f7bb1e-dbd6-461d-af64-3dd8ca946cd4"
-    },
-    {
-      "uuid": "fa34f137-669d-4dc4-8b3d-a3a18513d790",
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
-          "text": "Millions of parents say this helps - A LOT.",
-          "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
-          "uuid": "d1887402-8e59-4f62-a4bb-a8e60e6c9c56"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "d1f840d8-9a51-4ac1-ae2b-4def6d96fe7f",
-          "destination_uuid": null
-        }
-      ]
-    },
-    {
-      "uuid": "094f39a6-d18a-46fa-adad-584e538dcdea",
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
-          "text": "Try this whenever you are feeling stressed and you need a break to reconnect.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "efbb5f91-bb45-4f53-af8e-3ca44b93fa17"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "078dc0a9-90dc-45e6-9140-5a1611654bf1",
-          "destination_uuid": null
-        }
-      ]
     },
     {
       "actions": [],
@@ -1736,9 +1628,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
+          "attachments": [],
           "text": "Sit down and close your eyes.\nHow many sounds can you hear? Listen to the sounds inside and outside the room. Count them on your fingers.\nAfter ten seconds, how many fingers do you have up? What sounds did you hear?\nTry again for another ten seconds. Did you hear any new sounds? Did you hear any sounds inside your own body? Notice how you feel now.",
           "type": "send_msg",
           "all_urns": false,
@@ -1758,10 +1648,8 @@
       "uuid": "5f7431ee-9575-44db-9b06-ba6736fc7a32",
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"Breathe_in_to_the_count_of_three.mp3\")"
-          ],
-          "text": "Breathe in to the count of three.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "quick_replies": [],
           "uuid": "c1513052-dc77-404b-9d28-73b39146f74e"
@@ -1777,9 +1665,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
+          "attachments": [],
           "text": "Instead of moving away from the feeling, let’s move towards it for a moment.\nIt’s ok. Close your eyes if you feel comfortable. Take a deep breath.\n\nBecome curious. Where are you feeling it in your body? Is it hot or cold? Hard or soft? Tight or loose?\nAsk yourself some questions. What is it telling me? What does it need? How can I be kind to myself in this moment?\n\nIf your mind starts to wander, it’s normal. Just bring it back to the feeling. Keep breathing and feeling.\nReassure yourself. It’s ok to feel. Feeling is healing!",
           "type": "send_msg",
           "all_urns": false,
@@ -1798,9 +1684,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
+          "attachments": [],
           "text": "Notice your connection with the ground beneath you.\nWhat parts of your body touch the ground? What parts of your body don’t? \nNotice where it feels warm and where it feels cool.\nFeel the ground underneath you supporting you. Let your body sink into the support of the ground. ",
           "type": "send_msg",
           "all_urns": false,
@@ -1838,9 +1722,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
+          "attachments": [],
           "text": "Sit comfortably and close your eyes if you can.\nImagine a golden ring scanning your body from your feet to your head. \nPay attention as it moves up and down your body. Are there any areas that feel tense? Numb? Painful? \nFocus on those areas for a moment. Breathe in to the area and when you breathe out, try to let go of any tension or pain. \nDo this for a few breaths. \nOpen your eyes. How does your body feel now?\n\nTry this next time you find yourself lying in bed unable to sleep!",
           "type": "send_msg",
           "all_urns": false,
@@ -1860,10 +1742,8 @@
       "uuid": "bd969851-93ae-44a5-84a9-65c3f7f67034",
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"Listen_to_the_sounds.mp3\")"
-          ],
-          "text": "Listen to the sounds.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "quick_replies": [],
           "uuid": "132e0557-b807-4948-ae36-6bdf35362f67"
@@ -1872,7 +1752,7 @@
       "exits": [
         {
           "uuid": "e38a7820-38f7-4b0c-85a2-f6e0fc6b0b15",
-          "destination_uuid": "b4c2d271-2afc-4c1d-8c50-f39336262cc4"
+          "destination_uuid": null
         }
       ]
     },
@@ -1880,10 +1760,8 @@
       "uuid": "044f68ae-fc2f-4c3b-bae6-59de8bc00a9a",
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"Connection_with_the_ground.mp3\")"
-          ],
-          "text": "Connection with the ground.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "quick_replies": [],
           "uuid": "764aefd7-33bf-43f1-9595-7babc6f7e4d6"
@@ -1899,13 +1777,11 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
           "text": "How do you feel now? Do you feel any different? Deep breathing helps our whole body and mind to calm down. ",
           "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
           "uuid": "3d94e767-db90-4bd7-ba57-a20c4eb45f99"
         }
       ],
@@ -1918,34 +1794,11 @@
       "uuid": "278523b9-fa6b-43b1-96fe-c56f869245aa"
     },
     {
-      "uuid": "b4c2d271-2afc-4c1d-8c50-f39336262cc4",
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
-          "text": " Notice how you feel now.",
-          "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
-          "uuid": "c89f14b6-e670-4ffa-a390-33e76628b239"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "9e3fccae-f4b0-4593-b024-2039358099c5",
-          "destination_uuid": null
-        }
-      ]
-    },
-    {
       "uuid": "b3798f65-38b6-47fc-9e64-61b29c164f0a",
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"Dealing_with_difficult_feelings.mp3\")"
-          ],
-          "text": "Dealing with difficult feelings.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "quick_replies": [],
           "uuid": "fef7119a-8fc5-410b-ade6-d03f3ec19b33"
@@ -1954,7 +1807,7 @@
       "exits": [
         {
           "uuid": "2b9db892-90b7-4387-b3b2-bb2717d6a28b",
-          "destination_uuid": "da471a56-92b8-4fac-a0ff-6fa58ad8b3ae"
+          "destination_uuid": null
         }
       ]
     },
@@ -1962,10 +1815,8 @@
       "uuid": "f1017f0f-5594-4194-9bea-78e3c9c48e0a",
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"Body_relaxation.mp3\")"
-          ],
-          "text": "Body relaxation.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "quick_replies": [],
           "uuid": "c203cedb-4ed8-4713-bedc-6af26f9106e4"
@@ -1974,48 +1825,6 @@
       "exits": [
         {
           "uuid": "e34c1a17-10ff-4420-8c9f-62fcb40e78c1",
-          "destination_uuid": "0067ecbf-884b-4beb-a3b2-40bea8409b26"
-        }
-      ]
-    },
-    {
-      "uuid": "da471a56-92b8-4fac-a0ff-6fa58ad8b3ae",
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
-          "text": "It’s ok to feel. Feeling is healing!",
-          "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
-          "uuid": "3af51818-4315-4874-a630-654bc7f16d4d"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "c51ee20b-8f00-4dc9-a748-68a7ac001453",
-          "destination_uuid": null
-        }
-      ]
-    },
-    {
-      "uuid": "0067ecbf-884b-4beb-a3b2-40bea8409b26",
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
-          "text": "Try this next time you find yourself lying in bed unable to sleep!",
-          "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
-          "uuid": "ca7c82ba-e316-4a7b-b57f-b49e2623d0dc"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "f41f340f-de06-409d-bd3c-c8c68ba08667",
           "destination_uuid": null
         }
       ]
@@ -2048,26 +1857,6 @@
         "type": "random"
       },
       "uuid": "d4b31841-3dbb-4dbe-898f-a06a04e8a338"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
-          "text": "Let’s use the magic power of three to stay present and relax. At the end of a tough day, thinking of three things to be grateful for can help us find the courage to try again tomorrow.  ",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "482b95b7-28f0-4ca7-8141-31248ba5a8bd"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "bf68c7c9-e336-4fbc-8df1-630ab2a1dfdc",
-          "uuid": "73d178ab-486b-4382-ba2e-237271792317"
-        }
-      ],
-      "uuid": "07795bcc-6acc-4c95-a45a-b8925e486f45"
     },
     {
       "actions": [],
@@ -2128,6 +1917,24 @@
     {
       "actions": [
         {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Let’s use the magic power of three stay present and relax. At the end of a tough day, thinking of three things to be grateful for can help us find the courage to try again tomorrow.  ",
+          "type": "send_msg",
+          "uuid": "482b95b7-28f0-4ca7-8141-31248ba5a8bd"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "bf68c7c9-e336-4fbc-8df1-630ab2a1dfdc",
+          "uuid": "73d178ab-486b-4382-ba2e-237271792317"
+        }
+      ],
+      "uuid": "07795bcc-6acc-4c95-a45a-b8925e486f45"
+    },
+    {
+      "actions": [
+        {
           "all_urns": false,
           "attachments": [],
           "quick_replies": [],
@@ -2147,46 +1954,6 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
-          "text": "Let's take a moment to stop what you are doing and connect with your breath.  \n\nWhat is one thing you can be grateful for right now?\nWhat is one thing that brings you happiness?\nWhat is one thing that you love?\n\nThey don't have to be big. Sometimes the small things in life count the most!",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "238a8617-db7b-4e4a-b3ea-4c550319480b"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "730c3ba6-d294-496a-87cc-55b971051e79",
-          "uuid": "80332cbe-e701-45c5-b93d-9f604173e1c2"
-        }
-      ],
-      "uuid": "86f0d657-715c-485e-9dca-6efa76763d88"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"you_deserve_a_star.jpg\")"
-          ],
-          "text": "At the end of the day, take a minute to think about the day.  \nThink about one positive or fun thing you did.\nPraise yourself for one thing you did well today.\nThink of one thing you can do differently tomorrow. \nThink of one thing that you are grateful for. \n\nYou are a star!",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "5b1831a5-80b4-4d95-912b-9e0776d919e3"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "32975f05-a51a-4dfd-a184-530d4cc35a78",
-          "uuid": "5e3d541f-562f-4b0b-bc29-30b10b39f240"
-        }
-      ],
-      "uuid": "a6500d4c-18cd-424e-902d-30d9d4b85e68"
-    },
-    {
-      "actions": [
-        {
           "attachments": [],
           "quick_replies": [],
           "text": "Do you sometimes feel like you are getting everything wrong?  Here's a short activity that might help!",
@@ -2201,6 +1968,42 @@
         }
       ],
       "uuid": "bba7aa81-cd6d-48b2-aea6-a358dcc0faec"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Let's take a moment to stop what you are doing and connect with your breath.  \n\nWhat is one thing you can be grateful for right now?\nWhat is one thing that brings you happiness?\nWhat is one thing that you love?\n\nThey don't have to be big. Sometimes the small things in life count the most!",
+          "type": "send_msg",
+          "uuid": "238a8617-db7b-4e4a-b3ea-4c550319480b"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "730c3ba6-d294-496a-87cc-55b971051e79",
+          "uuid": "80332cbe-e701-45c5-b93d-9f604173e1c2"
+        }
+      ],
+      "uuid": "86f0d657-715c-485e-9dca-6efa76763d88"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "At the end of the day, take a minute to think about the day.  \nThink about one positive or fun thing you did.\nPraise yourself for one thing you did well today.\nThink of one thing you can do differently tomorrow. \nThink of one thing that you are grateful for. \n\nYou are a star!",
+          "type": "send_msg",
+          "uuid": "5b1831a5-80b4-4d95-912b-9e0776d919e3"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "32975f05-a51a-4dfd-a184-530d4cc35a78",
+          "uuid": "5e3d541f-562f-4b0b-bc29-30b10b39f240"
+        }
+      ],
+      "uuid": "a6500d4c-18cd-424e-902d-30d9d4b85e68"
     },
     {
       "uuid": "bf68c7c9-e336-4fbc-8df1-630ab2a1dfdc",
@@ -2327,10 +2130,8 @@
     {
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"The_magic_power_of_three.mp3\")"
-          ],
-          "text": "The magic power of three.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "all_urns": false,
           "quick_replies": [],
@@ -2348,9 +2149,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
+          "attachments": [],
           "text": "Close your eyes and think about the day. Name 1 thing that you are grateful for. Name 1 thing that you did well. Name 1 think that you love. You earned a goodnight of sleep!",
           "type": "send_msg",
           "all_urns": false,
@@ -2369,10 +2168,8 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
-          "text": "Take a moment to think over the day. Think of one thing you did today that you are proud of.\nWrap your arms around your body and give yourself a hug.\nThink of one thing you did today that you don’t feel proud of. What can you do differently tomorrow?\nAnd wrap your arms around your body and give yourself a hug.",
+          "attachments": [],
+          "text": "Do you sometimes feel like you are getting everything wrong?\n\nTake a moment to think over the day. Think of one thing you did today that you are proud of.\nWrap your arms around your body and give yourself a hug.\nThink of one thing you did today that you don’t feel proud of. What can you do differently tomorrow?\nAnd wrap your arms around your body and give yourself a hug.\n\nIt’s ok. You are doing your best so be kind to yourself. Get some rest and try again tomorrow!",
           "type": "send_msg",
           "all_urns": false,
           "quick_replies": [],
@@ -2471,10 +2268,8 @@
     {
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"Connect_with_your_breath.mp3\")"
-          ],
-          "text": "Connect with your breath.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "all_urns": false,
           "quick_replies": [],
@@ -2492,10 +2287,8 @@
     {
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"Take_a_minute_to_think_about_the_day.mp3\")"
-          ],
-          "text": "Take a minute to think about the day.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "all_urns": false,
           "quick_replies": [],
@@ -2504,7 +2297,7 @@
       ],
       "exits": [
         {
-          "destination_uuid": "25575ff4-1977-4eb1-8ada-51f59ab15b99",
+          "destination_uuid": null,
           "uuid": "1477bb83-f4e9-4347-9a84-96122486b1d8"
         }
       ],
@@ -2514,10 +2307,8 @@
       "uuid": "74e4d2ec-1563-4824-a98c-dbcb09535b43",
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"End_of_the_day.mp3\")"
-          ],
-          "text": "End of the day.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "quick_replies": [],
           "uuid": "f1bdb0dd-fe2d-4834-8c8d-aac43e9ca75d"
@@ -2526,27 +2317,6 @@
       "exits": [
         {
           "uuid": "3cf41a41-955a-4c0d-8d8d-7d7532d225f5",
-          "destination_uuid": "1556c2b7-f228-4436-9f8b-175e64bfec3a"
-        }
-      ]
-    },
-    {
-      "uuid": "25575ff4-1977-4eb1-8ada-51f59ab15b99",
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"you_deserve_a_star.jpg\")"
-          ],
-          "text": "You are a star!",
-          "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
-          "uuid": "1ba598fe-cf3b-46ac-bb33-030622d4acb3"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "376fc86b-7160-464a-bacd-c4a96ec0c2a6",
           "destination_uuid": null
         }
       ]
@@ -2555,10 +2325,8 @@
       "uuid": "bd4e26d3-95ed-4256-9957-4442d660e67c",
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.relaxation_path & \"Be_kind_to_yourself.mp3\")"
-          ],
-          "text": "Be kind to yourself.",
+          "attachments": [],
+          "text": "AUDIO",
           "type": "send_msg",
           "quick_replies": [],
           "uuid": "7d729a50-d3f9-4acf-a479-7dbf82b31aa0"
@@ -2567,48 +2335,6 @@
       "exits": [
         {
           "uuid": "38234b80-d498-414a-bd41-6119038eda8f",
-          "destination_uuid": "96159acf-3564-4aaa-9d5a-6f38ee791181"
-        }
-      ]
-    },
-    {
-      "uuid": "1556c2b7-f228-4436-9f8b-175e64bfec3a",
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
-          "text": "You earned a goodnight of sleep!",
-          "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
-          "uuid": "87f04829-c16c-4bbe-a999-6910cf27e63c"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "7b4952a9-affb-41f6-9e19-4496ab1bbf10",
-          "destination_uuid": null
-        }
-      ]
-    },
-    {
-      "uuid": "96159acf-3564-4aaa-9d5a-6f38ee791181",
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
-          "text": "It’s ok. You are doing your best so be kind to yourself. Get some rest and try again tomorrow!",
-          "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
-          "uuid": "c73c3546-90f9-4d1a-9269-3ff17a14178f"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "46fa32e1-51f0-43af-a075-e062e6b8d2b1",
           "destination_uuid": null
         }
       ]
@@ -2617,5 +2343,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "0838cab3-181c-496d-bd65-81c82299bbe9",
-  "revision": 310
+  "revision": 197
 }

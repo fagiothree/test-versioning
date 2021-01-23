@@ -1,6 +1,66 @@
 {
   "_ui": {
     "nodes": {
+      "07aba4aa-d548-4ea0-9160-d82c7e428b68": {
+        "position": {
+          "left": 1200,
+          "top": 920
+        },
+        "type": "execute_actions"
+      },
+      "0db20b1c-d590-48a8-ac54-a49d440f2bdc": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 380,
+          "top": 620
+        },
+        "type": "wait_for_response"
+      },
+      "1127db52-a6e2-47b9-8118-2f8aeafcb96d": {
+        "position": {
+          "left": 160,
+          "top": 860
+        },
+        "type": "execute_actions"
+      },
+      "3494500c-5fd6-47d2-9f08-98bb7a34d177": {
+        "position": {
+          "left": 700,
+          "top": 1080
+        },
+        "type": "execute_actions"
+      },
+      "3e7da705-cc1e-42e0-8841-35f8300ee656": {
+        "config": {},
+        "position": {
+          "left": 520,
+          "top": 940
+        },
+        "type": "split_by_subflow"
+      },
+      "43e99820-e90d-43c0-9ad0-711639b7bf4c": {
+        "position": {
+          "left": 1180,
+          "top": 480
+        },
+        "type": "execute_actions"
+      },
+      "47f35239-d905-45a8-abfd-57fd841c1c34": {
+        "position": {
+          "left": 1020,
+          "top": 340
+        },
+        "type": "execute_actions"
+      },
+      "4d38ea2c-f3dc-438a-b765-e1ad74da91a8": {
+        "position": {
+          "left": 600,
+          "top": 500
+        },
+        "type": "execute_actions"
+      },
       "63604b4f-94e9-4729-b40b-6e7e352eaddb": {
         "position": {
           "left": 220,
@@ -8,18 +68,10 @@
         },
         "type": "execute_actions"
       },
-      "cfaeccd8-0515-4f43-b8d8-f35edd853069": {
-        "config": {},
+      "657a486b-34f9-416f-b28a-b61e3fe1b220": {
         "position": {
-          "left": 220,
-          "top": 120
-        },
-        "type": "split_by_subflow"
-      },
-      "f2351a5b-d718-4fe7-b0ca-917fa08d5d35": {
-        "position": {
-          "left": 740,
-          "top": 200
+          "left": 1140,
+          "top": 760
         },
         "type": "execute_actions"
       },
@@ -30,10 +82,17 @@
         },
         "type": "execute_actions"
       },
-      "47f35239-d905-45a8-abfd-57fd841c1c34": {
+      "93f448fd-4a79-4c7d-be7f-2ec59186e5d0": {
         "position": {
-          "left": 1020,
-          "top": 340
+          "left": 100,
+          "top": 980
+        },
+        "type": "execute_actions"
+      },
+      "9776dcf2-b8c5-49bc-9a3d-0a3bc5cc8689": {
+        "position": {
+          "left": 500,
+          "top": 760
         },
         "type": "execute_actions"
       },
@@ -52,13 +111,6 @@
         },
         "type": "split_by_contact_field"
       },
-      "43e99820-e90d-43c0-9ad0-711639b7bf4c": {
-        "position": {
-          "left": 1180,
-          "top": 480
-        },
-        "type": "execute_actions"
-      },
       "cb0ae00d-2dc0-432b-aec2-76e89a927a97": {
         "position": {
           "left": 100,
@@ -66,77 +118,25 @@
         },
         "type": "execute_actions"
       },
-      "4d38ea2c-f3dc-438a-b765-e1ad74da91a8": {
-        "position": {
-          "left": 600,
-          "top": 500
-        },
-        "type": "execute_actions"
-      },
-      "0db20b1c-d590-48a8-ac54-a49d440f2bdc": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 380,
-          "top": 620
-        },
-        "type": "wait_for_response"
-      },
-      "9776dcf2-b8c5-49bc-9a3d-0a3bc5cc8689": {
-        "position": {
-          "left": 500,
-          "top": 760
-        },
-        "type": "execute_actions"
-      },
-      "657a486b-34f9-416f-b28a-b61e3fe1b220": {
-        "position": {
-          "left": 1140,
-          "top": 760
-        },
-        "type": "execute_actions"
-      },
-      "1127db52-a6e2-47b9-8118-2f8aeafcb96d": {
-        "position": {
-          "left": 160,
-          "top": 860
-        },
-        "type": "execute_actions"
-      },
-      "07aba4aa-d548-4ea0-9160-d82c7e428b68": {
-        "position": {
-          "left": 1200,
-          "top": 920
-        },
-        "type": "execute_actions"
-      },
-      "3e7da705-cc1e-42e0-8841-35f8300ee656": {
-        "config": {},
-        "position": {
-          "left": 520,
-          "top": 940
-        },
-        "type": "split_by_subflow"
-      },
-      "93f448fd-4a79-4c7d-be7f-2ec59186e5d0": {
-        "position": {
-          "left": 100,
-          "top": 980
-        },
-        "type": "execute_actions"
-      },
-      "3494500c-5fd6-47d2-9f08-98bb7a34d177": {
-        "position": {
-          "left": 700,
-          "top": 1080
-        },
-        "type": "execute_actions"
-      },
       "ce644a78-2752-475c-b2d4-5053650dcf4d": {
         "position": {
           "left": 700,
           "top": 1260
+        },
+        "type": "execute_actions"
+      },
+      "cfaeccd8-0515-4f43-b8d8-f35edd853069": {
+        "config": {},
+        "position": {
+          "left": 220,
+          "top": 120
+        },
+        "type": "split_by_subflow"
+      },
+      "f2351a5b-d718-4fe7-b0ca-917fa08d5d35": {
+        "position": {
+          "left": 740,
+          "top": 200
         },
         "type": "execute_actions"
       }
@@ -347,15 +347,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"Positive_instructions.jpg\")"
-          ],
-          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
+          "type": "send_msg",
           "uuid": "5028be7f-636f-4de2-af6d-b74024a6e4f9"
         }
       ],
@@ -370,16 +368,14 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"Positive_instructions.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "969ff261-5b72-4020-abf9-392480df728a"
         }
       ],
@@ -669,5 +665,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "44b0c52a-2386-4297-96af-fdd8f74b3bbe",
-  "revision": 3
+  "revision": 1
 }

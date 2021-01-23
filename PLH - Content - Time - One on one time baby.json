@@ -70,19 +70,19 @@
         "type": "execute_actions"
       },
       "6ca28692-f236-4b15-8ec5-cf82d9fa466e": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 60,
           "top": 1060
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "8e155bcc-dc93-49a6-a7c6-2e976d247a0d": {
         "position": {
@@ -90,23 +90,6 @@
           "top": 1200
         },
         "type": "execute_actions"
-      },
-      "410d90b9-f470-4f09-85bc-8deca0a5353c": {
-        "position": {
-          "left": 380,
-          "top": 1220
-        },
-        "type": "execute_actions"
-      },
-      "aab832b2-bcbc-4b33-8a3d-ac24bf8b30fd": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 80,
-          "top": 1460
-        },
-        "config": {
-          "cases": {}
-        }
       },
       "e5f2e268-d678-4797-ba8c-a65e9aa6ed8c": {
         "position": {
@@ -248,13 +231,6 @@
         },
         "type": "execute_actions"
       },
-      "e5cc056a-f3e1-4a3f-8d19-99056d2f3d5d": {
-        "position": {
-          "left": 760,
-          "top": 4820
-        },
-        "type": "execute_actions"
-      },
       "74945e53-79a8-42c0-80c8-0337b399c898": {
         "position": {
           "left": 20,
@@ -285,8 +261,8 @@
       },
       "c8f8f678-eada-48e2-a4bf-2161dde3a394": {
         "position": {
-          "left": 760,
-          "top": 5980
+          "left": 280,
+          "top": 6120
         },
         "type": "execute_actions"
       },
@@ -337,7 +313,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 19
+    "revision": 1
   },
   "name": "PLH - Content - Time - One on one time baby",
   "nodes": [
@@ -609,27 +585,26 @@
       "uuid": "8a795be2-14da-42fb-a0c4-4b96a3f76b32"
     },
     {
-      "uuid": "6ca28692-f236-4b15-8ec5-cf82d9fa466e",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "8e155bcc-dc93-49a6-a7c6-2e976d247a0d",
+          "uuid": "b794a926-d846-4dfc-8eb2-cda079b69327"
+        },
+        {
+          "destination_uuid": "e5f2e268-d678-4797-ba8c-a65e9aa6ed8c",
+          "uuid": "817ef2a1-7b47-40b8-a796-201d51830fc2"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "406face8-c217-4443-a4a0-09b15c2e44b2",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "e4ac5424-a4ea-48b7-8867-24ea6e07b759",
             "type": "has_any_word",
-            "uuid": "a81005ce-b1e8-427b-81cb-66d37d1b5873",
-            "category_uuid": "e4ac5424-a4ea-48b7-8867-24ea6e07b759"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "d74a1b31-3801-4d99-a514-e957a11d45c3",
-            "category_uuid": "f6534e10-10cb-402f-aa9b-551973e69e9d"
+            "uuid": "a81005ce-b1e8-427b-81cb-66d37d1b5873"
           }
         ],
         "categories": [
@@ -639,112 +614,36 @@
             "uuid": "e4ac5424-a4ea-48b7-8867-24ea6e07b759"
           },
           {
-            "uuid": "f6534e10-10cb-402f-aa9b-551973e69e9d",
-            "name": "Medium",
-            "exit_uuid": "f1df587b-8310-46af-ad33-3f935aea8ee2"
-          },
-          {
             "exit_uuid": "817ef2a1-7b47-40b8-a796-201d51830fc2",
             "name": "Other",
             "uuid": "406face8-c217-4443-a4a0-09b15c2e44b2"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "406face8-c217-4443-a4a0-09b15c2e44b2",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "8e155bcc-dc93-49a6-a7c6-2e976d247a0d",
-          "uuid": "b794a926-d846-4dfc-8eb2-cda079b69327"
-        },
-        {
-          "uuid": "f1df587b-8310-46af-ad33-3f935aea8ee2",
-          "destination_uuid": "410d90b9-f470-4f09-85bc-8deca0a5353c"
-        },
-        {
-          "destination_uuid": "e5f2e268-d678-4797-ba8c-a65e9aa6ed8c",
-          "uuid": "817ef2a1-7b47-40b8-a796-201d51830fc2"
-        }
-      ]
+      "uuid": "6ca28692-f236-4b15-8ec5-cf82d9fa466e"
     },
     {
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"One_On_One_Time_Babies.m4v\")"
+            "video:@(fields.video_script_path & \"One_On_One_Time_Babies.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video about spending one-on-one time with your baby!",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "2453a1a8-b76d-4cf6-b3f7-6a4bc3ebfc42"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "aab832b2-bcbc-4b33-8a3d-ac24bf8b30fd",
+          "destination_uuid": "e5f2e268-d678-4797-ba8c-a65e9aa6ed8c",
           "uuid": "343532f6-8ce7-4fba-9904-fa55cdeeead5"
         }
       ],
       "uuid": "8e155bcc-dc93-49a6-a7c6-2e976d247a0d"
-    },
-    {
-      "uuid": "410d90b9-f470-4f09-85bc-8deca0a5353c",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"One_On_One_Time_Babies.mp3\")"
-          ],
-          "text": "Here's an audio message about spending one-on-one time with your baby!",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "0aa2dff9-1a08-4184-ad63-db25542674d3"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "ecaeac5a-74f1-48f5-8252-70d4066b14c7",
-          "destination_uuid": "aab832b2-bcbc-4b33-8a3d-ac24bf8b30fd"
-        }
-      ]
-    },
-    {
-      "uuid": "aab832b2-bcbc-4b33-8a3d-ac24bf8b30fd",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "1e97c3f7-4f5c-461c-b3fc-1a4bf1f81cd1",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "1e97c3f7-4f5c-461c-b3fc-1a4bf1f81cd1",
-            "name": "All Responses",
-            "exit_uuid": "0f333269-affe-4e14-b8b0-a16df96a0a23"
-          },
-          {
-            "uuid": "e4f5fc51-1702-49fa-bbb9-28d511633090",
-            "name": "No Response",
-            "exit_uuid": "1af8a37d-0fe4-4b6c-9942-36d0d0da164a"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "e4f5fc51-1702-49fa-bbb9-28d511633090"
-          }
-        },
-        "result_name": "Result 6"
-      },
-      "exits": [
-        {
-          "uuid": "0f333269-affe-4e14-b8b0-a16df96a0a23",
-          "destination_uuid": "e5f2e268-d678-4797-ba8c-a65e9aa6ed8c"
-        },
-        {
-          "uuid": "1af8a37d-0fe4-4b6c-9942-36d0d0da164a",
-          "destination_uuid": "e5f2e268-d678-4797-ba8c-a65e9aa6ed8c"
-        }
-      ]
     },
     {
       "actions": [
@@ -786,16 +685,14 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"holding_baby.jpg\")"
-          ],
-          "text": "Would you like to learn more?",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more?",
+          "type": "send_msg",
           "uuid": "79b0d0d2-31f8-41de-a64d-1a9477af1923"
         }
       ],
@@ -1051,7 +948,7 @@
           "uuid": "ba78f0be-4f44-472f-bef8-89ff129a58e2"
         },
         {
-          "destination_uuid": "e5cc056a-f3e1-4a3f-8d19-99056d2f3d5d",
+          "destination_uuid": "c8f8f678-eada-48e2-a4bf-2161dde3a394",
           "uuid": "c716b474-7faf-47a8-a5ad-a1a510edb3b9"
         },
         {
@@ -1258,13 +1155,11 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"playing_with_baby_lego.jpg\")"
-          ],
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
           "text": "Give just enough help to let it be the child’s achievement. It is okay to play alongside and copy what they are doing but try to let them keep the initiative. If your child gets frustrated, you can reassure your child by gently stroking their back.",
           "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
           "uuid": "0206c2ac-a05f-435e-b98b-0735eb46312b"
         }
       ],
@@ -1332,35 +1227,13 @@
       "uuid": "098029d0-3e32-4f75-9bc7-faa571a245a4"
     },
     {
-      "uuid": "e5cc056a-f3e1-4a3f-8d19-99056d2f3d5d",
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.comic_path & \"playing_with_your_baby_comic.jpg\")"
-          ],
-          "text": "Here is a comic about spending one-on-one time with your baby!",
-          "type": "send_msg",
+          "all_urns": false,
+          "attachments": [],
           "quick_replies": [],
-          "uuid": "b44e89dc-821a-4f49-b49a-468170bb4e21"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "747d7aaf-3436-431c-a805-176d276c9519",
-          "destination_uuid": "c8f8f678-eada-48e2-a4bf-2161dde3a394"
-        }
-      ]
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.image_path & \"Crawing.jpg\")"
-          ],
           "text": "It is okay for your child to want to do many different things. Your child’s attention may wander to many different things during One-on-One Time. Anything that is happening can grab their attention: the sound of a siren, the feeling of a breeze, feelings in the body. Just keep your attention on your child.",
           "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
           "uuid": "479cf3e7-fbae-4168-99ed-4b7985e85eed"
         }
       ],
@@ -1375,13 +1248,11 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.comic_path & \"communicating_to_baby_comic.jpg\")"
-          ],
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
           "text": "Use words to describe actions, colours, shapes, numbers, sizes, textures, temperatures, tastes, sounds, and anything else that is happening. Speak with enthusiasm when describing what your child is doing.",
           "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
           "uuid": "be2af6d9-29bf-4d5f-b5c3-ef83fcdea272"
         }
       ],
@@ -1643,5 +1514,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "c2c6d288-93a9-4c5f-874d-b058797b9aa0",
-  "revision": 23
+  "revision": 5
 }

@@ -56,19 +56,19 @@
         "type": "wait_for_response"
       },
       "8cdaa260-c08b-42ff-a0f7-214e5aca4017": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 260,
           "top": 600
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "687a9f62-06f1-4f3e-b3e2-a1efc6781c63": {
         "position": {
@@ -84,13 +84,6 @@
         },
         "type": "execute_actions"
       },
-      "0b492e85-aa46-4d99-9036-ed14b2b0fe41": {
-        "position": {
-          "left": 320,
-          "top": 740
-        },
-        "type": "execute_actions"
-      },
       "0b75d2a7-4b5d-422e-b884-95356605c27a": {
         "position": {
           "left": 880,
@@ -98,28 +91,25 @@
         },
         "type": "execute_actions"
       },
-      "5d3306dc-55f0-46a0-a43d-3fe93b212eb8": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 100,
-          "top": 920
-        },
-        "config": {
-          "cases": {}
-        }
-      },
       "6b099b11-df2d-4416-b751-9aa3c6ef3d97": {
         "config": {},
         "position": {
-          "left": 640,
-          "top": 920
+          "left": 260,
+          "top": 860
         },
         "type": "split_by_subflow"
       },
       "1c9d5ad5-ffc4-44ba-98d0-ba5f35d7a7ea": {
         "position": {
-          "left": 640,
-          "top": 1060
+          "left": 260,
+          "top": 1000
+        },
+        "type": "execute_actions"
+      },
+      "3f574160-ce10-48e7-a83a-b30135c0925e": {
+        "position": {
+          "left": 700,
+          "top": 1280
         },
         "type": "execute_actions"
       },
@@ -132,13 +122,6 @@
           "top": 1340
         },
         "type": "wait_for_response"
-      },
-      "3f574160-ce10-48e7-a83a-b30135c0925e": {
-        "position": {
-          "left": 700,
-          "top": 1400
-        },
-        "type": "execute_actions"
       },
       "273cccbf-bce8-4968-ace8-fc42d3e1b9a0": {
         "position": {
@@ -157,7 +140,7 @@
       "a328daa3-6d80-41a6-86dc-0e550b001cc2": {
         "position": {
           "left": 780,
-          "top": 1540
+          "top": 1520
         },
         "type": "execute_actions"
       },
@@ -177,8 +160,8 @@
       },
       "83abac66-5adb-4577-a802-f14424f68f4a": {
         "position": {
-          "left": 140,
-          "top": 2060
+          "left": 120,
+          "top": 2020
         },
         "type": "execute_actions"
       },
@@ -222,6 +205,13 @@
         "position": {
           "left": 120,
           "top": 2620
+        },
+        "type": "execute_actions"
+      },
+      "869081a4-787b-4bcd-9d21-5d9135bda6de": {
+        "position": {
+          "left": 420,
+          "top": 2680
         },
         "type": "execute_actions"
       },
@@ -276,7 +266,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 15
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Book sharing",
   "nodes": [
@@ -400,16 +390,14 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"parent_sharing_book_with_child_on_couch.jpg\")"
-          ],
-          "text": "Would you like to learn more about how you can help your child develop through book sharing?",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about how you can help your child develop through book sharing?",
+          "type": "send_msg",
           "uuid": "bbcd0350-9309-4e0e-8254-8d4c2bfcda9d"
         }
       ],
@@ -515,27 +503,26 @@
       "uuid": "30b1cf26-1f05-4fc8-912f-a10f7c223578"
     },
     {
-      "uuid": "8cdaa260-c08b-42ff-a0f7-214e5aca4017",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "adecae02-4b5d-4feb-9bfe-8f58bb9b0f0a",
+          "uuid": "d27fc34d-11c7-4f0f-98b0-2678cf5283ec"
+        },
+        {
+          "destination_uuid": "6b099b11-df2d-4416-b751-9aa3c6ef3d97",
+          "uuid": "86f031f7-5603-432c-8cd9-9134034177ff"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "3234a4af-b72c-4a0f-af50-02243ab40f13",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "e2a26021-ff57-46cc-9aef-2feafedaf047",
             "type": "has_any_word",
-            "uuid": "acde8891-ab2a-47a2-b8ff-183686d8ab6a",
-            "category_uuid": "e2a26021-ff57-46cc-9aef-2feafedaf047"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "03982018-b7d4-441d-b9b6-2e9b3ad08c7d",
-            "category_uuid": "46e9755e-e0b1-4e19-8a21-cf4a98b23eac"
+            "uuid": "acde8891-ab2a-47a2-b8ff-183686d8ab6a"
           }
         ],
         "categories": [
@@ -545,32 +532,16 @@
             "uuid": "e2a26021-ff57-46cc-9aef-2feafedaf047"
           },
           {
-            "uuid": "46e9755e-e0b1-4e19-8a21-cf4a98b23eac",
-            "name": "Medium",
-            "exit_uuid": "ed0849bd-2560-4072-b945-a70c806e8ae6"
-          },
-          {
             "exit_uuid": "86f031f7-5603-432c-8cd9-9134034177ff",
             "name": "Other",
             "uuid": "3234a4af-b72c-4a0f-af50-02243ab40f13"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "3234a4af-b72c-4a0f-af50-02243ab40f13",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "adecae02-4b5d-4feb-9bfe-8f58bb9b0f0a",
-          "uuid": "d27fc34d-11c7-4f0f-98b0-2678cf5283ec"
-        },
-        {
-          "uuid": "ed0849bd-2560-4072-b945-a70c806e8ae6",
-          "destination_uuid": "0b492e85-aa46-4d99-9036-ed14b2b0fe41"
-        },
-        {
-          "destination_uuid": "6b099b11-df2d-4416-b751-9aa3c6ef3d97",
-          "uuid": "86f031f7-5603-432c-8cd9-9134034177ff"
-        }
-      ]
+      "uuid": "8cdaa260-c08b-42ff-a0f7-214e5aca4017"
     },
     {
       "actions": [
@@ -594,7 +565,7 @@
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Shared_Book_Reading.m4v\")"
+            "video:@(fields.video_script_path & \"Shared_Book_Reading.m4v\")"
           ],
           "text": "Here's a video to take you through the shared book reading activity!",
           "type": "send_msg",
@@ -604,31 +575,11 @@
       ],
       "exits": [
         {
-          "destination_uuid": "5d3306dc-55f0-46a0-a43d-3fe93b212eb8",
+          "destination_uuid": "6b099b11-df2d-4416-b751-9aa3c6ef3d97",
           "uuid": "94423105-fe0c-4e7b-b9ac-59042ebd0889"
         }
       ],
       "uuid": "adecae02-4b5d-4feb-9bfe-8f58bb9b0f0a"
-    },
-    {
-      "uuid": "0b492e85-aa46-4d99-9036-ed14b2b0fe41",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Shared_Book_Reading.mp3\")"
-          ],
-          "text": "Here's an audio message that takes you through the shared book reading activity!",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "2f82034c-1623-470e-aa1e-02532c5158f0"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "23c64373-91c6-4875-b782-83d47b2d2cfa",
-          "destination_uuid": "5d3306dc-55f0-46a0-a43d-3fe93b212eb8"
-        }
-      ]
     },
     {
       "actions": [
@@ -647,46 +598,6 @@
         }
       ],
       "uuid": "0b75d2a7-4b5d-422e-b884-95356605c27a"
-    },
-    {
-      "uuid": "5d3306dc-55f0-46a0-a43d-3fe93b212eb8",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "e0e3dec3-8ff8-495d-9074-1bfe76ed14b5",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "e0e3dec3-8ff8-495d-9074-1bfe76ed14b5",
-            "name": "All Responses",
-            "exit_uuid": "0c51ee41-c105-4d03-8159-60145925b092"
-          },
-          {
-            "uuid": "543c5f78-862c-4dc8-80a2-f2ad27cb25cb",
-            "name": "No Response",
-            "exit_uuid": "1570a434-c11a-4ed5-8781-a86ae3110f5b"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "543c5f78-862c-4dc8-80a2-f2ad27cb25cb"
-          }
-        },
-        "result_name": "Result 4"
-      },
-      "exits": [
-        {
-          "uuid": "0c51ee41-c105-4d03-8159-60145925b092",
-          "destination_uuid": "6b099b11-df2d-4416-b751-9aa3c6ef3d97"
-        },
-        {
-          "uuid": "1570a434-c11a-4ed5-8781-a86ae3110f5b",
-          "destination_uuid": "6b099b11-df2d-4416-b751-9aa3c6ef3d97"
-        }
-      ]
     },
     {
       "actions": [
@@ -763,6 +674,24 @@
         }
       ],
       "uuid": "1c9d5ad5-ffc4-44ba-98d0-ba5f35d7a7ea"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Sorry, I don't understand what you mean.",
+          "type": "send_msg",
+          "uuid": "6f72c57c-bf16-47f8-8dd5-f40024c7c069"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "1c9d5ad5-ffc4-44ba-98d0-ba5f35d7a7ea",
+          "uuid": "dc73d592-fd74-4746-a694-81ede58c03bb"
+        }
+      ],
+      "uuid": "3f574160-ce10-48e7-a83a-b30135c0925e"
     },
     {
       "actions": [],
@@ -933,24 +862,6 @@
         {
           "attachments": [],
           "quick_replies": [],
-          "text": "Sorry, I don't understand what you mean.",
-          "type": "send_msg",
-          "uuid": "6f72c57c-bf16-47f8-8dd5-f40024c7c069"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "1c9d5ad5-ffc4-44ba-98d0-ba5f35d7a7ea",
-          "uuid": "dc73d592-fd74-4746-a694-81ede58c03bb"
-        }
-      ],
-      "uuid": "3f574160-ce10-48e7-a83a-b30135c0925e"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
           "text": "1. Follow your child’s interest\nTalk about what interests your child. When your child shows interest in a picture (pointing, patting, looking), use this as a chance to talk about what has attracted your child’s interest",
           "type": "send_msg",
           "uuid": "60f9fe1a-1865-4977-846b-c4ff93c7286f"
@@ -1103,7 +1014,7 @@
       ],
       "exits": [
         {
-          "destination_uuid": "ba0186a8-7a90-48f5-b87b-f87364a653d6",
+          "destination_uuid": "869081a4-787b-4bcd-9d21-5d9135bda6de",
           "uuid": "c4ee4a75-e257-40dc-87e5-fbf40a28276b"
         }
       ],
@@ -1214,6 +1125,25 @@
         }
       ],
       "uuid": "003b9aa6-3b5a-40d5-bef4-d20f81be71c7"
+    },
+    {
+      "actions": [
+        {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "You can use books and stories to help talk with children about topics related to COVID-19 (such as getting sick, not going to school or work, staying indoors, feeling worried) and help them think about how this makes them feel.",
+          "type": "send_msg",
+          "uuid": "37922530-ff68-4879-b638-eb97e11770d3"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "ba0186a8-7a90-48f5-b87b-f87364a653d6",
+          "uuid": "a56e5941-348f-468f-9b63-b28a12440293"
+        }
+      ],
+      "uuid": "869081a4-787b-4bcd-9d21-5d9135bda6de"
     },
     {
       "actions": [],
@@ -1335,5 +1265,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "9f5e3722-b6b8-4382-b06c-873c965b3414",
-  "revision": 16
+  "revision": 3
 }

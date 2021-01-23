@@ -75,7 +75,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 43
+    "revision": 42
   },
   "name": "PLH - Feedback - Feedback for checkIn",
   "nodes": [
@@ -251,9 +251,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "We are sorry to hear that this has not been helpful. Not all solutions work for everyone. Here are 6 steps that you can try to find a solution by yourself or with someone else:\n1. Take a deep breath.\n2. Explore the challenge. \n3. Think of possible solutions. \n4. Choose a solution. \n5. Try it out!\n6. Reflect on whether it worked. \nYou should also praise yourself for trying. Parenting is not easy. You are a star just for showing up and caring. You can do it!",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "We are sorry to hear that this has not been helpful. Not all solutions work for everyone. Here are 6 steps that you can try to find a solution by yourself or with someone else:\n1. Take a deep breath.\n2. Explore the challenge. \n3. Think of possible solutions. \n4. Choose a solution \n5. Try it out!\n6. Reflect on whether it worked. \nYou should also praise yourself for trying. Parenting is not easy. You are a star just for showing up and caring. You can do it!",
+          "type": "send_msg",
           "uuid": "ff13a3d8-0cad-4c21-bf2d-264049742263"
         }
       ],
@@ -306,5 +306,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "9c6ec05a-102d-457d-abe4-3056979c5d3d",
-  "revision": 44
+  "revision": 43
 }

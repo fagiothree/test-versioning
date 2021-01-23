@@ -29,7 +29,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 6
+    "revision": 1
   },
   "name": "PLH - Content - Relax - CheckIn - Notice how you feel",
   "nodes": [
@@ -73,13 +73,11 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"calm_adult.jpg\")"
-          ],
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
           "text": "Thank yourself for taking the time to check in with your feelings and thoughts! Remember, you can always type \"Help\" at anytime if you need an activity to help you relax or reduce stress. Chat later!",
           "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
           "uuid": "9316516f-e57b-49ef-8d00-7b1efd28921a"
         }
       ],
@@ -95,5 +93,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "4f6b79e3-c686-4d8a-9a09-f898778ce160",
-  "revision": 7
+  "revision": 6
 }

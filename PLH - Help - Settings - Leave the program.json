@@ -1,17 +1,10 @@
 {
   "_ui": {
     "nodes": {
-      "d3ab7e8d-5e9c-405a-8f95-35a3e966a850": {
+      "9ab0b02a-b8ee-4ee0-b440-15dda5e5e165": {
         "position": {
-          "left": 540,
-          "top": 20
-        },
-        "type": "execute_actions"
-      },
-      "cdc4eece-66f2-4636-8fa1-433cd2ec8b3c": {
-        "position": {
-          "left": 940,
-          "top": 220
+          "left": 340,
+          "top": 620
         },
         "type": "execute_actions"
       },
@@ -25,17 +18,24 @@
         },
         "type": "wait_for_response"
       },
+      "cdc4eece-66f2-4636-8fa1-433cd2ec8b3c": {
+        "position": {
+          "left": 940,
+          "top": 220
+        },
+        "type": "execute_actions"
+      },
+      "d3ab7e8d-5e9c-405a-8f95-35a3e966a850": {
+        "position": {
+          "left": 540,
+          "top": 20
+        },
+        "type": "execute_actions"
+      },
       "ed04e34d-e7d1-4a7a-b528-0591696881f1": {
         "position": {
           "left": 260,
           "top": 380
-        },
-        "type": "execute_actions"
-      },
-      "9ab0b02a-b8ee-4ee0-b440-15dda5e5e165": {
-        "position": {
-          "left": 340,
-          "top": 620
         },
         "type": "execute_actions"
       }
@@ -57,7 +57,7 @@
   "language": "base",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 2
   },
   "name": "PLH - Help - Settings - Leave the program",
   "nodes": [
@@ -65,9 +65,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Are you sure you do not want to get these messages? If you do not want to receive any more messages, please type \"STOP MESSAGES.\"\nIf you made a mistake, please type \"back\" and choose another option.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Are you sure you want to Exit? If you do not want to receive any more messages, please type \"STOP MESSAGES.\"\nIf you made a mistake, please type \"back\" and choose another option.",
+          "type": "send_msg",
           "uuid": "8e49d080-5b5a-46d0-96f7-479e5c8049cc"
         }
       ],
@@ -204,5 +204,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "943dedb5-c7b3-48f7-b6f1-0c5dcff04740",
-  "revision": 2
+  "revision": 1
 }

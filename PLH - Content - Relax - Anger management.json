@@ -98,13 +98,6 @@
         },
         "type": "split_by_contact_field"
       },
-      "5653663a-7a96-4ed6-bd66-ac81eda1cf0e": {
-        "position": {
-          "left": 540,
-          "top": 1080
-        },
-        "type": "execute_actions"
-      },
       "b07f32fe-5b99-4f1e-9d2e-853b959e37b6": {
         "position": {
           "left": 40,
@@ -114,32 +107,8 @@
       },
       "a826cbd8-04ca-4553-a987-42183417854a": {
         "position": {
-          "left": 260,
-          "top": 1200
-        },
-        "type": "execute_actions"
-      },
-      "661dc73a-cda5-44ca-a4dd-209a99c3924d": {
-        "position": {
-          "left": 540,
-          "top": 1240
-        },
-        "type": "execute_actions"
-      },
-      "39cac433-c7cd-49b9-baa4-bab3a2a80c96": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 100,
-          "top": 1420
-        },
-        "config": {
-          "cases": {}
-        }
-      },
-      "2847a947-f21d-47bb-9b0f-cb1a7127d6eb": {
-        "position": {
-          "left": 540,
-          "top": 1520
+          "left": 160,
+          "top": 1340
         },
         "type": "execute_actions"
       },
@@ -157,6 +126,27 @@
           "top": 1860
         },
         "type": "split_by_subflow"
+      },
+      "5653663a-7a96-4ed6-bd66-ac81eda1cf0e": {
+        "position": {
+          "left": 540,
+          "top": 1080
+        },
+        "type": "execute_actions"
+      },
+      "661dc73a-cda5-44ca-a4dd-209a99c3924d": {
+        "position": {
+          "left": 540,
+          "top": 1240
+        },
+        "type": "execute_actions"
+      },
+      "2847a947-f21d-47bb-9b0f-cb1a7127d6eb": {
+        "position": {
+          "left": 540,
+          "top": 1520
+        },
+        "type": "execute_actions"
       }
     }
   },
@@ -165,7 +155,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 37
+    "revision": 14
   },
   "name": "PLH - Content - Relax - Anger management",
   "nodes": [
@@ -289,15 +279,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"misbehaving_children.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "b568bbf9-39b6-4980-912c-59e6c8afb6a0"
         }
       ],
@@ -313,9 +301,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Hello! We love our children and teenagers, but stress from caregiving and money can make us angry. Here is how we can maintain control and keep calm.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Hello! We love our children and teenagers, but stress from caregiving, money, and COVID-19 can make us angry. Here is how we can maintain control and keep calm.",
+          "type": "send_msg",
           "uuid": "41181ff4-3425-4ee2-b72f-efd427ee18ca"
         }
       ],
@@ -546,41 +534,21 @@
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"When_we_are_angry.m4v\")"
+            "video:@(fields.video_script_path & \"When_we_are_angry.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video to help you maintain control and keep calm when you get angry.",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "73238a32-5f64-4b60-81ee-3b58ab91a5d7"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "39cac433-c7cd-49b9-baa4-bab3a2a80c96",
+          "destination_uuid": "283224b0-3906-4c44-a579-9e8b141ba833",
           "uuid": "33918ff5-e5a0-4d10-826f-4a852a5d73e6"
         }
       ],
       "uuid": "b07f32fe-5b99-4f1e-9d2e-853b959e37b6"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"When_we_are_angry.mp3\")"
-          ],
-          "text": "Here's an audio message to help you maintain control and keep calm when you get angry.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "4e909036-42d0-497b-b903-d5cdcb40a934"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "39cac433-c7cd-49b9-baa4-bab3a2a80c96",
-          "uuid": "ad5f0728-089a-4680-a276-b585f5092f2f"
-        }
-      ],
-      "uuid": "a826cbd8-04ca-4553-a987-42183417854a"
     },
     {
       "uuid": "661dc73a-cda5-44ca-a4dd-209a99c3924d",
@@ -602,44 +570,22 @@
       ]
     },
     {
-      "uuid": "39cac433-c7cd-49b9-baa4-bab3a2a80c96",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "c9ae8f2f-cc68-48f1-a9f6-f40aea41608a",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "c9ae8f2f-cc68-48f1-a9f6-f40aea41608a",
-            "name": "All Responses",
-            "exit_uuid": "0054fb1a-cfca-46c7-b965-1001f8298cb3"
-          },
-          {
-            "uuid": "7ee7b683-f18f-40c1-a221-fa0293b57f6e",
-            "name": "No Response",
-            "exit_uuid": "a7a88d5d-4999-4021-9cca-e591f9fe5fd5"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "7ee7b683-f18f-40c1-a221-fa0293b57f6e"
-          }
-        },
-        "result_name": "Result 3"
-      },
+      "actions": [
+        {
+          "attachments": [],
+          "text": "Here's an audio message to help you maintain control and keep calm when you get angry.",
+          "type": "send_msg",
+          "quick_replies": [],
+          "uuid": "4e909036-42d0-497b-b903-d5cdcb40a934"
+        }
+      ],
       "exits": [
         {
-          "uuid": "0054fb1a-cfca-46c7-b965-1001f8298cb3",
-          "destination_uuid": "5653663a-7a96-4ed6-bd66-ac81eda1cf0e"
-        },
-        {
-          "uuid": "a7a88d5d-4999-4021-9cca-e591f9fe5fd5",
-          "destination_uuid": "5653663a-7a96-4ed6-bd66-ac81eda1cf0e"
+          "destination_uuid": "283224b0-3906-4c44-a579-9e8b141ba833",
+          "uuid": "ad5f0728-089a-4680-a276-b585f5092f2f"
         }
-      ]
+      ],
+      "uuid": "a826cbd8-04ca-4553-a987-42183417854a"
     },
     {
       "uuid": "2847a947-f21d-47bb-9b0f-cb1a7127d6eb",
@@ -741,5 +687,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "ee81469a-cb44-4708-a016-47c60093dd21",
-  "revision": 38
+  "revision": 25
 }

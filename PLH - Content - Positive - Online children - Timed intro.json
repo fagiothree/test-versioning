@@ -1,20 +1,58 @@
 {
   "_ui": {
     "nodes": {
-      "eb7a0324-bf30-4766-aac0-b58b8d27e1c2": {
+      "10b6a7e8-7fed-4e4d-a268-cbaaccff476f": {
         "position": {
-          "left": 560,
-          "top": 0
+          "left": 500,
+          "top": 440
         },
         "type": "execute_actions"
       },
-      "c6cc2f05-cdc8-4232-9f84-63930639d160": {
+      "4873d4ca-df9d-4486-8b48-d4ebc9efe564": {
         "config": {},
         "position": {
-          "left": 620,
-          "top": 120
+          "left": 80,
+          "top": 1120
         },
         "type": "split_by_subflow"
+      },
+      "7af5120c-661b-42ae-b620-dbf15551ee3e": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 320,
+          "top": 680
+        },
+        "type": "wait_for_response"
+      },
+      "7bfb5941-fc89-43d2-ae65-5a3eb87da9d9": {
+        "position": {
+          "left": 640,
+          "top": 1200
+        },
+        "type": "execute_actions"
+      },
+      "82af047d-2853-4d12-bba3-7ea17e15ffc4": {
+        "position": {
+          "left": 800,
+          "top": 400
+        },
+        "type": "execute_actions"
+      },
+      "8b13aa77-1d83-4037-bf6d-465c26c3593e": {
+        "position": {
+          "left": 440,
+          "top": 1040
+        },
+        "type": "execute_actions"
+      },
+      "8dd27b32-9893-45e3-a7c2-663d4995c31b": {
+        "position": {
+          "left": 320,
+          "top": 1340
+        },
+        "type": "execute_actions"
       },
       "b99baad7-45bf-41b6-97e2-0ed7ce46bdac": {
         "config": {
@@ -31,48 +69,32 @@
         },
         "type": "split_by_contact_field"
       },
-      "82af047d-2853-4d12-bba3-7ea17e15ffc4": {
-        "position": {
-          "left": 800,
-          "top": 400
-        },
-        "type": "execute_actions"
-      },
-      "e1ddc58d-e741-4bc4-ae8a-42e0c86977aa": {
-        "position": {
-          "left": 260,
-          "top": 420
-        },
-        "type": "execute_actions"
-      },
-      "10b6a7e8-7fed-4e4d-a268-cbaaccff476f": {
-        "position": {
-          "left": 500,
-          "top": 440
-        },
-        "type": "execute_actions"
-      },
-      "7af5120c-661b-42ae-b620-dbf15551ee3e": {
-        "config": {
-          "cases": {}
-        },
+      "c20ab00d-1d1b-4e30-bb86-688f4db2f8d8": {
         "position": {
           "left": 320,
-          "top": 680
+          "top": 1220
         },
-        "type": "wait_for_response"
+        "type": "execute_actions"
+      },
+      "c456c560-86d3-49e1-9fac-67fd4ff37f2e": {
+        "position": {
+          "left": 80,
+          "top": 1360
+        },
+        "type": "execute_actions"
+      },
+      "c6cc2f05-cdc8-4232-9f84-63930639d160": {
+        "config": {},
+        "position": {
+          "left": 620,
+          "top": 120
+        },
+        "type": "split_by_subflow"
       },
       "cfb16574-89b8-4d66-88f2-c31d031c5d6e": {
         "position": {
           "left": 600,
           "top": 800
-        },
-        "type": "execute_actions"
-      },
-      "f66276e6-6fdd-490f-8799-2c3ee48a9c76": {
-        "position": {
-          "left": 620,
-          "top": 920
         },
         "type": "execute_actions"
       },
@@ -83,68 +105,36 @@
         },
         "type": "execute_actions"
       },
-      "8b13aa77-1d83-4037-bf6d-465c26c3593e": {
+      "e1ddc58d-e741-4bc4-ae8a-42e0c86977aa": {
         "position": {
-          "left": 440,
-          "top": 1040
+          "left": 260,
+          "top": 420
         },
         "type": "execute_actions"
       },
-      "4873d4ca-df9d-4486-8b48-d4ebc9efe564": {
-        "config": {},
+      "eb7a0324-bf30-4766-aac0-b58b8d27e1c2": {
         "position": {
-          "left": 80,
-          "top": 1120
-        },
-        "type": "split_by_subflow"
-      },
-      "7bfb5941-fc89-43d2-ae65-5a3eb87da9d9": {
-        "position": {
-          "left": 640,
-          "top": 1200
+          "left": 560,
+          "top": 0
         },
         "type": "execute_actions"
       },
-      "c20ab00d-1d1b-4e30-bb86-688f4db2f8d8": {
+      "f66276e6-6fdd-490f-8799-2c3ee48a9c76": {
         "position": {
-          "left": 320,
-          "top": 1220
-        },
-        "type": "execute_actions"
-      },
-      "8dd27b32-9893-45e3-a7c2-663d4995c31b": {
-        "position": {
-          "left": 320,
-          "top": 1340
-        },
-        "type": "execute_actions"
-      },
-      "c456c560-86d3-49e1-9fac-67fd4ff37f2e": {
-        "position": {
-          "left": 80,
-          "top": 1360
+          "left": 620,
+          "top": 920
         },
         "type": "execute_actions"
       }
     },
-    "stickies": {
-      "b3e930df-bddf-4ea0-9081-022d969855e7": {
-        "position": {
-          "left": 900,
-          "top": 660
-        },
-        "title": "New Note",
-        "body": "...",
-        "color": "yellow"
-      }
-    }
+    "stickies": {}
   },
   "expire_after_minutes": 60,
   "ignore_triggers": true,
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 4
+    "revision": 25
   },
   "name": "PLH - Content - Positive - Online children - Timed intro",
   "nodes": [
@@ -269,9 +259,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Hello! Our children and teens are now spending a lot more time online. Being connected helps them stay positive…but it also presents risks and dangers.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Hello! Our children and teens are now spending a lot more time online. Being connected helps them reduce the impact of COVID-19 and encourages them to continue with their lives…but it also presents risks and dangers.",
+          "type": "send_msg",
           "uuid": "ee350e89-9429-44a8-ad20-cfd43cfd3dcf"
         }
       ],
@@ -286,15 +276,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"child_sitting_with_tablet.jpg\")"
-          ],
-          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
+          "type": "send_msg",
           "uuid": "b4f33b5d-aae4-409d-aef4-12dbeddda188"
         }
       ],
@@ -309,15 +297,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"child_sitting_with_tablet.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "03f2a4d8-0400-4334-a373-ac1035e79e85"
         }
       ],
@@ -617,5 +603,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "b1359bf4-21da-476c-98df-6f5c20e407c1",
-  "revision": 5
+  "revision": 1
 }

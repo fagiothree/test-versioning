@@ -1,10 +1,32 @@
 {
   "_ui": {
     "nodes": {
-      "8dc19cb5-baa3-425f-9b74-7055af54e6a6": {
+      "04409bb7-e1ea-48fb-9a05-4ef43b022cb5": {
+        "config": {},
         "position": {
-          "left": 680,
-          "top": 0
+          "left": 80,
+          "top": 1060
+        },
+        "type": "split_by_subflow"
+      },
+      "150678ef-2b20-4f4c-8cda-15a300ed0272": {
+        "position": {
+          "left": 540,
+          "top": 1240
+        },
+        "type": "execute_actions"
+      },
+      "463d0f3c-f07c-451d-ba23-7bce57ccf1cf": {
+        "position": {
+          "left": 20,
+          "top": 1200
+        },
+        "type": "execute_actions"
+      },
+      "4dde0121-64e4-4648-8384-37c8fb152b1b": {
+        "position": {
+          "left": 860,
+          "top": 280
         },
         "type": "execute_actions"
       },
@@ -16,10 +38,10 @@
         },
         "type": "split_by_subflow"
       },
-      "4dde0121-64e4-4648-8384-37c8fb152b1b": {
+      "5a2b84e4-2c15-4bd0-8299-294dcc38e75d": {
         "position": {
-          "left": 1000,
-          "top": 140
+          "left": 260,
+          "top": 1300
         },
         "type": "execute_actions"
       },
@@ -38,10 +60,17 @@
         },
         "type": "split_by_contact_field"
       },
-      "e850594a-e0cc-4864-9c01-ca65bd256eab": {
+      "8dc19cb5-baa3-425f-9b74-7055af54e6a6": {
         "position": {
-          "left": 240,
-          "top": 480
+          "left": 680,
+          "top": 0
+        },
+        "type": "execute_actions"
+      },
+      "9db73890-7ed1-462c-8c1b-03d41b4100ea": {
+        "position": {
+          "left": 260,
+          "top": 1200
         },
         "type": "execute_actions"
       },
@@ -62,24 +91,17 @@
         },
         "type": "wait_for_response"
       },
-      "bc2ea084-e8fb-4d9e-acf3-8c5e35bf85d0": {
-        "position": {
-          "left": 760,
-          "top": 780
-        },
-        "type": "execute_actions"
-      },
-      "eb50142d-c58e-48f9-b9f2-bfa1a72b23a1": {
-        "position": {
-          "left": 80,
-          "top": 900
-        },
-        "type": "execute_actions"
-      },
       "b97b800e-b36e-4fc9-98fc-cb3b2eb59e6f": {
         "position": {
           "left": 760,
           "top": 940
+        },
+        "type": "execute_actions"
+      },
+      "bc2ea084-e8fb-4d9e-acf3-8c5e35bf85d0": {
+        "position": {
+          "left": 760,
+          "top": 780
         },
         "type": "execute_actions"
       },
@@ -90,39 +112,17 @@
         },
         "type": "execute_actions"
       },
-      "04409bb7-e1ea-48fb-9a05-4ef43b022cb5": {
-        "config": {},
+      "e850594a-e0cc-4864-9c01-ca65bd256eab": {
+        "position": {
+          "left": 240,
+          "top": 480
+        },
+        "type": "execute_actions"
+      },
+      "eb50142d-c58e-48f9-b9f2-bfa1a72b23a1": {
         "position": {
           "left": 80,
-          "top": 1060
-        },
-        "type": "split_by_subflow"
-      },
-      "463d0f3c-f07c-451d-ba23-7bce57ccf1cf": {
-        "position": {
-          "left": 20,
-          "top": 1200
-        },
-        "type": "execute_actions"
-      },
-      "9db73890-7ed1-462c-8c1b-03d41b4100ea": {
-        "position": {
-          "left": 260,
-          "top": 1200
-        },
-        "type": "execute_actions"
-      },
-      "150678ef-2b20-4f4c-8cda-15a300ed0272": {
-        "position": {
-          "left": 540,
-          "top": 1240
-        },
-        "type": "execute_actions"
-      },
-      "5a2b84e4-2c15-4bd0-8299-294dcc38e75d": {
-        "position": {
-          "left": 260,
-          "top": 1300
+          "top": 900
         },
         "type": "execute_actions"
       }
@@ -134,7 +134,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 17
   },
   "name": "PLH - Content - Positive - Behave - Crying - Timed intro",
   "nodes": [
@@ -276,15 +276,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"parent_and_baby.jpg\")"
-          ],
-          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "We know that you have already received this tip (well done!). Would you like to review it again?",
+          "type": "send_msg",
           "uuid": "613fc1ce-b2ab-4df4-b353-3868db3877fb"
         }
       ],
@@ -299,15 +297,13 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"parent_and_baby.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "a937c40b-6186-4b0d-9014-46c9b5004ca7"
         }
       ],
@@ -607,5 +603,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "72fce5e3-ab15-4fea-97ff-e511df2af716",
-  "revision": 4
+  "revision": 1
 }

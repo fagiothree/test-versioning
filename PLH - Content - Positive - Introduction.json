@@ -53,19 +53,19 @@
         "type": "execute_actions"
       },
       "2a347bf4-722c-4d54-9cb5-94595a4e74b4": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 260,
           "top": 480
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "d2ed4c77-82bd-4761-bb32-f1e11c68930a": {
         "position": {
@@ -101,7 +101,7 @@
       "96b9b156-d8a5-42c8-ad20-ef6bafc20159": {
         "position": {
           "left": 280,
-          "top": 1000
+          "top": 700
         },
         "type": "execute_actions"
       },
@@ -114,8 +114,8 @@
       },
       "2e3837fb-af8d-41ba-9583-f54035ad4459": {
         "position": {
-          "left": 780,
-          "top": 960
+          "left": 520,
+          "top": 880
         },
         "type": "execute_actions"
       },
@@ -128,8 +128,8 @@
       },
       "529aeb05-9b0a-4e8c-a204-1a618d971a9e": {
         "position": {
-          "left": 560,
-          "top": 960
+          "left": 260,
+          "top": 900
         },
         "type": "execute_actions"
       },
@@ -147,23 +147,6 @@
           "top": 1520
         },
         "type": "split_by_subflow"
-      },
-      "af8f5d89-29b1-4bb4-bce9-e38907b09e87": {
-        "position": {
-          "left": 280,
-          "top": 600
-        },
-        "type": "execute_actions"
-      },
-      "5fb73245-766b-4df2-a8ed-0a6b56db1926": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 60,
-          "top": 800
-        },
-        "config": {
-          "cases": {}
-        }
       }
     },
     "stickies": {}
@@ -173,7 +156,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 3
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Introduction",
   "nodes": [
@@ -353,27 +336,26 @@
       "uuid": "004a38f2-b35e-4d49-be6e-643b7be14e98"
     },
     {
-      "uuid": "2a347bf4-722c-4d54-9cb5-94595a4e74b4",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "364547ad-de08-4568-92cd-1ea54e3b6760",
+          "uuid": "67bb207f-021c-46c0-9dfb-b25f7c149e7d"
+        },
+        {
+          "destination_uuid": "96b9b156-d8a5-42c8-ad20-ef6bafc20159",
+          "uuid": "9e1000b6-00f1-4c65-8c22-7f33e71b7b48"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "629f319a-2bc5-4fb4-9ad2-73a125848a52",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "07ad7aef-ef02-4413-a61d-9166638507a1",
             "type": "has_any_word",
-            "uuid": "7579e04e-1d55-420b-a4c7-92268d99307f",
-            "category_uuid": "07ad7aef-ef02-4413-a61d-9166638507a1"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "d55e6ffb-1968-4a64-9258-e6708ecdbaec",
-            "category_uuid": "cd42312a-166c-45b0-ad4f-31397770d201"
+            "uuid": "7579e04e-1d55-420b-a4c7-92268d99307f"
           }
         ],
         "categories": [
@@ -383,32 +365,16 @@
             "uuid": "07ad7aef-ef02-4413-a61d-9166638507a1"
           },
           {
-            "uuid": "cd42312a-166c-45b0-ad4f-31397770d201",
-            "name": "Medium",
-            "exit_uuid": "c34a6515-3a6d-41a3-a057-5b8565a7b94a"
-          },
-          {
             "exit_uuid": "9e1000b6-00f1-4c65-8c22-7f33e71b7b48",
             "name": "Other",
             "uuid": "629f319a-2bc5-4fb4-9ad2-73a125848a52"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "629f319a-2bc5-4fb4-9ad2-73a125848a52",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "364547ad-de08-4568-92cd-1ea54e3b6760",
-          "uuid": "67bb207f-021c-46c0-9dfb-b25f7c149e7d"
-        },
-        {
-          "uuid": "c34a6515-3a6d-41a3-a057-5b8565a7b94a",
-          "destination_uuid": "af8f5d89-29b1-4bb4-bce9-e38907b09e87"
-        },
-        {
-          "destination_uuid": "96b9b156-d8a5-42c8-ad20-ef6bafc20159",
-          "uuid": "9e1000b6-00f1-4c65-8c22-7f33e71b7b48"
-        }
-      ]
+      "uuid": "2a347bf4-722c-4d54-9cb5-94595a4e74b4"
     },
     {
       "actions": [
@@ -496,41 +462,21 @@
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Keeping_It_Positive.m4v\")"
+            "video:@(fields.video_script_path & \"Keeping_It_Positive.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video on how you can help your child behave more positively!",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "4799e07c-aa79-444d-a6c6-2b878e46e87d"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "5fb73245-766b-4df2-a8ed-0a6b56db1926",
+          "destination_uuid": "96b9b156-d8a5-42c8-ad20-ef6bafc20159",
           "uuid": "edfde3bf-c235-432d-9e35-813027ccdbe0"
         }
       ],
       "uuid": "364547ad-de08-4568-92cd-1ea54e3b6760"
-    },
-    {
-      "uuid": "af8f5d89-29b1-4bb4-bce9-e38907b09e87",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Keeping_It_Positive.mp3\")"
-          ],
-          "text": "Here's an audio message on how you can help your child behave more positively!",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "260786ab-14f4-474a-bb89-04ac20685e87"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "5608b262-8e1a-4fc6-9d11-36e924438973",
-          "destination_uuid": "5fb73245-766b-4df2-a8ed-0a6b56db1926"
-        }
-      ]
     },
     {
       "actions": [
@@ -555,6 +501,25 @@
     {
       "actions": [
         {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "There are 2 main ways that we can do to help our children behave positively more often.",
+          "type": "send_msg",
+          "uuid": "60c7836e-af10-4c29-9768-1eed01d224f9"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "529aeb05-9b0a-4e8c-a204-1a618d971a9e",
+          "uuid": "563c772b-27b2-4b61-8009-2d606deec820"
+        }
+      ],
+      "uuid": "96b9b156-d8a5-42c8-ad20-ef6bafc20159"
+    },
+    {
+      "actions": [
+        {
           "attachments": [],
           "quick_replies": [],
           "text": "That's okay! You can always type \"Help\" at anytime if you need any support with your children. Chat to you later!",
@@ -571,44 +536,23 @@
       "uuid": "6daeea36-aecf-4d52-87c7-6d60a453b4ee"
     },
     {
-      "uuid": "5fb73245-766b-4df2-a8ed-0a6b56db1926",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "e5309603-b469-4ccb-8308-0e399203661c",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "e5309603-b469-4ccb-8308-0e399203661c",
-            "name": "All Responses",
-            "exit_uuid": "2499a0f0-04cc-454e-90f7-ae0721a44d09"
-          },
-          {
-            "uuid": "6bf8f6fb-dd7c-4ae4-a1f3-6c7d45ddfaf6",
-            "name": "No Response",
-            "exit_uuid": "03e09e57-4aba-4edf-93d5-45ec97b8a41c"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "6bf8f6fb-dd7c-4ae4-a1f3-6c7d45ddfaf6"
-          }
-        },
-        "result_name": "Result 3"
-      },
+      "actions": [
+        {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Second, we can learn effective ways to manage difficult behaviours in a loving but firm way.",
+          "type": "send_msg",
+          "uuid": "d2c9e606-5d46-41c5-9895-d4d9930b4b6d"
+        }
+      ],
       "exits": [
         {
-          "uuid": "2499a0f0-04cc-454e-90f7-ae0721a44d09",
-          "destination_uuid": "96b9b156-d8a5-42c8-ad20-ef6bafc20159"
-        },
-        {
-          "uuid": "03e09e57-4aba-4edf-93d5-45ec97b8a41c",
-          "destination_uuid": "96b9b156-d8a5-42c8-ad20-ef6bafc20159"
+          "destination_uuid": "710ddd99-3afb-4e2c-bab4-345a7c357655",
+          "uuid": "517cc8d1-07be-48cf-8a67-e4353e484765"
         }
-      ]
+      ],
+      "uuid": "2e3837fb-af8d-41ba-9583-f54035ad4459"
     },
     {
       "actions": [
@@ -648,44 +592,6 @@
         }
       ],
       "uuid": "529aeb05-9b0a-4e8c-a204-1a618d971a9e"
-    },
-    {
-      "actions": [
-        {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Second, we can learn effective ways to manage difficult behaviours in a loving but firm way.",
-          "type": "send_msg",
-          "uuid": "d2c9e606-5d46-41c5-9895-d4d9930b4b6d"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "710ddd99-3afb-4e2c-bab4-345a7c357655",
-          "uuid": "517cc8d1-07be-48cf-8a67-e4353e484765"
-        }
-      ],
-      "uuid": "2e3837fb-af8d-41ba-9583-f54035ad4459"
-    },
-    {
-      "actions": [
-        {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
-          "text": "There are 2 main ways that we can do to help our children behave positively more often.",
-          "type": "send_msg",
-          "uuid": "60c7836e-af10-4c29-9768-1eed01d224f9"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "529aeb05-9b0a-4e8c-a204-1a618d971a9e",
-          "uuid": "563c772b-27b2-4b61-8009-2d606deec820"
-        }
-      ],
-      "uuid": "96b9b156-d8a5-42c8-ad20-ef6bafc20159"
     },
     {
       "actions": [
@@ -768,5 +674,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "4899b746-08af-4162-875d-8a52ad7ee85d",
-  "revision": 14
+  "revision": 3
 }

@@ -1,6 +1,77 @@
 {
   "_ui": {
     "nodes": {
+      "3f68aaf1-f559-4b76-a286-4ae91f913fa8": {
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
+        "position": {
+          "left": 660,
+          "top": 580
+        },
+        "type": "split_by_contact_field"
+      },
+      "f2e32968-c09e-4afc-ba13-ce61ecad8eaa": {
+        "position": {
+          "left": 680,
+          "top": 940
+        },
+        "type": "execute_actions"
+      },
+      "62a512e1-738b-456f-be4e-7e7943214aad": {
+        "position": {
+          "left": 40,
+          "top": 680
+        },
+        "type": "execute_actions"
+      },
+      "fa8d0e6f-862e-4867-9537-8404e0f446b4": {
+        "position": {
+          "left": 440,
+          "top": 740
+        },
+        "type": "execute_actions"
+      },
+      "042528b7-ebbd-4e16-979f-9dbee5e87aa6": {
+        "position": {
+          "left": 680,
+          "top": 1200
+        },
+        "type": "execute_actions"
+      },
+      "227d15af-d91f-4ed5-8237-ae315739325b": {
+        "position": {
+          "left": 220,
+          "top": 820
+        },
+        "type": "execute_actions"
+      },
+      "a36e25aa-f04c-40a3-bc75-0aa594dfe643": {
+        "position": {
+          "left": 680,
+          "top": 1600
+        },
+        "type": "execute_actions"
+      },
+      "d0a192d0-235d-4525-8964-e2538533a4ec": {
+        "position": {
+          "left": 680,
+          "top": 1760
+        },
+        "type": "execute_actions"
+      },
+      "f5a73052-f130-423f-9d6a-bb46193a030c": {
+        "position": {
+          "left": 280,
+          "top": 1240
+        },
+        "type": "execute_actions"
+      },
       "efcccf03-76d6-408c-a856-97b61ff6d935": {
         "position": {
           "left": 600,
@@ -18,20 +89,6 @@
           "cases": {}
         }
       },
-      "5f5e2c6a-fd56-4fbb-b231-5a924369781c": {
-        "position": {
-          "left": 900,
-          "top": 160
-        },
-        "type": "execute_actions"
-      },
-      "ecd2fadd-210f-42ec-ad3f-d7ccc261e66a": {
-        "position": {
-          "left": 960,
-          "top": 300
-        },
-        "type": "execute_actions"
-      },
       "4a363323-1025-435f-9b99-55a936b83b56": {
         "position": {
           "left": 380,
@@ -46,103 +103,39 @@
         },
         "type": "execute_actions"
       },
-      "3f68aaf1-f559-4b76-a286-4ae91f913fa8": {
-        "config": {
-          "cases": {},
-          "operand": {
-            "id": "type_of_media",
-            "name": "type of media",
-            "type": "field"
-          }
-        },
+      "ecd2fadd-210f-42ec-ad3f-d7ccc261e66a": {
         "position": {
-          "left": 660,
-          "top": 580
-        },
-        "type": "split_by_contact_field"
-      },
-      "62a512e1-738b-456f-be4e-7e7943214aad": {
-        "position": {
-          "left": 40,
-          "top": 680
+          "left": 960,
+          "top": 300
         },
         "type": "execute_actions"
       },
-      "fa8d0e6f-862e-4867-9537-8404e0f446b4": {
+      "5f5e2c6a-fd56-4fbb-b231-5a924369781c": {
         "position": {
-          "left": 440,
-          "top": 740
-        },
-        "type": "execute_actions"
-      },
-      "227d15af-d91f-4ed5-8237-ae315739325b": {
-        "position": {
-          "left": 240,
-          "top": 1540
-        },
-        "type": "execute_actions"
-      },
-      "f2e32968-c09e-4afc-ba13-ce61ecad8eaa": {
-        "position": {
-          "left": 740,
-          "top": 980
-        },
-        "type": "execute_actions"
-      },
-      "042528b7-ebbd-4e16-979f-9dbee5e87aa6": {
-        "position": {
-          "left": 740,
-          "top": 1200
-        },
-        "type": "execute_actions"
-      },
-      "f5a73052-f130-423f-9d6a-bb46193a030c": {
-        "position": {
-          "left": 280,
-          "top": 1240
-        },
-        "type": "execute_actions"
-      },
-      "a36e25aa-f04c-40a3-bc75-0aa594dfe643": {
-        "position": {
-          "left": 680,
-          "top": 1420
-        },
-        "type": "execute_actions"
-      },
-      "d0a192d0-235d-4525-8964-e2538533a4ec": {
-        "position": {
-          "left": 680,
-          "top": 1560
-        },
-        "type": "execute_actions"
-      },
-      "98245f6c-c778-42e6-9dce-f3ca3f6a027a": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 160,
-          "top": 960
-        },
-        "config": {
-          "cases": {}
-        }
-      },
-      "9e0671c4-b63b-4b00-a8d5-9fb7df2c9de0": {
-        "position": {
-          "left": 740,
-          "top": 820
+          "left": 900,
+          "top": 160
         },
         "type": "execute_actions"
       }
     },
-    "stickies": {}
+    "stickies": {
+      "bbd1a042-799d-40c6-9534-b2d8e3b7fdf1": {
+        "body": "referral last message",
+        "color": "yellow",
+        "position": {
+          "left": 20,
+          "top": 60
+        },
+        "title": "New Note"
+      }
+    }
   },
   "expire_after_minutes": 60,
   "ignore_triggers": true,
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 31
+    "revision": 3
   },
   "name": "PLH - Content - Relax - CheckIn - Loving Kindness",
   "nodes": [
@@ -332,7 +325,7 @@
           "uuid": "9757e4e4-2242-4801-a18d-ffddbd1bea12"
         },
         {
-          "destination_uuid": "9e0671c4-b63b-4b00-a8d5-9fb7df2c9de0",
+          "destination_uuid": "f2e32968-c09e-4afc-ba13-ce61ecad8eaa",
           "uuid": "8e1f6271-2cf5-49d5-b346-10bdf98d8652"
         }
       ],
@@ -382,17 +375,17 @@
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Loving_Kindness.m4v\")"
+            "video:@(fields.video_script_path & \"Loving_Kindness.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video to help you get through the day!",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "5e05a631-ecb2-4549-8969-11407d06856b"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "98245f6c-c778-42e6-9dce-f3ca3f6a027a",
+          "destination_uuid": "227d15af-d91f-4ed5-8237-ae315739325b",
           "uuid": "886208ed-3682-43a1-8a2d-03b7b1824c96"
         }
       ],
@@ -401,9 +394,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Loving_Kindness.mp3\")"
-          ],
+          "attachments": [],
           "text": "Here's an audio message to help you get through the day!",
           "type": "send_msg",
           "quick_replies": [],
@@ -412,69 +403,30 @@
       ],
       "exits": [
         {
-          "destination_uuid": "98245f6c-c778-42e6-9dce-f3ca3f6a027a",
+          "destination_uuid": "227d15af-d91f-4ed5-8237-ae315739325b",
           "uuid": "0a61db22-49c1-408c-a35b-af4d950a25e3"
         }
       ],
       "uuid": "fa8d0e6f-862e-4867-9537-8404e0f446b4"
     },
     {
-      "uuid": "9e0671c4-b63b-4b00-a8d5-9fb7df2c9de0",
       "actions": [
         {
+          "all_urns": false,
           "attachments": [],
-          "text": "Here is a short activity that can help when you are feeling like needing some more support to get through the day.",
-          "type": "send_msg",
           "quick_replies": [],
-          "uuid": "6feacd2d-6461-456b-a0fe-c1d55a76dde9"
+          "text": "If you ever need additional support to help you cope with any stress or other emotional difficulties, type \"Help\". Chat to you later!",
+          "type": "send_msg",
+          "uuid": "7d84d05a-cb69-448f-aa85-cafbc73c0e8d"
         }
       ],
       "exits": [
         {
-          "uuid": "327bb81b-7b00-498d-bff9-9233c2a05517",
-          "destination_uuid": "f2e32968-c09e-4afc-ba13-ce61ecad8eaa"
+          "destination_uuid": null,
+          "uuid": "f0173a15-d2ee-4851-af82-f63b2e90a007"
         }
-      ]
-    },
-    {
-      "uuid": "98245f6c-c778-42e6-9dce-f3ca3f6a027a",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "50f92ed2-e6be-4e1b-b87b-f025bf3032f9",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "50f92ed2-e6be-4e1b-b87b-f025bf3032f9",
-            "name": "All Responses",
-            "exit_uuid": "b5353acd-9538-4d1c-a17e-9b5433a5c8c0"
-          },
-          {
-            "uuid": "9c98f9eb-76c4-483b-9340-246b33a214d5",
-            "name": "No Response",
-            "exit_uuid": "f226be35-8771-41ce-bab4-4e327844e59a"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "9c98f9eb-76c4-483b-9340-246b33a214d5"
-          }
-        },
-        "result_name": "Result 2"
-      },
-      "exits": [
-        {
-          "uuid": "b5353acd-9538-4d1c-a17e-9b5433a5c8c0",
-          "destination_uuid": "9e0671c4-b63b-4b00-a8d5-9fb7df2c9de0"
-        },
-        {
-          "uuid": "f226be35-8771-41ce-bab4-4e327844e59a",
-          "destination_uuid": "9e0671c4-b63b-4b00-a8d5-9fb7df2c9de0"
-        }
-      ]
+      ],
+      "uuid": "227d15af-d91f-4ed5-8237-ae315739325b"
     },
     {
       "actions": [
@@ -557,25 +509,6 @@
           "all_urns": false,
           "attachments": [],
           "quick_replies": [],
-          "text": "If you ever need additional support to help you cope with any stress or other emotional difficulties, type \"Help\". Chat to you later!",
-          "type": "send_msg",
-          "uuid": "7d84d05a-cb69-448f-aa85-cafbc73c0e8d"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": null,
-          "uuid": "f0173a15-d2ee-4851-af82-f63b2e90a007"
-        }
-      ],
-      "uuid": "227d15af-d91f-4ed5-8237-ae315739325b"
-    },
-    {
-      "actions": [
-        {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
           "text": "May I be happy.\nMay there be love in my family.\nMay I feel loved.",
           "type": "send_msg",
           "uuid": "b1a3989a-156f-4d34-8d3c-78965babf5f7"
@@ -593,5 +526,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "55ce21b8-a860-4d90-bd2d-2002f27f8e24",
-  "revision": 52
+  "revision": 31
 }

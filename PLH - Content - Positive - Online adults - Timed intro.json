@@ -1,20 +1,48 @@
 {
   "_ui": {
     "nodes": {
-      "fa31e445-aab2-412b-9fe3-aca2a68c5843": {
+      "0bb07d3f-06f4-43fc-b86a-da698b8f151c": {
         "position": {
-          "left": 560,
-          "top": 0
+          "left": 320,
+          "top": 1340
         },
         "type": "execute_actions"
       },
-      "a0adacde-dec3-4b22-87b8-48633e46e7f9": {
+      "0e00b309-3f78-453b-b47b-7768126da813": {
+        "position": {
+          "left": 500,
+          "top": 440
+        },
+        "type": "execute_actions"
+      },
+      "1d096665-5a0a-41d1-b9cc-6cec457f3a70": {
+        "position": {
+          "left": 600,
+          "top": 800
+        },
+        "type": "execute_actions"
+      },
+      "39509be2-f052-40d9-9485-8e5d33e30b7d": {
         "config": {},
         "position": {
-          "left": 620,
-          "top": 120
+          "left": 80,
+          "top": 1120
         },
         "type": "split_by_subflow"
+      },
+      "40f48a62-b75c-4a49-8f7e-295781eff2f4": {
+        "position": {
+          "left": 620,
+          "top": 920
+        },
+        "type": "execute_actions"
+      },
+      "4379170a-695b-4f92-a0bf-80cb19d65b52": {
+        "position": {
+          "left": 60,
+          "top": 960
+        },
+        "type": "execute_actions"
       },
       "7ed927be-b0d1-4434-a694-30d599a5a680": {
         "config": {
@@ -31,13 +59,6 @@
         },
         "type": "split_by_contact_field"
       },
-      "f0a7c289-652f-4f00-9760-400958ee4d56": {
-        "position": {
-          "left": 800,
-          "top": 400
-        },
-        "type": "execute_actions"
-      },
       "8a124cc2-e307-4477-84ba-ceb2cbacf623": {
         "position": {
           "left": 260,
@@ -45,10 +66,46 @@
         },
         "type": "execute_actions"
       },
-      "0e00b309-3f78-453b-b47b-7768126da813": {
+      "a0adacde-dec3-4b22-87b8-48633e46e7f9": {
+        "config": {},
         "position": {
-          "left": 500,
-          "top": 440
+          "left": 620,
+          "top": 120
+        },
+        "type": "split_by_subflow"
+      },
+      "c41f255b-0f1b-4b0a-a99d-9a866a26e1ce": {
+        "position": {
+          "left": 320,
+          "top": 1220
+        },
+        "type": "execute_actions"
+      },
+      "d30febad-9fe3-461a-9b2b-f725665de5cc": {
+        "position": {
+          "left": 80,
+          "top": 1360
+        },
+        "type": "execute_actions"
+      },
+      "ec1b77d9-17fc-4d96-a8a2-2e79d129e0e3": {
+        "position": {
+          "left": 440,
+          "top": 1040
+        },
+        "type": "execute_actions"
+      },
+      "f0a7c289-652f-4f00-9760-400958ee4d56": {
+        "position": {
+          "left": 800,
+          "top": 400
+        },
+        "type": "execute_actions"
+      },
+      "f402f512-be29-48c5-b8ab-2595ae00974c": {
+        "position": {
+          "left": 640,
+          "top": 1200
         },
         "type": "execute_actions"
       },
@@ -62,67 +119,10 @@
         },
         "type": "wait_for_response"
       },
-      "1d096665-5a0a-41d1-b9cc-6cec457f3a70": {
+      "fa31e445-aab2-412b-9fe3-aca2a68c5843": {
         "position": {
-          "left": 600,
-          "top": 800
-        },
-        "type": "execute_actions"
-      },
-      "40f48a62-b75c-4a49-8f7e-295781eff2f4": {
-        "position": {
-          "left": 620,
-          "top": 920
-        },
-        "type": "execute_actions"
-      },
-      "4379170a-695b-4f92-a0bf-80cb19d65b52": {
-        "position": {
-          "left": 60,
-          "top": 960
-        },
-        "type": "execute_actions"
-      },
-      "ec1b77d9-17fc-4d96-a8a2-2e79d129e0e3": {
-        "position": {
-          "left": 440,
-          "top": 1040
-        },
-        "type": "execute_actions"
-      },
-      "39509be2-f052-40d9-9485-8e5d33e30b7d": {
-        "config": {},
-        "position": {
-          "left": 80,
-          "top": 1120
-        },
-        "type": "split_by_subflow"
-      },
-      "f402f512-be29-48c5-b8ab-2595ae00974c": {
-        "position": {
-          "left": 640,
-          "top": 1200
-        },
-        "type": "execute_actions"
-      },
-      "c41f255b-0f1b-4b0a-a99d-9a866a26e1ce": {
-        "position": {
-          "left": 320,
-          "top": 1220
-        },
-        "type": "execute_actions"
-      },
-      "0bb07d3f-06f4-43fc-b86a-da698b8f151c": {
-        "position": {
-          "left": 320,
-          "top": 1340
-        },
-        "type": "execute_actions"
-      },
-      "d30febad-9fe3-461a-9b2b-f725665de5cc": {
-        "position": {
-          "left": 80,
-          "top": 1360
+          "left": 560,
+          "top": 0
         },
         "type": "execute_actions"
       }
@@ -134,7 +134,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 2
   },
   "name": "PLH - Content - Positive - Online adults - Timed intro",
   "nodes": [
@@ -259,9 +259,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Hello! We are now spending a lot more time online. Being connected helps us stay positive…but it also presents risks and dangers.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Hello! We are now spending a lot more time online. Being connected helps reduce the impact of COVID-19 and encourages us to continue with our lives…but it also presents risks and dangers.",
+          "type": "send_msg",
           "uuid": "60e0a96f-ae80-42e5-a33d-77a2542587ec"
         }
       ],
@@ -603,5 +603,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "9fb0a3e3-479e-41b0-baee-bfcc21ceb3f6",
-  "revision": 2
+  "revision": 1
 }

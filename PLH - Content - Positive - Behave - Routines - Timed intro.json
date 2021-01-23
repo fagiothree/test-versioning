@@ -8,6 +8,21 @@
         },
         "type": "execute_actions"
       },
+      "31e798e9-2b63-40f2-8676-f6bc3257f5b9": {
+        "position": {
+          "left": 980,
+          "top": 420
+        },
+        "type": "execute_actions"
+      },
+      "3286c097-202d-4f0b-8ef1-f9939aefd805": {
+        "config": {},
+        "position": {
+          "left": 240,
+          "top": 820
+        },
+        "type": "split_by_subflow"
+      },
       "42d6622f-0d9f-4e6e-a24b-bd2c9b6a3c49": {
         "config": {},
         "position": {
@@ -16,10 +31,45 @@
         },
         "type": "split_by_subflow"
       },
+      "4c9c5285-726a-4f73-a9a5-5e2cdfc83077": {
+        "position": {
+          "left": 480,
+          "top": 1060
+        },
+        "type": "execute_actions"
+      },
       "5450a71a-60e2-4eb3-bddb-6295b63725f1": {
         "position": {
           "left": 880,
           "top": 220
+        },
+        "type": "execute_actions"
+      },
+      "619749ff-7fb3-4ef7-a53c-84b5c7cf2b5f": {
+        "position": {
+          "left": 240,
+          "top": 580
+        },
+        "type": "execute_actions"
+      },
+      "67518a44-b698-4eb8-a9a8-a31b5e0194b2": {
+        "position": {
+          "left": 20,
+          "top": 380
+        },
+        "type": "execute_actions"
+      },
+      "7ebb9c85-e3b9-4f2f-a3a3-83df4c4d8145": {
+        "position": {
+          "left": 460,
+          "top": 900
+        },
+        "type": "execute_actions"
+      },
+      "9a4ea099-96b7-4641-a171-bb504712888a": {
+        "position": {
+          "left": 260,
+          "top": 420
         },
         "type": "execute_actions"
       },
@@ -38,31 +88,31 @@
         },
         "type": "split_by_contact_field"
       },
+      "b61693f8-21ab-4b1d-8738-789e779e1737": {
+        "position": {
+          "left": 760,
+          "top": 620
+        },
+        "type": "execute_actions"
+      },
+      "ba5e2de5-844a-40c1-aa17-05457ecc1ca7": {
+        "position": {
+          "left": 980,
+          "top": 540
+        },
+        "type": "execute_actions"
+      },
+      "bee0ebe8-020f-48ef-a893-fe83bf74f06e": {
+        "position": {
+          "left": 780,
+          "top": 880
+        },
+        "type": "execute_actions"
+      },
       "c216f5eb-0d10-4f93-be91-245fbedcb78f": {
         "position": {
           "left": 620,
-          "top": 260
-        },
-        "type": "execute_actions"
-      },
-      "67518a44-b698-4eb8-a9a8-a31b5e0194b2": {
-        "position": {
-          "left": 20,
-          "top": 380
-        },
-        "type": "execute_actions"
-      },
-      "9a4ea099-96b7-4641-a171-bb504712888a": {
-        "position": {
-          "left": 260,
-          "top": 420
-        },
-        "type": "execute_actions"
-      },
-      "31e798e9-2b63-40f2-8676-f6bc3257f5b9": {
-        "position": {
-          "left": 980,
-          "top": 420
+          "top": 320
         },
         "type": "execute_actions"
       },
@@ -75,49 +125,6 @@
           "top": 540
         },
         "type": "wait_for_response"
-      },
-      "ba5e2de5-844a-40c1-aa17-05457ecc1ca7": {
-        "position": {
-          "left": 980,
-          "top": 540
-        },
-        "type": "execute_actions"
-      },
-      "619749ff-7fb3-4ef7-a53c-84b5c7cf2b5f": {
-        "position": {
-          "left": 240,
-          "top": 580
-        },
-        "type": "execute_actions"
-      },
-      "b61693f8-21ab-4b1d-8738-789e779e1737": {
-        "position": {
-          "left": 760,
-          "top": 620
-        },
-        "type": "execute_actions"
-      },
-      "3286c097-202d-4f0b-8ef1-f9939aefd805": {
-        "config": {},
-        "position": {
-          "left": 240,
-          "top": 820
-        },
-        "type": "split_by_subflow"
-      },
-      "bee0ebe8-020f-48ef-a893-fe83bf74f06e": {
-        "position": {
-          "left": 780,
-          "top": 880
-        },
-        "type": "execute_actions"
-      },
-      "7ebb9c85-e3b9-4f2f-a3a3-83df4c4d8145": {
-        "position": {
-          "left": 460,
-          "top": 900
-        },
-        "type": "execute_actions"
       },
       "e74b2a65-1498-4d00-810e-d0a153a79dc5": {
         "position": {
@@ -132,13 +139,6 @@
           "top": 1040
         },
         "type": "execute_actions"
-      },
-      "4c9c5285-726a-4f73-a9a5-5e2cdfc83077": {
-        "position": {
-          "left": 480,
-          "top": 1060
-        },
-        "type": "execute_actions"
       }
     },
     "stickies": {}
@@ -148,7 +148,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 21
   },
   "name": "PLH - Content - Positive - Behave - Routines - Timed intro",
   "nodes": [
@@ -183,11 +183,11 @@
       ],
       "exits": [
         {
-          "destination_uuid": "c216f5eb-0d10-4f93-be91-245fbedcb78f",
+          "destination_uuid": "5450a71a-60e2-4eb3-bddb-6295b63725f1",
           "uuid": "e707b5b8-8e2e-41db-a487-aa9b4166d9ee"
         },
         {
-          "destination_uuid": "c216f5eb-0d10-4f93-be91-245fbedcb78f",
+          "destination_uuid": "5450a71a-60e2-4eb3-bddb-6295b63725f1",
           "uuid": "3c4e31d8-213f-42db-a524-9a8396699ab5"
         }
       ],
@@ -232,9 +232,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "COVID-19 has interrupted our daily work, home and school routines. This is hard for children, teenagers and for you. Making new routines can help.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Hello! COVID-19 has interrupted our daily work, home and school routines. This is hard for children, teenagers and for you. Making new routines can help.",
+          "type": "send_msg",
           "uuid": "1ee116f3-ee4b-40ed-8ffc-5c7c8515d85d"
         }
       ],
@@ -290,11 +290,11 @@
     {
       "actions": [
         {
-          "attachments": [],
-          "text": "Hello! Today's Parenting Tip is about how we can create daily routines to keep our children feeling safe and secure.",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [],
+          "text": "Today's Parenting Tip is about how we can create daily routines to keep our children feeling safe and secure.",
+          "type": "send_msg",
           "uuid": "1d62317f-d1c3-41ae-8c72-ff357acd9a13"
         }
       ],
@@ -674,5 +674,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "7dbbc699-acb2-454e-812e-2d9a2509ec4b",
-  "revision": 6
+  "revision": 1
 }

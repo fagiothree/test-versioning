@@ -1,10 +1,38 @@
 {
   "_ui": {
     "nodes": {
-      "b8c52afc-682b-4e50-97c2-1098c8f5313f": {
+      "0203f9f6-6cfb-4bc5-b506-3fb5a2c4eb99": {
         "position": {
-          "left": 200,
-          "top": 0
+          "left": 720,
+          "top": 3140
+        },
+        "type": "execute_actions"
+      },
+      "0218bcee-bd0d-43a3-91b4-8e271a3945cd": {
+        "position": {
+          "left": 1060,
+          "top": 2840
+        },
+        "type": "execute_actions"
+      },
+      "0743f776-1c88-42c9-8cc6-dd44aa76b1d2": {
+        "position": {
+          "left": 860,
+          "top": 1160
+        },
+        "type": "execute_actions"
+      },
+      "1965337b-4c6f-47c9-9509-a7c9601b4e39": {
+        "position": {
+          "left": 380,
+          "top": 340
+        },
+        "type": "execute_actions"
+      },
+      "2e6057b5-e3a3-4e90-908d-e5fcd8e2138f": {
+        "position": {
+          "left": 600,
+          "top": 1560
         },
         "type": "execute_actions"
       },
@@ -15,6 +43,117 @@
           "top": 80
         },
         "type": "split_by_subflow"
+      },
+      "61285bbe-4eb4-4889-8c96-9bfec4af6540": {
+        "position": {
+          "left": 380,
+          "top": 840
+        },
+        "type": "execute_actions"
+      },
+      "65ef1e66-29fb-4759-9e4a-6c13accf2c03": {
+        "position": {
+          "left": 120,
+          "top": 1520
+        },
+        "type": "execute_actions"
+      },
+      "68953432-ad38-451e-8b16-c2212fdb08b0": {
+        "position": {
+          "left": 360,
+          "top": 3220
+        },
+        "type": "execute_actions"
+      },
+      "70e6b8b9-671f-4c1b-bc7d-b0391113f851": {
+        "position": {
+          "left": 80,
+          "top": 2480
+        },
+        "type": "execute_actions"
+      },
+      "72197d94-d9a4-450c-bdd9-6a626c927363": {
+        "position": {
+          "left": 1080,
+          "top": 2220
+        },
+        "type": "execute_actions"
+      },
+      "82541c0a-a6aa-4d0c-b002-58be4898f121": {
+        "position": {
+          "left": 860,
+          "top": 260
+        },
+        "type": "execute_actions"
+      },
+      "8dfb1835-b56f-4cd3-8486-ebb377e16852": {
+        "position": {
+          "left": 340,
+          "top": 2520
+        },
+        "type": "execute_actions"
+      },
+      "959099e2-1c76-4ea6-85aa-dd9bbc504cb5": {
+        "position": {
+          "left": 360,
+          "top": 1160
+        },
+        "type": "execute_actions"
+      },
+      "9aba6b15-cfd8-4083-9a41-755fadc27419": {
+        "config": {},
+        "position": {
+          "left": 360,
+          "top": 1000
+        },
+        "type": "split_by_subflow"
+      },
+      "a0e83f0d-3e37-4a56-b0d4-e4b845a66111": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 320,
+          "top": 680
+        },
+        "type": "wait_for_response"
+      },
+      "b2fe95c8-6fd1-4f7b-923d-a0e94737fe5b": {
+        "config": {},
+        "position": {
+          "left": 1080,
+          "top": 3020
+        },
+        "type": "split_by_subflow"
+      },
+      "b8c52afc-682b-4e50-97c2-1098c8f5313f": {
+        "position": {
+          "left": 200,
+          "top": 0
+        },
+        "type": "execute_actions"
+      },
+      "bbc5b75e-d8bb-4c0e-b135-6f07a8a07982": {
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
+        "position": {
+          "left": 100,
+          "top": 840
+        },
+        "type": "split_by_contact_field"
+      },
+      "bcb1e919-d6a9-4ae2-a4ae-7527dcfaf55a": {
+        "position": {
+          "left": 580,
+          "top": 2000
+        },
+        "type": "execute_actions"
       },
       "c76c8d77-a3c8-4cee-9263-1313ce23b1cc": {
         "config": {
@@ -31,144 +170,10 @@
         },
         "type": "split_by_contact_field"
       },
-      "82541c0a-a6aa-4d0c-b002-58be4898f121": {
-        "position": {
-          "left": 860,
-          "top": 260
-        },
-        "type": "execute_actions"
-      },
-      "1965337b-4c6f-47c9-9509-a7c9601b4e39": {
-        "position": {
-          "left": 380,
-          "top": 340
-        },
-        "type": "execute_actions"
-      },
-      "ea55bf36-571c-42d0-93c0-a8bfd6215064": {
-        "position": {
-          "left": 840,
-          "top": 520
-        },
-        "type": "execute_actions"
-      },
-      "a0e83f0d-3e37-4a56-b0d4-e4b845a66111": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 320,
-          "top": 680
-        },
-        "type": "wait_for_response"
-      },
       "caaf118c-f6b8-4e92-acde-9ae9a9f024fd": {
         "position": {
           "left": 940,
           "top": 780
-        },
-        "type": "execute_actions"
-      },
-      "bbc5b75e-d8bb-4c0e-b135-6f07a8a07982": {
-        "type": "split_by_contact_field",
-        "position": {
-          "left": 100,
-          "top": 840
-        },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
-      },
-      "61285bbe-4eb4-4889-8c96-9bfec4af6540": {
-        "position": {
-          "left": 200,
-          "top": 1040
-        },
-        "type": "execute_actions"
-      },
-      "9aba6b15-cfd8-4083-9a41-755fadc27419": {
-        "config": {},
-        "position": {
-          "left": 440,
-          "top": 1440
-        },
-        "type": "split_by_subflow"
-      },
-      "959099e2-1c76-4ea6-85aa-dd9bbc504cb5": {
-        "position": {
-          "left": 440,
-          "top": 1580
-        },
-        "type": "execute_actions"
-      },
-      "0743f776-1c88-42c9-8cc6-dd44aa76b1d2": {
-        "position": {
-          "left": 940,
-          "top": 1540
-        },
-        "type": "execute_actions"
-      },
-      "65ef1e66-29fb-4759-9e4a-6c13accf2c03": {
-        "position": {
-          "left": 200,
-          "top": 2480
-        },
-        "type": "execute_actions"
-      },
-      "2e6057b5-e3a3-4e90-908d-e5fcd8e2138f": {
-        "position": {
-          "left": 680,
-          "top": 2500
-        },
-        "type": "execute_actions"
-      },
-      "d524aa05-f7cd-4905-b451-4487a834e8f4": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 340,
-          "top": 2020
-        },
-        "type": "wait_for_response"
-      },
-      "e0c8dfd5-6717-4b4c-b759-abcdd1621b4e": {
-        "position": {
-          "left": 60,
-          "top": 2820
-        },
-        "type": "execute_actions"
-      },
-      "d9fce2be-7ec1-481c-ba78-00124853bda0": {
-        "position": {
-          "left": 820,
-          "top": 2240
-        },
-        "type": "execute_actions"
-      },
-      "bcb1e919-d6a9-4ae2-a4ae-7527dcfaf55a": {
-        "position": {
-          "left": 580,
-          "top": 2240
-        },
-        "type": "execute_actions"
-      },
-      "e128c53f-3953-4707-b435-29960798bbe0": {
-        "position": {
-          "left": 340,
-          "top": 2160
-        },
-        "type": "execute_actions"
-      },
-      "72197d94-d9a4-450c-bdd9-6a626c927363": {
-        "position": {
-          "left": 1080,
-          "top": 2220
         },
         "type": "execute_actions"
       },
@@ -179,65 +184,43 @@
         },
         "type": "execute_actions"
       },
-      "70e6b8b9-671f-4c1b-bc7d-b0391113f851": {
-        "position": {
-          "left": 80,
-          "top": 3160
-        },
-        "type": "execute_actions"
-      },
-      "8dfb1835-b56f-4cd3-8486-ebb377e16852": {
-        "position": {
-          "left": 340,
-          "top": 2820
-        },
-        "type": "execute_actions"
-      },
-      "0218bcee-bd0d-43a3-91b4-8e271a3945cd": {
-        "position": {
-          "left": 1060,
-          "top": 2840
-        },
-        "type": "execute_actions"
-      },
-      "b2fe95c8-6fd1-4f7b-923d-a0e94737fe5b": {
-        "config": {},
-        "position": {
-          "left": 1080,
-          "top": 3020
-        },
-        "type": "split_by_subflow"
-      },
-      "0203f9f6-6cfb-4bc5-b506-3fb5a2c4eb99": {
-        "position": {
-          "left": 720,
-          "top": 3140
-        },
-        "type": "execute_actions"
-      },
-      "68953432-ad38-451e-8b16-c2212fdb08b0": {
-        "position": {
-          "left": 360,
-          "top": 3300
-        },
-        "type": "execute_actions"
-      },
-      "06184bfe-ab8d-478f-b657-f5de59a4727b": {
-        "position": {
-          "left": 440,
-          "top": 1040
-        },
-        "type": "execute_actions"
-      },
-      "b1ab48e2-36f1-40f1-af3f-db1dc2692ebf": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 500,
-          "top": 1220
-        },
+      "d524aa05-f7cd-4905-b451-4487a834e8f4": {
         "config": {
           "cases": {}
-        }
+        },
+        "position": {
+          "left": 340,
+          "top": 1860
+        },
+        "type": "wait_for_response"
+      },
+      "d9fce2be-7ec1-481c-ba78-00124853bda0": {
+        "position": {
+          "left": 820,
+          "top": 1940
+        },
+        "type": "execute_actions"
+      },
+      "e0c8dfd5-6717-4b4c-b759-abcdd1621b4e": {
+        "position": {
+          "left": 60,
+          "top": 1940
+        },
+        "type": "execute_actions"
+      },
+      "e128c53f-3953-4707-b435-29960798bbe0": {
+        "position": {
+          "left": 340,
+          "top": 2020
+        },
+        "type": "execute_actions"
+      },
+      "ea55bf36-571c-42d0-93c0-a8bfd6215064": {
+        "position": {
+          "left": 840,
+          "top": 520
+        },
+        "type": "execute_actions"
       }
     },
     "stickies": {}
@@ -247,7 +230,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 74
   },
   "name": "PLH - Content - Positive - Behave - Crying",
   "nodes": [
@@ -407,16 +390,14 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"parent_and_baby.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "fac312b3-5207-4964-8f90-cc38651ca601"
         }
       ],
@@ -522,27 +503,26 @@
       "uuid": "caaf118c-f6b8-4e92-acde-9ae9a9f024fd"
     },
     {
-      "uuid": "bbc5b75e-d8bb-4c0e-b135-6f07a8a07982",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "61285bbe-4eb4-4889-8c96-9bfec4af6540",
+          "uuid": "96dc1132-b8a8-4dbe-8463-5b09ffc21820"
+        },
+        {
+          "destination_uuid": "9aba6b15-cfd8-4083-9a41-755fadc27419",
+          "uuid": "4f0fa26b-cd95-48c8-895c-6511d9129464"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "440eb725-5e3c-464c-84d6-8ae076106549",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "2a5b28a4-8b23-48ac-8a4d-5a5732b81b84",
             "type": "has_any_word",
-            "uuid": "4516dd73-b944-4f2b-8be0-5e09a5f47ae8",
-            "category_uuid": "2a5b28a4-8b23-48ac-8a4d-5a5732b81b84"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "81e30507-c33d-461a-94dc-4457385525e6",
-            "category_uuid": "2bd52bc4-062b-4a02-80e9-afa599a8e019"
+            "uuid": "4516dd73-b944-4f2b-8be0-5e09a5f47ae8"
           }
         ],
         "categories": [
@@ -552,112 +532,36 @@
             "uuid": "2a5b28a4-8b23-48ac-8a4d-5a5732b81b84"
           },
           {
-            "uuid": "2bd52bc4-062b-4a02-80e9-afa599a8e019",
-            "name": "Medium",
-            "exit_uuid": "651398da-1a1b-4d86-9e94-01ed4e57eb71"
-          },
-          {
             "exit_uuid": "4f0fa26b-cd95-48c8-895c-6511d9129464",
             "name": "Other",
             "uuid": "440eb725-5e3c-464c-84d6-8ae076106549"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "440eb725-5e3c-464c-84d6-8ae076106549",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "61285bbe-4eb4-4889-8c96-9bfec4af6540",
-          "uuid": "96dc1132-b8a8-4dbe-8463-5b09ffc21820"
-        },
-        {
-          "uuid": "651398da-1a1b-4d86-9e94-01ed4e57eb71",
-          "destination_uuid": "06184bfe-ab8d-478f-b657-f5de59a4727b"
-        },
-        {
-          "destination_uuid": "9aba6b15-cfd8-4083-9a41-755fadc27419",
-          "uuid": "4f0fa26b-cd95-48c8-895c-6511d9129464"
-        }
-      ]
+      "uuid": "bbc5b75e-d8bb-4c0e-b135-6f07a8a07982"
     },
     {
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Crying.m4v\")"
+            "video:@(fields.video_script_path & \"Crying.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video that might help you when your baby cries.",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "9c4f79e1-b314-48ab-84db-e727cf31816c"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "b1ab48e2-36f1-40f1-af3f-db1dc2692ebf",
+          "destination_uuid": "9aba6b15-cfd8-4083-9a41-755fadc27419",
           "uuid": "be1e7fb7-ea64-4a64-953b-2fa086632a43"
         }
       ],
       "uuid": "61285bbe-4eb4-4889-8c96-9bfec4af6540"
-    },
-    {
-      "uuid": "06184bfe-ab8d-478f-b657-f5de59a4727b",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Crying.mp3\")"
-          ],
-          "text": "Here's an audio message to help you when your baby cries.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "edabfe0b-a472-4d25-8f55-c0be967b0bb5"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "53bb39b5-aa85-4311-bf0a-df90ca84ee59",
-          "destination_uuid": "b1ab48e2-36f1-40f1-af3f-db1dc2692ebf"
-        }
-      ]
-    },
-    {
-      "uuid": "b1ab48e2-36f1-40f1-af3f-db1dc2692ebf",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "0001cc14-d95b-41eb-82b2-6ff36de5d755",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "0001cc14-d95b-41eb-82b2-6ff36de5d755",
-            "name": "All Responses",
-            "exit_uuid": "56b8e3b2-aae5-4d74-b1f0-0286ec842a6e"
-          },
-          {
-            "uuid": "85d74c60-c623-4e3b-8429-621e91495538",
-            "name": "No Response",
-            "exit_uuid": "4c81fb58-b76d-4463-a487-ed6085bd55c7"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "85d74c60-c623-4e3b-8429-621e91495538"
-          }
-        },
-        "result_name": "Result 4"
-      },
-      "exits": [
-        {
-          "uuid": "56b8e3b2-aae5-4d74-b1f0-0286ec842a6e",
-          "destination_uuid": "9aba6b15-cfd8-4083-9a41-755fadc27419"
-        },
-        {
-          "uuid": "4c81fb58-b76d-4463-a487-ed6085bd55c7",
-          "destination_uuid": "9aba6b15-cfd8-4083-9a41-755fadc27419"
-        }
-      ]
     },
     {
       "actions": [
@@ -720,6 +624,25 @@
     {
       "actions": [
         {
+          "all_urns": false,
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Here are some tips that might help when your baby cries:\n\n1. Why babies cry\n2. Respond as soon as you can\n3. Check to see why your baby is crying\n4. Comfort your baby\n5. Take a break if you need it\n6. Be gentle and patient with yourself\n7. If you think your baby is injured or sick, call or visit a clinic\n\nTo learn more about one of these, type \"1\" to \"7\". You can also type \"N\" to stop this tip.",
+          "type": "send_msg",
+          "uuid": "f93ea588-fb9b-4491-9ea9-316d57df99f4"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "d524aa05-f7cd-4905-b451-4487a834e8f4",
+          "uuid": "d464ac09-2808-4f9e-8962-4225566f0594"
+        }
+      ],
+      "uuid": "959099e2-1c76-4ea6-85aa-dd9bbc504cb5"
+    },
+    {
+      "actions": [
+        {
           "attachments": [],
           "quick_replies": [],
           "text": "Sorry, I don't understand what you mean.",
@@ -738,21 +661,38 @@
     {
       "actions": [
         {
-          "all_urns": false,
           "attachments": [],
           "quick_replies": [],
-          "text": "Here are some tips that might help when your baby cries:\n\n1. Why babies cry\n2. Respond as soon as you can\n3. Check to see why your baby is crying\n4. Comfort your baby\n5. Take a break if you need it\n6. Be gentle and patient with yourself\n7. If you think your baby is injured or sick, call or visit a clinic\n\nTo learn more about one of these, type \"1\" to \"7\". You can also type \"N\" to stop this tip.",
+          "text": "1. Why do babies cry?\n\nCrying is a normal part of your baby's development. Sometimes babies even have crying patterns. Crying usually increases at 2-3 weeks old and is generally highest when your baby is around 6 to 8 weeks. Often babies will start crying less around 3 to 4 months. Of course, remember that every baby is different!",
           "type": "send_msg",
-          "uuid": "f93ea588-fb9b-4491-9ea9-316d57df99f4"
+          "uuid": "7cdae9c8-a4d9-4c95-96c4-ae878f6e598b"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "d524aa05-f7cd-4905-b451-4487a834e8f4",
-          "uuid": "d464ac09-2808-4f9e-8962-4225566f0594"
+          "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
+          "uuid": "0ecaba55-228a-4701-a7be-a35b36df2488"
         }
       ],
-      "uuid": "959099e2-1c76-4ea6-85aa-dd9bbc504cb5"
+      "uuid": "65ef1e66-29fb-4759-9e4a-6c13accf2c03"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "3.  Check to see why your baby is crying\n\nThere are lots of reasons why babies cry. It might be hunger, pain, too much going on, rough handling, feeling cold/hot, wanting contact or attention, or feeling irritable. Babies can cry when they sense tension in the room. And sometimes they cry for no reason at all! ",
+          "type": "send_msg",
+          "uuid": "52b3b660-938e-41af-97b8-30566b7c5d8a"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
+          "uuid": "f6ea63b9-c3a5-4b9f-87e5-167eba36184f"
+        }
+      ],
+      "uuid": "2e6057b5-e3a3-4e90-908d-e5fcd8e2138f"
     },
     {
       "actions": [],
@@ -923,6 +863,60 @@
         {
           "attachments": [],
           "quick_replies": [],
+          "text": "4. Comfort your baby\n\nTry swaddling, gently rocking, or singing or soft music. You might need to feed your baby or change their diaper. They may be too hot or too cold. Or maybe they just need to be held. Take a Pause and try to relax - your baby can actually sense tension from you, too!",
+          "type": "send_msg",
+          "uuid": "dd4a5477-3202-4fa5-8906-3f5626531c2a"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
+          "uuid": "43b211e7-2876-49d7-ab03-5c22f54c5c4e"
+        }
+      ],
+      "uuid": "e0c8dfd5-6717-4b4c-b759-abcdd1621b4e"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "7. If you think your baby is injured or sick, call or visit a clinic\n\nIf your baby cries for a long time and does not stop, they might be injured or sick. You should seek medical help immediately. ",
+          "type": "send_msg",
+          "uuid": "c836323c-160b-4e74-9ab5-22cd895b4954"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
+          "uuid": "ee157d93-163c-4653-bf3c-d6721c400c9f"
+        }
+      ],
+      "uuid": "d9fce2be-7ec1-481c-ba78-00124853bda0"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "6. Be gentle and patient with yourself\n\nWe know that this is not easy. You are not a bad parent if your baby continues to cry after you have done all they can to calm them. You are doing your best!",
+          "type": "send_msg",
+          "uuid": "c40b8d0c-84ed-4782-849c-95ebbcac08a3"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
+          "uuid": "133dace9-843d-45bc-8d01-3fb0f6ec5a2a"
+        }
+      ],
+      "uuid": "bcb1e919-d6a9-4ae2-a4ae-7527dcfaf55a"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
           "text": "2. Respond as soon as you can\n\nGo to your baby when you hear them crying. You will not spoil your baby by picking them up. Babies who are carried and cuddled frequently, during both fussy and contented periods, may actually cry less.",
           "type": "send_msg",
           "uuid": "20fa20cf-615d-4690-9b00-1848260bc48f"
@@ -976,92 +970,21 @@
     {
       "actions": [
         {
+          "all_urns": false,
           "attachments": [],
           "quick_replies": [],
-          "text": "6. Be gentle and patient with yourself\n\nWe know that this is not easy. You are not a bad parent if your baby continues to cry after you have done all they can to calm them. You are doing your best!",
+          "text": "Call someone for help - a family member, a friend. Sometimes just talking with someone is enough, but if you feel overwhelmed, ask someone for help. Calling for help is a sign of strength.",
           "type": "send_msg",
-          "uuid": "c40b8d0c-84ed-4782-849c-95ebbcac08a3"
+          "uuid": "2bb0c7f8-5f30-4101-93d7-46bee58450d2"
         }
       ],
       "exits": [
         {
           "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
-          "uuid": "133dace9-843d-45bc-8d01-3fb0f6ec5a2a"
+          "uuid": "be8a1426-2bc7-4b32-9ade-14c4238dfe22"
         }
       ],
-      "uuid": "bcb1e919-d6a9-4ae2-a4ae-7527dcfaf55a"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "7. If you think your baby is injured or sick, call or visit a clinic\n\nIf your baby cries for a long time and does not stop, they might be injured or sick. You should seek medical help immediately. ",
-          "type": "send_msg",
-          "uuid": "c836323c-160b-4e74-9ab5-22cd895b4954"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
-          "uuid": "ee157d93-163c-4653-bf3c-d6721c400c9f"
-        }
-      ],
-      "uuid": "d9fce2be-7ec1-481c-ba78-00124853bda0"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "1. Why do babies cry?\n\nCrying is a normal part of your baby's development. Sometimes babies even have crying patterns. Crying usually increases at 2-3 weeks old and is generally highest when your baby is around 6 to 8 weeks. Often babies will start crying less around 3 to 4 months. Of course, remember that every baby is different!",
-          "type": "send_msg",
-          "uuid": "7cdae9c8-a4d9-4c95-96c4-ae878f6e598b"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
-          "uuid": "0ecaba55-228a-4701-a7be-a35b36df2488"
-        }
-      ],
-      "uuid": "65ef1e66-29fb-4759-9e4a-6c13accf2c03"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "3.  Check to see why your baby is crying\n\nThere are lots of reasons why babies cry. It might be hunger, pain, too much going on, rough handling, feeling cold/hot, wanting contact or attention, or feeling irritable. Babies can cry when they sense tension in the room. And sometimes they cry for no reason at all! ",
-          "type": "send_msg",
-          "uuid": "52b3b660-938e-41af-97b8-30566b7c5d8a"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
-          "uuid": "f6ea63b9-c3a5-4b9f-87e5-167eba36184f"
-        }
-      ],
-      "uuid": "2e6057b5-e3a3-4e90-908d-e5fcd8e2138f"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "4. Comfort your baby\n\nTry swaddling, gently rocking, or singing or soft music. You might need to feed your baby or change their diaper. They may be too hot or too cold. Or maybe they just need to be held. Take a Pause and try to relax - your baby can actually sense tension from you, too!",
-          "type": "send_msg",
-          "uuid": "dd4a5477-3202-4fa5-8906-3f5626531c2a"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
-          "uuid": "43b211e7-2876-49d7-ab03-5c22f54c5c4e"
-        }
-      ],
-      "uuid": "e0c8dfd5-6717-4b4c-b759-abcdd1621b4e"
+      "uuid": "70e6b8b9-671f-4c1b-bc7d-b0391113f851"
     },
     {
       "actions": [
@@ -1186,25 +1109,6 @@
     {
       "actions": [
         {
-          "all_urns": false,
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Call someone for help - a family member, a friend. Sometimes just talking with someone is enough, but if you feel overwhelmed, ask someone for help. Calling for help is a sign of strength.",
-          "type": "send_msg",
-          "uuid": "2bb0c7f8-5f30-4101-93d7-46bee58450d2"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "8dfb1835-b56f-4cd3-8486-ebb377e16852",
-          "uuid": "be8a1426-2bc7-4b32-9ade-14c4238dfe22"
-        }
-      ],
-      "uuid": "70e6b8b9-671f-4c1b-bc7d-b0391113f851"
-    },
-    {
-      "actions": [
-        {
           "field": {
             "key": "last_interaction",
             "name": "last interaction"
@@ -1226,5 +1130,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "cc5e9f3f-5155-4a3f-a902-351f89169898",
-  "revision": 15
+  "revision": 1
 }

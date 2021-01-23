@@ -1,20 +1,27 @@
 {
   "_ui": {
     "nodes": {
-      "4ff81e8c-705a-4338-bd60-55ce52b9b360": {
+      "2234e810-dab7-4607-b767-2a8f83a719a7": {
         "position": {
-          "left": 140,
-          "top": 40
+          "left": 880,
+          "top": 620
         },
         "type": "execute_actions"
       },
-      "6f85e8b6-8a55-46e8-8d9a-efd16ceb1a7f": {
-        "config": {},
-        "position": {
-          "left": 140,
-          "top": 160
+      "23df3cf0-9891-44d8-801b-49c36418140c": {
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
         },
-        "type": "split_by_subflow"
+        "position": {
+          "left": 360,
+          "top": 1240
+        },
+        "type": "split_by_contact_field"
       },
       "27232a59-246a-4ed2-b057-987eb52f893a": {
         "config": {
@@ -31,17 +38,17 @@
         },
         "type": "split_by_contact_field"
       },
-      "a2ccf483-2c4b-4860-a8b7-fb8aa70f3da9": {
+      "32a52742-f0e4-4417-9879-8368e28cbc79": {
         "position": {
-          "left": 380,
-          "top": 460
+          "left": 640,
+          "top": 2540
         },
         "type": "execute_actions"
       },
-      "2234e810-dab7-4607-b767-2a8f83a719a7": {
+      "43e48601-2e0c-4a17-bc75-381d268d8db1": {
         "position": {
-          "left": 880,
-          "top": 620
+          "left": 320,
+          "top": 2480
         },
         "type": "execute_actions"
       },
@@ -49,6 +56,20 @@
         "position": {
           "left": 380,
           "top": 700
+        },
+        "type": "execute_actions"
+      },
+      "4ff81e8c-705a-4338-bd60-55ce52b9b360": {
+        "position": {
+          "left": 140,
+          "top": 40
+        },
+        "type": "execute_actions"
+      },
+      "6341b8f6-601b-4206-bc59-5ae002ce4d2d": {
+        "position": {
+          "left": 260,
+          "top": 1780
         },
         "type": "execute_actions"
       },
@@ -62,27 +83,42 @@
         },
         "type": "wait_for_response"
       },
-      "bbdb2158-4360-45ec-ba07-58426c4d11d0": {
+      "6f85e8b6-8a55-46e8-8d9a-efd16ceb1a7f": {
+        "config": {},
         "position": {
-          "left": 920,
-          "top": 980
+          "left": 140,
+          "top": 160
+        },
+        "type": "split_by_subflow"
+      },
+      "7b1c4d4e-5cce-489f-9fe5-62c85c93bb85": {
+        "position": {
+          "left": 840,
+          "top": 2360
         },
         "type": "execute_actions"
       },
-      "23df3cf0-9891-44d8-801b-49c36418140c": {
-        "type": "split_by_contact_field",
+      "7d666703-89c4-440a-95d8-53939c249b13": {
         "position": {
           "left": 360,
-          "top": 1100
+          "top": 3480
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "execute_actions"
+      },
+      "83ab5dee-dbf3-4167-b3b1-8b2789962460": {
+        "position": {
+          "left": 480,
+          "top": 5040
+        },
+        "type": "execute_actions"
+      },
+      "9801a496-7e1c-42c5-9292-bcd01940556d": {
+        "config": {},
+        "position": {
+          "left": 260,
+          "top": 1640
+        },
+        "type": "split_by_subflow"
       },
       "9e7caab4-3100-4245-a7e6-6a8407f2049e": {
         "position": {
@@ -91,25 +127,24 @@
         },
         "type": "execute_actions"
       },
-      "a3242a2d-19c5-46bc-a7b7-e9f8b7f569f7": {
+      "a07808e6-e897-4cee-aac3-8354280aaead": {
         "position": {
-          "left": 820,
-          "top": 1580
+          "left": 660,
+          "top": 2720
         },
         "type": "execute_actions"
       },
-      "9801a496-7e1c-42c5-9292-bcd01940556d": {
-        "config": {},
+      "a2ccf483-2c4b-4860-a8b7-fb8aa70f3da9": {
         "position": {
-          "left": 880,
-          "top": 1760
+          "left": 380,
+          "top": 460
         },
-        "type": "split_by_subflow"
+        "type": "execute_actions"
       },
-      "6341b8f6-601b-4206-bc59-5ae002ce4d2d": {
+      "a3242a2d-19c5-46bc-a7b7-e9f8b7f569f7": {
         "position": {
-          "left": 260,
-          "top": 1780
+          "left": 280,
+          "top": 1460
         },
         "type": "execute_actions"
       },
@@ -123,13 +158,6 @@
         },
         "type": "wait_for_response"
       },
-      "ca8eb3d3-3f33-4891-9eb5-9a695d42391a": {
-        "position": {
-          "left": 840,
-          "top": 2220
-        },
-        "type": "execute_actions"
-      },
       "ac2e9abe-1345-44a5-ae26-ef3ced426504": {
         "position": {
           "left": 180,
@@ -137,31 +165,17 @@
         },
         "type": "execute_actions"
       },
-      "7b1c4d4e-5cce-489f-9fe5-62c85c93bb85": {
+      "bbdb2158-4360-45ec-ba07-58426c4d11d0": {
+        "position": {
+          "left": 920,
+          "top": 980
+        },
+        "type": "execute_actions"
+      },
+      "ca8eb3d3-3f33-4891-9eb5-9a695d42391a": {
         "position": {
           "left": 840,
-          "top": 2360
-        },
-        "type": "execute_actions"
-      },
-      "43e48601-2e0c-4a17-bc75-381d268d8db1": {
-        "position": {
-          "left": 320,
-          "top": 2480
-        },
-        "type": "execute_actions"
-      },
-      "32a52742-f0e4-4417-9879-8368e28cbc79": {
-        "position": {
-          "left": 640,
-          "top": 2540
-        },
-        "type": "execute_actions"
-      },
-      "a07808e6-e897-4cee-aac3-8354280aaead": {
-        "position": {
-          "left": 660,
-          "top": 2720
+          "top": 2220
         },
         "type": "execute_actions"
       },
@@ -172,24 +186,10 @@
         },
         "type": "execute_actions"
       },
-      "7d666703-89c4-440a-95d8-53939c249b13": {
-        "position": {
-          "left": 360,
-          "top": 3480
-        },
-        "type": "execute_actions"
-      },
       "d79c1db1-7528-499b-8e6b-f907dd92f4af": {
         "position": {
           "left": 500,
-          "top": 4480
-        },
-        "type": "execute_actions"
-      },
-      "83ab5dee-dbf3-4167-b3b1-8b2789962460": {
-        "position": {
-          "left": 480,
-          "top": 5040
+          "top": 4280
         },
         "type": "execute_actions"
       },
@@ -200,30 +200,6 @@
           "top": 5260
         },
         "type": "split_by_subflow"
-      },
-      "f620a227-5e5d-4860-ab0c-fe3bafe56c87": {
-        "position": {
-          "left": 360,
-          "top": 1300
-        },
-        "type": "execute_actions"
-      },
-      "63b38536-d17a-488b-9602-cfeb02e3f868": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 220,
-          "top": 1520
-        },
-        "config": {
-          "cases": {}
-        }
-      },
-      "81d60583-004d-47ba-978c-e25dc421f06d": {
-        "position": {
-          "left": 500,
-          "top": 4100
-        },
-        "type": "execute_actions"
       }
     },
     "stickies": {}
@@ -233,7 +209,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 96
   },
   "name": "PLH - Content - Positive - Behave - Routines",
   "nodes": [
@@ -505,27 +481,26 @@
       "uuid": "bbdb2158-4360-45ec-ba07-58426c4d11d0"
     },
     {
-      "uuid": "23df3cf0-9891-44d8-801b-49c36418140c",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "9e7caab4-3100-4245-a7e6-6a8407f2049e",
+          "uuid": "688f124c-f835-4279-9765-8288f61794a8"
+        },
+        {
+          "destination_uuid": "a3242a2d-19c5-46bc-a7b7-e9f8b7f569f7",
+          "uuid": "d6636380-fd9c-4df5-95c3-6996ecdeafe4"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "4656df28-609f-4d6a-aef9-13bca74b6b96",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "79fe5a43-a12f-4c2b-93d2-518f18464637",
             "type": "has_any_word",
-            "uuid": "78203dd7-390f-4dd6-87b8-1ef9caee9ba3",
-            "category_uuid": "79fe5a43-a12f-4c2b-93d2-518f18464637"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "b9fc6059-645d-4bc8-9ebf-9e5f204893c9",
-            "category_uuid": "ecdef73e-f86a-4f2f-8110-5070d7afcebc"
+            "uuid": "78203dd7-390f-4dd6-87b8-1ef9caee9ba3"
           }
         ],
         "categories": [
@@ -535,112 +510,36 @@
             "uuid": "79fe5a43-a12f-4c2b-93d2-518f18464637"
           },
           {
-            "uuid": "ecdef73e-f86a-4f2f-8110-5070d7afcebc",
-            "name": "Medium",
-            "exit_uuid": "92a00704-8f3d-4ec1-aa17-3ab0d72d7667"
-          },
-          {
             "exit_uuid": "d6636380-fd9c-4df5-95c3-6996ecdeafe4",
             "name": "Other",
             "uuid": "4656df28-609f-4d6a-aef9-13bca74b6b96"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "4656df28-609f-4d6a-aef9-13bca74b6b96",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "9e7caab4-3100-4245-a7e6-6a8407f2049e",
-          "uuid": "688f124c-f835-4279-9765-8288f61794a8"
-        },
-        {
-          "uuid": "92a00704-8f3d-4ec1-aa17-3ab0d72d7667",
-          "destination_uuid": "f620a227-5e5d-4860-ab0c-fe3bafe56c87"
-        },
-        {
-          "destination_uuid": "a3242a2d-19c5-46bc-a7b7-e9f8b7f569f7",
-          "uuid": "d6636380-fd9c-4df5-95c3-6996ecdeafe4"
-        }
-      ]
+      "uuid": "23df3cf0-9891-44d8-801b-49c36418140c"
     },
     {
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Structure_Up.m4v\")"
+            "video:@(fields.video_script_path & \"Structure_Up.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video to help you create daily routines with your children.",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "b2200687-5225-47fd-b622-a02051877174"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "63b38536-d17a-488b-9602-cfeb02e3f868",
+          "destination_uuid": "a3242a2d-19c5-46bc-a7b7-e9f8b7f569f7",
           "uuid": "44e66543-5736-49b7-80f0-fd4ac0d49fa1"
         }
       ],
       "uuid": "9e7caab4-3100-4245-a7e6-6a8407f2049e"
-    },
-    {
-      "uuid": "f620a227-5e5d-4860-ab0c-fe3bafe56c87",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Structure_Up.mp3\")"
-          ],
-          "text": "Here's an audio message to help you create daily routines with your children.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "04f28abe-be42-423e-8c15-a127197b89b6"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "abde047c-6938-4091-8e51-d496b4ab5c73",
-          "destination_uuid": "63b38536-d17a-488b-9602-cfeb02e3f868"
-        }
-      ]
-    },
-    {
-      "uuid": "63b38536-d17a-488b-9602-cfeb02e3f868",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "6975b11a-cbc2-4a11-9137-bf4cdf028b00",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "6975b11a-cbc2-4a11-9137-bf4cdf028b00",
-            "name": "All Responses",
-            "exit_uuid": "7e6de4b5-e1ac-451b-bc36-60fbb5c735ce"
-          },
-          {
-            "uuid": "3ecf7ed0-321d-4e9d-90cc-322263a4b44c",
-            "name": "No Response",
-            "exit_uuid": "78929d4a-32c1-4e3d-990c-45ebcf40365b"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "3ecf7ed0-321d-4e9d-90cc-322263a4b44c"
-          }
-        },
-        "result_name": "Result 4"
-      },
-      "exits": [
-        {
-          "uuid": "7e6de4b5-e1ac-451b-bc36-60fbb5c735ce",
-          "destination_uuid": "a3242a2d-19c5-46bc-a7b7-e9f8b7f569f7"
-        },
-        {
-          "uuid": "78929d4a-32c1-4e3d-990c-45ebcf40365b",
-          "destination_uuid": "a3242a2d-19c5-46bc-a7b7-e9f8b7f569f7"
-        }
-      ]
     },
     {
       "actions": [
@@ -758,7 +657,7 @@
           "uuid": "5eb5ba8d-c3f4-4e17-bde0-8e57d043ff0a"
         },
         {
-          "destination_uuid": "81d60583-004d-47ba-978c-e25dc421f06d",
+          "destination_uuid": "d79c1db1-7528-499b-8e6b-f907dd92f4af",
           "uuid": "6a4c2973-ae94-4762-93ec-1ada2389e7d7"
         },
         {
@@ -1000,33 +899,13 @@
       "uuid": "7d666703-89c4-440a-95d8-53939c249b13"
     },
     {
-      "uuid": "81d60583-004d-47ba-978c-e25dc421f06d",
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.comic_path & \"creating_a_daily_routine_comic.jpg\")"
-          ],
-          "text": "Here are some suggestions for routines that you could establish with your children:\nBedtime\nSchoolwork\nChores\nMealtime\nPlay/free time\nT.V. or gadget time\nStorytime\nOne-on-One Time\nYou can add more, too!",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "858b317e-715b-4ea7-b4d1-3bb563fec56f"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "389e94b9-9d1b-4e44-89c4-304ae19a6611",
-          "destination_uuid": "d79c1db1-7528-499b-8e6b-f907dd92f4af"
-        }
-      ]
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "text": "Well done! You have added another tool to your Parenting Toolkit.",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [],
+          "text": "Well done! You have added another tool to your Parenting Toolkit.  Here are some suggestions for routines that you could establish with your children:\nBedtime\nSchoolwork\nChores\nMealtime\nPlay/free time\nT.V. or gadget time\nStorytime\nOne-on-One Time\nYou can add more, too!",
+          "type": "send_msg",
           "uuid": "9a711c2f-bb69-4b4b-bb55-7a32f89353b0"
         }
       ],
@@ -1129,5 +1008,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "4076357c-e1ba-441f-9ea0-d8429b2305ed",
-  "revision": 25
+  "revision": 1
 }

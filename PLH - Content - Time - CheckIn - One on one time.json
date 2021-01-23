@@ -173,6 +173,13 @@
         },
         "type": "execute_actions"
       },
+      "952ecfd7-d7cb-4404-9d38-a89205ff4d73": {
+        "position": {
+          "left": 240,
+          "top": 1920
+        },
+        "type": "execute_actions"
+      },
       "48d0692e-5b5c-43ff-aec3-56b127a494f8": {
         "config": {
           "cases": {}
@@ -183,13 +190,6 @@
         },
         "type": "wait_for_response"
       },
-      "952ecfd7-d7cb-4404-9d38-a89205ff4d73": {
-        "position": {
-          "left": 240,
-          "top": 1920
-        },
-        "type": "execute_actions"
-      },
       "a4e6abc5-8ce3-4581-9566-15e42dbbf1da": {
         "position": {
           "left": 700,
@@ -197,17 +197,17 @@
         },
         "type": "execute_actions"
       },
-      "2f1f66fb-ff74-444b-8b91-4cf797dded9f": {
-        "position": {
-          "left": 460,
-          "top": 2060
-        },
-        "type": "execute_actions"
-      },
       "cbb9d1ab-e763-4980-a3e8-38c0f0c70717": {
         "position": {
           "left": 220,
           "top": 2140
+        },
+        "type": "execute_actions"
+      },
+      "2f1f66fb-ff74-444b-8b91-4cf797dded9f": {
+        "position": {
+          "left": 460,
+          "top": 2060
         },
         "type": "execute_actions"
       },
@@ -246,10 +246,10 @@
         },
         "type": "execute_actions"
       },
-      "46aab20c-91c2-46c1-84d2-13a5f505c26d": {
+      "c2dc5108-806e-4b11-a4d0-76fee395a783": {
         "position": {
-          "left": 960,
-          "top": 2720
+          "left": 1260,
+          "top": 2820
         },
         "type": "execute_actions"
       },
@@ -257,13 +257,6 @@
         "position": {
           "left": 400,
           "top": 2800
-        },
-        "type": "execute_actions"
-      },
-      "c2dc5108-806e-4b11-a4d0-76fee395a783": {
-        "position": {
-          "left": 1260,
-          "top": 2820
         },
         "type": "execute_actions"
       },
@@ -295,6 +288,13 @@
           "top": 3360
         },
         "config": {}
+      },
+      "46aab20c-91c2-46c1-84d2-13a5f505c26d": {
+        "position": {
+          "left": 960,
+          "top": 2720
+        },
+        "type": "execute_actions"
       }
     },
     "stickies": {}
@@ -304,7 +304,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 31
+    "revision": 19
   },
   "name": "PLH - Content - Time - CheckIn - One on one time",
   "nodes": [
@@ -1238,9 +1238,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Children often want to spend time watching T.V. or playing with a gadget. Sometimes you might want to give them some other fun options to do instead (Type: \"Help\" if you want a suggestion).",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Children often to want to spend time watching T.V. or playing with a gadget. Sometimes you might want to give them some other fun options to do instead (Type: \"Help\" if you want a suggestion).",
+          "type": "send_msg",
           "uuid": "bedaa9b1-85c4-46bf-865c-a99bb472828b"
         }
       ],
@@ -1536,5 +1536,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "7eaa7281-c749-40a7-8e02-e42ecf5f676c",
-  "revision": 32
+  "revision": 31
 }

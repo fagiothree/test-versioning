@@ -16,6 +16,50 @@
         },
         "type": "split_by_contact_field"
       },
+      "2cb66b1d-d5b4-4c4b-99b0-29e37cae0055": {
+        "position": {
+          "left": 1200,
+          "top": 420
+        },
+        "type": "execute_actions"
+      },
+      "5d26061d-9927-452a-b0ee-5ac88c136dd1": {
+        "config": {},
+        "position": {
+          "left": 580,
+          "top": 800
+        },
+        "type": "split_by_subflow"
+      },
+      "6d71d73d-cf1a-4735-997e-170d29a1bce6": {
+        "config": {},
+        "position": {
+          "left": 760,
+          "top": 480
+        },
+        "type": "split_by_subflow"
+      },
+      "85c0a964-03ec-4ab5-bdd8-24daaa166989": {
+        "position": {
+          "left": 360,
+          "top": 960
+        },
+        "type": "execute_actions"
+      },
+      "9b245a9d-7387-499a-9f9a-e8056df3e1a1": {
+        "position": {
+          "left": 940,
+          "top": 620
+        },
+        "type": "execute_actions"
+      },
+      "b1d51f68-9719-4a3e-baf1-6df36640b8d7": {
+        "position": {
+          "left": 800,
+          "top": 920
+        },
+        "type": "execute_actions"
+      },
       "d2f26751-1229-45ab-a9a9-91bfc272fe7f": {
         "config": {
           "cases": {},
@@ -39,66 +83,12 @@
         },
         "type": "split_by_subflow"
       },
-      "2cb66b1d-d5b4-4c4b-99b0-29e37cae0055": {
-        "position": {
-          "left": 1200,
-          "top": 420
-        },
-        "type": "execute_actions"
-      },
-      "6d71d73d-cf1a-4735-997e-170d29a1bce6": {
-        "config": {},
-        "position": {
-          "left": 520,
-          "top": 480
-        },
-        "type": "split_by_subflow"
-      },
-      "9b245a9d-7387-499a-9f9a-e8056df3e1a1": {
-        "position": {
-          "left": 940,
-          "top": 620
-        },
-        "type": "execute_actions"
-      },
       "e57e9c8a-85f5-42fb-a19f-ec1ba03776e3": {
         "position": {
           "left": 1100,
           "top": 740
         },
         "type": "execute_actions"
-      },
-      "5d26061d-9927-452a-b0ee-5ac88c136dd1": {
-        "config": {},
-        "position": {
-          "left": 580,
-          "top": 800
-        },
-        "type": "split_by_subflow"
-      },
-      "b1d51f68-9719-4a3e-baf1-6df36640b8d7": {
-        "position": {
-          "left": 800,
-          "top": 920
-        },
-        "type": "execute_actions"
-      },
-      "85c0a964-03ec-4ab5-bdd8-24daaa166989": {
-        "position": {
-          "left": 360,
-          "top": 960
-        },
-        "type": "execute_actions"
-      },
-      "f607eb73-19a6-404f-814b-e9af2b7fb191": {
-        "type": "split_by_groups",
-        "position": {
-          "left": 820,
-          "top": 400
-        },
-        "config": {
-          "cases": {}
-        }
       }
     }
   },
@@ -222,7 +212,7 @@
       ],
       "exits": [
         {
-          "destination_uuid": "f607eb73-19a6-404f-814b-e9af2b7fb191",
+          "destination_uuid": "6d71d73d-cf1a-4735-997e-170d29a1bce6",
           "uuid": "0dc77ec5-d2ca-484e-b2b2-0a1227080448"
         },
         {
@@ -266,48 +256,6 @@
         "type": "switch"
       },
       "uuid": "d9daa2ad-04d9-4b7b-b722-afdbeeb2b7d5"
-    },
-    {
-      "uuid": "f607eb73-19a6-404f-814b-e9af2b7fb191",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "cases": [
-          {
-            "uuid": "e669e120-90c3-4114-b7e4-7d57fb9bf8d7",
-            "type": "has_group",
-            "arguments": [
-              "55c96316-5fc8-4844-bf7d-c557eb769dc2",
-              "in program"
-            ],
-            "category_uuid": "f990847b-bc54-44f0-86fd-b2396feb0ddf"
-          }
-        ],
-        "categories": [
-          {
-            "uuid": "f990847b-bc54-44f0-86fd-b2396feb0ddf",
-            "name": "in program",
-            "exit_uuid": "81666f43-649f-41d2-bc0f-5a0f7aabb0e8"
-          },
-          {
-            "uuid": "d86e75bd-c8f3-45b9-8d85-748ffbb2cd0f",
-            "name": "Other",
-            "exit_uuid": "9c44337e-d5f9-43db-886b-29ea1f022080"
-          }
-        ],
-        "default_category_uuid": "d86e75bd-c8f3-45b9-8d85-748ffbb2cd0f",
-        "operand": "@contact.groups",
-        "result_name": ""
-      },
-      "exits": [
-        {
-          "uuid": "81666f43-649f-41d2-bc0f-5a0f7aabb0e8",
-          "destination_uuid": "6d71d73d-cf1a-4735-997e-170d29a1bce6"
-        },
-        {
-          "uuid": "9c44337e-d5f9-43db-886b-29ea1f022080"
-        }
-      ]
     },
     {
       "actions": [
@@ -528,5 +476,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "1cec32be-fdd2-4210-b473-6140452c62f3",
-  "revision": 5
+  "revision": 1
 }

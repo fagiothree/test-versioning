@@ -23,13 +23,6 @@
         },
         "type": "execute_actions"
       },
-      "23432113-455f-4ea8-be2c-7c2f4712509e": {
-        "position": {
-          "left": 140,
-          "top": 80
-        },
-        "type": "execute_actions"
-      },
       "735bab5d-8ff5-4d49-bf6c-098ec7536faf": {
         "position": {
           "left": 420,
@@ -37,10 +30,10 @@
         },
         "type": "execute_actions"
       },
-      "e9fd8e52-a965-4b74-99a6-7f90dfa580ca": {
+      "23432113-455f-4ea8-be2c-7c2f4712509e": {
         "position": {
-          "left": 720,
-          "top": 220
+          "left": 140,
+          "top": 80
         },
         "type": "execute_actions"
       },
@@ -132,6 +125,13 @@
           "top": 1000
         },
         "type": "execute_actions"
+      },
+      "e9fd8e52-a965-4b74-99a6-7f90dfa580ca": {
+        "position": {
+          "left": 720,
+          "top": 220
+        },
+        "type": "execute_actions"
       }
     }
   },
@@ -140,7 +140,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 10
+    "revision": 1
   },
   "name": "PLH - Feedback - Feedback for content",
   "nodes": [
@@ -223,16 +223,16 @@
       "actions": [
         {
           "attachments": [],
-          "text": "How helpful was this tip?",
-          "type": "send_msg",
           "quick_replies": [
-            "Not helpful",
-            "A little helpful",
-            "Helpful",
-            "Very helpful",
             "Extremely helpful",
+            "Very helpful",
+            "Helpful",
+            "A little helpful",
+            "Not helpful",
             "Prefer not to answer"
           ],
+          "text": "How helpful was this tip?",
+          "type": "send_msg",
           "uuid": "b905a0ee-c215-4680-972e-36ab56b97ce9"
         }
       ],
@@ -248,16 +248,16 @@
       "actions": [
         {
           "attachments": [],
-          "text": "How helpful was this activity?",
-          "type": "send_msg",
           "quick_replies": [
-            "Not helpful",
-            "A little helpful",
-            "Helpful",
-            "Very helpful",
             "Extremely helpful",
+            "Very helpful",
+            "Helpful",
+            "A little helpful",
+            "Not helpful",
             "Prefer not to answer"
           ],
+          "text": "How helpful was this activity?",
+          "type": "send_msg",
           "uuid": "d84c8150-3eca-450d-ac1b-2e356f93f0ce"
         }
       ],
@@ -273,16 +273,16 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Have these relaxation activities helped reduce the stress in your life?",
-          "type": "send_msg",
           "quick_replies": [
-            "Not helpful",
-            "A little helpful",
-            "Helpful",
-            "Very helpful",
             "Extremely helpful",
+            "Very helpful",
+            "Helpful",
+            "A little helpful",
+            "Not helpful",
             "Prefer not to answer"
           ],
+          "text": "Have these relaxation activities helped reduce the stress in your life?",
+          "type": "send_msg",
           "uuid": "7a7d9617-eccc-46a2-892e-95d54eebdb78"
         }
       ],
@@ -302,11 +302,11 @@
           "text": "Was this advice helpful?",
           "type": "send_msg",
           "quick_replies": [
-            "Not helpful",
-            "A little helpful",
-            "Helpful",
-            "Very helpful",
             "Extremely helpful",
+            "Very helpful",
+            "Helpful",
+            "A little helpful",
+            "Not helpful",
             "Prefer not to answer"
           ],
           "uuid": "afe6fc7e-d097-4cd9-94f4-02ecc4702be8"
@@ -689,5 +689,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "7535a8c5-f7cf-4171-bb34-22381b1c91b4",
-  "revision": 34
+  "revision": 10
 }

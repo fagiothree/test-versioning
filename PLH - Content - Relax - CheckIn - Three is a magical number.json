@@ -18,8 +18,8 @@
           }
         },
         "position": {
-          "left": 520,
-          "top": 240
+          "left": 540,
+          "top": 360
         },
         "type": "split_by_contact_field"
       },
@@ -50,16 +50,6 @@
           "top": 1080
         },
         "type": "execute_actions"
-      },
-      "6c569d29-0f31-46a6-bf86-65e673bdf83b": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 320,
-          "top": 780
-        },
-        "config": {
-          "cases": {}
-        }
       }
     },
     "stickies": {}
@@ -69,7 +59,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 3
+    "revision": 1
   },
   "name": "PLH - Content - Relax - CheckIn - Three is a magical number",
   "nodes": [
@@ -152,9 +142,7 @@
     {
       "actions": [
         {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Magical_Number.mp3\")"
-          ],
+          "attachments": [],
           "text": "Here's an audio message to guide you through this activity!",
           "type": "send_msg",
           "quick_replies": [],
@@ -163,7 +151,7 @@
       ],
       "exits": [
         {
-          "destination_uuid": "6c569d29-0f31-46a6-bf86-65e673bdf83b",
+          "destination_uuid": "f696ea54-1a7f-4cc8-8bbc-853923574027",
           "uuid": "4115aa90-5402-4b17-825f-9967aadb94a6"
         }
       ],
@@ -191,61 +179,21 @@
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Magical_Number.m4v\")"
+            "video:@(fields.video_script_path & \"Magical_Number.m4v\")"
           ],
+          "quick_replies": [],
           "text": "Here's a video to guide through this activity!",
           "type": "send_msg",
-          "quick_replies": [],
           "uuid": "67290940-19c3-4983-b28f-0382f297e8cd"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "6c569d29-0f31-46a6-bf86-65e673bdf83b",
+          "destination_uuid": "f696ea54-1a7f-4cc8-8bbc-853923574027",
           "uuid": "6e88acda-c3a2-460a-b0fd-c279d514ca01"
         }
       ],
       "uuid": "61185199-9158-46bf-9788-e2758e04360c"
-    },
-    {
-      "uuid": "6c569d29-0f31-46a6-bf86-65e673bdf83b",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "308b0e68-6a5d-4151-93e7-447845180510",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "308b0e68-6a5d-4151-93e7-447845180510",
-            "name": "All Responses",
-            "exit_uuid": "4dc74690-52fa-4401-ab22-3c7dd9575aad"
-          },
-          {
-            "uuid": "7f5c321f-1b35-412c-bfdc-634ba468a4dc",
-            "name": "No Response",
-            "exit_uuid": "95641c51-cbc0-4eb1-b14b-8b8f57f63b3e"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "7f5c321f-1b35-412c-bfdc-634ba468a4dc"
-          }
-        },
-        "result_name": "Result 1"
-      },
-      "exits": [
-        {
-          "uuid": "4dc74690-52fa-4401-ab22-3c7dd9575aad",
-          "destination_uuid": "62517ae7-2493-4d3e-9a41-ae0cce938f85"
-        },
-        {
-          "uuid": "95641c51-cbc0-4eb1-b14b-8b8f57f63b3e",
-          "destination_uuid": "62517ae7-2493-4d3e-9a41-ae0cce938f85"
-        }
-      ]
     },
     {
       "actions": [
@@ -270,5 +218,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "392a6e37-612f-4014-9d54-e83e03b44a81",
-  "revision": 11
+  "revision": 3
 }

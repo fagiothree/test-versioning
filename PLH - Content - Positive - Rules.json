@@ -1,10 +1,40 @@
 {
   "_ui": {
     "nodes": {
-      "681c6e3a-92b0-4656-a526-ef1f26e6ac33": {
+      "19690ee1-0133-460f-ac02-3e9c8094a22d": {
+        "position": {
+          "left": 140,
+          "top": 1380
+        },
+        "type": "execute_actions"
+      },
+      "260fa5b0-7b1f-4b6e-a7aa-840cf6f7f23f": {
+        "config": {},
+        "position": {
+          "left": 920,
+          "top": 2700
+        },
+        "type": "split_by_subflow"
+      },
+      "2ad244cd-04bf-4155-b7b9-660870de7095": {
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 200,
-          "top": 0
+          "top": 1160
+        },
+        "type": "split_by_contact_field"
+      },
+      "3aa7cf97-3aed-42a4-b4e3-440cbc05b69a": {
+        "position": {
+          "left": 700,
+          "top": 2580
         },
         "type": "execute_actions"
       },
@@ -15,6 +45,48 @@
           "top": 140
         },
         "type": "split_by_subflow"
+      },
+      "41e2ac90-351e-4b09-b042-f8a056035392": {
+        "position": {
+          "left": 220,
+          "top": 1540
+        },
+        "type": "execute_actions"
+      },
+      "4634bc02-6658-4526-af82-7103eef6bf00": {
+        "position": {
+          "left": 900,
+          "top": 1960
+        },
+        "type": "execute_actions"
+      },
+      "681c6e3a-92b0-4656-a526-ef1f26e6ac33": {
+        "position": {
+          "left": 200,
+          "top": 0
+        },
+        "type": "execute_actions"
+      },
+      "71491126-dbc6-4d00-ab16-6e519e1fa7f7": {
+        "position": {
+          "left": 660,
+          "top": 2200
+        },
+        "type": "execute_actions"
+      },
+      "7737a033-4810-488c-9006-737666815787": {
+        "position": {
+          "left": 820,
+          "top": 1300
+        },
+        "type": "execute_actions"
+      },
+      "9517b896-6080-4cc3-ae43-ebbe6d3b8fd9": {
+        "position": {
+          "left": 420,
+          "top": 740
+        },
+        "type": "execute_actions"
       },
       "9c36aca0-f8dd-4823-bda1-c817c4e89c60": {
         "config": {
@@ -31,6 +103,38 @@
         },
         "type": "split_by_contact_field"
       },
+      "a5cf6084-12ef-4090-a95a-5e79ad9fdb67": {
+        "config": {
+          "cases": {}
+        },
+        "position": {
+          "left": 440,
+          "top": 900
+        },
+        "type": "wait_for_response"
+      },
+      "a959b094-c536-4553-b1e6-4d5447ac5a15": {
+        "position": {
+          "left": 800,
+          "top": 820
+        },
+        "type": "execute_actions"
+      },
+      "af462195-a171-47b3-a0f4-02dde7d92fa3": {
+        "position": {
+          "left": 800,
+          "top": 1020
+        },
+        "type": "execute_actions"
+      },
+      "d9235f84-d6bc-4de1-b0d2-c88613c3ff7e": {
+        "config": {},
+        "position": {
+          "left": 900,
+          "top": 2280
+        },
+        "type": "split_by_subflow"
+      },
       "dea4318b-d27c-4cc9-912f-36c8d96dc112": {
         "position": {
           "left": 620,
@@ -45,138 +149,10 @@
         },
         "type": "execute_actions"
       },
-      "9517b896-6080-4cc3-ae43-ebbe6d3b8fd9": {
-        "position": {
-          "left": 420,
-          "top": 740
-        },
-        "type": "execute_actions"
-      },
-      "a959b094-c536-4553-b1e6-4d5447ac5a15": {
-        "position": {
-          "left": 800,
-          "top": 820
-        },
-        "type": "execute_actions"
-      },
-      "a5cf6084-12ef-4090-a95a-5e79ad9fdb67": {
-        "config": {
-          "cases": {}
-        },
-        "position": {
-          "left": 440,
-          "top": 900
-        },
-        "type": "wait_for_response"
-      },
-      "af462195-a171-47b3-a0f4-02dde7d92fa3": {
-        "position": {
-          "left": 800,
-          "top": 1020
-        },
-        "type": "execute_actions"
-      },
-      "2ad244cd-04bf-4155-b7b9-660870de7095": {
-        "type": "split_by_contact_field",
-        "position": {
-          "left": 200,
-          "top": 1160
-        },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
-      },
-      "7737a033-4810-488c-9006-737666815787": {
-        "position": {
-          "left": 820,
-          "top": 1300
-        },
-        "type": "execute_actions"
-      },
-      "19690ee1-0133-460f-ac02-3e9c8094a22d": {
-        "position": {
-          "left": 40,
-          "top": 1440
-        },
-        "type": "execute_actions"
-      },
-      "41e2ac90-351e-4b09-b042-f8a056035392": {
-        "position": {
-          "left": 220,
-          "top": 1740
-        },
-        "type": "execute_actions"
-      },
-      "4634bc02-6658-4526-af82-7103eef6bf00": {
-        "position": {
-          "left": 900,
-          "top": 1960
-        },
-        "type": "execute_actions"
-      },
-      "71491126-dbc6-4d00-ab16-6e519e1fa7f7": {
-        "position": {
-          "left": 660,
-          "top": 2200
-        },
-        "type": "execute_actions"
-      },
-      "d9235f84-d6bc-4de1-b0d2-c88613c3ff7e": {
-        "config": {},
-        "position": {
-          "left": 900,
-          "top": 2280
-        },
-        "type": "split_by_subflow"
-      },
-      "3aa7cf97-3aed-42a4-b4e3-440cbc05b69a": {
-        "position": {
-          "left": 700,
-          "top": 2580
-        },
-        "type": "execute_actions"
-      },
-      "260fa5b0-7b1f-4b6e-a7aa-840cf6f7f23f": {
-        "config": {},
-        "position": {
-          "left": 920,
-          "top": 2700
-        },
-        "type": "split_by_subflow"
-      },
       "f7b030b7-d56d-4a0b-be5a-b90d52740863": {
         "position": {
           "left": 900,
           "top": 2840
-        },
-        "type": "execute_actions"
-      },
-      "55b7d01d-d70d-432a-8776-6650fa78efbb": {
-        "position": {
-          "left": 560,
-          "top": 1820
-        },
-        "type": "execute_actions"
-      },
-      "19516483-0766-42d9-8253-fff9a07c1698": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 220,
-          "top": 1600
-        },
-        "config": {
-          "cases": {}
-        }
-      },
-      "f6b775db-1ac6-4521-9240-1195cc912648": {
-        "position": {
-          "left": 240,
-          "top": 1260
         },
         "type": "execute_actions"
       }
@@ -188,7 +164,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 1
+    "revision": 66
   },
   "name": "PLH - Content - Positive - Rules",
   "nodes": [
@@ -351,16 +327,14 @@
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"Positive_instructions.jpg\")"
-          ],
-          "text": "Would you like to learn more about this tip?",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [
             "Yes",
             "No"
           ],
+          "text": "Would you like to learn more about this tip?",
+          "type": "send_msg",
           "uuid": "1286285f-6192-45df-aafa-cf3902f0d948"
         }
       ],
@@ -471,27 +445,26 @@
       "uuid": "af462195-a171-47b3-a0f4-02dde7d92fa3"
     },
     {
-      "uuid": "2ad244cd-04bf-4155-b7b9-660870de7095",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "19690ee1-0133-460f-ac02-3e9c8094a22d",
+          "uuid": "2797ef2b-a13d-4554-bdb2-2cbc94a01835"
+        },
+        {
+          "destination_uuid": "41e2ac90-351e-4b09-b042-f8a056035392",
+          "uuid": "44fd25c9-b8ea-42f7-b073-6666a368e6a2"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "32dfa1e6-75d3-4a7d-a52d-b3156dcc467f",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "f36549d8-a6b5-4638-a2be-2c231ec4d16b",
             "type": "has_any_word",
-            "uuid": "3a1fe7be-794c-46a6-8759-156ce7de0aeb",
-            "category_uuid": "f36549d8-a6b5-4638-a2be-2c231ec4d16b"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "3bef4f83-e388-4e07-8f99-0f8026187fa7",
-            "category_uuid": "9e649067-f712-44a7-84fa-5f249dd5270c"
+            "uuid": "3a1fe7be-794c-46a6-8759-156ce7de0aeb"
           }
         ],
         "categories": [
@@ -501,52 +474,16 @@
             "uuid": "f36549d8-a6b5-4638-a2be-2c231ec4d16b"
           },
           {
-            "uuid": "9e649067-f712-44a7-84fa-5f249dd5270c",
-            "name": "Medium",
-            "exit_uuid": "608b67ef-dbab-450c-aea9-14aca80849f4"
-          },
-          {
             "exit_uuid": "44fd25c9-b8ea-42f7-b073-6666a368e6a2",
             "name": "Other",
             "uuid": "32dfa1e6-75d3-4a7d-a52d-b3156dcc467f"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "32dfa1e6-75d3-4a7d-a52d-b3156dcc467f",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "19690ee1-0133-460f-ac02-3e9c8094a22d",
-          "uuid": "2797ef2b-a13d-4554-bdb2-2cbc94a01835"
-        },
-        {
-          "uuid": "608b67ef-dbab-450c-aea9-14aca80849f4",
-          "destination_uuid": "f6b775db-1ac6-4521-9240-1195cc912648"
-        },
-        {
-          "destination_uuid": "41e2ac90-351e-4b09-b042-f8a056035392",
-          "uuid": "44fd25c9-b8ea-42f7-b073-6666a368e6a2"
-        }
-      ]
-    },
-    {
-      "uuid": "f6b775db-1ac6-4521-9240-1195cc912648",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Household_Rules.mp3\")"
-          ],
-          "text": "Here's an audio message on how you can involve your children in establishing household rules.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "5ef96222-0fbc-4f43-b74c-83106bc706d4"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "50fc5485-f110-447c-b321-b5c85bb1188c",
-          "destination_uuid": "19516483-0766-42d9-8253-fff9a07c1698"
-        }
-      ]
+      "uuid": "2ad244cd-04bf-4155-b7b9-660870de7095"
     },
     {
       "actions": [
@@ -572,61 +509,21 @@
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Household_Rules.m4v\")"
+            "video:@(fields.video_script_path & \"Household_Rules.m4v\")"
           ],
-          "text": "Here's is a video on how you can involve your children in establishing household rules.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Here's is a video on how you can involve your children in establishing household rules",
+          "type": "send_msg",
           "uuid": "0b692c6d-8cc6-495a-a6c5-a46d0cda25bf"
         }
       ],
       "exits": [
         {
-          "destination_uuid": "19516483-0766-42d9-8253-fff9a07c1698",
+          "destination_uuid": "41e2ac90-351e-4b09-b042-f8a056035392",
           "uuid": "6d6d1678-18a4-49bd-9899-b300d8c2d2b0"
         }
       ],
       "uuid": "19690ee1-0133-460f-ac02-3e9c8094a22d"
-    },
-    {
-      "uuid": "19516483-0766-42d9-8253-fff9a07c1698",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "8a679e98-060a-4431-9a72-76a000a8e61d",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "8a679e98-060a-4431-9a72-76a000a8e61d",
-            "name": "All Responses",
-            "exit_uuid": "97e8e64d-9701-4649-af98-4fe9bbd3c99d"
-          },
-          {
-            "uuid": "6cc62133-f498-4467-81a7-90e88c4f6c89",
-            "name": "No Response",
-            "exit_uuid": "f8150a2a-adf8-4184-87bc-83607c27d7c0"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "6cc62133-f498-4467-81a7-90e88c4f6c89"
-          }
-        },
-        "result_name": "Result 3"
-      },
-      "exits": [
-        {
-          "uuid": "97e8e64d-9701-4649-af98-4fe9bbd3c99d",
-          "destination_uuid": "41e2ac90-351e-4b09-b042-f8a056035392"
-        },
-        {
-          "uuid": "f8150a2a-adf8-4184-87bc-83607c27d7c0",
-          "destination_uuid": "41e2ac90-351e-4b09-b042-f8a056035392"
-        }
-      ]
     },
     {
       "actions": [
@@ -640,32 +537,11 @@
       ],
       "exits": [
         {
-          "destination_uuid": "55b7d01d-d70d-432a-8776-6650fa78efbb",
+          "destination_uuid": "4634bc02-6658-4526-af82-7103eef6bf00",
           "uuid": "6bd6e2c9-7400-42b2-9182-b97a75757085"
         }
       ],
       "uuid": "41e2ac90-351e-4b09-b042-f8a056035392"
-    },
-    {
-      "uuid": "55b7d01d-d70d-432a-8776-6650fa78efbb",
-      "actions": [
-        {
-          "attachments": [
-            "image:@(fields.comic_path & \"Making_a_Tech_Agreement_with_Your_Teen_comic.jpg\")"
-          ],
-          "text": "Here is a comic that shows how you can involve your children in establishing household rules.",
-          "type": "send_msg",
-          "all_urns": false,
-          "quick_replies": [],
-          "uuid": "2059baf1-6e21-4c3b-a3a4-f26114a9a837"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "cc1f8d2e-0b02-4e68-8103-a7d12e665e36",
-          "destination_uuid": "4634bc02-6658-4526-af82-7103eef6bf00"
-        }
-      ]
     },
     {
       "actions": [
@@ -872,5 +748,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "6f286d96-de35-4511-8e2c-d311d90fb1aa",
-  "revision": 18
+  "revision": 1
 }

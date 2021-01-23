@@ -63,19 +63,19 @@
         "type": "execute_actions"
       },
       "1c6d59fa-a057-481a-a56c-baf68323f8ed": {
-        "type": "split_by_contact_field",
+        "config": {
+          "cases": {},
+          "operand": {
+            "id": "type_of_media",
+            "name": "type of media",
+            "type": "field"
+          }
+        },
         "position": {
           "left": 200,
           "top": 920
         },
-        "config": {
-          "operand": {
-            "id": "type_of_media",
-            "type": "field",
-            "name": "type of media"
-          },
-          "cases": {}
-        }
+        "type": "split_by_contact_field"
       },
       "65da1642-61eb-44ac-b69b-1460f0301782": {
         "position": {
@@ -94,15 +94,15 @@
       "ee573d8f-a844-42c7-a805-90d8f852b14a": {
         "config": {},
         "position": {
-          "left": 740,
-          "top": 1360
+          "left": 280,
+          "top": 1260
         },
         "type": "split_by_subflow"
       },
       "e5af2b2d-409a-43b0-b5db-87844e23c946": {
         "position": {
-          "left": 360,
-          "top": 1600
+          "left": 400,
+          "top": 1400
         },
         "type": "execute_actions"
       },
@@ -112,7 +112,7 @@
         },
         "position": {
           "left": 240,
-          "top": 2040
+          "top": 1800
         },
         "type": "wait_for_response"
       },
@@ -147,56 +147,56 @@
       "04a239fe-8b69-4f94-bfa6-02827c9cf346": {
         "position": {
           "left": 120,
-          "top": 2180
+          "top": 2020
         },
         "type": "execute_actions"
       },
       "d7e55bef-321f-4ec8-846b-3e16fce29c98": {
         "position": {
           "left": 340,
-          "top": 2180
+          "top": 2040
         },
         "type": "execute_actions"
       },
       "255c2105-c41e-4a03-8573-9270e7f1ee3e": {
         "position": {
           "left": 560,
-          "top": 3000
+          "top": 2040
         },
         "type": "execute_actions"
       },
       "3d723e39-e7b9-4c2d-b9c9-efe0a4ba60a9": {
         "position": {
           "left": 1000,
-          "top": 2220
+          "top": 2200
         },
         "type": "execute_actions"
       },
       "836eafdd-7c49-4cc0-8cd0-63dfe05c0c32": {
         "position": {
           "left": 340,
-          "top": 2420
+          "top": 2280
         },
         "type": "execute_actions"
       },
       "532b3472-054d-4551-afe2-1c31dc7a24df": {
         "position": {
           "left": 120,
-          "top": 2460
+          "top": 2300
         },
         "type": "execute_actions"
       },
       "75d61b27-b7c7-4148-a65e-4928c2249696": {
         "position": {
-          "left": 140,
-          "top": 2980
+          "left": 560,
+          "top": 2600
         },
         "type": "execute_actions"
       },
       "56214fe6-7ed7-421e-8066-84a73e31ac9d": {
         "position": {
           "left": 560,
-          "top": 3660
+          "top": 3020
         },
         "type": "execute_actions"
       },
@@ -228,23 +228,6 @@
           "top": 4920
         },
         "type": "execute_actions"
-      },
-      "d183e05f-47a2-43c1-a958-8f8eecb25140": {
-        "position": {
-          "left": 340,
-          "top": 1100
-        },
-        "type": "execute_actions"
-      },
-      "039963ba-438b-4640-8fb6-c7009a0d401b": {
-        "type": "wait_for_response",
-        "position": {
-          "left": 80,
-          "top": 1300
-        },
-        "config": {
-          "cases": {}
-        }
       }
     },
     "stickies": {}
@@ -254,7 +237,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 3
+    "revision": 1
   },
   "name": "PLH - Content - Positive - Family",
   "nodes": [
@@ -509,27 +492,26 @@
       "uuid": "0ce2083e-d6aa-4198-9bb0-a47f3f868b85"
     },
     {
-      "uuid": "1c6d59fa-a057-481a-a56c-baf68323f8ed",
       "actions": [],
+      "exits": [
+        {
+          "destination_uuid": "65da1642-61eb-44ac-b69b-1460f0301782",
+          "uuid": "f83da5ab-794d-4dc2-b7f9-ee5ac612c156"
+        },
+        {
+          "destination_uuid": "ee573d8f-a844-42c7-a805-90d8f852b14a",
+          "uuid": "f41e4b0f-f46b-412a-bec6-0c61d98ba26e"
+        }
+      ],
       "router": {
-        "type": "switch",
-        "default_category_uuid": "0a72410e-ae61-4199-ae68-eb82fe12b3d3",
         "cases": [
           {
             "arguments": [
               "high"
             ],
+            "category_uuid": "c97f2a48-52d9-49e3-8de4-bbe33d29da36",
             "type": "has_any_word",
-            "uuid": "e4d62c1e-e499-41f3-b1e2-ea8290f01c49",
-            "category_uuid": "c97f2a48-52d9-49e3-8de4-bbe33d29da36"
-          },
-          {
-            "arguments": [
-              "medium"
-            ],
-            "type": "has_any_word",
-            "uuid": "8a0d6cb0-176a-49fc-a2cf-f1c3a5e49a7e",
-            "category_uuid": "2f65082e-62b6-45ad-b917-c742a9737c45"
+            "uuid": "e4d62c1e-e499-41f3-b1e2-ea8290f01c49"
           }
         ],
         "categories": [
@@ -539,38 +521,22 @@
             "uuid": "c97f2a48-52d9-49e3-8de4-bbe33d29da36"
           },
           {
-            "uuid": "2f65082e-62b6-45ad-b917-c742a9737c45",
-            "name": "Medium",
-            "exit_uuid": "08aceb80-886f-437c-b669-b39290da11d6"
-          },
-          {
             "exit_uuid": "f41e4b0f-f46b-412a-bec6-0c61d98ba26e",
             "name": "Other",
             "uuid": "0a72410e-ae61-4199-ae68-eb82fe12b3d3"
           }
         ],
-        "operand": "@fields.type_of_media"
+        "default_category_uuid": "0a72410e-ae61-4199-ae68-eb82fe12b3d3",
+        "operand": "@fields.type_of_media",
+        "type": "switch"
       },
-      "exits": [
-        {
-          "destination_uuid": "65da1642-61eb-44ac-b69b-1460f0301782",
-          "uuid": "f83da5ab-794d-4dc2-b7f9-ee5ac612c156"
-        },
-        {
-          "uuid": "08aceb80-886f-437c-b669-b39290da11d6",
-          "destination_uuid": "d183e05f-47a2-43c1-a958-8f8eecb25140"
-        },
-        {
-          "destination_uuid": "ee573d8f-a844-42c7-a805-90d8f852b14a",
-          "uuid": "f41e4b0f-f46b-412a-bec6-0c61d98ba26e"
-        }
-      ]
+      "uuid": "1c6d59fa-a057-481a-a56c-baf68323f8ed"
     },
     {
       "actions": [
         {
           "attachments": [
-            "video:@(fields.voiceover_video_path & \"Family_Harmony.m4v\")"
+            "video:@(fields.video_script_path & \"Family_Harmony.m4v\")"
           ],
           "text": "Here's a video to help you support positive family relationships at home.",
           "type": "send_msg",
@@ -580,31 +546,11 @@
       ],
       "exits": [
         {
-          "destination_uuid": "039963ba-438b-4640-8fb6-c7009a0d401b",
+          "destination_uuid": "ee573d8f-a844-42c7-a805-90d8f852b14a",
           "uuid": "a6ae16fa-d34c-4cd4-a71d-9ed754aa3cca"
         }
       ],
       "uuid": "65da1642-61eb-44ac-b69b-1460f0301782"
-    },
-    {
-      "uuid": "d183e05f-47a2-43c1-a958-8f8eecb25140",
-      "actions": [
-        {
-          "attachments": [
-            "audio:@(fields.voiceover_audio_path & \"Family_Harmony.mp3\")"
-          ],
-          "text": "Here's an audio message to help you support positive family relationships at home.",
-          "type": "send_msg",
-          "quick_replies": [],
-          "uuid": "8c8a3ad7-9715-4a3d-8aaf-cc6eb2dcee50"
-        }
-      ],
-      "exits": [
-        {
-          "uuid": "798c715c-4be4-42af-a350-223aab172834",
-          "destination_uuid": "039963ba-438b-4640-8fb6-c7009a0d401b"
-        }
-      ]
     },
     {
       "actions": [
@@ -623,46 +569,6 @@
         }
       ],
       "uuid": "8aa66247-b72f-4908-9f1e-4c24b064bc94"
-    },
-    {
-      "uuid": "039963ba-438b-4640-8fb6-c7009a0d401b",
-      "actions": [],
-      "router": {
-        "type": "switch",
-        "default_category_uuid": "d8506ee5-5e10-40a4-afeb-6d46182a9f7c",
-        "cases": [],
-        "categories": [
-          {
-            "uuid": "d8506ee5-5e10-40a4-afeb-6d46182a9f7c",
-            "name": "All Responses",
-            "exit_uuid": "dbfa0cfc-92e1-443b-a0a9-74b34f4d0c16"
-          },
-          {
-            "uuid": "69958860-07bb-48d6-8c34-c752dcca1b7c",
-            "name": "No Response",
-            "exit_uuid": "ffe246ae-3c6c-4be2-9bc5-d80e7bcd796a"
-          }
-        ],
-        "operand": "@input.text",
-        "wait": {
-          "type": "msg",
-          "timeout": {
-            "seconds": 120,
-            "category_uuid": "69958860-07bb-48d6-8c34-c752dcca1b7c"
-          }
-        },
-        "result_name": "Result 4"
-      },
-      "exits": [
-        {
-          "uuid": "dbfa0cfc-92e1-443b-a0a9-74b34f4d0c16",
-          "destination_uuid": "ee573d8f-a844-42c7-a805-90d8f852b14a"
-        },
-        {
-          "uuid": "ffe246ae-3c6c-4be2-9bc5-d80e7bcd796a",
-          "destination_uuid": "ee573d8f-a844-42c7-a805-90d8f852b14a"
-        }
-      ]
     },
     {
       "actions": [
@@ -739,78 +645,6 @@
         }
       ],
       "uuid": "e5af2b2d-409a-43b0-b5db-87844e23c946"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Sorry, I don't understand what you mean.",
-          "type": "send_msg",
-          "uuid": "9c17d67b-ad41-4346-ae89-b836eacf4b5c"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "e5af2b2d-409a-43b0-b5db-87844e23c946",
-          "uuid": "9e96c9cd-b3dd-4285-844f-df2dfdab8a5c"
-        }
-      ],
-      "uuid": "cd188477-73db-486f-8a10-1502909cda2c"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Step 4. Share the load\n\nLooking after children and other family members is difficult, but it’s much easier when responsibilities are shared. Try to share household chores, childcare, and other tasks equally amongst family members",
-          "type": "send_msg",
-          "uuid": "40a84eb5-16aa-4fa3-a6e5-f5c506ea5cdd"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "75d61b27-b7c7-4148-a65e-4928c2249696",
-          "uuid": "33947d90-920b-40ef-999e-a85755832f7f"
-        }
-      ],
-      "uuid": "5acfd7ae-76a3-4604-9457-5d8f0925ef21"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Step 5. Take care of yourself\n\nCreate a schedule for time “on” and time “off” with other adults in your household. It is okay to ask for help when you are feeling tired or stressed so that you can take a break",
-          "type": "send_msg",
-          "uuid": "b8c816a8-9b86-4115-8e23-13f42db14a55"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "3d723e39-e7b9-4c2d-b9c9-efe0a4ba60a9",
-          "uuid": "b9470a30-405c-4636-ac73-f75889687404"
-        }
-      ],
-      "uuid": "b63a1efb-4286-4c56-934b-528360f8a721"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Step 6. Do nice things together as a family\n\nLet each family member take turns choosing a whole family activity. Find ways to spend time alone with other adults in your home, too!",
-          "type": "send_msg",
-          "uuid": "9243dbb2-9dd0-4fad-bed9-3f1f018be95a"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "75d61b27-b7c7-4148-a65e-4928c2249696",
-          "uuid": "7b720617-a4b4-4846-b23d-364b16dbd55b"
-        }
-      ],
-      "uuid": "0c5ded56-6978-4de6-98d2-158cb55b77b6"
     },
     {
       "actions": [],
@@ -964,6 +798,78 @@
         {
           "attachments": [],
           "quick_replies": [],
+          "text": "Sorry, I don't understand what you mean.",
+          "type": "send_msg",
+          "uuid": "9c17d67b-ad41-4346-ae89-b836eacf4b5c"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "e5af2b2d-409a-43b0-b5db-87844e23c946",
+          "uuid": "9e96c9cd-b3dd-4285-844f-df2dfdab8a5c"
+        }
+      ],
+      "uuid": "cd188477-73db-486f-8a10-1502909cda2c"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Step 4. Share the load\n\nLooking after children and other family members is difficult, but it’s much easier when responsibilities are shared. Try to share household chores, childcare, and other tasks equally amongst family members",
+          "type": "send_msg",
+          "uuid": "40a84eb5-16aa-4fa3-a6e5-f5c506ea5cdd"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "75d61b27-b7c7-4148-a65e-4928c2249696",
+          "uuid": "33947d90-920b-40ef-999e-a85755832f7f"
+        }
+      ],
+      "uuid": "5acfd7ae-76a3-4604-9457-5d8f0925ef21"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Step 5. Take care of yourself\n\nCreate a schedule for time “on” and time “off” with other adults in your household. It is okay to ask for help when you are feeling tired or stressed so that you can take a break",
+          "type": "send_msg",
+          "uuid": "b8c816a8-9b86-4115-8e23-13f42db14a55"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "3d723e39-e7b9-4c2d-b9c9-efe0a4ba60a9",
+          "uuid": "b9470a30-405c-4636-ac73-f75889687404"
+        }
+      ],
+      "uuid": "b63a1efb-4286-4c56-934b-528360f8a721"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Step 6. Do nice things together as a family\n\nLet each family member take turns choosing a whole family activity. Find ways to spend time alone with other adults in your home, too!",
+          "type": "send_msg",
+          "uuid": "9243dbb2-9dd0-4fad-bed9-3f1f018be95a"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "75d61b27-b7c7-4148-a65e-4928c2249696",
+          "uuid": "7b720617-a4b4-4846-b23d-364b16dbd55b"
+        }
+      ],
+      "uuid": "0c5ded56-6978-4de6-98d2-158cb55b77b6"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
           "text": "Step 1. Be a model of behaviour for your kids\n\nHow we talk and behave in front of our children is a big influence on how they behave too! Try to talk kindly to everyone in the family, adults and children.",
           "type": "send_msg",
           "uuid": "11307f4f-ebfd-488c-a200-d1c43833f9ab"
@@ -994,6 +900,24 @@
         }
       ],
       "uuid": "d7e55bef-321f-4ec8-846b-3e16fce29c98"
+    },
+    {
+      "actions": [
+        {
+          "attachments": [],
+          "quick_replies": [],
+          "text": "Step 3. Be a great listener\n\nListen to others when they are talking with you. Be open and show them that you hear what they are saying. It can help to summarise what you have heard before responding: “What I hear you saying is…”",
+          "type": "send_msg",
+          "uuid": "4a0c2bf7-f55c-4ce8-92b4-d4bb89a9c036"
+        }
+      ],
+      "exits": [
+        {
+          "destination_uuid": "75d61b27-b7c7-4148-a65e-4928c2249696",
+          "uuid": "7c246caf-79d6-454c-955d-aaf538bb6636"
+        }
+      ],
+      "uuid": "255c2105-c41e-4a03-8573-9270e7f1ee3e"
     },
     {
       "actions": [
@@ -1070,24 +994,6 @@
         }
       ],
       "uuid": "75d61b27-b7c7-4148-a65e-4928c2249696"
-    },
-    {
-      "actions": [
-        {
-          "attachments": [],
-          "quick_replies": [],
-          "text": "Step 3. Be a great listener\n\nListen to others when they are talking with you. Be open and show them that you hear what they are saying. It can help to summarise what you have heard before responding: “What I hear you saying is…”",
-          "type": "send_msg",
-          "uuid": "4a0c2bf7-f55c-4ce8-92b4-d4bb89a9c036"
-        }
-      ],
-      "exits": [
-        {
-          "destination_uuid": "75d61b27-b7c7-4148-a65e-4928c2249696",
-          "uuid": "7c246caf-79d6-454c-955d-aaf538bb6636"
-        }
-      ],
-      "uuid": "255c2105-c41e-4a03-8573-9270e7f1ee3e"
     },
     {
       "actions": [
@@ -1238,5 +1144,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "c9c952bb-fd0b-46b2-8c12-c1b62370ae41",
-  "revision": 16
+  "revision": 3
 }
