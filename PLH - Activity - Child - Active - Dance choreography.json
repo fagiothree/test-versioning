@@ -1,17 +1,17 @@
 {
   "_ui": {
     "nodes": {
-      "198a2a67-53ee-4892-bfd3-4f06da2041e7": {
-        "position": {
-          "left": 0,
-          "top": 0
-        },
-        "type": "execute_actions"
-      },
       "15aa983f-a6fc-4170-95bc-b55b9cafa894": {
         "position": {
           "left": 0,
           "top": 300
+        },
+        "type": "execute_actions"
+      },
+      "198a2a67-53ee-4892-bfd3-4f06da2041e7": {
+        "position": {
+          "left": 0,
+          "top": 0
         },
         "type": "execute_actions"
       },
@@ -30,19 +30,17 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 2
+    "revision": 1
   },
   "name": "PLH - Activity - Child - Active - Dance choreography",
   "nodes": [
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"family_dancing_and_playing_instruments.jpg\")"
-          ],
-          "text": "Dance choreography\n•\tCreate a dance choreography to your children’s favorite songs.\n•\tFirst person does a dance move and everyone else copies. \n•\tEveryone takes turns being the leader.\n•\tPerform it for the household!",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [],
+          "text": "Dance choreography\n•\tCreate a dance choreography to your children’s favorite songs\n•\tFirst person does a dance move and everyone else copies. \n•\tEveryone takes turns being the leader\n•\tPerform it for the household!",
+          "type": "send_msg",
           "uuid": "e8c1dc6d-77ca-4f64-bbc1-1726b5879241"
         }
       ],
@@ -145,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "37764bda-2189-4ea5-9cd1-b11a81f5ec4e",
-  "revision": 3
+  "revision": 1
 }

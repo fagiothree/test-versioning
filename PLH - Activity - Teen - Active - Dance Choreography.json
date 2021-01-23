@@ -1,12 +1,13 @@
 {
   "_ui": {
     "nodes": {
-      "e89b76b4-398b-4a66-8ebe-bc1d4e7dbab4": {
+      "4654a33d-21c0-46b4-bd4a-78a74e6c7743": {
+        "config": {},
         "position": {
-          "left": 0,
-          "top": 0
+          "left": 240,
+          "top": 480
         },
-        "type": "execute_actions"
+        "type": "split_by_subflow"
       },
       "9695efdb-7fec-478a-833d-541391faff5c": {
         "position": {
@@ -15,13 +16,12 @@
         },
         "type": "execute_actions"
       },
-      "4654a33d-21c0-46b4-bd4a-78a74e6c7743": {
-        "config": {},
+      "e89b76b4-398b-4a66-8ebe-bc1d4e7dbab4": {
         "position": {
-          "left": 240,
-          "top": 480
+          "left": 0,
+          "top": 0
         },
-        "type": "split_by_subflow"
+        "type": "execute_actions"
       }
     }
   },
@@ -30,19 +30,17 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 2
+    "revision": 1
   },
   "name": "PLH - Activity - Teen - Active - Dance Choreography",
   "nodes": [
     {
       "actions": [
         {
-          "attachments": [
-            "image:@(fields.image_path & \"family_dancing_and_playing_instruments.jpg\")"
-          ],
-          "text": "Dance choreography\n•\tCreate a dance choreography to your teen's favorite songs.\n•\tFirst person does a dance move and everyone else copies. \n•\tEveryone takes turns being the leader.\n•\tPerform it for the household!",
-          "type": "send_msg",
+          "attachments": [],
           "quick_replies": [],
+          "text": "Dance choreography\n•\tCreate a dance choreography to your teen's favorite songs\n•\tFirst person does a dance move and everyone else copies. \n•\tEveryone takes turns being the leader\n•\tPerform it for the household!",
+          "type": "send_msg",
           "uuid": "c3f1167a-7c17-45f7-9e79-4746afd4596b"
         }
       ],
@@ -145,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "df8dcab5-8eac-41fb-be7f-43b1fe1b4380",
-  "revision": 4
+  "revision": 1
 }

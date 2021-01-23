@@ -8,13 +8,6 @@
         },
         "type": "execute_actions"
       },
-      "dc74e77e-9783-4d8d-bf32-38bba978baa0": {
-        "position": {
-          "left": 0,
-          "top": 360
-        },
-        "type": "execute_actions"
-      },
       "d3c3cca4-86cb-4b76-a241-2908e9cbabf9": {
         "config": {},
         "position": {
@@ -22,6 +15,13 @@
           "top": 420
         },
         "type": "split_by_subflow"
+      },
+      "dc74e77e-9783-4d8d-bf32-38bba978baa0": {
+        "position": {
+          "left": 0,
+          "top": 360
+        },
+        "type": "execute_actions"
       }
     }
   },
@@ -30,7 +30,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 2
+    "revision": 1
   },
   "name": "PLH - Activity - Teen - Calm - At the end of the day",
   "nodes": [
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "At the End of the Day\n•\tAt the end of each day, take a minute to think about the day.  \n•\tTalk to your teen about one positive or fun thing they did.\n•\tPraise yourself for one thing you did well today.\n•\tThink of one thing that you are grateful for.  \n•\tYou are a star!",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "At the End of the Day\n•\tAt the end of each day, take a minute to think about the day.  \n•\tTalk your child about one positive or fun thing they did.\n•\tPraise yourself for one thing you did well today.\n•\tThink of one thing that you are grateful for.  \n•\tYou are a star!",
+          "type": "send_msg",
           "uuid": "f2f82519-508b-414c-97a7-94c987b9d904"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "c434ebf4-ffbf-4113-aeac-dfbd2ff15b07",
-  "revision": 3
+  "revision": 1
 }

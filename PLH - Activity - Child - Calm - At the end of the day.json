@@ -1,6 +1,14 @@
 {
   "_ui": {
     "nodes": {
+      "1685531c-d649-4ec4-8838-4dfa29bb4669": {
+        "config": {},
+        "position": {
+          "left": 320,
+          "top": 540
+        },
+        "type": "split_by_subflow"
+      },
       "53e4d2b5-0b0d-4f76-bea8-11d26d58c6cb": {
         "position": {
           "left": 20,
@@ -14,14 +22,6 @@
           "top": 420
         },
         "type": "execute_actions"
-      },
-      "1685531c-d649-4ec4-8838-4dfa29bb4669": {
-        "config": {},
-        "position": {
-          "left": 320,
-          "top": 540
-        },
-        "type": "split_by_subflow"
       }
     }
   },
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "At the End of the Day\n•\tAt the end of each day, take a minute to think about the day.  \n•\tTalk to your child about one positive or fun thing they did.\n•\tPraise yourself for one thing you did well today.\n•\tThink of one thing that you are grateful for.  \n•\tYou are a star!",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "At the End of the Day\n•\tAt the end of each day, take a minute to think about the day.  \n•\tTalk your child about one positive or fun thing they did.\n•\tPraise yourself for one thing you did well today.\n•\tThink of one thing that you are grateful for.  \n•\tYou are a star!",
+          "type": "send_msg",
           "uuid": "957165f6-fa14-4273-9a8b-9d0d5dfc7fb9"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "f064acaf-54f0-4e4a-8721-77ec0447999d",
-  "revision": 2
+  "revision": 1
 }

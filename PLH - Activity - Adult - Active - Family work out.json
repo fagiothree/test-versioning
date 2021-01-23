@@ -8,13 +8,6 @@
         },
         "type": "execute_actions"
       },
-      "fee3f3df-ccdc-43e6-96c8-12cded4fe687": {
-        "position": {
-          "left": 0,
-          "top": 400
-        },
-        "type": "execute_actions"
-      },
       "6a1db9f2-88fc-4c8e-a9ac-b39acca313c9": {
         "config": {},
         "position": {
@@ -22,6 +15,13 @@
           "top": 620
         },
         "type": "split_by_subflow"
+      },
+      "fee3f3df-ccdc-43e6-96c8-12cded4fe687": {
+        "position": {
+          "left": 0,
+          "top": 400
+        },
+        "type": "execute_actions"
       }
     }
   },
@@ -30,7 +30,7 @@
   "language": "eng",
   "localization": {},
   "metadata": {
-    "revision": 2
+    "revision": 1
   },
   "name": "PLH - Activity - Adult - Active - Family work out",
   "nodes": [
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Family Work Out\n•\tChoose a sport or exercise to do together.\n•\tDecide on a schedule. Are you going to do it every day? For how long? \n•\tTry it out for a week. \n•\tAt the end of the week, ask yourself and your family these questions. How's it going? How did you feel at the start of the week? How do you feel at the end of the week? What can we do differently next week?",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Family Work Out\n•\tChoose a sport or exercise to do together\n•\tDecide on a schedule. Are you going to do it every day? For how long? \n•\tTry it out for a week. \n•\tAt the end of the week, ask yourself and your family these questions. How´s it going? How did you feel at the start of the week? How do you feel at the end of the week? What can we do differently next week?",
+          "type": "send_msg",
           "uuid": "4de97a6e-a23c-4085-9503-1528864cd1f5"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "e9a9e362-a249-4345-8551-9ff7e3111dd5",
-  "revision": 3
+  "revision": 1
 }

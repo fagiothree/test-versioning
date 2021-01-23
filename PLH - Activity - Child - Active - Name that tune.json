@@ -8,13 +8,6 @@
         },
         "type": "execute_actions"
       },
-      "e25f4018-434f-4537-ac88-659800f1e19c": {
-        "position": {
-          "left": 0,
-          "top": 320
-        },
-        "type": "execute_actions"
-      },
       "df5379cf-05dc-46e3-9deb-5347714ad5e4": {
         "config": {},
         "position": {
@@ -22,6 +15,13 @@
           "top": 500
         },
         "type": "split_by_subflow"
+      },
+      "e25f4018-434f-4537-ac88-659800f1e19c": {
+        "position": {
+          "left": 0,
+          "top": 320
+        },
+        "type": "execute_actions"
       }
     }
   },
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Name that tune\n•\tFirst person gets to choose or sing a song.\n•\tEveryone else must guess the name of the tune (to make it harder they can guess the singer).\n•\tThe first one to guess it right becomes the next leader.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Name that tune\n•\tFirst person gets to choose or sing a song\n•\tEveryone else must guess the name of the tune (to make it harder they can guess the singer)\n•\tThe first one to guess it right becomes the next leader",
+          "type": "send_msg",
           "uuid": "f1ddcc4a-da40-4cfd-abad-ca7d56032bcc"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "c5dd3d5e-298e-454c-8ff0-cdb5d94d559c",
-  "revision": 2
+  "revision": 1
 }

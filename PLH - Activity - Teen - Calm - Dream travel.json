@@ -1,17 +1,17 @@
 {
   "_ui": {
     "nodes": {
-      "c6183f76-86d1-44eb-9169-334db38cb8d9": {
-        "position": {
-          "left": 0,
-          "top": 0
-        },
-        "type": "execute_actions"
-      },
       "180e81d9-458e-425e-abce-21405555feab": {
         "position": {
           "left": 40,
           "top": 400
+        },
+        "type": "execute_actions"
+      },
+      "c6183f76-86d1-44eb-9169-334db38cb8d9": {
+        "position": {
+          "left": 0,
+          "top": 0
         },
         "type": "execute_actions"
       },
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Dream Travel\n•\tYou can’t travel but you can dream! Ask your teen these questions\n•\tWhere do you want to travel? How long will you be away? What will you pack? What will you do? What will you see?\n•\tLook at a map together if you have one.\n•\tChoose a country that they’ve never heard of and look it up together online.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Dream Travel\n•\tYou can’t travel but you can dream! Ask your teen these questions\n•\tWhere do you want to travel? How long will you be away? What will you pack? What will you do? What will you see ?\n•\tLook at a map together if you have one.\n•\tChoose a country that they’ve never heard of and look it up together online.",
+          "type": "send_msg",
           "uuid": "12a72f3c-84c1-4da9-9c25-bd51eb792213"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "a405c2d3-e738-46fb-aed9-90fd69b26e7d",
-  "revision": 2
+  "revision": 1
 }

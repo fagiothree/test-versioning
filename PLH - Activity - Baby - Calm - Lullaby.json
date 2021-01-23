@@ -8,13 +8,6 @@
         },
         "type": "execute_actions"
       },
-      "72248990-14f2-49cf-9264-4d3e51307332": {
-        "position": {
-          "left": 0,
-          "top": 380
-        },
-        "type": "execute_actions"
-      },
       "5584f533-df50-4540-bec7-c363695d3b1d": {
         "config": {},
         "position": {
@@ -22,6 +15,13 @@
           "top": 520
         },
         "type": "split_by_subflow"
+      },
+      "72248990-14f2-49cf-9264-4d3e51307332": {
+        "position": {
+          "left": 0,
+          "top": 380
+        },
+        "type": "execute_actions"
       }
     }
   },
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Lullaby\n•\tWhen your baby or toddler cries, sing a soft song to calm you both down.\n•\tSing a soothing song you know or make up your own with a simple melody and some soothing words.\n•\tRepeat it over and over in a rhythmical way. For example, “My little one, oh little one”.\n•\tSing the same song regularly so your child gets used to it!",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Lullaby\n•\tWhen your baby or toddler cries, sing a soft song to calm you both down\n•\tSing a soothing song you know or make up your own with a simple melody and some soothing words\n•\tRepeat it over and over in a rhythmical way. For example, “My little one, oh little one”\n•\tSing the same song regularly so your child gets used to it!",
+          "type": "send_msg",
           "uuid": "3ccc79ae-5076-4436-b2e1-42293d9720b0"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "28ea2327-d2c6-40be-8ead-528e9bc685bf",
-  "revision": 2
+  "revision": 1
 }

@@ -1,12 +1,13 @@
 {
   "_ui": {
     "nodes": {
-      "a5b6a5bb-4ff3-458b-bbbc-fd522a29f0ec": {
+      "657af48e-3a75-4595-8543-fe4d061db3ee": {
+        "config": {},
         "position": {
-          "left": 0,
-          "top": 0
+          "left": 280,
+          "top": 540
         },
-        "type": "execute_actions"
+        "type": "split_by_subflow"
       },
       "864f3cf8-4572-45b6-969a-84d98d4e1e95": {
         "position": {
@@ -15,13 +16,12 @@
         },
         "type": "execute_actions"
       },
-      "657af48e-3a75-4595-8543-fe4d061db3ee": {
-        "config": {},
+      "a5b6a5bb-4ff3-458b-bbbc-fd522a29f0ec": {
         "position": {
-          "left": 280,
-          "top": 540
+          "left": 0,
+          "top": 0
         },
-        "type": "split_by_subflow"
+        "type": "execute_actions"
       }
     }
   },
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Memory game – “When COVID-19 ends…”\n•\tFirst person says, “When COVID-19 ends, I am going to… (e.g., go to the park)”\n•\tSecond person adds to first person, “When COVID-19 ends, I am going to the park and… (e.g., visit my best friend)”\n•\tEach person adds to the previous trying to think of all of the fun things to do when COVID-19 ends",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Memory game – “When COVID-19 ends…”\n•\tFirst person says, “When COVID-19 ends, I am going to… (e.g., go to the park)”\n•\tSecond person adds to first person, “When COVID-19 ends, I am going to the park and… (e.g., visit my best friend”\n•\tEach person adds to the previous trying to think of all of the fun things to do when COVID-19 ends",
+          "type": "send_msg",
           "uuid": "dfe3de12-40a4-46b1-9319-c2a78e041b8a"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "17536ef9-4187-4d54-95c6-b242f0314874",
-  "revision": 2
+  "revision": 1
 }

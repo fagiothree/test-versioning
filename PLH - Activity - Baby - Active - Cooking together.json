@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Cooking together\n•\tChildren love to do what you do!\n•\tLet your baby play with pots and spoons while you are making dinner.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Cooking together\n•\tChildren love to do what you do!\n•\tLet your baby play with pots and spoons while you are making dinner",
+          "type": "send_msg",
           "uuid": "5f3287b3-534f-4dd8-a051-760a0fc7b018"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "d12b2aa2-aadd-4b6c-80fb-f45007190500",
-  "revision": 2
+  "revision": 1
 }

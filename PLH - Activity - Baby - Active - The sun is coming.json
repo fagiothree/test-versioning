@@ -1,13 +1,6 @@
 {
   "_ui": {
     "nodes": {
-      "ca0a691d-ba77-4470-846f-ff6ebe35b469": {
-        "position": {
-          "left": 0,
-          "top": 0
-        },
-        "type": "execute_actions"
-      },
       "651ab0e2-aaca-46eb-a119-83bb24518d48": {
         "position": {
           "left": 0,
@@ -22,6 +15,13 @@
           "top": 780
         },
         "type": "split_by_subflow"
+      },
+      "ca0a691d-ba77-4470-846f-ff6ebe35b469": {
+        "position": {
+          "left": 0,
+          "top": 0
+        },
+        "type": "execute_actions"
       }
     }
   },
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "The Sun is Coming! \n•\tLie your baby on their back after washing them or changing their diaper.\n•\tTell them the sun is coming! Wiggle your fingers like sunrays above their head and make your face a big smiling sun.\n•\tTell them the wind is coming! Blow softly over their body.\n•\tTell them the rain is coming! Use your fingers to gently pat over their whole body like light raindrops.\n•\tTell them the clouds are coming! Wrap the towel or cloth around them like a blanket and cuddle them.\n•\tPlay with different weathers. Which one does your baby like best?\n•\tAdd sound effects or make it into a little song. Use the tune of another song you know! ",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "The Sun is Coming! \n•\tLie your baby on their back after washing them or changing their diaper\n•\tTell them the sun is coming! Wiggle your fingers like sunrays above their head and make your face a big smiling sun.\n•\tTell them the wind is coming! Blow softly over their body.\n•\tTell them the rain is coming! Use your fingers to gently pat over their whole body like light raindrops.\n•\tTell them the clouds are coming! Wrap the towel or cloth around them like a blanket and cuddle them \n•\tPlay with different weathers. Which one does your baby like best?\n•\tAdd sound effects or make it into a little song. Use the tune of another song you know! ",
+          "type": "send_msg",
           "uuid": "3f46bace-439f-4a88-adc4-1427d760a634"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "3fa2c146-420a-403d-a0f1-97a4d2fa4b3b",
-  "revision": 2
+  "revision": 1
 }

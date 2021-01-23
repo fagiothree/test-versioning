@@ -1,13 +1,6 @@
 {
   "_ui": {
     "nodes": {
-      "ed0e39f3-164a-4950-98ab-82106515fc8a": {
-        "position": {
-          "left": 0,
-          "top": 0
-        },
-        "type": "execute_actions"
-      },
       "2aec64da-10b4-4c5a-8e50-06fc096ddec6": {
         "position": {
           "left": 0,
@@ -22,6 +15,13 @@
           "top": 600
         },
         "type": "split_by_subflow"
+      },
+      "ed0e39f3-164a-4950-98ab-82106515fc8a": {
+        "position": {
+          "left": 0,
+          "top": 0
+        },
+        "type": "execute_actions"
       }
     }
   },
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Freeze dance\n•\tPlay music or someone sings a song, and everyone dances.\n•\tWhen the music stops, everyone must freeze.\n•\tLast person still dancing becomes the judge for the next round.\n•\tAnimal dance: Same as above but when the music stops, call out a name of an animal, and everyone has to become that animal.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Freeze dance\n•\tPlay music or someone sings a song, and everyone dances\n•\tWhen the music stops, everyone must freeze\n•\tLast person still dancing becomes the judge for the next round\n•\tAnimal dance: Same as above but when the music stops, call out a name of an animal, and everyone has to become that animal",
+          "type": "send_msg",
           "uuid": "cb3e882f-640a-4456-9891-4ae819b252a0"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "cdc4e7f5-bfce-4585-8dc6-fe89bbe72b7e",
-  "revision": 2
+  "revision": 1
 }

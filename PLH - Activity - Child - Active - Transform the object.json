@@ -1,6 +1,14 @@
 {
   "_ui": {
     "nodes": {
+      "8f598d8d-155c-4535-8508-138180446118": {
+        "config": {},
+        "position": {
+          "left": 320,
+          "top": 500
+        },
+        "type": "split_by_subflow"
+      },
       "9dff3ed4-473d-416d-8304-98d1f8da80e6": {
         "position": {
           "left": 0,
@@ -14,14 +22,6 @@
           "top": 360
         },
         "type": "execute_actions"
-      },
-      "8f598d8d-155c-4535-8508-138180446118": {
-        "config": {},
-        "position": {
-          "left": 320,
-          "top": 500
-        },
-        "type": "split_by_subflow"
       }
     }
   },
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Transform the object\n•\tEveryday household items like brooms, mops, or scarfs can become fun props for games\n•\tPlace an object in the center of the room and whenever someone has an idea, they jump in and show the rest what the object can be\n•\tFor example, a broom might be ridden as a horse or a microphone or a guitar!",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Transform the object\n•\tEvery day household items like brooms, mops, or scarfs can become fun props for games\n•\tPlace an object in the center of the room and whenever someone has an idea, they jump in and show the rest what the object can be\n•\tFor example, a broom might be ridden as a horse or a microphone or a guitar!",
+          "type": "send_msg",
           "uuid": "f0f93a7e-c012-44df-afe8-d074414c3293"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "216a00ac-d55a-414c-acd3-5624ecd75d34",
-  "revision": 2
+  "revision": 1
 }

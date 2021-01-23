@@ -1,10 +1,10 @@
 {
   "_ui": {
     "nodes": {
-      "c4fef547-0276-4e0a-b340-1e5ba15a05cb": {
+      "1d826ada-5754-4adf-ace7-b68cf87e3b42": {
         "position": {
-          "left": 320,
-          "top": 60
+          "left": 240,
+          "top": 1040
         },
         "type": "execute_actions"
       },
@@ -15,19 +15,13 @@
         },
         "type": "execute_actions"
       },
-      "c5dbc1bf-b60f-43d6-a4b1-54d07b50f3b4": {
+      "6fa632af-a0d7-4ce5-9ab0-e778e5f2682d": {
+        "config": {},
         "position": {
-          "left": 560,
-          "top": 560
+          "left": 720,
+          "top": 1600
         },
-        "type": "execute_actions"
-      },
-      "fd8cdda0-6345-422a-8aa9-b71a9f04122d": {
-        "position": {
-          "left": 560,
-          "top": 760
-        },
-        "type": "execute_actions"
+        "type": "split_by_subflow"
       },
       "85a11d9f-6092-44dc-8797-51149be2d2ca": {
         "position": {
@@ -43,10 +37,24 @@
         },
         "type": "execute_actions"
       },
-      "1d826ada-5754-4adf-ace7-b68cf87e3b42": {
+      "8d9a363e-9566-4de7-813b-28dd3756190a": {
         "position": {
-          "left": 240,
-          "top": 1040
+          "left": 540,
+          "top": 1380
+        },
+        "type": "execute_actions"
+      },
+      "c4fef547-0276-4e0a-b340-1e5ba15a05cb": {
+        "position": {
+          "left": 320,
+          "top": 60
+        },
+        "type": "execute_actions"
+      },
+      "c5dbc1bf-b60f-43d6-a4b1-54d07b50f3b4": {
+        "position": {
+          "left": 560,
+          "top": 560
         },
         "type": "execute_actions"
       },
@@ -57,20 +65,12 @@
         },
         "type": "execute_actions"
       },
-      "8d9a363e-9566-4de7-813b-28dd3756190a": {
+      "fd8cdda0-6345-422a-8aa9-b71a9f04122d": {
         "position": {
-          "left": 540,
-          "top": 1380
+          "left": 560,
+          "top": 760
         },
         "type": "execute_actions"
-      },
-      "6fa632af-a0d7-4ce5-9ab0-e778e5f2682d": {
-        "config": {},
-        "position": {
-          "left": 720,
-          "top": 1600
-        },
-        "type": "split_by_subflow"
       }
     }
   },
@@ -87,9 +87,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Hello! How are you feeling? If you are feeling overwhelmed or stressed, here's a fun activity that can also release some stress.",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Hello! How are you feeling? If you are feeling overwhelmed or stress, here's a fun activity that can also release some stress.",
+          "type": "send_msg",
           "uuid": "86cd793e-3bd4-4cc3-bb17-fd429ff72ae5"
         }
       ],
@@ -122,11 +122,11 @@
     {
       "actions": [
         {
-          "attachments": [],
-          "text": "Place one foot in front of the other and make small circles from ankles, remember to turn to both sides. Do each foot with four circles in each direction.",
-          "type": "send_msg",
           "all_urns": false,
+          "attachments": [],
           "quick_replies": [],
+          "text": "Place one foot in front of the other and make small circles from ankles, remember to turn to both sides. Do each foot with four circles in each direction",
+          "type": "send_msg",
           "uuid": "8ff34d88-65fb-4829-951a-1e4399f417f3"
         }
       ],
@@ -324,5 +324,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "87aaaa2e-c306-4ccd-b92d-12ffbbc3cc70",
-  "revision": 3
+  "revision": 1
 }

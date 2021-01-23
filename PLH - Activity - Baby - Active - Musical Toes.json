@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Musical Toes\n•\tPut your baby on their back.\n•\tWiggle their toe and say, “This little toe goes [funny sound].”\n•\tMake a funny sound for each toe.\n•\tPlay with different sounds. For example, animal sounds, popping sounds, squeaky sounds, fart sounds. \n•\tRepeat this for all ten toes. \n•\tTry to make the last toe the biggest and funniest sound!",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Musical Toes\n•\tPut your baby on their back\n•\tWiggle their toe and say, “This little toe goes [funny sound]”\n•\tMake a funny sound for each toe\n•\tPlay with different sounds. For example, animal sounds, popping sounds, squeaky sounds, fart sounds. \n•\tRepeat this for all ten toes. \n•\tTry to make the last toe the biggest and funniest sound!",
+          "type": "send_msg",
           "uuid": "722c4da0-5297-4076-9f3b-b05545fc94d7"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "148bbe8b-c81a-43b4-8e45-15c906a7e0bd",
-  "revision": 2
+  "revision": 1
 }

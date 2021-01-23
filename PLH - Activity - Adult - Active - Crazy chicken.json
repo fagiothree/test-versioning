@@ -1,13 +1,6 @@
 {
   "_ui": {
     "nodes": {
-      "94ab859d-950c-46d4-bd37-e062ed3978ad": {
-        "position": {
-          "left": 0,
-          "top": 0
-        },
-        "type": "execute_actions"
-      },
       "1b625594-f43c-443f-8fc5-49860567b462": {
         "position": {
           "left": 0,
@@ -22,6 +15,13 @@
           "top": 540
         },
         "type": "split_by_subflow"
+      },
+      "94ab859d-950c-46d4-bd37-e062ed3978ad": {
+        "position": {
+          "left": 0,
+          "top": 0
+        },
+        "type": "execute_actions"
       }
     }
   },
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Crazy Chicken\n•\tShake your hand in the air 8 times while counting to 8\n•\tDo it as fast and loud as you can\n•\tRepeat with your other hand and both feet\n•\tDo it 7 times, then 6 times until you get to 1.\n•\tCall out “Crazy chicken” as loud as you can!\n•\tHave you released all your stress? If not, do it again even faster and louder! ",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Crazy Chicken\n•\tShake your hand in the air 8 times while counting\n•\tDo it as fast and loud as you can\n•\tRepeat with your other hand and both feet\n•\tDo it 7 times, then 6 times until you get to 1.\n•\tCall out “Crazy chicken” as loud as you can!\n•\tHave you released all your stress? If not, do it again even faster and louder! ",
+          "type": "send_msg",
           "uuid": "74ef7ab9-4c12-48fd-bcc8-44c8657827be"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "5e677aa1-0ea7-4972-9f6d-24c013ec18ad",
-  "revision": 2
+  "revision": 1
 }

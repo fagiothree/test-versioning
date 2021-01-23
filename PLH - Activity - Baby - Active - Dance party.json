@@ -8,13 +8,6 @@
         },
         "type": "execute_actions"
       },
-      "c9f2965a-6576-4e77-8e60-4aa34700ef9d": {
-        "position": {
-          "left": 0,
-          "top": 520
-        },
-        "type": "execute_actions"
-      },
       "95a96eb3-1997-4a9f-b905-2cd3d1c416b8": {
         "config": {},
         "position": {
@@ -22,6 +15,13 @@
           "top": 640
         },
         "type": "split_by_subflow"
+      },
+      "c9f2965a-6576-4e77-8e60-4aa34700ef9d": {
+        "position": {
+          "left": 0,
+          "top": 520
+        },
+        "type": "execute_actions"
       }
     }
   },
@@ -38,9 +38,9 @@
       "actions": [
         {
           "attachments": [],
-          "text": "Dance Party\n•\tPut on your favourite music or sing your favourite song and dance around the room with your toddler. If you have a baby hold them while you dance. \n•\tDance in different ways or with different parts of your body.\n•\tFor example, “Dance like a monkey”, “Dance like a chicken” or “Let’s dance with our knees and hips”.\n•\tThink up different instructions. Be seriously playful! \n•\tWhen the music stops, everyone does a funny freeze.\n•\tNotice what rhythms or movement they like!",
-          "type": "send_msg",
           "quick_replies": [],
+          "text": "Dance Party\n•\tPut on your favourite music or sing your favourite song and dance around the room with your toddler. If you have a baby hold them while you dance. \n•\tDance in different ways or with different parts of your body\n•\tFor example, “Dance like a monkey”, “Dance like a chicken” or “Let’s dance with our knees and hips”\n•\tThink up different instructions. Be seriously playful! \n•\tWhen the music stops, everyone does a funny freeze\n•\tNotice what rhythms or movement they like!",
+          "type": "send_msg",
           "uuid": "47043970-f8ba-4e65-9580-67a7dd12bc56"
         }
       ],
@@ -143,5 +143,5 @@
   "spec_version": "13.1.0",
   "type": "messaging",
   "uuid": "a3284fca-9428-45b0-aec5-1ccb5936154d",
-  "revision": 2
+  "revision": 1
 }
